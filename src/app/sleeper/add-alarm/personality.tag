@@ -28,7 +28,9 @@
       <div class="stepper-container">
           <stepper size="{state.sleeper.getSteps()}" current="2"></stepper>
       </div>
-      <img show="{loading}" src="/images/loading.gif"></img>
+      <div show="{ loading }" class="circle-progress center active">
+        <div class="spinner"></div>
+     </div>
   </div>
   
  <style>
@@ -50,6 +52,11 @@
          }
          #questions-link {
             font-size: 12px;     
+         }
+
+         .circle-progress.active {
+             position: relative;
+             top: -110px;
          }
      }
  </style>

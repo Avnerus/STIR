@@ -91,7 +91,7 @@
             phonon.panel('#home-suggest').open();
             this.state.auth.suggestedSleeperHome();
         } else if (this.state.sleeper.newAlarmTime) {
-            let diff = this.TimeUtil.getDiff(this.state.sleeper.newAlarmTime);
+            let diff = this.TimeUtil.getDiff(new Date(this.state.sleeper.newAlarmTime));
             this.state.sleeper.newAlarmTime = null;
             let messageId = diff.days == 1 ? 'NEW_ALARM_NOTIFICATION_1DAY' : 'NEW_ALARM_NOTIFICATION';
             phonon.notif(
