@@ -44,7 +44,7 @@
             }
             position: absolute;
             width: 100%;
-            bottom: 60px; 
+            bottom: 80px; 
             right: 1px;
            .add-button {
                 background-color: #f36b21;

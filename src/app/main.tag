@@ -176,8 +176,9 @@
         .notification {
             font-size: 16px;
             line-height: unset;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            padding-left: 30px;
         }
 
         .popover {
