@@ -23,7 +23,7 @@ import 'phonon/dist/js/components/dialogs'
 import 'phonon/dist/js/components/preloaders'
 import 'phonon/dist/js/components/forms'
 import 'phonon/dist/js/components/panels'
-//import 'phonon/dist/js/components/popovers'
+import 'phonon/dist/js/components/notifications'
 
 console.log("Client loading!");
 

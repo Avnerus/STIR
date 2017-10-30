@@ -113,7 +113,9 @@ const Messages =
     CONNECT_FACEBOOK: 'Connectez-vous avec Facebook',
     CONNECT_TWITTER: 'Connectez-vous avec Twitter',
     NOT_SOCIAL: 'Vous n\'êtes pas sur les médias sociaux?',
-    SUBMIT: 'Soumettre'
+    SUBMIT: 'Soumettre',
+    NEW_ALARM_NOTIFICATION: 'Wakeup message set for {hours} hours and {minutes} minutes from now.',
+    NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.'
 };
 
 export default Messages;

@@ -66,6 +66,21 @@ class TimeUtil {
         defaultTime.setMilliseconds(0);
         return defaultTime;
     }
+
+    getDiff(date) {
+        // https://stackoverflow.com/questions/7709803/javascript-get-minutes-between-two-dates
+        let today = new Date();
+        let diffMs = (date - today);
+        let diffDays = Math.floor(diffMs / 86400000); // days
+        let diffHrs = Math.floor((diffMs % 86400000) / 3600000); // hours
+        let diffMins = Math.round(((diffMs % 86400000) % 3600000) / 60000); // minutes
+
+        return {
+            days: diffDays,
+            hours: diffHrs,
+            minutes: diffMins
+        }
+    }
 };
 
 // Singleton

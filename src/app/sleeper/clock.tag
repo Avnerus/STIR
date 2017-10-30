@@ -90,6 +90,17 @@
             );
             phonon.panel('#home-suggest').open();
             this.state.auth.suggestedSleeperHome();
+        } else if (this.state.sleeper.newAlarmTime) {
+            let diff = this.TimeUtil.getDiff(this.state.sleeper.newAlarmTime);
+            this.state.sleeper.newAlarmTime = null;
+            let messageId = diff.days == 1 ? 'NEW_ALARM_NOTIFICATION_1DAY' : 'NEW_ALARM_NOTIFICATION';
+            phonon.notif(
+                this.formatMessage(messageId, {
+                    hours: diff.hours,
+                    minutes: diff.minutes
+                }),
+                2000, false
+            );
         }
         let manifestLink = $('link[href="manifest.json"]');
         if (manifestLink.length == 0) {

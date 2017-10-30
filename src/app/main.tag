@@ -173,6 +173,12 @@
             background-color: transparent;
 
         }
+        .notification {
+            font-size: 16px;
+            line-height: unset;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
         .popover {
             width: 52px;
