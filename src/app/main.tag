@@ -22,10 +22,38 @@
         body {
             font-family: Abel, Helvetica;
             color: white;
+            background-color: #000;
         }
         .app-page {
             background-color: #000;
         }
+        body.arte {
+            .app-page {
+                top: 0;
+                padding-top: 40px;
+            }
+            .header-bar ~ .content {
+                margin-top: 92px;
+            }
+            
+            main .content {
+                margin-top: 52px;
+            }
+        }
+        body.nfb {
+            .app-page {
+                top: -40px;
+                padding-top: 40px;
+            }
+            .header-bar ~ .content {
+                margin-top: 92px;
+            }
+            
+            main .content {
+                margin-top: 52px;
+            }
+        }
+
         .btn.raised {
                 box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
                 }
@@ -138,7 +166,6 @@
             }
 
         }
-
         .description {
             font-size: 18px;
         }

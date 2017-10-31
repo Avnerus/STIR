@@ -429,8 +429,9 @@ app.use(async function (req, res, next) {
                 Object.assign(renderOpts, {
                     nfbShare: nfbSettings.share,
                     nfbDeps: nfbSettings.dependencies,
-                    nfbHeader: nfbSettings.header
+                    nfbHeader: nfbSettings.header,
                     //nfbFooter: nfbSettings.footer
+                    nfbTopnav: nfbSettings.geoloc.topnav
                 });
             } 
             res.render('index', renderOpts);
