@@ -1,9 +1,5 @@
 <rouser-welcome>
-<header class="header-bar">
-    <div class="pull-left">
-        <a href="/"><h1>STIR | Rouser</h1></a>
-    </div>
-</header>
+<virtual data-is="stir-header"></virtual>
 <div class="content">
      <div class="padded-full">
             <h1><formatted-message id='ROUSER_WELCOME'/></h1>
@@ -37,6 +33,7 @@
  </style>
  <script>
     import MiscUtil from '../util/misc'
+    import '../common/stir-header.tag'
 
     this.on('mount', () => {
         console.log("rouser welcome mounted");

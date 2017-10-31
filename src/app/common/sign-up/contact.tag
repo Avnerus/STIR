@@ -1,9 +1,5 @@
 <sign-up-contact>
-  <header class="header-bar">
-        <div class="pull-left">
-            <a href="/"><h1>STIR | Contact</h1></a>
-        </div>
-  </header>
+  <virtual data-is="stir-header"></virtual>
   <div class="content">
       <div show="{ phonePluginLoaded }" class="padded-full">
         <div if="{state.main.role == 'sleeper'}">
@@ -65,8 +61,12 @@
             background-color: #333 !important;
          }
      }
+    .circle-progress.active {
+        top: 70%;
+    }
  </style>
  <script>
+    import '../stir-header.tag'
     
     this.mixin('UIUtil');
 

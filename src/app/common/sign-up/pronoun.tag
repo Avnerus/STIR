@@ -1,9 +1,5 @@
 <sign-up-pronoun>
-  <header class="header-bar">
-        <div class="pull-left">
-            <a href="/"><h1>STIR | Contact</h1></a>
-        </div>
-  </header>
+  <virtual data-is="stir-header"></virtual>
   <div class="content">
       <div class="padded-full">
            <h1><formatted-message id="CONTACT_PRONOUN"/></h1>
@@ -62,6 +58,8 @@
      }
  </style>
  <script>
+    import '../stir-header.tag'
+    
     this.on('mount', () => {
         console.log("sign-up pronoun mounted");
         if (IS_CLIENT) {
@@ -99,7 +97,16 @@
         }
         catch(err) {
             console.log("set pronoun error!", err);
-            phonon.alert(err.message, "Oops", false, "Ok");
+            if (err.code && err.code == 409) {
+                phonon.alert(
+                    this.formatMessage('ALARM_EXISTS'),
+                    "Oops", 
+                    false, 
+                    "Ok"
+                );
+            } else {
+                phonon.alert(err.message, "Oops", false, "Ok");
+            }
         }
     }
  </script>

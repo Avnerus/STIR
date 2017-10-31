@@ -1,9 +1,5 @@
 <rouser-alarm-record>
-<header class="header-bar">
-    <div class="pull-left">
-       <a href="/"><h1>STIR | Rouser</h1></a>
-    </div>
-</header>
+<virtual data-is="stir-header"></virtual>
 <div class="content">
   <div class="padded-full">
       <div class="description row">
@@ -48,6 +44,8 @@
  </style>
 
  <script>
+    import '../../common/stir-header.tag'
+
     this.on('mount', () => {
         console.log("alarm record mounted");
         this.state.rouser.on('recording_ready', this.onRecordingReady);

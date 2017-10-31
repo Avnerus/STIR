@@ -1,9 +1,5 @@
 <sleeper-alarms-add-time>
-    <header class="header-bar">
-        <div class="pull-left">
-            <a href="/"><h1>STIR | Sleeper</h1></a>
-        </div>
-    </header>
+  <virtual data-is="stir-header"></virtual>
   <div class="content">
       <div class="padded-full">
             <h1><formatted-message id='SLEEPER_TIME_WHEN'/></h1>
@@ -43,6 +39,7 @@
  <script>
     import '../alarm-time.tag'
     import '../../common/stepper.tag'
+    import '../../common/stir-header.tag'
 
     this.mixin('TimeUtil');
 

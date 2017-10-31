@@ -1,5 +1,6 @@
 const Messages =
 {
+    STIR: 'L\'appel du réveil',
     OK: 'Ok',
     CANCEL: 'Annuler',
     NOTICE: 'Notice',

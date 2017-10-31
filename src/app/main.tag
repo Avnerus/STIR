@@ -132,13 +132,11 @@
 
             h1 {
                 line-height: 26px;
-                color: white;
-
+                span {
+                    color: white;
+                }
             }
 
-        }
-        .header-bar ~ .content {
-            margin-top: 65px;
         }
 
         .description {

@@ -1,9 +1,5 @@
 <rouser-alarms>
-<header class="header-bar">
-    <div class="pull-left">
-        <a href="/"><h1>STIR | Rouser</h1></a>
-    </div>
-</header>
+<virtual data-is="stir-header"></virtual>
 <div class="content">
      <div show="{state.rouser.alarms != null && state.rouser.alarms.length > 0}" class="padded-full">
             <h1><formatted-message id='ROUSER_FOUND_SLEEPER'/></h1>
@@ -58,6 +54,7 @@
      }
  </style>
  <script>
+    import '../common/stir-header.tag'
     import MiscUtil from '../util/misc'
 
     this.on('mount', () => {

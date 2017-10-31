@@ -1,9 +1,5 @@
 <sleeper-alarms-add-personality>
-    <header class="header-bar">
-        <div class="pull-left">
-            <a href="/"><h1>STIR | Sleeper</h1></a>
-        </div>
-    </header>
+  <virtual data-is="stir-header"></virtual>
   <div class="content">
     <div class="padded-full">
         <h1><formatted-message id='PERSONALITY_DESCRIPTION'/></h1>
@@ -61,6 +57,9 @@
      }
  </style>
  <script>
+    import '../../common/stepper.tag'
+    import '../../common/stir-header.tag'
+
     this.on('mount', async () => {
         console.log("add-alarm-personality mounted");
         if (IS_CLIENT) {

@@ -1,16 +1,20 @@
 <sleeper-alarms>
-<header class="header-bar">
-    <div class="pull-left">
-        <a href="/"><h1>STIR | Sleeper</h1></a>
-    </div>
-</header>
+<virtual data-is="stir-header"></virtual>
 <div class="content">
      <div class="padded-full">
          <div show="{state.sleeper.alarms != null}">
-             <h1 if="{state.auth.user.name}"><formatted-message id="CLOCK_WELCOME_NAME" name="{state.auth.user.name}"/></h1>
-             <h1 if="{!state.auth.user.name}"><formatted-message id="CLOCK_WELCOME"/></h1>
-             <p if="{state.sleeper.alarms && state.sleeper.alarms.length > 0}"><formatted-message id="CLOCK_DESC"/></p>
-             <p if="{state.sleeper.alarms && state.sleeper.alarms.length == 0}"><formatted-message id="CLOCK_DESC_NO_ALARMS"/></p>
+             <h1 if="{state.auth.user.name}">
+                <formatted-message id="CLOCK_WELCOME_NAME" name="{state.auth.user.name}"/>
+             </h1>
+             <h1 if="{!state.auth.user.name}">
+                <formatted-message id="CLOCK_WELCOME"/>
+             </h1>
+             <p if="{state.sleeper.alarms && state.sleeper.alarms.length > 0}">
+                <formatted-message id="CLOCK_DESC"/>
+             </p>
+             <p if="{state.sleeper.alarms && state.sleeper.alarms.length == 0}">
+                <formatted-message id="CLOCK_DESC_NO_ALARMS"/>
+              </p>
               <alarm-time
                   each={ state.sleeper.alarms } 
                   data="{ {time: this.time, _id: this._id} }" 
@@ -71,6 +75,9 @@
  <script>
     import './alarm-time.tag'
     import MiscUtil from '../util/misc'
+    import '../common/stir-header.tag'
+
+
 
     this.mixin('TimeUtil');
     this.mixin('UIUtil');
@@ -82,15 +89,7 @@
 
     this.on('ready', () => {
         this.update();
-        if (!MiscUtil.isStandaone() && this.state.auth.user && !this.state.auth.user.status.suggestedSleeperHome) {
-            $('#home-suggest-message').html(
-                this.formatMessage('HOME_SUGGEST', {
-                    role: this.formatMessage('SLEEPER')
-                })
-            );
-            phonon.panel('#home-suggest').open();
-            this.state.auth.suggestedSleeperHome();
-        } else if (this.state.sleeper.newAlarmTime) {
+        if (this.state.sleeper.newAlarmTime) {
             let diff = this.TimeUtil.getDiff(new Date(this.state.sleeper.newAlarmTime));
             this.state.sleeper.newAlarmTime = null;
             let messageId = diff.days == 1 ? 'NEW_ALARM_NOTIFICATION_1DAY' : 'NEW_ALARM_NOTIFICATION';
@@ -101,6 +100,16 @@
                 }),
                 2000, false
             );
+        }
+        else if
+        (!MiscUtil.isStandaone() && this.state.auth.user && !this.state.auth.user.status.suggestedSleeperHome) {
+            $('#home-suggest-message').html(
+                this.formatMessage('HOME_SUGGEST', {
+                    role: this.formatMessage('SLEEPER')
+                })
+            );
+            phonon.panel('#home-suggest').open();
+            this.state.auth.suggestedSleeperHome();
         }
         let manifestLink = $('link[href="manifest.json"]');
         if (manifestLink.length == 0) {

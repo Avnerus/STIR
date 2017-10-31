@@ -1,9 +1,5 @@
 <sleeper-welcome>
-<header class="header-bar">
-    <div class="pull-left">
-        <a href="/"><h1>STIR - Sleeper</h1></a>
-    </div>
-</header>
+<virtual data-is="stir-header"></virtual>
 <div class="content">
      <div class="padded-full">
            <div class="row description">
@@ -55,6 +51,7 @@
  </style>
  <script>
     import MiscUtil from '../util/misc'
+    import '../common/stir-header.tag'
 
     this.on('mount', () => {
         console.log("sleeper welcome mounted");

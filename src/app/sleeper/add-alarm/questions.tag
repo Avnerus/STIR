@@ -1,9 +1,5 @@
 <sleeper-alarms-add-questions>
-    <header class="header-bar">
-        <div class="pull-left">
-            <a href="/"><h1>STIR | Sleeper</h1></a>
-        </div>
-    </header>
+  <virtual data-is="stir-header"></virtual>
   <div class="content">
     <div class="padded-full">
        <form action="" onsubmit="{submitQuestions}">
@@ -84,6 +80,9 @@
      }
  </style>
  <script>
+    import '../../common/stepper.tag'
+    import '../../common/stir-header.tag'
+
     this.on('mount', async () => {
         console.log("add-alarm-questions mounted");
         this.state.sleeper.on('alarm_created', this.onAlarmCreated);

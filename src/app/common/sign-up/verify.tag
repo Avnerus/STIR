@@ -1,9 +1,5 @@
 <sign-up-verify>
-  <header class="header-bar">
-        <div class="pull-left">
-            <a href="/"><h1>STIR | Contact</h1></a>
-        </div>
-  </header>
+  <virtual data-is="stir-header"></virtual>
   <div class="content">
       <div class="padded-full">
            <p>
@@ -43,6 +39,8 @@
      }
  </style>
  <script>
+    import '../stir-header.tag'
+
     this.on('mount', () => {
         console.log("sign-up contacts mounted");
     });

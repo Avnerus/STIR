@@ -1,9 +1,5 @@
 <sleeper-alarm-summary>
-<header class="header-bar">
-    <div class="pull-left">
-        <a href="/"><h1>STIR</h1></a>
-    </div>
-</header>
+<virtual data-is="stir-header"></virtual>
 <div class="content">
      <div class="padded-full">
             <h1 if="{!state.sleeper.currentAlarm.failed}">
@@ -41,6 +37,8 @@
      }
  </style>
  <script>
+
+    import '../common/stir-header.tag'
 
     this.traits = Object.keys(this.state.sleeper.currentAlarm.generatedFrom).map((key) => {
         return {trait: key, value: this.state.sleeper.currentAlarm.generatedFrom[key]}
