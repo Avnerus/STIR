@@ -10,6 +10,16 @@
          <formatted-message id='ROUSER_RECORD_NOTICE'/>
       </div>
       </p>
+      <p>
+      <div class="language-requirement">
+           <formatted-message id='LANGUAGE_REQUIREMENT'/>
+        <ul>
+            <li each="{getLanguages()}" class="language-item">
+               <formatted-message id='{name}'/>
+            </li>
+        </ul>
+      </div>
+      </p>
       <div id="prompt">
             <div class="intro row">
                <formatted-message id='PROMPT_INTRO' name="{state.rouser.currentAlarm.name}"/>
@@ -36,9 +46,10 @@
             margin-bottom: 10px;
         }
         .notice {
-            padding-bottom: 20px;
-            border-bottom: 1px solid #ddd;
             font-weight: 600;
+        }
+        .language-requirement {
+            border-bottom: 1px solid #ddd;
         }
      }
  </style>
@@ -60,6 +71,14 @@
         this.update();
     });
 
+    getLanguages() {
+        const names = {
+            'en': 'ENGLISH',
+            'fr': 'FRENCH',
+            'de': 'GERMAN'
+        }
+        return this.state.rouser.currentAlarm.locales.map(code => {return {name: names[code]}});
+    }
 
     async requestCall(e) {
         e.preventDefault();

@@ -18,7 +18,7 @@
                 </ul>
               </div>
               <div class="row language-requirement">
-                You will can record the message in <b>one</b> of the following languages:
+                You can record the message in <b>one</b> of the following languages:
                 <ul>
                     <li each="{getLanguages()}" class="language-item">
                         {name}

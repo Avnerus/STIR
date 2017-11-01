@@ -116,7 +116,8 @@ const Messages =
     NOT_SOCIAL: 'Vous n\'êtes pas sur les médias sociaux?',
     SUBMIT: 'Soumettre',
     NEW_ALARM_NOTIFICATION: 'Wakeup message set for {hours} hours and {minutes} minutes from now.',
-    NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.'
+    NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.',
+    LANGUAGE_REQUIREMENT: 'You can record the message in one of the following languages:'
 };
 
 export default Messages;
