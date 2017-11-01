@@ -565,7 +565,7 @@ export default class AlarmManager {
     }
 
     dispathMturk() {
-        if (process.env.NODE_ENV == 'production') {
+        if (process.env.NODE_ENV == 'production' && !process.env.DISABLE_AUTO_MTURK) {
             let triggerTime = new Date();
             triggerTime.setHours(triggerTime.getHours() + MTURK_TRIGGER_HOURS);
             return Alarm.find({
