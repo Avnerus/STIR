@@ -51,16 +51,23 @@ export default {
             // Get the session
             let sessionData = Session.getFor(user._id);
 
-            if (sessionData && sessionData.pendingAlarm) {
+            if (
+                sessionData && 
+                sessionData.pendingAlarm && 
+                sessionData.pendingAlarm.recording && 
+                sessionData.pendingAlarm.recording.finalized
+            ) {
                 if (sessionData.pendingAlarm.recording.mixUrl.match(/^http.*/)) {
                     response.play({},sessionData.pendingAlarm.recording.mixUrl);
                 } else {
                     response.play({},SERVER_URL + sessionData.pendingAlarm.recording.mixUrl);
                 }
 
-                req.app.service('alarms/rouser').alarmDelivered(sessionData.pendingAlarm);
             } else {
-                response.say({}, "Wake up");
+                response.say({}, "Good morning from Stir. We're sorry but no one was able to record your personalized message. But please wake up anyway!");
+            }
+            if (sessionData && sessionData.pendingAlarm) {
+                req.app.service('alarms/rouser').alarmDelivered(sessionData.pendingAlarm);
             }
             res.type('text/xml');
             res.send(response.toString());

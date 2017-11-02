@@ -43,7 +43,7 @@ export default class AlarmManager {
         console.log("Get pending alarms");
         Alarm.find({
             time: {$gt: new Date()},
-            'recording.finalized': true,
+            analyzed: true,
             delivered: false,
             dummy: false,
             deleted: false,
@@ -116,15 +116,22 @@ export default class AlarmManager {
         let sessionData = Session.getFor(userId);
         if (sessionData.pendingAlarm) {
             console.log("ALARM FAILED!", sessionData.pendingAlarm);
-            this.app.service('users').get(userId)
-            .then((user) => {
-                let message = IntlMixin.formatMessage('ALARM_FAILED_NOTIFY',{
-                    name: user.name,
-                    time: new Date(sessionData.pendingAlarm.time),
-                    url: process.env.SERVER_URL + "/sleeper/alarm/" + sessionData.pendingAlarm._id + "/summary",
-                },withTimezone(sessionData.pendingAlarm.timezone),user.locale);
+            return Promise.resolve({})
+            .then(() => {
+                if (sessionData.pendingAlarm.recording && sessionData.pendingAlarm.recording.finalized) {
+                    return this.app.service('users').get(userId)
+                    .then((user) => {
+                        let message = IntlMixin.formatMessage('ALARM_FAILED_NOTIFY',{
+                            name: user.name,
+                            time: new Date(sessionData.pendingAlarm.time),
+                            url: process.env.SERVER_URL + "/sleeper/alarm/" + sessionData.pendingAlarm._id + "/summary",
+                        },withTimezone(sessionData.pendingAlarm.timezone),user.locale);
 
-                return this.messageUser(user._id, message);
+                        return this.messageUser(user._id, message);
+                    })
+                } else {
+                    return ;
+                }
             })
             .then((result) => {
                 return this.app.service('alarms/sleeper').patch(sessionData.pendingAlarm._id, {failed: true});
@@ -165,9 +172,19 @@ export default class AlarmManager {
         this.app.service('alarms/sleeper').patch(alarm._id, {delivered: true});
         Session.setFor(alarm.userId, {pendingAlarm : null});
         if (alarm.assignedTo) {
-            this.messageUser(alarm.assignedTo, "Your wake-up call was just delieverd to the sleeper! Thank you from STIR");
+            this.app.service('users').get(alarm.assignedTo)
+            .then((user) => {
+                let message = IntlMixin.formatMessage('ALARM_DELIVERED',{
+                    url: process.env.SERVER_URL + "/sleeper/alarm/" + alarm._id + "/summary",
+                    name: user.name
+                },BaseI18n,user.locale);
+
+                this.messageUser(alarm.assignedTo, message);
+            })
         }
-        this.sendAlarmSummary(alarm._id, alarm.userId);
+        if (alarm.recording && alarm.recording.finalized) {
+            this.sendAlarmSummary(alarm._id, alarm.userId);
+        }
     }
     sendAlarmSummary(alarmId, userId) {
         // In 2 minutes..
@@ -468,7 +485,7 @@ export default class AlarmManager {
         }
     }
     notifyRousers() {
-        if (process.env.NODE_ENV == 'production') {
+        if (process.env.NODE_ENV == 'production' && !process.env.DISABLE_NOTIFY_ROUSERS) {
             return Alarm.find({
                 time: {$gt: new Date()},
                 deleted: false,

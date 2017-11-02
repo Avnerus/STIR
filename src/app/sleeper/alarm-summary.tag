@@ -8,10 +8,14 @@
             <h1 if="{state.sleeper.currentAlarm.failed}">
                 <formatted-message id='SLEEPER_SUMMARY_FAILED' name="{state.auth.user.name}"/>
             </h1>
-            <p><formatted-message id='LISTEN_ALARM'/></p>
-            <audio controls="controls">
-                <source src="{state.sleeper.currentAlarm.recording.mixUrl}"></source>
-            </audio>
+            <p>
+                <formatted-message id='LISTEN_ALARM'/>
+            </p>
+            <p>
+                <audio controls="controls">
+                    <source src="{state.sleeper.currentAlarm.recording.mixUrl}"></source>
+                </audio>
+            </p>
             <p><b><formatted-message id='YOUR_TRAITS'/></b></p>
             <p each="{traits}">
                 {trait} : {value}
