@@ -71,6 +71,7 @@ export default class SleeperStore extends Store {
         console.log("Saving alarm", this.currentAlarm, newTime, timezone);
         let result = await SocketUtil.rpc('alarms/sleeper::patch', this.currentAlarm._id, {time: newTime, timezone: timezone});
         this.currentAlarm.time = newTime.toString();
+        this.currentAlarm = null;
         return result;
     }
 
