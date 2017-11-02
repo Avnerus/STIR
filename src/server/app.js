@@ -145,7 +145,7 @@ app.configure(oauth2({
   Strategy: FacebookStrategy,
   clientID: process.env['FB_APP_ID'],
   clientSecret : process.env['FB_APP_SECRET'],
-  scope: ['public_profile', 'email', 'user_posts'],
+  scope: ['public_profile', 'user_posts'],
   callbackURL: process.env['SERVER_URL'] + "/auth/facebook/callback",
   Verifier: CustomOAuthVerifier,
   handler:  CustomOAuthHandler({
