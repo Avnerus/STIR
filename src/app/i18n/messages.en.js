@@ -1,5 +1,6 @@
 const Messages =
 {
+    STIR: 'STIR',
     OK: 'Ok',
     CANCEL: 'Cancel',
     NOTICE: 'Notice',
@@ -52,7 +53,7 @@ const Messages =
     BEGIN: 'Begin',
     SLEEPER_SUMMARY_DESCRIPTION: 'Hi {name}, we hope you enjoyed your personalzied wakeup message from Stir.',
     SLEEPER_SUMMARY_FAILED: 'Hi {name}, Sorry we couldn\'t deliver your wakeup message',
-    BE_A_ROUSER: 'Sign up to be a rouser',
+    BE_A_ROUSER: 'Want to be a Rouser?',
     SLEEPER_SUMMARY_MESSAGE: 'Good morning {name}! Checkout your wakeup summary from Stir at {url}',
     NOTICE: 'Notice',
     PHONE_EXISTS: 'There is already a registered device with this phone number, switch to this device?',
@@ -104,7 +105,7 @@ const Messages =
     TOO_EARLY_CONFIRM: 'STIR needs at least {hours} hours to prepare your message. We can set your wakeup for the follwing day.',
     ALARM_FAILED_NOTIFY: 'Hi {name}, This is a message from STIR. We tried to deliver your wakeup at {time, time, short}, but unfortunately the call didn\'t follow through. You can still hear your wakuep and get a review of your analysis in here: {url}',
     LISTEN_ALARM: 'You can listen again to your wakeup message here:',
-    YOUR_TRAITS: 'Your personality analysis was based on the following traits:',
+    YOUR_TRAITS: 'Your Rouser received the following prompt, personlized for you based on our psychometric analysis of your data:',
     ENGLISH: 'English',
     FRENCH: 'French',
     GERMAN: 'German',
@@ -112,7 +113,11 @@ const Messages =
     CONNECT_FACEBOOK: 'Connect with Facebook',
     CONNECT_TWITTER: 'Connect with Twitter',
     NOT_SOCIAL: 'Not on social media?',
-    SUBMIT: 'Submit'
+    SUBMIT: 'Submit',
+    NEW_ALARM_NOTIFICATION: 'Wakeup message set for {hours} hours and {minutes} minutes from now.',
+    NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.',
+    LANGUAGE_REQUIREMENT: 'You can record the message in one of the following languages:',
+    ALARM_DELIVERED: 'Your wake-up call was just delieverd to your sleeper! Thank you from STIR'
 };
 
 export default Messages;

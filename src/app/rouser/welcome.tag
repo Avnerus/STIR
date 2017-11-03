@@ -8,7 +8,6 @@
                 <p><formatted-message id='ROUSER_WELCOME_2'/></p>
                 <p><formatted-message id='ROUSER_WELCOME_3'/></p>
                 <p><formatted-message id='ROUSER_WELCOME_4'/></p>
-                <p><formatted-message id='ROUSER_WELCOME_5'/></p>
             </div>
             <div class="action">
                 <button class="btn raised primary" click="{begin}">

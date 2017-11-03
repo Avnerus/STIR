@@ -14,16 +14,24 @@
                 </a>
             </div>
             <p><formatted-message id='LISTEN_ALARM'/></p>
-	    <p>
+            <p>
             <audio controls="controls">
                 <source src="{state.sleeper.currentAlarm.recording.mixUrl}"></source>
             </audio>
             </p>
             <p><b><formatted-message id='YOUR_TRAITS'/></b></p>
-            <p each="{traits}">
-                {trait} : {value}
-            </p>
-
+            <div id="prompt">
+                <div class="intro row">
+                   <formatted-message id='PROMPT_INTRO' name="{state.sleeper.currentAlarm.name}"/>
+                </div> 
+                <p each="{text, i in state.sleeper.currentAlarm.prompt[state.auth.locale].paragraphs}">{text}</p>
+                <p><i><formatted-message id='PROMPT_INSTRUCTION' name="{state.sleeper.currentAlarm.name}"/></i></p>
+                <ul class="">
+                  <li each="{text, i in state.sleeper.currentAlarm.prompt[state.auth.locale].instructions}">
+                    {text}
+                  </li>
+                </ul>
+            </div>
       </div>
  </div>
  <style>
@@ -43,9 +51,6 @@
 
     import '../common/stir-header.tag'
 
-    this.traits = Object.keys(this.state.sleeper.currentAlarm.generatedFrom).map((key) => {
-        return {trait: key, value: this.state.sleeper.currentAlarm.generatedFrom[key]}
-    });
     this.on('mount', () => {
         console.log("alarm summary mounted");
     });

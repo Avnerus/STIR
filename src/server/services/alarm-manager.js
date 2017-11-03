@@ -163,7 +163,7 @@ export default class AlarmManager {
 
     }
     onAlarmPatched(alarm) {
-        console.log("Alarm patched!",alarm);
+        console.log("Alarm patched!");
         this.getPendingAlarms();
     }
 

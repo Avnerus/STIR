@@ -239,7 +239,7 @@ app.service('/alarms/sleeper').hooks({
                     throw(new Errors.NotFound());
                 }
             },
-            pluck('_id', 'time', 'failed', 'generatedFrom', 'recording.mixUrl') 
+            pluck('_id', 'time', 'failed', 'generatedFrom', 'recording.mixUrl', 'prompt','name') 
         ]
     }
 });
