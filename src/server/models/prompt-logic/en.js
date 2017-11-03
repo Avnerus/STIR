@@ -1,4 +1,4 @@
-`export default {
+export default {
     "big5s":{
         "big5_agreeableness":{
             "person_type":"morning",
@@ -282,7 +282,7 @@
                     },
                     "paragraph":{
                         "he":"#name# is a dependable, responsible person who puts a lot of thought and care into his actions.",
-                        "she":"#name# is a dependable, responsible person who puts a lot of thought and care into her actions."
+                        "she":"#name# is a dependable, responsible person who puts a lot of thought and care into her actions.",
                         "they":"#name# is a dependable, responsible person who puts a lot of thought and care into their actions."
                     },
                 },
@@ -294,7 +294,7 @@
                     },
                     "paragraph":{
                         "he":"#name# is an ambitious force of nature. He approaches every task with a competitive, purposeful spirit.",
-                        "she":"#name# is an ambitious force of nature. She approaches every task with a competitive, purposeful spirit."
+                        "she":"#name# is an ambitious force of nature. She approaches every task with a competitive, purposeful spirit.",
                         "they":"#name# is an ambitious force of nature. They approach every task with a competitive, purposeful spirit."
                     },
                 },
@@ -306,7 +306,7 @@
                     },
                     "paragraph":{
                         "he":"#name# is very particular. He has a clear vision and doesn't like to be veered off course.",
-                        "she":"#name# is very particular. She has a clear vision and doesn't like to be veered off course."
+                        "she":"#name# is very particular. She has a clear vision and doesn't like to be veered off course.",
                         "they":"#name# is very particular. They have a clear vision and don'tt like to be veered off course."
                     },
                 },
@@ -892,7 +892,7 @@
                     },
                     "paragraph":{
                         "he":"#name# is a soft, sensitive person. Some may even describe him as gullible, but he is beloved for his kindness.",
-                        "she":"#name# is a soft, sensitive person. Some may even describe her as gullible, but she is beloved for her kindness."
+                        "she":"#name# is a soft, sensitive person. Some may even describe her as gullible, but she is beloved for her kindness.",
                         "they":"#name# is a soft, sensitive person. Some may even describe them as gullible, but they are beloved for their kindness."
                     },
                 },
@@ -966,7 +966,7 @@
                     },
                     "paragraph":{
                         "he":"#name# can be a bit of a mystery. He tends to have his guard up, but anyone who is let in is quite lucky. He has a rich inner life.",
-                        "she":"#name# can be a bit of a mystery. She tends to have her guard up, but anyone who is let in is quite lucky. She has a rich inner life."
+                        "she":"#name# can be a bit of a mystery. She tends to have her guard up, but anyone who is let in is quite lucky. She has a rich inner life.",
                         "they":"#name# can be a bit of a mystery. They tend to have their guard up, but anyone who is let in is quite lucky. They have a rich inner life."
                     },
                 },
@@ -1209,7 +1209,7 @@
                     },
                     "paragraph":{
                         "he":"#name# is extremely bright. He has a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge.",
-                        "she":"#name# is extremely bright. She has a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge."
+                        "she":"#name# is extremely bright. She has a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge.",
                         "they":"#name# is extremely bright. They have a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge."
                     },
                 },
@@ -1221,7 +1221,7 @@
                     },
                     "paragraph":{
                         "he":"#name# is a force to be reckoned with, smart and full of expression. People might describe him as having a magnetic intensity.",
-                        "she":"#name# is a force to be reckoned with, smart and full of expression. People might describe her as having a magnetic intensity."
+                        "she":"#name# is a force to be reckoned with, smart and full of expression. People might describe her as having a magnetic intensity.",
                         "they":"#name# is a force to be reckoned with, smart and full of expression. People might describe them as having a magnetic intensity."
                     },
                 },
