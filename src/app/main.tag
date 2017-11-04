@@ -20,7 +20,8 @@
 
     <style>
         body {
-            font-family: Abel, Helvetica;
+            font-family: 'Roboto Condensed', Helvetica, sans-serif;
+            font-weight: 400;
             color: white;
             background-color: #000;
         }
@@ -99,6 +100,7 @@
             }
         }
         h1 {
+            font-family: 'Abel', Helvetica, sans-serif;
             text-transform: uppercase;
             font-size: 1.3rem;
             letter-spacing: .1rem;
