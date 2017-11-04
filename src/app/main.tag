@@ -182,7 +182,7 @@
 
         }
         .disclaimer, .disclaimer > p  {
-            color: #ff5c5c;
+            color: #c2f442;
             margin-top: 30px;
         }
 
