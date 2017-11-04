@@ -40,6 +40,7 @@
  </style>
  <script>
     import '../stir-header.tag'
+    this.mixin('RouteUtil');
 
     this.on('mount', () => {
         console.log("sign-up contacts mounted");
@@ -59,7 +60,7 @@
             let result = await this.state.auth.verifyCode(this.refs.code.value);
             console.log("Verify code result status: " + result.status);
             if (result.status == "success") {
-                page("/sign-up/locale");
+                await this.RouteUtil.routeSignup();
             } else if (result.status == "EXISTS") {
                 console.log("Phone exists!, asking confirmation");
                 let confirm = phonon.confirm(
@@ -75,7 +76,7 @@
                     console.log("Result", result);
                     if (result.status == "success") {
                         this.state.sleeper.invalidateAlarms();
-                        page("/sign-up/locale");
+                        await this.RouteUtil.routeSignup();
                     }
                 });
             } else {

@@ -54,7 +54,7 @@ function generatePrompt(app, alarm, analysis,  user, tryNumber) {
         if (result) {
             if (result.status == "success") {
                 alarmData.debug = {
-                    watson: JSON.stringify(result.personality)
+                    //watson: JSON.stringify(result.personality)  Legal constraint
                 }
                 alarmData.generatedFrom = chooseTraits(result.personality, analysis, PromptLogics.en);
                 console.log("Generated From:", alarmData.generatedFrom);

@@ -105,6 +105,12 @@ export default class AuthStore extends Store {
             }
         }
     }
+
+    refreshStatus() {
+        this.user.status = null;
+        this.gettingStatus = false;
+        this.getStatus();
+    }
     async getSession() { 
         if (!this.user.session && !this.gettingSession)  {
             try {
@@ -133,6 +139,7 @@ export default class AuthStore extends Store {
         console.log("set alarm locales", locales);
         let result = await SocketUtil.rpc('user/contact::patch', null, {alarmLocales: locales});
         console.log("Alarm locals status", result);
+        this.user.alarmLocales = locales;
         return result;
     }
 

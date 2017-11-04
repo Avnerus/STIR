@@ -75,8 +75,6 @@ export default {
         .catch((err) => {
             console.log("Error in twiml alarm service!", err);
             res.send("Error" + err);
-            req.app.service('alarms/rouser').alarmDeliveryFailed(pendingAlarm);
-
         })
     },
     dispatchRecordingCall: function(hook) {

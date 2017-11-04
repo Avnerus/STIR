@@ -59,6 +59,7 @@
  </style>
  <script>
     import '../stir-header.tag'
+    this.mixin('RouteUtil');
     
     this.on('mount', () => {
         console.log("sign-up pronoun mounted");
@@ -85,28 +86,13 @@
             let result = await this.state.auth.setPronoun(this.refs.pronounForm.pronoun.value);
             console.log(result);
             if (result.status == "success") {
-                if (this.state.main.role == 'sleeper' && this.state.sleeper.currentAlarm) {
-                    await this.state.sleeper.addAlarm();
-                    page("/sleeper/alarms");
-                } else {
-                    page("/");
-                }
+                await this.RouteUtil.routeSignup();
             } else {
                 throw new Error("Internal error");
             }
         }
         catch(err) {
-            console.log("set pronoun error!", err);
-            if (err.code && err.code == 409) {
-                phonon.alert(
-                    this.formatMessage('ALARM_EXISTS'),
-                    "Oops", 
-                    false, 
-                    "Ok"
-                );
-            } else {
-                phonon.alert(err.message, "Oops", false, "Ok");
-            }
+            phonon.alert(err.message, "Oops", false, "Ok");
         }
     }
  </script>

@@ -138,10 +138,12 @@ export default class AlarmManager {
             })
             .then(() => {
                 Session.setFor(userId, {pendingAlarm : null});
+                return this.app.service('/user/contact').clearData(userId);
             })
             .catch((err) => {
                 console.log("Error notifying sleeper on failed alarm", err);
                 Session.setFor(userId, {pendingAlarm : null});
+                this.app.service('/user/contact').clearData(userId);
             })
         }
     }
@@ -179,11 +181,16 @@ export default class AlarmManager {
                     name: user.name
                 },BaseI18n,user.locale);
 
-                this.messageUser(alarm.assignedTo, message);
+                return this.messageUser(alarm.assignedTo, message);
+            })
+            .catch((err) => {
+                console.log("Error during delivery notification!", err);
             })
         }
         if (alarm.recording && alarm.recording.finalized) {
             this.sendAlarmSummary(alarm._id, alarm.userId);
+        } else {
+            this.app.service('/user/contact').clearData(alarm.userId);
         }
     }
     sendAlarmSummary(alarmId, userId) {
@@ -200,12 +207,15 @@ export default class AlarmManager {
             })
             .then((result) => {
                 console.log("Sent");
+                return this.app.service('/user/contact').clearData(userId);
             })
             .catch((err) => {
                 console.log("Error sending alarm summary!", err);
+                this.app.service('/user/contact').clearData(userId);
             })
         }, 1000 * 60 * 2);
     }
+
     messageUser(id, message) {
         return this.app.service('users').find({
             query: {_id: id}
@@ -218,16 +228,12 @@ export default class AlarmManager {
             }
         })
     }
-    alarmDeliveryFailed(alarm) {
-        console.log("ALARM DELIVERY FAILED!", alarm);
-    }
-
     find(params) {
         // First get the alarms that this user was assigend to
         console.log("Alarm manager for rouser", params.user);
-        if (!params.user.status.phoneValidated) {
+        if (!params.user.alarmLocales || params.user.alarmLocales.length == 0) {
             // Can't assign alarms if they didn't sign up
-            return Promise.reject(new Error("Phone not validated"));
+            return Promise.reject(new Error("Recording language not set!"));
         } else {
             // First get alarms assigned to this rouser and not finalized
             let query  = {
@@ -377,7 +383,14 @@ export default class AlarmManager {
                 time: alarm.time
         },withTimezone(alarm.timezone),user.locale);
 
-        this.messageUser(user._id, message);
+        this.messageUser(user._id, message)
+        .then(() => {
+            return this.app.service('/user/contact').clearData(user._id);
+        })
+        .catch((err) => {
+            console.log("Error after failed analysis", err);
+            this.app.service('/user/contact').clearData(user._id);
+        })
     }
 
 

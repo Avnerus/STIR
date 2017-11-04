@@ -22,7 +22,12 @@
                   on-cancel="{parent.onAlarmCancel}"
               >
               </alarm-time>
-              <div class="add-alarm">
+              <div if="{state.sleeper.alarms && state.sleeper.alarms.length > 0}"class="action">
+                <a class="btn raised primary" href="/rouser/alarms">
+                    <formatted-message id='BE_A_ROUSER'/>
+                </a>
+              </div>
+              <div if="{state.sleeper.alarms && state.sleeper.alarms.length == 0}" class="add-alarm">
                    <div class="add-button">
                        <a href="/sleeper/alarms/add/time">
                             <i class="material-icons">alarm_add</i>

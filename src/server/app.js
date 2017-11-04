@@ -395,14 +395,17 @@ app.use(async function (req, res, next) {
                 await req.appState[taskObj.store][taskObj.task].apply(req.appState[taskObj.store], taskObj.args);
             }
             
+            if (req.appState.auth.user.locale && !req.forceLocale) {
+                req.appState.auth.locale = req.appState.auth.user.locale;
+            } else if (req.appState.auth.locale && !req.appState.auth.user.locale) {
+                req.appState.auth.user.locale = req.appState.auth.locale;
+            }
+
             let nfbSettings = null;
             if (!req.query.assignmentId) {
                 nfbSettings = await NFBUtil.getSettings(process.env.NFB_ENDPOINT, req.ip, req.forceLocale || req.appState.auth.user.locale);
             }
 
-            if (req.appState.auth.user.locale && !req.forceLocale) {
-                req.appState.auth.locale = req.appState.auth.user.locale;
-            }
             console.log("Render riot");
             mixin({state: req.appState}); // Global state mixin
             mixin({TimeUtil: TimeUtil}); 

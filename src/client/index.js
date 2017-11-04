@@ -10,6 +10,7 @@ import 'nodent-runtime'
 import SocketUtil from '../app/util/socket'
 import TimeUtil from '../app/util/time'
 import UIUtil from '../app/util/ui'
+import RouteUtil from '../app/util/route'
 
 // i18n
 import {IntlMixin} from 'riot-intl'
@@ -168,6 +169,7 @@ IntlMixin.i18n = {
 mixin('i18n', IntlMixin, true); 
 mixin('TimeUtil', {TimeUtil: TimeUtil}); 
 mixin('UIUtil', {UIUtil: new UIUtil(IntlMixin)}); 
+mixin('RouteUtil', {RouteUtil: new RouteUtil(state, IntlMixin)}); 
 
 page();
 phonon.navigator().start();

@@ -95,10 +95,10 @@ class Routes {
                 }
                 else if (
                     req.appState.auth.user.status &&
-                    !req.appState.auth.user.status.phoneValidated && 
+                    (!req.appState.auth.user.alarmLocales || req.appState.auth.user.alarmLocales.length == 0) &&
                     req.appState.rouser.action != 'welcome' &&
                     !req.appState.auth.mturk) {
-                    page.show("/sign-up/contact");
+                    page.show("/sign-up/locale");
                 }
             } else {
                 this.populate(req, 'auth', 'getStatus');
@@ -145,6 +145,12 @@ class Routes {
                 req.appState.auth.mturk = req.query;
             }
             this.populate(req, 'rouser', 'chooseAlarm', req.params.id, req.query) 
+            if (
+                req.appState.auth.user.status &&
+                !req.appState.auth.user.status.phoneValidated &&
+                !req.appState.auth.mturk) {
+                page.show("/sign-up/contact");
+            }
             this.next(next, req, res);
         });
 
