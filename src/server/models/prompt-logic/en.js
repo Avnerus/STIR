@@ -1,4 +1,4 @@
-export default {
+`export default {
     "big5s":{
         "big5_agreeableness":{
             "person_type":"morning",
@@ -7,40 +7,48 @@ export default {
                     "instruction":{
                         "he":"Remind him to let his kindness shine today.",
                         "she":"Remind her to let her kindness shine today.",
+                        "they":"Remind them to let their kindness shine today.",
                     },
                     "paragraph":{
                         "he":"#name# is a cooperative, polite person who cares deeply about the needs of others.",
                         "she":"#name# is a cooperative, polite person who cares deeply about the needs of others.",
+                        "they":"#name# is a cooperative, polite person who cares deeply about the needs of others.",
                     }
                 },
                 "big5_extraversion":{
                     "instruction":{
                         "he":"Encourage him to celebrate the day in his usual merry ways.",
                         "she":"Encourage her to celebrate the day in her usual merry ways.",
+                        "they":"Encourage them to celebrate the day in their usual merry ways.",
                     },
                     "paragraph":{
                         "he":"#name# is full of joy and effervescent energy. He has a lot of love for the people in his life.",
                         "she":"#name# is full of joy and effervescent energy. She has a lot of love for the people in her life.",
+                        "they":"#name# is full of joy and effervescent energy. They have a lot of love for the people in their life.",
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
                         "he":"Encourage him to let his grace carry him through the day.",
                         "she":"Encourage her to let her grace carry her through the day.",
+                        "they":"Encourage them to let their grace carry them through the day.",
                     },
                     "paragraph":{
                         "he":"#name# is a deeply passionate, affectionate person. This soft-hearted spirit makes #name# stand out.",
-                        "she":"#name# is a deeply passionate, affectionate person. This soft-hearted spirit makes #name# stand out."
+                        "she":"#name# is a deeply passionate, affectionate person. This soft-hearted spirit makes #name# stand out.",
+                        "they":"#name# is a deeply passionate, affectionate person. This soft-hearted spirit makes #name# stand out.",
                     },
                 },
                 "big5_openness":{
                     "instruction":{
                         "he":"Remind him how much the world needs compassionate people like him.",
                         "she":"Remind her how much the world needs compassionate people like her.",
+                        "they":"Remind them how much the world needs compassionate people like them.",
                     },
                     "paragraph":{
                         "he":"#name# is a genial, idealistic person. His unconditional compassion makes #name# stand out.",
-                        "she":"#name# is a genial, idealistic person. Her unconditional compassion makes #name# stand out."
+                        "she":"#name# is a genial, idealistic person. Her unconditional compassion makes #name# stand out.",
+                        "they":"#name# is a genial, idealistic person. Their unconditional compassion makes #name# stand out.",
                     },
                 },
             },
@@ -49,40 +57,48 @@ export default {
                     "instruction":{
                         "he":"Support him in finding some time for himself today.",
                         "she":"Support her in finding some time for herself today.",
+                        "they":"Support them in finding some time for themselves today.",
                     },
                     "paragraph":{
                         "he":"#name# is an unpretentious, self-effacing person, putting the needs of others before his own.",
-                        "she":"#name# is an unpretentious, self-effacing person, putting the needs of others before her own."
+                        "she":"#name# is an unpretentious, self-effacing person, putting the needs of others before her own.",
+                        "they":"#name# is an unpretentious, self-effacing person, putting the needs of others before their own.",
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
                         "he":">Remind him that his humility is a virtue.",
                         "she":"Remind her that her humility is a virtue.",
+                        "they":"Remind them that their humility is a virtue.",
                     },
                     "paragraph":{
                         "he":"#name# is a humble, soft-hearted soul. While #name# often sticks to himself, he has a deep compassion for others.",
-                        "she":"#name# is a humble, soft-hearted soul. While #name# often sticks to herself, she has a deep compassion for others."
+                        "she":"#name# is a humble, soft-hearted soul. While #name# often sticks to herself, she has a deep compassion for others.",
+                        "they":"#name# is a humble, soft-hearted soul. While #name# often sticks to themselves, they have a deep compassion for others.",
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
                         "he":"Support him in spreading his peaceful spirit today.",
                         "she":"Support her in spreading her peaceful spirit today.",
+                        "they":"Support them in spreading their peaceful spirit today.",
                     },
                     "paragraph":{
                         "he":"#name# has a peaceful, easygoing demeanor. This comes from an attitude of tolerance and a generosity toward others.",
-                        "she":"#name# has a peaceful, easygoing demeanor. This comes from an attitude of tolerance and a generosity toward others."
+                        "she":"#name# has a peaceful, easygoing demeanor. This comes from an attitude of tolerance and a generosity toward others.",
+                        "they":"#name# has a peaceful, easygoing demeanor. This comes from an attitude of tolerance and a generosity toward others.",
                     },
                 },
                 "big5_openness":{
                     "instruction":{
                         "he":"Support him in prioritizing his relationships today.",
                         "she":"Support her in prioritizing her relationships today.",
+                        "they":"Support them in prioritizing their relationships today.",
                     },
                     "paragraph":{
                         "he":"#name# has a deep compassion for others and puts his relationships first. Some may even describe him as dependent.",
-                        "she":"#name# has a deep compassion for others and puts her relationships first. Some may even describe her as dependent."
+                        "she":"#name# has a deep compassion for others and puts her relationships first. Some may even describe her as dependent.",
+                        "they":"#name# has a deep compassion for others and puts their relationships first. Some may even describe them as dependent.",
                     },
                 },
             },
@@ -92,15 +108,18 @@ export default {
                         {
                             "he":"Share how much respect you have for his altruism.",
                             "she":"Share how much respect you have for her altruism.",
+                            "they":"Share how much respect you have for their altruism.",
                         },
                         {
                             "he":"Reassure him that it's okay to focus on himself and his own needs from time to time though.",
                             "she":"Reassure her that it's okay to focus on herself and her own needs from time to time though.",
+                            "they":"Reassure them that it's okay to focus on themselves and their own needs from time to time though.",
                         }
                     ],
                     "paragraph":{
                         "he":"He is driven by a genuine desire to help people. For him, putting others’ needs first is fulfilling and rewarding, not burdensome.",
                         "she": "She is driven by a genuine desire to help people. For her, putting others’ needs first is fulfilling and rewarding, not burdensome.",
+                        "they": "They are driven by a genuine desire to help people. For them, putting others’ needs first is fulfilling and rewarding, not burdensome.",
                     }
                 },
                 "facet_cooperation":{
@@ -108,15 +127,18 @@ export default {
                         {
                             "he":"Let him know how special his cooperative spirit is.",
                             "she":"Let her know how special her cooperative spirit is.",
+                            "they":"Let them know how special their cooperative spirit is.",
                         },
                         {
                             "he":"Advise him to stand up for himself though, whenever the situation calls for it.",
                             "she":"Advise her to stand up for herself though, whenever the situation calls for it.",
+                            "they":"Advise them to stand up for themselves though, whenever the situation calls for it.",
                         }
                     ],
                     "paragraph":{
                         "he":"He has a strong desire to avoid confrontation and is willing to make sacrifices in order to do so.",
                         "she": "She has a strong desire to avoid confrontation and is willing to make sacrifices in order to do so.",
+                        "they": "They have a strong desire to avoid confrontation and are willing to make sacrifices in order to do so.",
                     }
                 },
                 "facet_modesty":{
@@ -124,15 +146,18 @@ export default {
                         {
                             "he":"Let him know you value his modesty, and make him feel comfortable with being seen.",
                             "she":"Let her know you value her modesty, and make her feel comfortable with being seen.",
+                            "they":"Let them know you value their modesty, and make them feel comfortable with being seen.",
                         },
                         {
                             "he":"Reassure him that it's okay to accept positive attention - after all, he's an admirable person.",
                             "she":"Reassure her that it's okay to accept positive attention - after all, she's an admirable person.",
+                            "they":"Reassure them that it's okay to accept positive attention - after all, they're an admirable person.",
                         }
                     ],
                     "paragraph":{
                         "he":"He is modest and reserved. While he has ample confidence to get on with life, being the center of attention is extremely uncomfortable.",
                         "she": "She is modest and reserved. While she has ample confidence to get on with life, being the center of attention is extremely uncomfortable.",
+                        "they": "They are modest and reserved. While they have ample confidence to get on with life, being the center of attention is extremely uncomfortable.",
                     }
                 },
                 "facet_morality":{
@@ -140,15 +165,18 @@ export default {
                         {
                             "he":"Share how much you respect his moral compass.",
                             "she":"Share how much you respect her moral compass.",
+                            "they":"Share how much you respect their moral compass.",
                         },
                         {
                             "he":"Advise him against being too black and white in his judgments though.",
                             "she":"Advise her against being too black and white in her judgments though.",
+                            "they":"Advise them against being too black and white in their judgments though.",
                         }
                     ],
                     "paragraph":{
                         "he":"He is driven by a strong sense of moral conviction, always trying to do what is 'right.'",
                         "she": "She is driven by a strong sense of moral conviction, always trying to do what is 'right.'",
+                        "they": "They are driven by a strong sense of moral conviction, always trying to do what is 'right.'",
                     }
                 },
                 "facet_sympathy":{
@@ -156,15 +184,18 @@ export default {
                         {
                             "he":"Show your appreciation for the empathy he feels and expresses.",
                             "she":"Show your appreciation for the empathy she feels and expresses.",
+                            "they":"Show your appreciation for the empathy they feel and express.",
                         },
                         {
                             "he":"Advise him against letting others' emotions affect his own moods though.",
                             "she":"Advise her against letting others' emotions affect her own moods though.",
+                            "they":"Advise them against letting others' emotions affect their own moods though.",
                         }
                     ],
                     "paragraph":{
                         "he":"He is sensitive to the feelings of others. Some might call him an empath.",
                         "she": "She is sensitive to the feelings of others. Some might call her an empath.",
+                        "they": "They are sensitive to the feelings of others. Some might call them an empath.",
                     }
                 }, 
                 "facet_trust":{
@@ -172,15 +203,18 @@ export default {
                         {
                             "he":"Share how much you respect his positivity and faith in people.",
                             "she":"Share how much you respect her positivity and faith in people.",
+                            "they":"Share how much you respect their positivity and faith in people.",
                         },
                         {
                             "he":"Advise him to be a little discerning in his trust of people, just to protect himself.",
                             "she":"Advise her to be a little discerning in her trust of people, just to protect herself.",
+                            "they":"Advise them to be a little discerning in their trust of people, just to protect themselves.",
                         }
                     ],
                     "paragraph":{
                         "he":"He is driven by a sense of trust in people. Although this 'forgive and forget' attitude sometimes borders on naive, it allows #name# to see the best in any situation.",
                         "she": "She is driven by a sense of trust in people. Although this 'forgive and forget' attitude sometimes borders on naive, it allows #name# to see the best in any situation.",
+                        "they": "They are driven by a sense of trust in people. Although this 'forgive and forget' attitude sometimes borders on naive, it allows #name# to see the best in any situation.",
                     }
                 }                                                                              
             },
@@ -283,7 +317,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a dependable, responsible person who puts a lot of thought and care into his actions.",
                         "she":"#name# is a dependable, responsible person who puts a lot of thought and care into her actions.",
-                        "they":"#name# is a dependable, responsible person who puts a lot of thought and care into their actions."
+                        "they":"#name# is a dependable, responsible person who puts a lot of thought and care into their actions.",
                     },
                 },
                 "big5_extraversion":{
@@ -295,7 +329,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is an ambitious force of nature. He approaches every task with a competitive, purposeful spirit.",
                         "she":"#name# is an ambitious force of nature. She approaches every task with a competitive, purposeful spirit.",
-                        "they":"#name# is an ambitious force of nature. They approach every task with a competitive, purposeful spirit."
+                        "they":"#name# is an ambitious force of nature. They approach every task with a competitive, purposeful spirit.",
                     },
                 },
                 "big5_neuroticism":{
@@ -307,7 +341,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is very particular. He has a clear vision and doesn't like to be veered off course.",
                         "she":"#name# is very particular. She has a clear vision and doesn't like to be veered off course.",
-                        "they":"#name# is very particular. They have a clear vision and don'tt like to be veered off course."
+                        "they":"#name# is very particular. They have a clear vision and don'tt like to be veered off course.",
                     },
                 },
                 "big5_openness":{
@@ -319,7 +353,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a dignified soul with an ability to bring sophisticated ideas and execute to perfection.",
                         "she":"#name# is a dignified soul with an ability to bring sophisticated ideas and execute to perfection.",
-                        "they":"#name# is a dignified soul with an ability to bring sophisticated ideas and execute to perfection."
+                        "they":"#name# is a dignified soul with an ability to bring sophisticated ideas and execute to perfection.",
                     },
                 },
             },
@@ -333,7 +367,7 @@ export default {
                     "paragraph":{
                         "he":"#name# has a stern demeanor. He is a strict follower of rules and exhibits tremendous attention to detail.",
                         "she":"#name# has a stern demeanor. She is a strict follower of rules and exhibits tremendous attention to detail.",
-                        "they":"#name# has a stern demeanor. They are a strict follower of rules and exhibit tremendous attention to detail."
+                        "they":"#name# has a stern demeanor. They are a strict follower of rules and exhibit tremendous attention to detail.",
                     },
                 },
                 "big5_extraversion":{
@@ -345,7 +379,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is always on time and over-prepared. He can be quite formal in his demeanor, and exudes confidence.",
                         "she":"#name# is always on time and over-prepared. She can be quite formal in her demeanor, and exudes confidence.",
-                        "they":"#name# is always on time and over-prepared. They can be quite formal in their demeanor, and exude confidence."
+                        "they":"#name# is always on time and over-prepared. They can be quite formal in their demeanor, and exude confidence.",
                     },
                 },
                 "big5_neuroticism":{
@@ -357,7 +391,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a steady soul. Self-discipline and a logical mindset get him through the day and help him succeed.",
                         "she":"#name# is a steady soul. Self-discipline and a logical mindset get her through the day and help her succeed.",
-                        "they":"#name# is a steady soul. Self-discipline and a logical mindset get them through the day and help them succeed."
+                        "they":"#name# is a steady soul. Self-discipline and a logical mindset get them through the day and help them succeed.",
                     },
                 },
                 "big5_openness":{
@@ -369,7 +403,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is quite traditional. He is thoughtful in his actions, preferring the tried-and-true in both his career and relationships.",
                         "she":"#name# is quite traditional. She is thoughtful in her actions, preferring the tried-and-true in both her career and relationships.",
-                        "they":"#name# is quite traditional. They are thoughtful in their actions, preferring the tried-and-true in both career and relationships."
+                        "they":"#name# is quite traditional. They are thoughtful in their actions, preferring the tried-and-true in both career and relationships.",
                     },
                 },
             },
@@ -588,7 +622,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a vibrant soul, with a lot of enthusiasm to share with the people in his life.",
                         "she":"#name# is a vibrant soul, with a lot of enthusiasm to share with the people in her life.",
-                        "they":"#name# is a vibrant soul, with a lot of enthusiasm to share with the people in their life."
+                        "they":"#name# is a vibrant soul, with a lot of enthusiasm to share with the people in their life.",
                     },
                 },
                 "big5_conscientiousness":{
@@ -600,7 +634,7 @@ export default {
                     "paragraph":{
                         "he":"#name# has an inner fire that drives his ambitious and persistent spirit. He is always on the move and making things happen for himself.",
                         "she":"#name# has an inner fire that drives her ambitious and persistent spirit. She is always on the move and making things happen for herself.",
-                        "they":"#name# has an inner fire that drives their ambitious and persistent spirit. They are always on the move and making things happen for themselves."
+                        "they":"#name# has an inner fire that drives their ambitious and persistent spirit. They are always on the move and making things happen for themselves.",
                     },
                 },
                 "big5_neuroticism":{
@@ -612,7 +646,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is extravagant, charming and quite moody. Always putting on a show for the people in his life, no moment is dull with #name#.",
                         "she":"#name# is extravagant, charming and quite moody. Always putting on a show for the people in her life, no moment is dull with #name#.",
-                        "they":"#name# is extravagant, charming and quite moody. Always putting on a show for the people in their life, no moment is dull with #name#."
+                        "they":"#name# is extravagant, charming and quite moody. Always putting on a show for the people in their life, no moment is dull with #name#.",
                     },
                 },
                 "big5_openness":{
@@ -624,7 +658,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is full of spontaneous wit. He is smarter than you and the next person, and knows how to express himself.",
                         "she":"#name# is full of spontaneous wit. She is smarter than you and the next person, and knows how to express herself.",
-                        "they":"#name# is full of spontaneous wit. They are smarter than you and the next person, and know how to express themselves."
+                        "they":"#name# is full of spontaneous wit. They are smarter than you and the next person, and know how to express themselves.",
                     },
                 },
             },
@@ -638,7 +672,7 @@ export default {
                     "paragraph":{
                         "he":"#name# knows what he wants and isn't afraid to tell you. He's opinionated and knows how to get his way.",
                         "she":"#name# knows what she wants and isn't afraid to tell you. She's opinionated and knows how to get her way.",
-                        "they":"#name# knows what they want and isn't afraid to tell you. THey're opinionated and know how to get their way."
+                        "they":"#name# knows what they want and isn't afraid to tell you. THey're opinionated and know how to get their way.",
                     },
                 },
                 "big5_conscientiousness":{
@@ -650,7 +684,7 @@ export default {
                     "paragraph":{
                         "he":"#name# has a mischievous, boisterous spirit. An exhibitionist at heart, he's always taking people for a ride.",
                         "she":"#name# has a mischievous, boisterous spirit. An exhibitionist at heart, she's always taking people for a ride.",
-                        "they":"#name# has a mischievous, boisterous spirit. An exhibitionist at heart, they're always taking people for a ride."
+                        "they":"#name# has a mischievous, boisterous spirit. An exhibitionist at heart, they're always taking people for a ride.",
                     },
                 },
                 "big5_neuroticism":{
@@ -662,7 +696,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a bold soul. Driven by an unwavering confidence, he is uninhibited when going after what he wants.",
                         "she":"#name# is a bold soul. Driven by an unwavering confidence, she is uninhibited when going after what she wants.",
-                        "they":"#name# is a bold soul. Driven by an unwavering confidence, they are uninhibited when going after what they want."
+                        "they":"#name# is a bold soul. Driven by an unwavering confidence, they are uninhibited when going after what they want.",
                     },
                 },
                 "big5_openness":{
@@ -674,7 +708,7 @@ export default {
                     "paragraph":{
                         "he":"#name# doesn't hold back. He's confident and talkative. He may not always be the best listener but does have a great willingness to share himself.",
                         "she":"#name# doesn't hold back. She's confident and talkative. She may not always be the best listener but does have a great willingness to share herself.",
-                        "they":"#name# doesn't hold back. They're confident and talkative. They may not always be the best listener but do have a great willingness to share themselves."
+                        "they":"#name# doesn't hold back. They're confident and talkative. They may not always be the best listener but do have a great willingness to share themselves.",
                     },
                 },
             },
@@ -893,7 +927,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a soft, sensitive person. Some may even describe him as gullible, but he is beloved for his kindness.",
                         "she":"#name# is a soft, sensitive person. Some may even describe her as gullible, but she is beloved for her kindness.",
-                        "they":"#name# is a soft, sensitive person. Some may even describe them as gullible, but they are beloved for their kindness."
+                        "they":"#name# is a soft, sensitive person. Some may even describe them as gullible, but they are beloved for their kindness.",
                     },
                 },
                 "big5_conscientiousness":{
@@ -905,7 +939,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is exacting at everything he does. Some may describe him as hard to please and high-strung, but many place a high value on his opinions.",
                         "she":"#name# is exacting at everything she does. Some may describe her as hard to please and high-strung, but many place a high value on her opinions.",
-                        "they":"#name# is exacting at everything they do. Some may describe him as hard to please and high-strung, but many place a high value on their opinions."
+                        "they":"#name# is exacting at everything they do. Some may describe him as hard to please and high-strung, but many place a high value on their opinions.",
                     },
                 },
                 "big5_extraversion":{
@@ -929,7 +963,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a passionate, sensual soul. Full of life and emotion, others can't help but be drawn to him even if they don't always understand him.",
                         "she":"#name# is a passionate, sensual soul. Full of life and emotion, others can't help but be drawn to her even if they don't always understand her.",
-                        "they":"#name# is a passionate, sensual soul. Full of life and emotion, others can't help but be drawn to them even if they don't always understand #name#."
+                        "they":"#name# is a passionate, sensual soul. Full of life and emotion, others can't help but be drawn to them even if they don't always understand #name#.",
                     },
                 },
             },
@@ -967,7 +1001,7 @@ export default {
                     "paragraph":{
                         "he":"#name# can be a bit of a mystery. He tends to have his guard up, but anyone who is let in is quite lucky. He has a rich inner life.",
                         "she":"#name# can be a bit of a mystery. She tends to have her guard up, but anyone who is let in is quite lucky. She has a rich inner life.",
-                        "they":"#name# can be a bit of a mystery. They tend to have their guard up, but anyone who is let in is quite lucky. They have a rich inner life."
+                        "they":"#name# can be a bit of a mystery. They tend to have their guard up, but anyone who is let in is quite lucky. They have a rich inner life.",
                     },
                 },
                 "big5_openness":{
@@ -979,7 +1013,7 @@ export default {
                     "paragraph":{
                         "he":"#name# doesn't like surprises. He knows his needs and seeks refuge in structured environments. When setup for success, #name# has an emotional depth that allows him to thrive.",
                         "she":"#name# doesn't like surprises. She knows her needs and seeks refuge in structured environments. When setup for success, #name# has an emotional depth that allows her to thrive.",
-                        "they":"#name# doesn't like surprises. They know their needs and seek refuge in structured environments. When setup for success, #name# has an emotional depth that allows them to thrive."
+                        "they":"#name# doesn't like surprises. They know their needs and seek refuge in structured environments. When setup for success, #name# has an emotional depth that allows them to thrive.",
                     },
                 },
             },
@@ -1198,7 +1232,7 @@ export default {
                     "paragraph":{
                         "he":"#name# has a tactful, diplomatic nature that allows him to get along with many different types of people.",
                         "she":"#name# has a tactful, diplomatic nature that allows her to get along with many different types of people.",
-                        "they":"#name# has a tactful, diplomatic nature that allows them to get along with many different types of people."
+                        "they":"#name# has a tactful, diplomatic nature that allows them to get along with many different types of people.",
                     },
                 },
                 "big5_conscientiousness":{
@@ -1210,7 +1244,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is extremely bright. He has a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge.",
                         "she":"#name# is extremely bright. She has a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge.",
-                        "they":"#name# is extremely bright. They have a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge."
+                        "they":"#name# is extremely bright. They have a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge.",
                     },
                 },
                 "big5_extraversion":{
@@ -1221,7 +1255,7 @@ export default {
                     },
                     "paragraph":{
                         "he":"#name# is a force to be reckoned with, smart and full of expression. People might describe him as having a magnetic intensity.",
-                        "she":"#name# is a force to be reckoned with, smart and full of expression. People might describe her as having a magnetic intensity.",
+                        "she":"#name# is a force to be reckoned with, smart and full of expression. People might describe her as having a magnetic intensity."
                         "they":"#name# is a force to be reckoned with, smart and full of expression. People might describe them as having a magnetic intensity."
                     },
                 },
@@ -1234,7 +1268,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a passionate soul with a desire to experience every last bit of what life has to offer. He has a penchant for the extreme.",
                         "she":"#name# is a passionate soul with a desire to experience every last bit of what life has to offer. She has a penchant for the extreme.",
-                        "they":"#name# is a passionate soul with a desire to experience every last bit of what life has to offer. They have a penchant for the extreme."
+                        "they":"#name# is a passionate soul with a desire to experience every last bit of what life has to offer. They have a penchant for the extreme.",
                     },
                 },
             },
@@ -1248,7 +1282,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is very much his own person, full of beautiful eccentricities. His savviness and wit garner him a lot of attention.",
                         "she":"#name# is very much her own person, full of beautiful eccentricities. Her savviness and wit garner her a lot of attention.",
-                        "they":"#name# is very much their own person, full of beautiful eccentricities. Their savviness and wit garner them a lot of attention."
+                        "they":"#name# is very much their own person, full of beautiful eccentricities. Their savviness and wit garner them a lot of attention.",
                     },
                 },
                 "big5_conscientiousness":{
@@ -1260,7 +1294,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a fun, quirky person. He is unconventional and charts his own path. You will not find another #name# in the world.",
                         "she":"#name# is a fun, quirky person. She is unconventional and charts her own path. You will not find another #name# in the world.",
-                        "they":"#name# is a fun, quirky person. They are unconventional and chart their own path. You will not find another #name# in the world."
+                        "they":"#name# is a fun, quirky person. They are unconventional and chart their own path. You will not find another #name# in the world.",
                     },
                 },
                 "big5_extraversion":{
@@ -1272,7 +1306,7 @@ export default {
                     "paragraph":{
                         "he":"#name# is a thoughtful, meditative being. He lives a life of self-examination and introspection, seeking the beauty within.",
                         "she":"#name# is a thoughtful, meditative being. She lives a life of self-examination and introspection, seeking the beauty within.",
-                        "they":"#name# is a thoughtful, meditative being. They live a life of self-examination and introspection, seeking the beauty within."
+                        "they":"#name# is a thoughtful, meditative being. They live a life of self-examination and introspection, seeking the beauty within.",
                     },
                 },
                 "big5_neuroticism":{
