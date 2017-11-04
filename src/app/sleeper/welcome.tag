@@ -19,7 +19,7 @@
             </div>
             <div class="disclaimer">
                 <formatted-message id='HOW_DISCLAMER_1'/>
-                <a href="/faq"><formatted-message id='HOW_DISCLAMER_2'/></a>
+                <a href="" click="{privacy}"><formatted-message id='HOW_DISCLAMER_2'/></a>
                 <formatted-message id='HOW_DISCLAMER_3'/>
             </div>
             <div class="action">
@@ -67,6 +67,11 @@
     begin(e) {
         this.state.auth.shownSleeperIntro();
         page.show("/sleeper/alarms/add/time");
+    }
+
+    privacy(e) {
+	e.preventDefault();
+	window.location = "/privacy.html"
     }
 
  </script>
