@@ -18,7 +18,7 @@ const Messages =
     HOME_ACTION:  'Would you like to join Stir as a Sleeper or a Rouser?',
     CLOCK_WELCOME:  'Welcome.',
     CLOCK_WELCOME_NAME:  'Welcome back, {name}',
-    CLOCK_DESC:  "You have the following messages scheduled:",
+    CLOCK_DESC:  "You have the following message scheduled:",
     CLOCK_DESC_NO_ALARMS:  "You have no wake-up messages scheduled.",
     ALARM_DATE:  "{date, date, short}",
     ALARM_TOMORROW:  "Tomorrow",

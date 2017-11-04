@@ -53,7 +53,6 @@
         if (this.state.sleeper.currentAlarm == null) {
             this.state.sleeper.currentAlarm = {};
         }
-        this.state.auth.on('status_updated', this.onStatusUpdated);
     });
 
     this.on('ready', () => {
@@ -66,6 +65,7 @@
         this.verified = false;
         this.update();
         this.state.auth.refreshStatus();
+        this.state.auth.on('status_updated', this.onStatusUpdated);
     })
     this.on('update', () => {
         console.log("add-alarm-time update.");
@@ -73,6 +73,9 @@
 
     this.on('unmount', () => {
         console.log("add-alarm-time unmounted");
+    });
+
+    this.on('hidden', () => {
         this.state.auth.off('status_updated', this.onStatusUpdated);
     });
 

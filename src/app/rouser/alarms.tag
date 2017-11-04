@@ -81,6 +81,8 @@
         if (manifestLink.length == 0) {
             $('head').append('<link rel="manifest" href="/rouser/manifest.json">');
         }
+
+        this.state.auth.refreshStatus();
     });
 
     queueUpdated() {

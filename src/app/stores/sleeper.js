@@ -160,7 +160,7 @@ export default class SleeperStore extends Store {
         if (!this._state.auth.user.pronoun) {
             this.steps += 1;
         }
-        if (!this._state.auth.user.alarmLocales) {
+        if (!this._state.auth.user.alarmLocales || this._state.auth.user.alarmLocales.length == 0) {
             this.steps += 1;
         }
         console.log("Calculated steps", this.steps);

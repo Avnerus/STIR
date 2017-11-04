@@ -1,4 +1,4 @@
-`export default {
+export default {
     "big5s":{
         "big5_agreeableness":{
             "person_type":"morning",
@@ -1255,7 +1255,7 @@
                     },
                     "paragraph":{
                         "he":"#name# is a force to be reckoned with, smart and full of expression. People might describe him as having a magnetic intensity.",
-                        "she":"#name# is a force to be reckoned with, smart and full of expression. People might describe her as having a magnetic intensity."
+                        "she":"#name# is a force to be reckoned with, smart and full of expression. People might describe her as having a magnetic intensity.",
                         "they":"#name# is a force to be reckoned with, smart and full of expression. People might describe them as having a magnetic intensity."
                     },
                 },

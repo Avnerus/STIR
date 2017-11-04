@@ -231,9 +231,9 @@ export default class AlarmManager {
     find(params) {
         // First get the alarms that this user was assigend to
         console.log("Alarm manager for rouser", params.user);
-        if (!params.user.status.phoneValidated) {
+        if (!params.user.alarmLocales || params.user.alarmLocales.length == 0) {
             // Can't assign alarms if they didn't sign up
-            return Promise.reject(new Error("Phone not validated"));
+            return Promise.reject(new Error("Recording language not set!"));
         } else {
             // First get alarms assigned to this rouser and not finalized
             let query  = {

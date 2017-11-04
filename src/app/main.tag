@@ -377,6 +377,7 @@
         });
 
         this.on('ready', () => {
+            this.state.rouser.invalidateAlarms();
             this.update();
         })
 

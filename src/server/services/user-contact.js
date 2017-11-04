@@ -152,6 +152,7 @@ export default class UserContactService {
         // Make sure there are no upcoming alarms for this user
         return Alarm.count({
             userId: userId,
+            deleted: false,
             time: {$gt: new Date()}
         })
         .then((count) => {

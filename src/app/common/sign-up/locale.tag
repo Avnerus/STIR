@@ -67,6 +67,7 @@
  </style>
  <script>
     import '../stir-header.tag'
+    this.mixin('RouteUtil');
 
     this.on('mount', () => {
         console.log("sign-up locale mounted");
@@ -104,13 +105,7 @@
             }
             let result = await this.state.auth.setAlarmLocales(locales);
             if (result.status == "success") {
-                if (this.state.main.role == 'sleeper' && this.state.sleeper.currentAlarm) {
-                    page("/sign-up/pronoun");
-                } else if (this.state.main.role == 'rouser') {
-                    page("/rouser/alarms");
-                } else {
-                    page("/");
-                }
+                await this.RouteUtil.routeSignup();
             } else {
                 throw new Error("Internal error");
             }
