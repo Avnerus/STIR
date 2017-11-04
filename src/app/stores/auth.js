@@ -105,6 +105,12 @@ export default class AuthStore extends Store {
             }
         }
     }
+
+    refreshStatus() {
+        this.user.status = null;
+        this.gettingStatus = false;
+        this.getStatus();
+    }
     async getSession() { 
         if (!this.user.session && !this.gettingSession)  {
             try {

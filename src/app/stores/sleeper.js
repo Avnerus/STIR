@@ -155,9 +155,12 @@ export default class SleeperStore extends Store {
     calculateSteps() {
         this.steps = 2;
         if (!this._state.auth.user.status.phoneValidated) {
-            this.steps += 3;
+            this.steps += 2;
         } 
         if (!this._state.auth.user.pronoun) {
+            this.steps += 1;
+        }
+        if (!this._state.auth.user.alarmLocales) {
             this.steps += 1;
         }
         console.log("Calculated steps", this.steps);

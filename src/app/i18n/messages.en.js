@@ -1,5 +1,6 @@
 const Messages =
 {
+    STIR: 'STIR',
     OK: 'Ok',
     CANCEL: 'Cancel',
     NOTICE: 'Notice',
@@ -56,7 +57,7 @@ const Messages =
     SLEEPER_SUMMARY_MESSAGE: 'Good morning, {name}! Check out your wake-up summary from Stir at {url}',
     NOTICE: 'Notice',
     PHONE_EXISTS: 'There is already a registered device with this phone number. Switch to this device?',
-    FAIL_NOTIFY: 'This is a message from Stir. we\'re sorry {name}, but due to an analysis failture you wake-up at {time, time, short} will not be delivered',
+    FAIL_NOTIFY: 'This is a message from Stir. we\'re sorry {name}, but due to an analysis failiure you wake-up at {time, time, short} will not be delivered',
     SLEEPER_WELCOME: 'If you\'re like nearly half of the other humans in the world, you woke up this morning underslept. Our aim is to make that transition just a little bit better.',
     SLEEPER_WELCOME_1: 'Put your morning in our hands, we\'ve got you.',
     HOW_IT_WORKS: 'How it works:',
@@ -112,7 +113,11 @@ const Messages =
     CONNECT_FACEBOOK: 'Connect with Facebook',
     CONNECT_TWITTER: 'Connect with Twitter',
     NOT_SOCIAL: 'Not on social media?',
-    SUBMIT: 'Submit'
+    SUBMIT: 'Submit',
+    NEW_ALARM_NOTIFICATION: 'Wakeup message set for {hours} hours and {minutes} minutes from now.',
+    NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.',
+    LANGUAGE_REQUIREMENT: 'You can record the message in one of the following languages:',
+    ALARM_DELIVERED: 'Your wake-up call was just delieverd to your sleeper! Thank you from STIR'
 };
 
 export default Messages;

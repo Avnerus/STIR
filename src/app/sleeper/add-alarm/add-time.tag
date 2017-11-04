@@ -49,6 +49,13 @@
         }
     });
 
+    this.on('mount', () => {
+        if (this.state.sleeper.currentAlarm == null) {
+            this.state.sleeper.currentAlarm = {};
+        }
+        this.state.auth.on('status_updated', this.onStatusUpdated);
+    });
+
     this.on('ready', () => {
         this.state.sleeper.calculateSteps();
 
@@ -58,6 +65,7 @@
         this.state.sleeper.currentAlarm.timezone = this.TimeUtil.getTimezone();
         this.verified = false;
         this.update();
+        this.state.auth.refreshStatus();
     })
     this.on('update', () => {
         console.log("add-alarm-time update.");
@@ -65,6 +73,7 @@
 
     this.on('unmount', () => {
         console.log("add-alarm-time unmounted");
+        this.state.auth.off('status_updated', this.onStatusUpdated);
     });
 
     async onAlarmTimeChange(item, time) {
@@ -143,6 +152,12 @@
         let result = await this.state.sleeper.saveProgress();
         console.log(result);
         return result;
+    }
+
+    onStatusUpdated() {
+        console.log("User status updated!");
+        this.state.sleeper.steps = null;
+        this.update();
     }
 
  </script>

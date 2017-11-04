@@ -16,6 +16,7 @@ export default class UserContactService {
             country: params.user.country,
             countryCode: params.user.countryCode,
             locale: params.user.locale,
+            alarmLocales: params.user.alarmLocales,
             pronoun: params.user.pronoun,
             env: {
                 tooEarlyHours: this.app.service('alarms/rouser').getTooEarlyHours()
@@ -146,4 +147,28 @@ export default class UserContactService {
     get4DigitCode() {
         return Math.floor(1000 + Math.random() * 9000);
     }
+
+    clearData(userId) {
+        // Make sure there are no upcoming alarms for this user
+        return Alarm.count({
+            userId: userId,
+            time: {$gt: new Date()}
+        })
+        .then((count) => {
+            if (count == 0) {
+                console.log("Clearing phone number and SNS");
+                return this.app.service("users").patch(userId, {
+                     $unset: { 
+                         phone: "",
+                         twitter: "",
+                         facebook: ""
+                     } ,
+                     'status.phoneValidated': false
+                })
+            } else {
+                console.log("NOT clearing out phone number because there are still alarms to go");
+            }
+        })
+    }
+
 }
