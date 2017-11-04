@@ -63,6 +63,7 @@
             font-family: 'Abel', Helvetica, sans-serif;
             text-transform: uppercase;
             font-size: .9rem;
+            font-weight: 600;
             letter-spacing: .1rem;
             border: 3px solid white;
             padding: 20px;
