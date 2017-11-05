@@ -51,6 +51,10 @@
             this.refs.audio.load();
         })
 
+        this.on('hidden', () => {
+            this.refs.audio.pause();
+        })
+
         recordAgain() {
             page("/rouser/alarm/" + this.state.rouser.currentAlarm._id + "/record")
         }
