@@ -3,6 +3,7 @@ import WastonUtil from '../util/watson'
 import Session from '../models/session-persistent'
 import translate from 'node-google-translate-skidz';
 import MSTranslateUtil from '../util/mstranslate'
+import STIRError from '../../app/stir-error'
 
 const FB_APP_ID = process.env['FB_APP_ID'];
 const FB_APP_SECRET = process.env['FB_APP_SECRET'];
@@ -108,7 +109,11 @@ export default class FBAnalyzeService {
             graph.get('/debug_token?input_token=' + accessToken + '&access_token=' + FB_APP_TOKEN, (err, res) => {
                 console.log(res);
                 if (res && res.data.is_valid) {
-                    resolve();
+                    if (res.data.scopes.includes('user_posts')) {
+                        resolve();
+                    } else {
+                        reject(new STIRError('FB-NO-POSTS', "No user_posts permission"));
+                    }
                 } else {
                     reject(new Error(res.data.error.message));
                 }

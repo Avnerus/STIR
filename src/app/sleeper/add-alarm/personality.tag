@@ -102,7 +102,7 @@
                 this.state.sleeper.pendingTwitter = false;
                 this.state.sleeper.pendingFacebook = false;
                 this.loading = false;
-                this.showError(err.message);
+                this.showError(err);
             }
             this.update();
         }
@@ -111,16 +111,20 @@
     });
 
     showError(err) {
+        console.log("Error",err);
         let errorText;
         if (err.code && err.code == 130) {
             errorText = "The twitter servers are currently over capacity, please try again in a few minutes!"
-        } else {
+        } else if (err.code && err.code == 'FB-NO-POSTS') {
+            errorText = this.formatMessage('FB_NO_PERMISSION');
+        }
+        else {
             errorText = "We have encountred the following error: " + err.message + ". Please inform our developers!";
             if (err.code) {
                 errorText += ' (Code ' + err.code + ')';
             }
         }
-        phonon.alert(errorText, "Something went wrong", false, "Ok");
+        phonon.alert(errorText, "Oops", false, "Ok");
     }
 
     this.on('unmount', () => {
