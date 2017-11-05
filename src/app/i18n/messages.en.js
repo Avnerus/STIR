@@ -45,6 +45,7 @@ const Messages =
     ROUSER_NOTIFY: 'Hi {name}, this is Stir. There are new Sleepers in need of a wake-up message! Go now to {url}',
     HOME_SUGGEST_IOS: 'Click {share button} to get a dedicated {role} app on your home screen!',
     HOME_SUGGEST_ANDROID: 'Add this page to your home screen to get a dedicated {role} app!',
+    HOME_SUGGEST: 'Add this page to your home screen to get a dedicated {role} app!',
     ROUSER_WELCOME: 'Hello, and welcome to Stir. We\'re thrilled to have you join us as a Rouser.',
     ROUSER_WELCOME_1: 'Once you sign up, you\'ll be directed to a call queue where you\'ll find a Sleeper.',
     ROUSER_WELCOME_2: 'We\'ll provide you with some guidelines for how to personalize your message.',
