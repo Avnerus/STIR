@@ -28,6 +28,7 @@ const AlarmSchema = new mongoose.Schema({
     mturk: {type: Boolean, default: false},
     notifiedSleeper: {type: Boolean, default: false},
     notifiedRousers: {type: Boolean, default: false},
+    sentFeedback: {type: Boolean, default: false},
     locales: [String],
     timezone: String,
     country: String,

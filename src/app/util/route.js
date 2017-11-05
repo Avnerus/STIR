@@ -41,6 +41,7 @@ export default class RouteUtil {
             } else {
                 phonon.alert(err.message, "Oops", false, "Ok");
             }
+            this.state.sleeper.currentAlarm = null;
         }
     }
 };

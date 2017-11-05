@@ -42,6 +42,7 @@ import QuestionsAnalyzeService from './services/questions-analyze'
 import UserContactService from './services/user-contact'
 import RecordingsService from './services/recordings'
 import SessionService from './services/session'
+import FeedbackService from './services/feedback'
 
 import UserModel from './models/user'
 import AlarmModel from './models/alarm'
@@ -64,7 +65,6 @@ import {BaseI18n} from '../app/i18n/i18n'
 import Messages from '../app/i18n/messages'
 import Formats from '../app/i18n/formats'
 import Errors from 'feathers-errors'
-
 
 global.fetch = require('node-fetch');
 global.io = require('socket.io-client');
@@ -119,7 +119,8 @@ app
 .use('/questions-analyze', new QuestionsAnalyzeService())
 .use('/user/contact', new UserContactService())
 .use('/recordings',new RecordingsService())
-.use('/user/session',new SessionService());
+.use('/user/session',new SessionService())
+.use('/feedback',new FeedbackService());
 
 // TWIML
 app.post('/twiml-rec.xml', TwiMLService.getRecordingTwiML)
@@ -241,7 +242,7 @@ app.service('/alarms/sleeper').hooks({
                     throw(new Errors.NotFound());
                 }
             },
-            pluck('_id', 'time', 'failed', 'generatedFrom', 'recording.mixUrl', 'prompt','name') 
+            pluck('_id', 'time', 'failed', 'generatedFrom', 'recording.mixUrl', 'prompt','name', 'sentFeedback') 
         ]
     }
 });

@@ -6,7 +6,7 @@
            <h1><formatted-message id='QUESTIONS_DESCRIPTION'/></h1>
            <div id="name-input">
                 <b><label><formatted-message id='QUESTIONS_NAME'/></label></b>
-                <input type="text" name="name" ref="name" required>
+                <input type="text" name="name" ref="name" maxlength="35" required>
           </div>
           <b><formatted-message id='QUESTIONS_ORDER'/></b>
           <div id="paragraphs">

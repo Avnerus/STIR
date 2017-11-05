@@ -122,7 +122,11 @@ const Messages =
     LANGUAGE_REQUIREMENT: 'You can record the message in one of the following languages:',
     ALARM_DELIVERED: 'Your wake-up call was just delieverd to your sleeper! Thank you from STIR',
     FB_NO_PERMISSION: 'Stir requires permission to read your posts in order to personalized your wakeup message.',
-    ALARM_SUMMARY_AUTH_ERROR: 'A wakeup summary can only be viewed from the device that created the wakeup'
+    ALARM_SUMMARY_AUTH_ERROR: 'A wakeup summary can only be viewed from the device that created the wakeup',
+    SEND_FEEDBACK_DESC: 'Liked your message? You can send a one time feedback to your rouser',
+    SEND_FEEDBACK: 'Send Feedback',
+    FEEDBACK_MESSAGE: 'You received feedback from {name}: {text}',
+    FEEDBACK_CANT_REACH: 'We couldn\'t reach your rouser!'
 };
 
 export default Messages;

@@ -171,5 +171,10 @@ export default class SleeperStore extends Store {
         }
         return this.steps;
     }
-    
+
+    async sendFeedback(text) {
+        console.log("Send feedback", text);
+        let result = await SocketUtil.rpc('feedback::create', {text: text, alarmId: this.currentAlarm._id});
+        return result;
+    }
 };
