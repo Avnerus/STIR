@@ -23,8 +23,8 @@ export function authHook(hook) {
 
                 if (!accessToken) {
                     if (hook.params.provider == "rest") {
-                        console.log("No token! creating user");
-                        createNewUser(hook.app, mturk, hook.params.ip)
+                        console.log("No token! creating user", hook.data);
+                        createNewUser(hook.app, mturk, hook.params.ip, hook.data.locale)
                         .then((accessToken) => {
                             hook.params.headers.authorization = accessToken;
                             resolve(hook);
@@ -38,7 +38,7 @@ export function authHook(hook) {
                     })
                     .catch ((error) => {
                         console.log("Error getting user", error.message,"Creating a new one");
-                        createNewUser(hook.app, mturk, hook.params.ip)
+                        createNewUser(hook.app, mturk, hook.params.ip, hook.data.locale)
                         .then((accessToken) => {
                             hook.data.accessToken = accessToken;
                             hook.params.headers.authorization = accessToken;
@@ -77,8 +77,8 @@ export function authMiddleware(req,res,next) {
         next();
     }
 }
-function createNewUser(app, mturk, ip) {
-    let data = {};
+function createNewUser(app, mturk, ip, locale) {
+    let data = { locale: (locale || 'en') };
     if (mturk) {
         console.log("Assigning mturk user to", mturk);                      
         data = {

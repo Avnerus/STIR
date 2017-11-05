@@ -119,7 +119,8 @@ const Messages =
     NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.',
     LANGUAGE_REQUIREMENT: 'You can record the message in one of the following languages:',
     ALARM_DELIVERED: 'Your wake-up call was just delieverd to your sleeper! Thank you from STIR',
-    FB_NO_PERMISSION: 'Stir requires permission to read your posts in order to personalized your wakeup message.'
+    FB_NO_PERMISSION: 'Stir requires permission to read your posts in order to personalized your wakeup message.',
+    ALARM_SUMMARY_AUTH_ERROR: 'A wakeup summary can only be viewed from the device that created the wakeup'
 };
 
 export default Messages;

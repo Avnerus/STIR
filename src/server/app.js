@@ -58,8 +58,8 @@ import TimeUtil from '../app/util/time'
 import PersistentSession from './models/session-persistent'
 import NFBUtil from './util/nfb'
 
-//import {IntlMixin} from '../app/riot-intl/src/main'
 import {IntlMixin} from 'riot-intl'
+import {BaseI18n} from '../app/i18n/i18n'
 
 import Messages from '../app/i18n/messages'
 import Formats from '../app/i18n/formats'
@@ -448,7 +448,34 @@ app.use(async function (req, res, next) {
     }
 });
 
-app.use(errorHandler());
+app.use(errorHandler({
+    html: (error, req, res, next) => {
+        console.log("Render error", error);
+        if (error.code == 404) {
+            error.message = "Page not found";
+        } else {
+            error.message = getCustomMessage(req) || error.message;
+        }
+        res.render('error', {error: error, home: process.env.SERVER_URL});
+    }
+}));
+
+function getCustomMessage(req, error) {
+    console.log("Get custom message?" , req.user);    
+    let locale = 'en';
+    if (req.feathers && req.feathers.locale) {
+        locale = req.feathers.locale;
+    }
+    if (req.user && req.user.locale) {
+        locale = req.user.locale;
+    }
+    if (req.page == 'sleeper-alarm-summary') {
+        return IntlMixin.formatMessage('ALARM_SUMMARY_AUTH_ERROR',{},BaseI18n, locale);
+        
+    } else {
+        return null;
+    }
+}
 
 
 console.log("Starting server");

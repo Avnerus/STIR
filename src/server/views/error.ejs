@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/phonon.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- IPHONE WEB APP-->
+  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+  <link rel="apple-touch-startup-image" href="/images/icons/icon-512x512.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="STIR">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <script>
+    window.IS_CLIENT = true;
+    window.IS_SERVER = false;
+
+  </script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="error">
+         <img src="/images/icons/icon-384x384.png"></img>
+          <h1> Stir Error <%- error.code %> </h1>
+          <span> <%- error.message %> </span>
+          <a href="<%- home %>">Start over?</a>
+      </div>
+    </div>
+  </body>
+</html>

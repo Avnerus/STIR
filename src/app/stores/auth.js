@@ -49,7 +49,7 @@ export default class AuthStore extends Store {
     async loginRest() {
         try {
             console.log("User login REST");
-            let data = {strategy: "jwt"};
+            let data = {strategy: "jwt", locale: this.locale};
             let response = await FetchUtil.postJSON("/authentication",data, this.accessToken)
             console.log("REST Login reply: ", response);
             if (response.errors) {

@@ -337,6 +337,21 @@
                         width: 5px;
                          
          }
+
+        .error {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+            
+            span {
+                font-size: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                padding: 10px;
+            }
+        }
     </style>
 
     <script>
