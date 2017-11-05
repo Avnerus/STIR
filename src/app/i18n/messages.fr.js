@@ -43,6 +43,8 @@ const Messages =
     WAKE_they: 'Wake them',
     SLEEPER_NOTIFY: 'Hi {name}, this is a reminder from STIR. You have a wakeup call set for {time, time, short}.',
     ROUSER_NOTIFY: 'This is a message from STIR. There are new sleepers in need of a wakeup message! Go now to {url}',
+    HOME_SUGGEST_IOS: 'Click {share button} to get a dedicated {role} app on your home screen!',
+    HOME_SUGGEST_ANDROID: 'Add this page to your home screen to get a dedicated {role} app!',
     HOME_SUGGEST: 'Add this page to your home screen to get a dedicated {role} app!',
     ROUSER_WELCOME: 'Bonjour et bienvenue sur L\'appel du réveil. Nous sommes enchantés de vous accueillir parmi nos Réveilleurs.',
     ROUSER_WELCOME_1: 'Suite à votre inscription, nous vous dirigerons vers une liste d\'appels où vous trouverez un Dormeur en attente d\'un message de réveil personnalisé.',
