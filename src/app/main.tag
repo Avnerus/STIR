@@ -11,7 +11,7 @@
                     <a class="btn primary" href="/sleeper/alarms">
                         <formatted-message id='SLEEPER'/>
                     </a>
-                    <a class="btn primary" href="/rouser/alarms">
+                    <a class="btn primary" href="/rouser/alarms" click="{refreshRouser}">
                         <formatted-message id='ROUSER'/>
                     </a>
                 </div>
@@ -395,7 +395,6 @@
         });
 
         this.on('ready', () => {
-            this.state.rouser.invalidateAlarms();
             this.update();
         })
 
@@ -409,6 +408,10 @@
 
         roleUpdated(role) {
             console.log("Main role updated!", role);
+        }
+
+        refreshRouser(e) {
+            this.state.rouser.invalidateAlarms();            
         }
     </script>
 </main>
