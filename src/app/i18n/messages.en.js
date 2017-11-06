@@ -35,7 +35,7 @@ const Messages =
     ROUSER_FOUND_SLEEPER: 'We have a Sleeper in need of a wake-up message.',
     ROUSER_SLEEPER_EXPLANATION: 'Once you record a message, you can record a message for another Sleeper.',
     ROUSER_NO_SLEEPERS: 'There are currently no Sleepers in need of a wake-up message.',
-    ROUSER_NO_SLEEPERS_EXPLANATION: 'We\'ll text you when we have a Sleeper who needs a message.',
+    ROUSER_NO_SLEEPERS_EXPLANATION: 'Check back here from time to time to assist sleeeprs in need.',
     ANOTHER_SLEEPER: 'Find another Sleeper',
     BE_A_SLEEPER: 'Be a Sleeper',
     WAKE_he: 'Wake him',
