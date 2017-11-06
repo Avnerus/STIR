@@ -50,10 +50,22 @@
     <%- body %>
 
     <!--Home suggest panel-->
-    <div id="home-suggest" class="panel">
+    <div id="home-suggest-android" class="panel home-suggest">
             <div class="content">
                 <div class="padded-full">
-                    <span id="home-suggest-message">Add this page to your home screen!</span>
+                    <span class="home-suggest-tap">Tap </span>
+                    <i class="material-icons share-icon">more_vert</i>
+                    <span class="home-suggest-message"> to get a dedicated {role} app on your home screen!</span>
+                    <a href="" data-panel-close="true"><i class="material-icons">clear</i></a>
+                </div>
+            </div>
+    </div>
+    <div id="home-suggest-iphone" class="panel home-suggest">
+            <div class="content">
+                <div class="padded-full">
+                    <span class="home-suggest-tap">Tap </span>
+                    <img src="/images/icons/iphone_share.png"></img>
+                    <span class="home-suggest-message"> to get a dedicated {role} app on your home screen!</span>
                     <a href="" data-panel-close="true"><i class="material-icons">clear</i></a>
                 </div>
             </div>

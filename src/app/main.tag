@@ -352,6 +352,32 @@
                 padding: 10px;
             }
         }
+
+        #home-suggest-iphone {
+            img {
+                margin-left: 3px;
+                margin-right: 3px;
+                position: relative;
+                top: 3px;
+            }
+        }
+        #home-suggest-android {
+            .share-icon {
+                position: relative;
+                top: 5px;
+            }
+        }
+        .home-suggest {
+            a {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+            }
+            .padded-full {
+                line-height: 22px;
+            }
+
+        }
     </style>
 
     <script>

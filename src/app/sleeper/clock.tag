@@ -108,13 +108,9 @@
         }
         else if
         (!MiscUtil.isStandaone() && this.state.auth.user && !this.state.auth.user.status.suggestedSleeperHome) {
-            $('#home-suggest-message').html(
-                this.formatMessage('HOME_SUGGEST', {
-                    role: this.formatMessage('SLEEPER')
-                })
-            );
-            phonon.panel('#home-suggest').open();
-            this.state.auth.suggestedSleeperHome();
+            if (this.UIUtil.suggest('SLEEPER')) {
+                this.state.auth.suggestedSleeperHome();
+            }
         }
         let manifestLink = $('link[href="manifest.json"]');
         if (manifestLink.length == 0) {

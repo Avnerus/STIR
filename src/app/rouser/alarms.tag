@@ -57,6 +57,8 @@
     import '../common/stir-header.tag'
     import MiscUtil from '../util/misc'
 
+    this.mixin('UIUtil');
+
     this.on('mount', () => {
         console.log("alarm-queue mounted");
         this.state.rouser.on('queue_updated', this.queueUpdated);
@@ -69,13 +71,9 @@
     this.on('ready', () => {
         this.update();
         if (!MiscUtil.isStandaone() && this.state.auth.user && !this.state.auth.user.status.suggestedRouserHome) {
-            $('#home-suggest-message').html(
-                this.formatMessage('HOME_SUGGEST', {
-                    role: this.formatMessage('ROUSER')
-                })
-            );
-            phonon.panel('#home-suggest').open();
-            this.state.auth.suggestedRouserHome();
+            if (this.UIUtil.suggest('ROUSER')) {
+                this.state.auth.suggestedRouserHome();
+            }
         }
         let manifestLink = $('link[href="manifest.json"]');
         if (manifestLink.length == 0) {
