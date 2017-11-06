@@ -287,6 +287,7 @@
                 background-color: black;
                 video {
                     height: 100%;
+                    width: 100%;
                 }
             }
             .overlay {
@@ -301,9 +302,9 @@
                 flex-direction: column;
 
                 h1 {
-                    color: white;
+                    color: black;
                     position: absolute;
-                    top: 30%;
+                    top: 15%;
                     width: 100%;
                     text-align: center;
                 }
@@ -316,16 +317,17 @@
                 .play-button {
                     position: absolute;
                     i {
-                        color: white;
+                        color: #333;
                         font-size: 72px;
                     }
                 }
 
                 .skip-link {
                     position: absolute;
-                    bottom: 10%;
+                    bottom: 8%;
                     font-size: 22px;
                     font-weight: bold;
+                    color: #333;
                 }
                 
             }
