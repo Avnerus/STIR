@@ -7,6 +7,7 @@ import Errors from 'feathers-errors'
 import {IntlMixin} from 'riot-intl'
 import {BaseI18n, withTimezone} from '../../app/i18n/i18n'
 import DummyAlarms from '../models/dummy-alarms'
+import TwiMLService from './twiml'
 
 let ALARMS_IN_QUEUE = 1;
 const FIELDS_TO_RETURN = "_id time name prompt locales country pronoun recording dummy"
@@ -63,7 +64,7 @@ export default class AlarmManager {
                 this.activateAlarm(activeAlarm._id);
                 // One retry after a minute
                 setTimeout(() => {
-                    this.retryAlarm(activeAlarm.userId);
+                    this.retryAlarm(activeAlarm._id);
                 },CALL_RETRY_TIMEOUT);
 
             }
@@ -85,67 +86,67 @@ export default class AlarmManager {
             })
         })
         .then((user) => {
-            Session.setFor(user._id, {pendingAlarm : alarm});
-
-            // Make the call
-            TwilioUtil.client.calls.create({
-                    url: SERVER_URL + '/twiml-alarm.xml',
-                    to: user.phone,
-                    from: TwilioUtil.TWILIO_PHONE_NUMBER
-            }).then((response) => {
-                console.log("Twilio response", response);
-            })
-            .catch((err) => {
-                console.log("Error dispatching alarm call", err )
-            })
+            // Dispatch the call
+            return TwiMLService.dispatchAlarmCall(user, alarm);
+        }).then((response) => {
+            console.log("Result", response);
+        })
+        .catch((err) => {
+            console.log("Error dispatching alarm call", err )
         })
     }
-    retryAlarm(userId) {
-        let sessionData = Session.getFor(userId);
-        if (sessionData.pendingAlarm) {
-            console.log("RETRYING ALARM!", sessionData.pendingAlarm);
-            this.activateAlarm(sessionData.pendingAlarm);
-            //
-            // failed after a minute
-            setTimeout(() => {
-                this.alarmFailed(userId);
-            },CALL_RETRY_TIMEOUT);
-        }
+    retryAlarm(alarmId) {
+        Alarm.findOne({
+            _id: alarmId
+        })
+        .then((alarm) => {
+            if (alarm && !alarm.delivered) {
+                console.log("RETRYING ALARM!", alarm);
+                this.activateAlarm(alarm._id);
+                //
+                // failed after a minute
+                setTimeout(() => {
+                    this.alarmFailed(alarm._id);
+                },CALL_RETRY_TIMEOUT);
+            }
+        });
     }
-    alarmFailed(userId) {
-        let sessionData = Session.getFor(userId);
-        if (sessionData.pendingAlarm) {
-            console.log("ALARM FAILED!", sessionData.pendingAlarm);
-            return Promise.resolve({})
-            .then(() => {
-                if (sessionData.pendingAlarm.recording && sessionData.pendingAlarm.recording.finalized) {
-                    return this.app.service('users').get(userId)
-                    .then((user) => {
-                        let message = IntlMixin.formatMessage('ALARM_FAILED_NOTIFY',{
-                            name: user.name,
-                            time: new Date(sessionData.pendingAlarm.time),
-                            url: process.env.SERVER_URL + "/sleeper/alarm/" + sessionData.pendingAlarm._id + "/summary",
-                        },withTimezone(sessionData.pendingAlarm.timezone),user.locale);
+    alarmFailed(alarmId) {
+        Alarm.findOne({
+            _id: alarmId
+        })
+        .then((alarm) => {
+            if (alarm && !alarm.delivered) {
+                console.log("ALARM FAILED!", alarm._id);
+                return Promise.resolve({})
+                .then(() => {
+                    if (alarm.recording && alarm.recording.finalized) {
+                        return this.app.service('users').get(userId)
+                        .then((user) => {
+                            let message = IntlMixin.formatMessage('ALARM_FAILED_NOTIFY',{
+                                name: alarm.name,
+                                time: new Date(alarm.time),
+                                url: process.env.SERVER_URL + "/sleeper/alarm/" + alarm._id + "/summary",
+                            },withTimezone(alarm.timezone),alarm.userLocale);
 
-                        return this.messageUser(user._id, message);
-                    })
-                } else {
-                    return ;
-                }
-            })
-            .then((result) => {
-                return this.app.service('alarms/sleeper').patch(sessionData.pendingAlarm._id, {failed: true});
-            })
-            .then(() => {
-                Session.setFor(userId, {pendingAlarm : null});
-                return this.app.service('/user/contact').clearData(userId);
-            })
-            .catch((err) => {
-                console.log("Error notifying sleeper on failed alarm", err);
-                Session.setFor(userId, {pendingAlarm : null});
-                this.app.service('/user/contact').clearData(userId);
-            })
-        }
+                            return this.messageUser(alarm.userId, message);
+                        })
+                    } else {
+                        return ;
+                    }
+                })
+                .then((result) => {
+                    return this.app.service('alarms/sleeper').patch(alarm._id, {failed: true});
+                })
+                .then(() => {
+                    return this.app.service('/user/contact').clearData(alarm.userId);
+                })
+                .catch((err) => {
+                    console.log("Error notifying sleeper on failed alarm", err);
+                    this.app.service('/user/contact').clearData(alarm.userId);
+                })
+            }
+        })
     }
     popAlarm() {
         if (this.pendingAlarms.length > 0) {
@@ -172,7 +173,6 @@ export default class AlarmManager {
     alarmDelivered(alarm) {
         console.log("ALARM DELIVERED!", alarm);
         this.app.service('alarms/sleeper').patch(alarm._id, {delivered: true});
-        Session.setFor(alarm.userId, {pendingAlarm : null});
         if (alarm.assignedTo) {
             this.app.service('users').get(alarm.assignedTo)
             .then((user) => {

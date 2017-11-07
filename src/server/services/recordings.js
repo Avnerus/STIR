@@ -5,6 +5,7 @@ import formidable from 'formidable'
 import MTurkUtil from '../util/mturk'
 import DownloadUtil from '../util/download'
 import S3Util from '../util/s3'
+import TwiMLService from './twiml'
 
 export default class RecordingsService {
     constructor() {
@@ -21,9 +22,8 @@ export default class RecordingsService {
     create(data,params) {
         console.log("RecordingsService::create! ", data,params);
         // Create a pending recording for this user
-        Session.setFor(params.user._id, {pendingRecording : data});
-
-        return Promise.resolve({status: "success"});
+        //
+        return TwiMLService.dispatchRecordingCall(data, params);
     }
 
     patch(id, data, params) {

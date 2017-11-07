@@ -125,7 +125,7 @@ app
 // TWIML
 app.post('/twiml-rec.xml', TwiMLService.getRecordingTwiML)
 app.post('/twiml-alarm.xml', TwiMLService.getAlarmTwiML)
-app.post('/twiml/recording-status/:userId', TwiMLService.getRecordingStatus)
+app.post('/twiml/recording-status', TwiMLService.getRecordingStatus)
 
 //Setup authentication
 app.configure(authentication(AuthSettings));
@@ -190,7 +190,8 @@ app.service('/alarms/sleeper').hooks({
           (hook) => { 
               hook.data.locales = hook.params.user.alarmLocales,
               hook.data.country = hook.params.user.country, 
-              hook.data.pronoun = hook.params.user.pronoun 
+              hook.data.pronoun = hook.params.user.pronoun,
+              hook.data.userLocale = hook.params.user.locale 
           },
           (hook) => { 
               if (hook.data.analysis == 'questions') {
@@ -319,12 +320,6 @@ app.service('/alarms/rouser').hooks({
 app.service('/recordings').before({
   create: [
       authHooks.associateCurrentUser({ as: 'rouserId'})
-  ]
-});
-
-app.service('/recordings').after({
-  create: [
-      TwiMLService.dispatchRecordingCall
   ]
 });
 

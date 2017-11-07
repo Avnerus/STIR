@@ -36,7 +36,6 @@
             <button class="btn primary raised" type="submit"><formatted-message id='RECORD_ACTION'/></button>
        </form>
        <img show="{loading}" src="/images/loading.gif">
-       <b show"{error}" class="error">{error}</b>
    </div>
 </div>
 
@@ -100,7 +99,7 @@
         } 
         catch(e) {
             console.log("Error requesting call", e);
-            this.error = e.message;
+            phonon.alert(e.name ? e.name : e.message, "Oops", false, "Ok");
             this.loading = false;
             this.update();
         }

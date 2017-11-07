@@ -30,6 +30,7 @@ const AlarmSchema = new mongoose.Schema({
     notifiedRousers: {type: Boolean, default: false},
     sentFeedback: {type: Boolean, default: false},
     locales: [String],
+    userLocale: String,
     timezone: String,
     country: String,
     pronoun: String,
