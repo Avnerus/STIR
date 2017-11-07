@@ -8,7 +8,7 @@
                     <p><formatted-message id='HOME_CHOICE1'/></p>
                     <p><formatted-message id='HOME_CHOICE2'/></p>
                     <h1><formatted-message id='HOME_ACTION'/></h1>
-                    <a class="btn primary" href="/sleeper/alarms">
+                    <a class="btn primary" href="/sleeper/alarms" click="{refreshSleeper}">
                         <formatted-message id='SLEEPER'/>
                     </a>
                     <a class="btn primary" href="/rouser/alarms" click="{refreshRouser}">
@@ -440,6 +440,10 @@
 
         refreshRouser(e) {
             this.state.rouser.invalidateAlarms();            
+        }
+
+        refreshSleeper(e) {
+            this.state.sleeper.invalidateAlarms();            
         }
     </script>
 </main>

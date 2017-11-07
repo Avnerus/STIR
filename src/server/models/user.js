@@ -13,6 +13,7 @@ const UserSchema = new mongoose.Schema({
     alarmsRecorded: {type: Number, default: 0},
     waitingForAlarms: {type: Boolean, default: false},
     password: String,
+    lastLogin: Date,
     status : {
         phoneValidated: {type: Boolean, default: false},
         suggestedSleeperHome: {type: Boolean, default: false},

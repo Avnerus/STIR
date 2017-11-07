@@ -180,6 +180,16 @@ app.service('authentication').hooks({
       authHook,
       authentication.hooks.authenticate(['local','jwt'])
     ]
+  },
+  after: {
+      create: [
+          (hook) => {
+              if (hook.params.user) {
+                  hook.app.service('users').patch(hook.params.user._id, {lastLogin: new Date()});
+              }
+              return hook;
+          }
+      ]
   }
 });
 

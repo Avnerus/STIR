@@ -48,6 +48,7 @@
         });
 
         this.on('ready', () => {
+            this.update();
             this.refs.audio.load();
         })
 

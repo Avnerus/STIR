@@ -121,7 +121,7 @@ export default class AlarmManager {
                 return Promise.resolve({})
                 .then(() => {
                     if (alarm.recording && alarm.recording.finalized) {
-                        return this.app.service('users').get(userId)
+                        return this.app.service('users').get(alarm.userId)
                         .then((user) => {
                             let message = IntlMixin.formatMessage('ALARM_FAILED_NOTIFY',{
                                 name: alarm.name,
@@ -139,11 +139,11 @@ export default class AlarmManager {
                     return this.app.service('alarms/sleeper').patch(alarm._id, {failed: true});
                 })
                 .then(() => {
-                    return this.app.service('/user/contact').clearData(alarm.userId);
+                    //return this.app.service('/user/contact').clearData(alarm.userId);
                 })
                 .catch((err) => {
                     console.log("Error notifying sleeper on failed alarm", err);
-                    this.app.service('/user/contact').clearData(alarm.userId);
+                    //this.app.service('/user/contact').clearData(alarm.userId);
                 })
             }
         })
@@ -190,7 +190,7 @@ export default class AlarmManager {
         if (alarm.recording && alarm.recording.finalized) {
             this.sendAlarmSummary(alarm._id, alarm.userId);
         } else {
-            this.app.service('/user/contact').clearData(alarm.userId);
+            // this.app.service('/user/contact').clearData(alarm.userId);
         }
     }
     sendAlarmSummary(alarmId, userId) {
@@ -207,11 +207,11 @@ export default class AlarmManager {
             })
             .then((result) => {
                 console.log("Sent");
-                return this.app.service('/user/contact').clearData(userId);
+                //return this.app.service('/user/contact').clearData(userId);
             })
             .catch((err) => {
                 console.log("Error sending alarm summary!", err);
-                this.app.service('/user/contact').clearData(userId);
+                //this.app.service('/user/contact').clearData(userId);
             })
         }, 1000 * 60 * 2);
     }
@@ -385,11 +385,11 @@ export default class AlarmManager {
 
         this.messageUser(user._id, message)
         .then(() => {
-            return this.app.service('/user/contact').clearData(user._id);
+            //return this.app.service('/user/contact').clearData(user._id);
         })
         .catch((err) => {
             console.log("Error after failed analysis", err);
-            this.app.service('/user/contact').clearData(user._id);
+            //this.app.service('/user/contact').clearData(user._id);
         })
     }
 

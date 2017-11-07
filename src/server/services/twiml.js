@@ -77,7 +77,7 @@ export default {
                     response.play({},SERVER_URL + alarm.recording.mixUrl);
                 }
             } else {
-                resonse.say({}, defaultText);
+                response.say({}, defaultText);
             }
            
         })
@@ -138,7 +138,7 @@ export default {
         if (req.body.RecordingStatus == 'completed') {
             let sessionData = TWIML_SESSIONS[req.body.CallSid];
             if (sessionData && sessionData.pendingRecording) {
-                console.log("Downloading recording!");
+                console.log("Downloading recording!", sessionData.pendingRecording);
                 let recordingUrl = 
                     '/recordings/' + 
                     sessionData.pendingRecording.alarmId + '-' + 
@@ -149,18 +149,20 @@ export default {
                     console.log("Finished download!");
                     sessionData.pendingRecording.recordingUrl = recordingUrl + '?t=' + (new Date).getTime();
                     req.app.service('recordings').ready(sessionData.pendingRecording);
+                    delete TWIML_SESSIONS[req.body.CallSid];
                 })
                 .catch((err) => {
                     console.log("Error downloading file!", err);
                     delete TWIML_SESSIONS[req.body.CallSid];
                 })
-                delete TWIML_SESSIONS[req.body.CallSid];
                 res.send({status: "success"});
             } else {
                 res.send("No pending recording");
             }
         } else {
-            delete TWIML_SESSIONS[req.body.CallSid];
+            if (TWIML_SESSIONS[req.body.CallSid]) {
+                delete TWIML_SESSIONS[req.body.CallSid];
+            }
             res.send("Recording not completed");
         }
     }
