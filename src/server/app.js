@@ -53,6 +53,7 @@ import AlarmManager from './services/alarm-manager'
 import patchAlarmHook from './services/patch-alarm'
 import dispatchMTurkHook from './services/dispatch-mturk'
 import noDotPluck from './util/no-dot-pluck'
+import {encryptUser, decryptUser} from './services/encrypt-user'
 
 import SocketUtil from '../app/util/socket'
 import TimeUtil from '../app/util/time'
@@ -168,7 +169,15 @@ app.service('users').hooks({
   before: {
     create: [
       local.hooks.hashPassword()
+    ],
+    patch: [
+        encryptUser
     ]
+  },
+  after: {
+      get: [
+          decryptUser
+      ]
   }
 });
 
@@ -184,7 +193,7 @@ app.service('authentication').hooks({
   after: {
       create: [
           (hook) => {
-              if (hook.params.user) {
+              if (hook.params.user && hook.params.user._id) {
                   hook.app.service('users').patch(hook.params.user._id, {lastLogin: new Date()});
               }
               return hook;

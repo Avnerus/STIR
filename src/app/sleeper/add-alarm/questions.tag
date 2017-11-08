@@ -112,9 +112,7 @@
             console.log("Analysis status", analysisStatus);
             this.state.sleeper.currentAlarm.analysis = 'questions';
             this.state.sleeper.currentAlarm.name = this.refs.name.value;
-            if (!this.state.auth.user.name) {
-                this.state.auth.setUserName(this.refs.name.value);
-            }
+            this.state.auth.setUserName(this.refs.name.value);
 
             this.validateCheck();
         

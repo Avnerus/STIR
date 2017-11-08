@@ -87,9 +87,7 @@
                 if (analysisStatus) {
                     console.log("analysis status", analysisStatus);
                     if (analysisStatus.status == "success") {
-                        if (!this.state.auth.user.name) {
-                            this.state.auth.setUserName(analysisStatus.userName);
-                        }
+                        this.state.auth.setUserName(analysisStatus.userName);
                         this.state.sleeper.currentAlarm.name = analysisStatus.userName;
                         this.validateCheck();
                    } else {

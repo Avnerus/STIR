@@ -277,7 +277,7 @@ export default {
                 },
                 "need_practicality":{
                     "instruction":{
-                        "he":"tGive him confidence that today will be a fruitful day.",
+                        "he":"Give him confidence that today will be a fruitful day.",
                         "she": "Give her confidence that today will be a fruitful day.",
                         "they": "Give them confidence that today will be a fruitful day.",
                     }

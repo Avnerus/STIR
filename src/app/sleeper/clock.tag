@@ -93,6 +93,7 @@
     });
 
     this.on('ready', () => {
+        console.log("Clock ready", this.state.auth.user.name);
         this.update();
         if (this.state.sleeper.newAlarmTime) {
             let diff = this.TimeUtil.getDiff(new Date(this.state.sleeper.newAlarmTime));

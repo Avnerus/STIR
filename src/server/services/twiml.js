@@ -3,6 +3,7 @@ import {twiml} from 'twilio'
 import User from '../models/user'
 import Session from '../models/session-persistent'
 import DownloadUtil from '../util/download'
+import {decrypt} from './encrypt-user'
 
 const TWIML_SESSIONS = {};
 
@@ -102,7 +103,7 @@ export default {
         console.log("TWIML Dispatch recording!");
         return TwilioUtil.client.calls.create({
                 url: SERVER_URL + '/twiml-rec.xml',
-                to: params.user.phone,
+                to: decrypt(params.user.phone),
                 from: TwilioUtil.TWILIO_PHONE_NUMBER
         }).then((response) => {
             TWIML_SESSIONS[response.sid] = {

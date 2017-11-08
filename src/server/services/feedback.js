@@ -39,7 +39,7 @@ export default class FeedbackService {
                 throw new Error(errorMessage);
             }
             let message = IntlMixin.formatMessage('FEEDBACK_MESSAGE',{
-                name: params.user.name,
+                name: targetAlarm.name,
                 text: data.text
             },BaseI18n,rouser.locale);
 

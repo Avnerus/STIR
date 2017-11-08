@@ -69,8 +69,13 @@ function generatePrompt(app, alarm, analysis,  user, tryNumber) {
             } else {
                 throw new Error(result.message);
             }
+        } else {
+            throw new Error("Error generating prompt! Empty result");
         }
         console.log("Final prompt", alarmData.prompt);
+        
+        // TODO: Should be cleared periodically as well for users that never completed the process
+        app.service("/user/contact").clearTokens(user._id);
 
         return app.service('alarms/sleeper').patch(alarm._id,alarmData);
     })
@@ -83,6 +88,7 @@ function generatePrompt(app, alarm, analysis,  user, tryNumber) {
             },RETRY_INTERVAL);
         } else {
             console.log("Giving up");
+            app.service("/user/contact").clearTokens(user._id);
             app.service('alarms/sleeper').patch(alarm._id,{failed: true, deleted: true})
             .then(() => {
                 app.service('alarms/rouser').failedAnalysis(alarm,user);

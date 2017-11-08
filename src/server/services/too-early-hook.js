@@ -1,4 +1,3 @@
-
 export default function tooEarlyHook(hook) {
     if (process.env.NODE_ENV == 'production' && !process.env.DISABLE_TOO_EARLY && (hook.params.provider == "socketio" || hook.params.provider == "rest") &&
         (hook.data.newAlarm || hook.data.time)) {

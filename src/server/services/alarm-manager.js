@@ -81,9 +81,7 @@ export default class AlarmManager {
         .then((result) => {
             alarm = result;
             // Get the user
-            return User.findOne({
-              _id: alarm.userId  
-            })
+            return this.app.service('users').get(alarm.userId);
         })
         .then((user) => {
             // Dispatch the call
@@ -176,9 +174,9 @@ export default class AlarmManager {
         if (alarm.assignedTo) {
             this.app.service('users').get(alarm.assignedTo)
             .then((user) => {
+                console.log("Sending delivery message");
                 let message = IntlMixin.formatMessage('ALARM_DELIVERED',{
-                    url: process.env.SERVER_URL + "/sleeper/alarm/" + alarm._id + "/summary",
-                    name: user.name
+                    name: alarm.name
                 },BaseI18n,user.locale);
 
                 return this.messageUser(alarm.assignedTo, message);
@@ -188,6 +186,7 @@ export default class AlarmManager {
             })
         }
         if (alarm.recording && alarm.recording.finalized) {
+            console.log("Will send summary message");
             this.sendAlarmSummary(alarm._id, alarm.userId);
         } else {
             // this.app.service('/user/contact').clearData(alarm.userId);
@@ -217,14 +216,13 @@ export default class AlarmManager {
     }
 
     messageUser(id, message) {
-        return this.app.service('users').find({
-            query: {_id: id}
-        })
-        .then((result) => {
-            if (result.length > 0) {
+        return this.app.service('users').get(id)
+        .then((user) => {
+            if (user) {
                 console.log("Sending message: ", message);
-                let user = result[0];
                 return TwilioUtil.sendMessage(user.phone, message);
+            } else {
+                throw new Error("messageUser, User not found! " + id);
             }
         })
     }
@@ -256,6 +254,7 @@ export default class AlarmManager {
                         mturk: false,
                         analyzed: true,
                         dummy: false,
+                        deleted: false,
                         locales: {$elemMatch: {$in: params.user.alarmLocales}},
                         time: {$gt: new Date()}
                     };

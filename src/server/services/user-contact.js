@@ -172,4 +172,12 @@ export default class UserContactService {
         })
     }
 
+    clearTokens(userId) {
+        return this.app.service("users").patch(userId, {
+             $unset: { 
+                 twitter: "",
+                 facebook: ""
+             }
+        })
+    }
 }
