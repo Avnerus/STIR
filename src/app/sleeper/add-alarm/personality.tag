@@ -60,8 +60,37 @@
     import '../../common/stepper.tag'
     import '../../common/stir-header.tag'
 
-    this.on('mount', async () => {
+    this.on('mount', () => {
         console.log("add-alarm-personality mounted");
+        this.state.sleeper.on('alarm_created', this.onAlarmCreated);
+    });
+
+    showError(err) {
+        console.log("Error",err);
+        let errorText;
+        if (err.code && err.code == 130) {
+            errorText = "The twitter servers are currently over capacity, please try again in a few minutes!"
+        } else if (err.code && err.code == 'FB-NO-POSTS') {
+            errorText = this.formatMessage('FB_NO_PERMISSION');
+        }
+        else {
+            errorText = "We have encountred the following error: " + err.message + ". Please inform our developers!";
+            if (err.code) {
+                errorText += ' (Code ' + err.code + ')';
+            }
+        }
+        phonon.alert(errorText, "Oops", false, "Ok");
+    }
+
+    this.on('unmount', () => {
+        this.state.sleeper.off('alarm_created', this.onAlarmCreated);
+    });
+
+    this.on('ready', () => {
+        this.update();
+    });
+
+    this.on('transitionend', async () => {
         if (IS_CLIENT) {
             try {
                 let analysisStatus = null;
@@ -104,34 +133,7 @@
             }
             this.update();
         }
-
-        this.state.sleeper.on('alarm_created', this.onAlarmCreated);
-    });
-
-    showError(err) {
-        console.log("Error",err);
-        let errorText;
-        if (err.code && err.code == 130) {
-            errorText = "The twitter servers are currently over capacity, please try again in a few minutes!"
-        } else if (err.code && err.code == 'FB-NO-POSTS') {
-            errorText = this.formatMessage('FB_NO_PERMISSION');
-        }
-        else {
-            errorText = "We have encountred the following error: " + err.message + ". Please inform our developers!";
-            if (err.code) {
-                errorText += ' (Code ' + err.code + ')';
-            }
-        }
-        phonon.alert(errorText, "Oops", false, "Ok");
-    }
-
-    this.on('unmount', () => {
-        this.state.sleeper.off('alarm_created', this.onAlarmCreated);
-    });
-
-    this.on('ready', () => {
-        this.update();
-    });
+    })
 
 
     async validateCheck() {
