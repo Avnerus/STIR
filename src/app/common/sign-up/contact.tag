@@ -57,13 +57,16 @@
             margin-top: 10px;
          }
 
-         .country-list {
-            background-color: #333 !important;
-         }
      }
     .circle-progress.active {
         top: 70%;
     }
+    .country-list {
+        background-color: #333 !important;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .iti-flag {background-image: url("../images/flags@2x.png") !important;}
+   }
  </style>
  <script>
     import '../stir-header.tag'
