@@ -107,7 +107,7 @@ export default [
         mturk: false,
         deleted: false,
         locales: ['en', 'fr', 'de'],
-        generatedfrom : {
+        generatedFrom : {
                 "big5" : "big5_extraversion",
                 "highs" : "big5_conscientiousness",
                 "facet" : "facet_trust",
