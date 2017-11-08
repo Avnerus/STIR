@@ -2,6 +2,7 @@ import TwilioUtil from '../util/twilio'
 import STIRError from '../../app/stir-error'
 import Session from '../models/session-persistent'
 import Alarm from '../models/alarm'
+import {encrypt} from './encrypt-user'
 
 export default class UserContactService {
     setup(app) {
@@ -87,7 +88,7 @@ export default class UserContactService {
         if (data.code == contact.verificationCode) {
             // Check that nobody already has that phone
             return this.app.service("users").find({query: {
-                phone: contact.phone,
+                phone: encrypt(contact.phone),
                 _id: {$ne: params.user._id}
             }})
             .then((result) => {
@@ -132,7 +133,7 @@ export default class UserContactService {
             })
             .catch((err) => {
                 console.log("Error updating contact", err);
-                if (err.code && err.code == "EXISTS") {
+                if ((err.code && err.code == "EXISTS") || (err.name && err.name == 'Conflict')) {
                     return {status: "EXISTS"};
                 } else {
                     throw (err);
