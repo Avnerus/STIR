@@ -47,7 +47,13 @@ export default [
         analyzed: true,
         mturk: false,
         deleted: false,
-        locales: ['en', 'fr', 'de']
+        locales: ['en', 'fr', 'de'],
+        generatedFrom : {
+                "big5" : "big5_openness",
+                "highs" : "big5_conscientiousness",
+                "facet" : "facet_trust",
+                "need" : "need_practicality"
+        }
     },
 
 
@@ -100,7 +106,13 @@ export default [
         analyzed: true,
         mturk: false,
         deleted: false,
-        locales: ['en', 'fr', 'de']
+        locales: ['en', 'fr', 'de'],
+        generatedfrom : {
+                "big5" : "big5_extraversion",
+                "highs" : "big5_conscientiousness",
+                "facet" : "facet_trust",
+                "need" : "need_practicality"
+        }
     },
 
 
@@ -152,6 +164,12 @@ export default [
         analyzed: true,
         mturk: false,
         deleted: false,
-        locales: ['en', 'fr', 'de']
+        locales: ['en', 'fr', 'de'],
+        generatedFrom : {
+                "big5" : "big5_neuroticism",
+                "highs" : "big5_conscientiousness",
+                "facet" : "facet_trust",
+                "need" : "need_practicality"
+        }
     }
 ]
