@@ -4,24 +4,24 @@ var TimeFormat = SoxCommand.TimeFormat;
 runTest();
 
 function runTest() {
-    Promise.all([identifyWav('public/recordings/59ea026846bcaa7bb9327211-rec.wav'),identifyWav('backingtracks/_2014_.wav')])
+    Promise.all([identifyWav('public/recordings/5a02fe3fce8e1017d90a8ce9-5a025405edc7b652c3ea889b-rec.wav'),identifyWav('backingtracks/openness.wav')])
     .then((waveInfo) => {
         console.log("Wave info", waveInfo);
         
     //    var endTimeFormatted = TimeFormat.formatTimeRelativeToEnd(waveInfo[1].duration - waveInfo[0].duration - 3);
         var startTimeFormatted = TimeFormat.formatTimeAbsolute(waveInfo[0].duration + 3 + 3);
 
-        var subCommand = SoxCommand('public/recordings/59ea026846bcaa7bb9327211-rec.wav')
+        var subCommand = SoxCommand('public/recordings/5a02fe3fce8e1017d90a8ce9-5a025405edc7b652c3ea889b-rec.wav')
         .output('-p')
         //.output('test.wav')
         .outputSampleRate(44100)
         .outputChannels(2)
         .outputFileType('wav')
-        .addEffect('delay', '+3');
+        .addEffect('delay', '3');
 
         var command = SoxCommand()
         .inputSubCommand(subCommand)
-        .input('backingtracks/_2014_.wav')
+        .input('-v 0.5 backingtracks/openness.wav')
         .combine('mix')
         .output('mix.mp3')
         .outputFileType('mp3')

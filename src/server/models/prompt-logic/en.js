@@ -746,9 +746,9 @@ export default {
                         }
                     ],
                     "paragraph":{
-                        "he":"He is a true leader, always ssserting his ideas and directing others to make sure they come to life.",
-                        "she": "She is a true leader, always ssserting her ideas and directing others to make sure they come to life.",
-                        "they": "They are a true leader, always ssserting their ideas and directing others to make sure they come to life.",
+                        "he":"He is a true leader, always asserting his ideas and directing others to make sure they come to life.",
+                        "she": "She is a true leader, always asserting her ideas and directing others to make sure they come to life.",
+                        "they": "They are a true leader, always asserting their ideas and directing others to make sure they come to life.",
                     }
                 },  
                 "facet_cheerfulness":{

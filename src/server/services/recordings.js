@@ -7,6 +7,14 @@ import DownloadUtil from '../util/download'
 import S3Util from '../util/s3'
 import TwiMLService from './twiml'
 
+const BACKING_TRACKS = {
+    big5_agreeableness: '_2014_.wav',
+    big5_conscientiousness: '_2014_.wav',
+    big5_extraversion: 'extraversion.wav',
+    big5_neuroticism: 'neuroticism.wav',
+    big5_openness: 'openness.wav'
+}
+
 export default class RecordingsService {
     constructor() {
         this.events = ['ready'];
@@ -57,14 +65,16 @@ export default class RecordingsService {
 
     ready(data) {
         console.log("Recording file is ready! mixing",data);
-        // Delete from session, save in db
-        Session.setFor(data.rouserId, {pendingRecording : null});
-        // Mix
-        SoxUtil.mixBackingTrack(
-            'public/recordings/' + data.alarmId + '-' + data.rouserId + '-rec.wav',
-            'backingtracks/_2014_.wav',
-            'public/recordings/' + data.alarmId + '-' + data.rouserId + '-mix.mp3'
-        )
+        this.app.service('/alarms/sleeper').get(data.alarmId, {query: {$select:['generatedFrom'] }})
+        .then((alarm) => {
+            console.log("Alarm data", alarm);
+            // Mix
+            return SoxUtil.mixBackingTrack(
+                'public/recordings/' + data.alarmId + '-' + data.rouserId + '-rec.wav',
+                'backingtracks/' + BACKING_TRACKS[alarm.generatedFrom.big5],
+                'public/recordings/' + data.alarmId + '-' + data.rouserId + '-mix.mp3'
+            )
+        })
         .then((result) => {
             console.log("Mixing result", result);
             data.mixUrl = '/recordings/' + data.alarmId + '-' + data.rouserId + '-mix.mp3?t=' + new Date().getTime();
@@ -89,6 +99,7 @@ export default class RecordingsService {
         let destinationPath;
         let mixPath;
         let alarmId;
+        let targetAlarm;
 
         this.parseForm(req)
         .then((form) => {
@@ -113,6 +124,7 @@ export default class RecordingsService {
         })
         .then((alarm) => {
             if (alarm) {
+                targetAlarm = alarm;
                 console.log("Alarm: ", alarm);
                 alarmId = alarm._id;
                 destinationPath = 'recordings/' + alarm._id + '-rec.wav';
@@ -127,7 +139,7 @@ export default class RecordingsService {
         .then(() => {
             return SoxUtil.mixBackingTrack(
                 'public/' + destinationPath,
-                'backingtracks/_2014_.wav',
+                'backingtracks/' + BACKING_TRACKS[targetAlarm.generatedFrom.big],
                 'public/' + mixPath
             )
         })
@@ -166,5 +178,4 @@ export default class RecordingsService {
             });
         })
     }
-
 }
