@@ -286,7 +286,6 @@
             .content {
                 background-color: black;
                 video {
-                    height: 100%;
                     width: 100%;
                 }
             }
