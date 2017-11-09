@@ -171,7 +171,7 @@ export default class AlarmManager {
     alarmDelivered(alarm) {
         console.log("ALARM DELIVERED!", alarm);
         this.app.service('alarms/sleeper').patch(alarm._id, {delivered: true});
-        if (alarm.assignedTo) {
+        if (alarm.assignedTo && alarm.recording && alarm.recording.finalized) {
             this.app.service('users').get(alarm.assignedTo)
             .then((user) => {
                 console.log("Sending delivery message");

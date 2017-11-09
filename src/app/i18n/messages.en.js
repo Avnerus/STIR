@@ -124,7 +124,8 @@ const Messages =
     SEND_FEEDBACK_DESC: 'Liked your message? You can send a one time feedback to your rouser',
     SEND_FEEDBACK: 'Send Feedback',
     FEEDBACK_MESSAGE: 'You received feedback from {name}: {text}',
-    FEEDBACK_CANT_REACH: 'We couldn\'t reach your rouser!'
+    FEEDBACK_CANT_REACH: 'We couldn\'t reach your rouser!',
+    ROUSER_WELCOME_DISCLAIMER: 'Your message must contain no illicit, defamatory or hateful content, because of the nature of the experience, there is an inherent risk that a user may receive a message that is not in accordance with the regulations.'
 };
 
 export default Messages;
