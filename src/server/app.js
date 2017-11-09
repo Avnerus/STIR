@@ -451,7 +451,8 @@ app.use(async function (req, res, next) {
                     nfbDeps: nfbSettings.dependencies,
                     nfbHeader: nfbSettings.header,
                     //nfbFooter: nfbSettings.footer
-                    nfbTopnav: nfbSettings.geoloc.topnav
+                    nfbTopnav: nfbSettings.geoloc.topnav,
+                    nfbTag: nfbSettings.tag
                 });
             } 
             res.render('index', renderOpts);
