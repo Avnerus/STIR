@@ -18,7 +18,11 @@
         </div>
         <div class="disclaimer">
             </p><formatted-message id='PERSONALITY_DISCLAIMER_1'/></p>
-            </p><formatted-message id='PERSONALITY_DISCLAIMER_2'/></p>
+            <p>
+                <formatted-message id='PRIVACY_DISCLAMER_1'/>
+                <a href="" click="{privacy}"><formatted-message id='PRIVACY_DISCLAMER_2'/></a>
+                <formatted-message id='PRIVACY_DISCLAMER_3'/>
+            </p>
         </div>
       </div>
       <div class="stepper-container">

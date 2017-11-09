@@ -18,9 +18,7 @@
                 <formatted-message id='SLEEPER_WELCOME_1'/>
             </div>
             <div class="disclaimer">
-                <formatted-message id='HOW_DISCLAMER_1'/>
-                <a href="" click="{privacy}"><formatted-message id='HOW_DISCLAMER_2'/></a>
-                <formatted-message id='HOW_DISCLAMER_3'/>
+                <p><formatted-message id='SLEEPER_WELCOME_DISCLAIMER'/></p>
             </div>
             <div class="action">
                 <button class="btn raised primary" click="{begin}">

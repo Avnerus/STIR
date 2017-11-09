@@ -66,9 +66,9 @@ const Messages =
     HOW_WORKS_2: 'Sign up with your Facebook or Twitter. Our algorithms will analyze your data to understand you and your morning needs*.',
     HOW_WORKS_3: 'A Rouser will create a personalized message for you.',
     HOW_WORKS_4: 'You\'ll receive a call with the message to wake you up tomorrow morning.',
-    HOW_DISCLAMER_1: '*No personally identifiable information will be stored or shared. Click ',
-    HOW_DISCLAMER_2: 'here',
-    HOW_DISCLAMER_3: ' for more info.',
+    PRIVACY_DISCLAMER_1: '*No personally identifiable information will be stored or shared. Click ',
+    PRIVACY_DISCLAMER_2: 'here',
+    PRIVACY_DISCLAMER_3: ' for more info.',
     SLEEPER_TIME_WHEN: 'When would you like to wake up?',
     SLEEPER_TIME_DISCLAMER: 'We\'ll deliver your message in your local time zone. Stir needs at least {hours} hours to prepare your message.',
     PERSONALITY_DESCRIPTION: 'Stir uses data analysis methods to personalize your wake-up experience.',
@@ -87,7 +87,7 @@ const Messages =
     CONTACT_EXPLANATION: 'After this, you\'ll be asked to verify your number with a 4-digit code.',
     ROUSER_CONTACT: 'First, enter your phone number.*',
     ROUSER_CONTACT_DISCLAIMER: '*Why do we need this info? We give you a call when you\'re ready to record your wake-up messages. Just follow the steps on the following screens.',
-    CONTACT_DISCLAIMER: '*Calls and SMS messages from Stir will be free of charge to you.',
+    CONTACT_DISCLAIMER: 'The incoming calls from STIR are all coming from a toll free number and thus should be at no cost. However, by taking part in the STIR project, I agree to cover any exceptional phone costs billed by my mobile phone service provider incurred from my participation as a "Rouser" or a "Sleeper".',
     CONTACT_VERIFY: 'Great. Please enter your verification code.',
     CONTACT_VERIFY_NAME: 'Great, {name}. Please enter your verification code.',
     ALARM_LOCALES_DISCLAIMER_SLEEPER: 'Select all the languages you speak to enhance your chances of a great wake-up message.',
@@ -125,7 +125,8 @@ const Messages =
     SEND_FEEDBACK: 'Send Feedback',
     FEEDBACK_MESSAGE: 'You received feedback from {name}: {text}',
     FEEDBACK_CANT_REACH: 'We couldn\'t reach your rouser!',
-    ROUSER_WELCOME_DISCLAIMER: 'Your message must contain no illicit, defamatory or hateful content, because of the nature of the experience, there is an inherent risk that a user may receive a message that is not in accordance with the regulations.'
+    ROUSER_WELCOME_DISCLAIMER: 'Your message must contain no illicit, defamatory or hateful content, because of the nature of the experience, there is an inherent risk that a user may receive a message that is not in accordance with the regulations. All participants acknowledge that the NFB and ARTE assume no responsibility for the reception of a message that is not in accordance with the regulations.',
+    SLEEPER_WELCOME_DISCLAIMER: 'Even though the Rousers are warned that their message must contain no illicit, defamatory or hateful content, because of the nature of the experience, there is an inherent risk that a user may receive a message that is not in accordance with the regulations. All participants acknowledge that the NFB and ARTE assume no responsibility for the reception of a message that is not in accordance with the regulations.'
 };
 
 export default Messages;

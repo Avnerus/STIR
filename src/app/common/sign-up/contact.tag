@@ -25,7 +25,7 @@
         </form>
         <div class="disclaimer">
             <p if="{state.main.role == 'rouser'}"><formatted-message id='ROUSER_CONTACT_DISCLAIMER'/></p>
-            <span if="{state.main.role == 'rouser'}">*</span><formatted-message id='CONTACT_DISCLAIMER'/>
+            <p><formatted-message id='CONTACT_DISCLAIMER'/></p>
         </div>
       </div>
       <div show="{ !phonePluginLoaded || loading }" class="circle-progress center active">
