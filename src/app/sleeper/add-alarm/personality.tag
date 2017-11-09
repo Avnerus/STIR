@@ -20,7 +20,7 @@
             </p><formatted-message id='PERSONALITY_DISCLAIMER_1'/></p>
             <p>
                 <formatted-message id='PRIVACY_DISCLAMER_1'/>
-                <a href="" click="{privacy}"><formatted-message id='PRIVACY_DISCLAMER_2'/></a>
+                <a href="/privacy.html" click="{privacy}"><formatted-message id='PRIVACY_DISCLAMER_2'/></a>
                 <formatted-message id='PRIVACY_DISCLAMER_3'/>
             </p>
         </div>
@@ -163,6 +163,11 @@
         if (IS_CLIENT) {
             page("/sleeper/alarms");
         }
+    }
+
+    privacy(e) {
+        e.preventDefault();
+        window.location = "/privacy.html"
     }
  </script>
 </sleeper-alarms-add-personality>

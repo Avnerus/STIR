@@ -67,10 +67,5 @@
         page.show("/sleeper/alarms/add/time");
     }
 
-    privacy(e) {
-	e.preventDefault();
-	window.location = "/privacy.html"
-    }
-
  </script>
 </sleeper-welcome>
