@@ -21,18 +21,11 @@
             </audio>
             </p>
             <p><b><formatted-message id='YOUR_TRAITS'/></b></p>
-            <div id="prompt">
-                <div class="intro row">
-                   <formatted-message id='PROMPT_INTRO' name="{state.sleeper.currentAlarm.name}"/>
-                </div> 
-                <p each="{text, i in state.sleeper.currentAlarm.prompt[state.auth.locale].paragraphs}">{text}</p>
-                <p><i><formatted-message id='PROMPT_INSTRUCTION' name="{state.sleeper.currentAlarm.name}"/></i></p>
-                <ul class="">
-                  <li each="{text, i in state.sleeper.currentAlarm.prompt[state.auth.locale].instructions}">
-                    {text}
-                  </li>
-                </ul>
-            </div>
+            <ul class="">
+              <li each="{traits}">
+                {adjective + ' ' + noun}
+              </li>
+            </ul>
             <div if="{!state.sleeper.currentAlarm.sentFeedback}" id="feedback">
                 <p>
                     <formatted-message id='SEND_FEEDBACK_DESC'/>
@@ -64,6 +57,10 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
+         }
+
+         ul {
+            padding-left: 15px;
          }
 
          #feedback {
@@ -110,6 +107,22 @@
 
     this.loading = false;
     this.sent = false;
+
+    this.traits = Object.keys(this.state.sleeper.currentAlarm.generatedFrom).map((key) => {
+            let adjectives = {
+                big5: 'High',
+                highs: 'High',
+                lows: 'Low',
+                facet: 'Notable',
+                need: 'Need for'
+            }
+            let noun = this.state.sleeper.currentAlarm.generatedFrom[key].split('_')[1];
+
+            return {
+                adjective: adjectives[key],
+                noun: noun
+            }
+    });
 
     this.on('mount', () => {
         console.log("alarm summary mounted");

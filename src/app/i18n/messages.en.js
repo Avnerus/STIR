@@ -106,7 +106,7 @@ const Messages =
     TOO_EARLY_CONFIRM: 'Stir needs at least {hours} hours to prepare your message. We can set your wake-up for the follwing day.',
     ALARM_FAILED_NOTIFY: 'Hi {name}, This is a message from Stir. We tried to deliver your message at {time, time, short}, but unfortunately the call didn\'t go through. You can still hear your wake-up and see a summary here: {url}',
     LISTEN_ALARM: 'You can listen again to your wake-up message here:',
-    YOUR_TRAITS: 'Your Rouser received the following prompt, personlized for you based on our psychometric analysis of your data:',
+    YOUR_TRAITS: 'Your Rouser recorded your personlized message based on the following psychometric analysis of your data:',
     ENGLISH: 'English',
     FRENCH: 'French',
     GERMAN: 'German',
