@@ -63,7 +63,7 @@ const Messages =
     SLEEPER_WELCOME_1: 'Put your morning in our hands, we\'ve got you.',
     HOW_IT_WORKS: 'How it works:',
     HOW_WORKS_1: 'Set your wake-up time.',
-    HOW_WORKS_2: 'Sign up with your Facebook or Twitter. Our algorithms will analyze your data to understand you and your morning needs*.',
+    HOW_WORKS_2: 'Sign up with your Facebook or Twitter. Our algorithms will analyze your data to understand you and your morning needs.',
     HOW_WORKS_3: 'A Rouser will create a personalized message for you.',
     HOW_WORKS_4: 'You\'ll receive a call with the message to wake you up tomorrow morning.',
     PRIVACY_DISCLAMER_1: '*No personally identifiable information will be stored or shared. Click ',

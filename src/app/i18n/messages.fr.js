@@ -64,7 +64,7 @@ const Messages =
     SLEEPER_WELCOME_1: 'En tant que Dormeur, vous remplacerez votre alarme numérique par un message de L\'appel du réveil. Remettez votre matin entre nos mains, nous en prendrons soin!',
     HOW_IT_WORKS: 'Comment ça fonctionne?',
     HOW_WORKS_1: 'Programmez votre alarme.',
-    HOW_WORKS_2: 'Inscrivez-vous avec votre compte Facebook ou Twitter. Nos algorithmes analyseront vos données pour mieux vous comprendre, vous  et vos désirs matinaux.*',
+    HOW_WORKS_2: 'Inscrivez-vous avec votre compte Facebook ou Twitter. Nos algorithmes analyseront vos données pour mieux vous comprendre, vous  et vos désirs matinaux.',
     HOW_WORKS_3: 'Un Réveilleur créera pour vous un message de réveil personnalisé.',
     HOW_WORKS_4: 'Vous recevrez un appel contenant votre message de réveil spécial.',
     HOW_DISCLAMER_1: '*Aucune information personnelle identifiable ne sera enregistrée ou conservée. Cliquez',
