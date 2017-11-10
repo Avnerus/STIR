@@ -444,7 +444,6 @@ export default class AlarmManager {
             { multi: true  }
         );
     }
-
     notifySleepers() {
         if (process.env.NODE_ENV == 'production') {
             let notifyTime = new Date();
