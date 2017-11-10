@@ -13,7 +13,7 @@ const Messages =
     ALARM_EXISTS: 'You already have a wake-up set at that time. Please pick a different time.',
     HOME_TITLE:  'Welcome, we\'re glad you\'re here.',
     HOME_EXPLANATION: 'Stir is a personalized wake-up service that brings people gently into the new day.',
-    HOME_CHOICE1:  'Sign up as a Sleeper to set a wake-up message.',
+    HOME_CHOICE1:  'Sign up as a Sleeper to experience a wake-up message.',
     HOME_CHOICE2:  'Sign up as a Rouser if you\'d like to create wake-up messages for Sleepers.',
     HOME_ACTION:  'Would you like to join Stir as a Sleeper or a Rouser?',
     CLOCK_WELCOME:  'Welcome.',
