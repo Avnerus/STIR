@@ -94,7 +94,7 @@ const app = feathers()
 .use(bodyParser.json())
 .use(bodyParser.urlencoded({ extended: true  }))
 .use(function(req, res, next) {
-    req.feathers.ip = req.ip;
+    req.feathers.ip = req.headers['x-forwarded-for'] || req.ip;
     if (req.query.lang && SUPPORTED_LANGS[req.query.lang]) {
         req.feathers.locale = req.forceLocale = req.locale = req.query.lang;
     } else {
@@ -105,6 +105,7 @@ const app = feathers()
 .use(session({ secret: AuthSettings.secret, resave: true, saveUninitialized: true  }));
 
 app.enable('trust proxy');
+app.set('trust proxy', true);
 
 //app.use(authMiddleware);
 
