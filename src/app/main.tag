@@ -348,6 +348,10 @@
                     width: 100%;
                     text-align: center;
                 }
+                
+                .video-title {
+                  display: none;
+                }
 
                 a {
                     width: 100%;
@@ -356,8 +360,16 @@
                 
                 .play-button {
                     position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    background-color: rgba(0,0,0,.6);
+                    display: flex;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    
                     i {
-                        color: #333;
+                        color: #fff;
                         font-size: 72px;
                     }
                 }
@@ -365,11 +377,12 @@
                 .skip-link {
                     position: absolute;
                     bottom: 8%;
-                    font-size: 1.1rem;
+                    font-size: .9rem;
                     font-family: Abel;
                     font-weight: 600;
-                    border-bottom: 1px solid #333;
+                    text-decoration: underline;
                     color: #333;
+                    text-transform:uppercase;
                 }
                 
             }
