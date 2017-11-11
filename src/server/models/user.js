@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 const UserSchema = new mongoose.Schema({
     name: String,
     email: String,
-    phone: { type: String, index: { unique: true, sparse: true  }, required: false },
+    phone: String,
     country: String,
     countryCode: String,
     locale: String,

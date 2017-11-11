@@ -86,58 +86,15 @@ export default class UserContactService {
         console.log("User contact", contact);
 
         if (data.code == contact.verificationCode) {
-            // Check that nobody already has that phone
-            return this.app.service("users").find({query: {
-                phone: encrypt(contact.phone),
-                _id: {$ne: params.user._id}
-            }})
-            .then((result) => {
-                if (result.length > 0) {
-                    let user = result[0];
-                    console.log("There is already a user with this phone!", user._id);
-                    if (!data.force) {
-                        throw new STIRError("EXISTS");
-                    } else {
-                        // Remove the phone field
-                        return this.app.service("users").patch(user._id, {
-                             $unset: { phone: "" } ,
-                             'status.phoneValidated': false
-                        })
-                        .then(() => {
-                            return Alarm.update(
-                                { 
-                                   'userId': user._id,
-                                }, 
-                                { $set: { userId: params.user._id  }},
-                                { multi: true  }
-                            );
-                        })
-                        .then(() => {
-                            // Refersh alarms
-                            this.app.service('alarms/rouser').getPendingAlarms();
-                            return;
-                        })
-                    }
-                }            
-                else {
-                    return;
-                }
-            })
-            .then((result) => {
-                contact['status.phoneValidated'] = true;
-                return this.app.service("users").patch(params.user._id, contact)
-            })
+            contact['status.phoneValidated'] = true;
+            return this.app.service("users").patch(params.user._id, contact)
             .then((result) => {
                console.log("Patched contact", result);
                return {status: "success"}
             })
             .catch((err) => {
                 console.log("Error updating contact", err);
-                if ((err.code && err.code == "EXISTS") || (err.name && err.name == 'Conflict')) {
-                    return {status: "EXISTS"};
-                } else {
-                    throw (err);
-                }
+                throw (err);
             });
         } else {
             return Promise.reject(new Error("Code is incorrect"));

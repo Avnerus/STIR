@@ -61,24 +61,6 @@
             console.log("Verify code result status: " + result.status);
             if (result.status == "success") {
                 await this.RouteUtil.routeSignup();
-            } else if (result.status == "EXISTS") {
-                console.log("Phone exists!, asking confirmation");
-                let confirm = phonon.confirm(
-                    this.formatMessage('PHONE_EXISTS'), 
-                    this.formatMessage('NOTICE'), 
-                    true, 
-                    "Ok", 
-                    this.formatMessage('CANCEL')
-                );
-                confirm.on('confirm', async () => {
-                    console.log("Forcing!");
-                    let result = await this.state.auth.verifyCode(this.refs.code.value, true);
-                    console.log("Result", result);
-                    if (result.status == "success") {
-                        this.state.sleeper.invalidateAlarms();
-                        await this.RouteUtil.routeSignup();
-                    }
-                });
             } else {
                 throw new Error("Internal error");
             }

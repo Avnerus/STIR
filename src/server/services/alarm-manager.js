@@ -547,6 +547,7 @@ export default class AlarmManager {
 
     notifyWaitingRousers(alarm) {
         console.log("Get waiting rousers");        
+        //TODO: Handle several users with the same phone
         return User.count({
             waitingForAlarms: true,
             phone: {$ne: null},
