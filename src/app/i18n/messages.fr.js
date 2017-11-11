@@ -125,7 +125,10 @@ const Messages =
     SEND_FEEDBACK_DESC: 'Liked your message? You can send a one time feedback to your rouser',
     SEND_FEEDBACK: 'Send Feedback',
     FEEDBACK_MESSAGE: 'You received feedback from {name}: {text}',
-    FEEDBACK_CANT_REACH: 'We couldn\'t reach your rouser!'
+    FEEDBACK_CANT_REACH: 'We couldn\'t reach your rouser!',
+    ROUSER_WELCOME_DISCLAIMER: 'Your message must contain no illicit, defamatory or hateful content, because of the nature of the experience, there is an inherent risk that a user may receive a message that is not in accordance with the regulations. All participants acknowledge that the NFB and ARTE assume no responsibility for the reception of a message that is not in accordance with the regulations.',
+    SLEEPER_WELCOME_DISCLAIMER: 'Even though the Rousers are warned that their message must contain no illicit, defamatory or hateful content, because of the nature of the experience, there is an inherent risk that a user may receive a message that is not in accordance with the regulations. All participants acknowledge that the NFB and ARTE assume no responsibility for the reception of a message that is not in accordance with the regulations.',
+    CREDITS: 'CREDITS'
 };
 
 export default Messages;

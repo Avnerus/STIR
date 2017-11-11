@@ -11,6 +11,7 @@
                     <span class="role" if="{state.main.role != null}"> | </span>
                     <formatted-message class="role" if="{state.main.role == 'sleeper'}" id="SLEEPER"/>
                     <formatted-message class="role" if="{state.main.role == 'rouser'}" id="ROUSER"/>
+                    <formatted-message class="role" if="{opts.section}" id="{opts.section}"/>
                 </a>
             </div>
         </h1>

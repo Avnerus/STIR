@@ -214,6 +214,10 @@ class Routes {
             this.go(next, req, res);
         });
 
+        app.route('/credits').get((req, res, next) => {
+            this.go(next, req, res);
+        });
+
         /*
 
         app.route('*').get((req, res, next) => {

@@ -15,6 +15,11 @@
                         <formatted-message id='ROUSER'/>
                     </a>
                 </div>
+                <div id="credits-link">
+                    <a href="/credits">
+                        <formatted-message id='CREDITS'/>
+                    </a>
+                </div>
             </div>
     </div>
 
@@ -225,10 +230,29 @@
             justify-content: center;
             @media (max-height: 650px) {
                 position: relative;
+                bottom: 50px;
             }
             position: absolute;
             bottom: 60px;
             width: 100%;
+        }
+        #credits-link {
+            display: flex;
+            justify-content: center;
+            @media (max-height: 650px) {
+                position: relative;
+                bottom: 15px;
+            }
+            position: absolute;
+            bottom: 60px;
+            width: 100%;
+
+           a {
+                color: white;
+                letter-spacing: 1px;
+                text-decoration: underline;
+                font-weight: 400;
+           }
         }
         #prompt {
             .intro {
@@ -405,6 +429,8 @@
 
         import './admin/login.tag'
         import './admin/dashboard.tag'
+
+        import './credits.tag'
 
         import MiscUtil from './util/misc'
 
