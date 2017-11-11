@@ -1,17 +1,26 @@
 <alarm-time>
     <article class="alarm">
-        <div id="alarm-container" click="{changeTime}">
-            <div id="alarm-time-group">
-                <formatted-time if="{opts.data.time}"class="{alarm-time: true, verifying:opts.verifying}" value="{new Date(opts.data.time)}" format="short"/>
-                <formatted-time if="{!opts.data.time}"class="{alarm-time: true, verifying:opts.verifying}" value="{defaultTime}" format="short"/>
-                <span class="{alarm-timezone: true, verifying:opts.verifying}">LOCAL TIME</span>
+        <div class="alarm-container">
+            <div class="alarm-click-group" click="{changeTime}">
+                <div class="alarm-time-group">
+                    <formatted-time if="{opts.data.time}"class="{alarm-time: true, verifying:opts.verifying}" value="{new Date(opts.data.time)}" format="short"/>
+                    <formatted-time if="{!opts.data.time}"class="{alarm-time: true, verifying:opts.verifying}" value="{defaultTime}" format="short"/>
+                    <span class="{alarm-timezone: true, verifying:opts.verifying}">LOCAL TIME</span>
+                </div>
+                <div class="alarm-date-group">
+                    <formatted-message if="{opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(opts.data.time)}" date="{new Date(opts.data.time)}"/>            
+                    <formatted-message if="{!opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(this.defaultTime)}" date="{new Date(this.defaultTime)}"/>            
+                </div>
             </div>
-            <formatted-message if="{opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(opts.data.time)}" date="{new Date(opts.data.time)}"/>            
-            <formatted-message if="{!opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(this.defaultTime)}" date="{new Date(this.defaultTime)}"/>            
+            <div class="actions" if="{opts.onCancel}">
+                <a class="edit-alarm" click="{changeTime}" href="">
+                    <formatted-message id="EDIT"/>
+                </a>
+                <a class="cancel-alarm" click="{cancelAlarm}" href="">
+                    <formatted-message id="CANCEL"/>
+                </a>
+            </div>
         </div>
-        <a if="{opts.onCancel}" class="alarm-action" id="cancel-alarm" click="{cancelAlarm}" href="#">
-            <i class="material-icons">alarm_off</i>
-        </a>
         <div show="{opts.verifying}" class="circle-progress active">
             <div class="spinner"></div>
         </div>
@@ -31,6 +40,7 @@
          }
          .alarm-date {
             margin-top: 5px;
+            margin-bottom: 5px;
             color: #ff7500;
             font-weight: 600px;
          }
@@ -50,18 +60,22 @@
             align-items: center;
             border-radius: 5px;
          }
-         #alarm-container {
+         .alarm-container {
             display: flex;
             flex-direction: column;
          }
-         #alarm-time-group {
+         .alarm-time-group {
             display: flex;
             flex-direction: row;
             align-items: baseline;
             color: #06c2ff;
-         .clock-desc {
-            margin-top: 10px;
+           .clock-desc {
+              margin-top: 10px;
+            }
+            margin-bottom: 5px;
          }
+         .alarm-date-group {
+            margin-bottom: 5px;
          }
          .alarm-action {
             color: #ff6969;
@@ -71,6 +85,19 @@
               font-size: 30px;
             }
          } 
+         .actions {
+             a {
+                 text-transform: uppercase;                             
+                 text-decoration: underline;
+                 color: white;
+                 font-weight: 400;
+                 font-size: 14px;
+                 margin-right: 10px;
+             }
+             .cancel-alarm {
+                color: #ff6969;
+             }
+         }
          .circle-progress {
             width: 20px;
             height: 20px;
@@ -91,13 +118,6 @@
 
     this.on('unmount', () => {
     });
-
-    this.on('update', () => {
-        console.log('alarm-time update');
-    })
-    this.on('updated', () => {
-        console.log('alarm-time updated');
-    })
 
     changeTime(e) {
         console.log("Change time!",opts.data.time,this.refs.time);
