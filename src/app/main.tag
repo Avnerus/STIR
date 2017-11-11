@@ -77,6 +77,7 @@
             width: 100%;
             color: white !important;
             line-height: 20px;
+            border-radius: 0;
         }
        .btn:hover, .btn.btn-flat:hover {
          background: white !important;
