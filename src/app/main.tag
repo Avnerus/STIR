@@ -26,7 +26,7 @@
     <style>
         body {
             font-family: 'Abel', Helvetica, sans-serif;
-            font-weight: 600;
+            font-weight: 400;
             color: white;
             background-color: #000;
         }
@@ -100,7 +100,6 @@
             margin: 0;
             min-height: 580px;
             p {
-                font-family: 'Roboto Condensed', Helvetica, sans-serif;
                 font-size: .9rem;
                 margin-bottom: 10px;
                 color: #d1d1d1;
