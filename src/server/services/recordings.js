@@ -139,7 +139,7 @@ export default class RecordingsService {
         .then(() => {
             return SoxUtil.mixBackingTrack(
                 'public/' + destinationPath,
-                'backingtracks/' + BACKING_TRACKS[targetAlarm.generatedFrom.big],
+                'backingtracks/' + BACKING_TRACKS[targetAlarm.generatedFrom.big5],
                 'public/' + mixPath
             )
         })

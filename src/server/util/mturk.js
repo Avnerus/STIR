@@ -6,7 +6,9 @@ class MTurkUtil {
     constructor() {
         this.mturk = new MTurk({
             region: 'us-east-1',
-            endpoint: process.env['MTURK_ENDPOINT']
+            endpoint: process.env['MTURK_ENDPOINT'],
+            accessKeyId: process.env['MTURK_ACCESS_KEY_ID'],
+            secretAccessKey: process.env['MTURK_SECRET_ACCESS_KEY']
         });
         this.params = {
           AssignmentDurationInSeconds: 60 * 30, /* required */
