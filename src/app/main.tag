@@ -235,6 +235,7 @@
             position: absolute;
             bottom: 60px;
             width: 100%;
+            padding-top: 20px;
         }
         #credits-link {
             display: flex;
