@@ -113,7 +113,10 @@
                 page("/rouser/alarm/" + this.state.rouser.currentAlarm._id + "/mix")
             }
         } else {
-            console.error(this.state.rouser.currentAlarm.recording.message);
+            console.log("Error", this.state.rouser.currentAlarm.recording.message);
+            this.loading = false;
+            this.update();
+            phonon.alert(this.state.rouser.currentAlarm.recording.message, "Oops", false, "Ok");
         }
     }
  </script>
