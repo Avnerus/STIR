@@ -109,10 +109,8 @@
         }
         h1 {
             font-family: 'Abel', Helvetica, sans-serif;
-            text-transform: uppercase;
-            font-size: 1.4rem;
-            letter-spacing: .1rem;
-            margin-top: 10px;
+            font-size: 1.7rem;
+            letter-spacing: .03rem;
             font-weight: 600;
             line-height: unset;
             margin: unset;
@@ -259,7 +257,7 @@
                 bottom: 15px;
             }
             position: absolute;
-            bottom: 60px;
+            bottom: 30px;
             width: 100%;
             padding-top: 20px;
 
