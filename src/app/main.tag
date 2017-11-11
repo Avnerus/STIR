@@ -238,6 +238,12 @@
             bottom: 60px;
             width: 100%;
             padding-top: 20px;
+            .dot {
+              height: 10px!important;
+              width: 10px!important;
+              margin: 4px!important;
+              border: 2px solid white!important;
+            }
         }
         #credits-link {
             display: flex;
