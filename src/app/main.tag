@@ -261,7 +261,13 @@
                 color: white;
                 letter-spacing: 1px;
                 text-decoration: underline;
-                font-weight: 400;
+                font-weight: 600;
+                font-family: Abel;
+                font-size: .8rem;      
+           }
+           
+           a:hover {
+                color: blue;
            }
         }
         #prompt {
@@ -358,8 +364,10 @@
                 .skip-link {
                     position: absolute;
                     bottom: 8%;
-                    font-size: 22px;
-                    font-weight: bold;
+                    font-size: 1.1rem;
+                    font-family: Abel;
+                    font-weight: 600;
+                    border-bottom: 1px solid #333;
                     color: #333;
                 }
                 
