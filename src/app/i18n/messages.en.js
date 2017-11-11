@@ -41,7 +41,7 @@ const Messages =
     WAKE_he: 'Wake him',
     WAKE_she: 'Wake her',
     WAKE_they: 'Wake them',
-    SLEEPER_NOTIFY: 'Hi {name}, this is a reminder from Stir. You have a wake-up call set for {time, time, short}. To ensure you wake up to your message, turn your ringer up and make sure DO NOT DISTURB is disabled.',
+    SLEEPER_NOTIFY: 'Hi {name}, this is a reminder from Stir. You have a wake-up message set for {time, time, short}. To ensure you wake up to your message, turn your ringer up and make sure DO NOT DISTURB is disabled.',
     ROUSER_NOTIFY: 'Hi {name}, this is Stir. There are new Sleepers in need of a wake-up message! Go now to {url}',
     HOME_SUGGEST_TAP: 'Tap',
     HOME_SUGGEST: 'to get a dedicated {role} app on your home screen!',
