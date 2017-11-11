@@ -100,7 +100,8 @@
             margin: 0;
             min-height: 580px;
             p {
-                font-size: .9rem;
+                font-family: 'Abel', Helvetica, sans-serif;
+                font-size: 1rem;
                 margin-bottom: 10px;
                 color: #d1d1d1;
                 margin-top: 16px;
