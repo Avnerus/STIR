@@ -99,20 +99,20 @@
             margin: 0;
             min-height: 580px;
             p {
-                font-family: Abel, Helvetica;
-                font-size: 1rem;
+                font-family: 'Roboto Condensed', Helvetica, sans-serif;
+                font-size: .9rem;
                 margin-bottom: 10px;
-                color: #ebebeb;
+                color: #d1d1d1;
                 margin-top: 16px;
             }
         }
         h1 {
             font-family: 'Abel', Helvetica, sans-serif;
             text-transform: uppercase;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             letter-spacing: .1rem;
             margin-top: 10px;
-            font-weight: 700;
+            font-weight: 600;
             line-height: unset;
             margin: unset;
             margin-bottom: 13.9333px;
@@ -192,6 +192,7 @@
         }
         .disclaimer, .disclaimer > p  {
             color: #c2f442;
+            font-size: .7rem;
             margin-top: 30px;
         }
 
@@ -237,6 +238,12 @@
             bottom: 60px;
             width: 100%;
             padding-top: 20px;
+            .dot {
+              height: 10px!important;
+              width: 10px!important;
+              margin: 4px!important;
+              border: 2px solid white!important;
+            }
         }
         #credits-link {
             display: flex;
