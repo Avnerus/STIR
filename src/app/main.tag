@@ -275,18 +275,18 @@
         }
         #prompt {
             .intro {
-                font-size: 18px;
+         
                 margin-bottom: 10px;
             }        
             p {
-                font-size: 16px;
+                font-size: 1rem;
             }
             ul {
                 padding-left: 10px;
                 margin-top: 0;
 
                 li {
-                    font-size: 16px;
+                    font-size: 1rem;
                     margin-bottom: 5px;
                 }
 
