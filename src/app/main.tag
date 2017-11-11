@@ -360,9 +360,9 @@
                 
                 .play-button {
                     position: absolute;
-                    width: 80px;
-                    height: 80px;
-                    background-color: rgba(0,0,0,.4);
+                    width: 90px;
+                    height: 90px;
+                    background-color: rgba(0,0,0,.6);
                     display: flex;
                     border-radius: 50%;
                     justify-content: center;
@@ -370,7 +370,7 @@
                     
                     i {
                         color: #fff;
-                        font-size: 40px;
+                        font-size: 60px;
                     }
                 }
 
