@@ -192,6 +192,7 @@
         }
         .disclaimer, .disclaimer > p  {
             color: #c2f442;
+            font-size: .7rem;
             margin-top: 30px;
         }
 
