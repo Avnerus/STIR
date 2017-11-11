@@ -360,9 +360,9 @@
                 
                 .play-button {
                     position: absolute;
-                    width: 100px;
-                    height: 100px;
-                    background-color: rgba(0,0,0,.6);
+                    width: 80px;
+                    height: 80px;
+                    background-color: rgba(0,0,0,.4);
                     display: flex;
                     border-radius: 50%;
                     justify-content: center;
@@ -370,13 +370,13 @@
                     
                     i {
                         color: #fff;
-                        font-size: 72px;
+                        font-size: 40px;
                     }
                 }
 
                 .skip-link {
                     position: absolute;
-                    bottom: 8%;
+                    bottom: 5%;
                     font-size: .9rem;
                     font-family: Abel;
                     font-weight: 600;
