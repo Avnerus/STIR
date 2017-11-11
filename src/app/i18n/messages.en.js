@@ -52,7 +52,7 @@ const Messages =
     ROUSER_WELCOME_4: 'Thanks for joining our global network of Rousers giving people a fresh start to their day.',
     WELCOME: 'Welcome',
     BEGIN: 'Begin',
-    SLEEPER_SUMMARY_DESCRIPTION: 'Hi {name}, we hope you enjoyed your personalzied wake-up message from Stir.',
+    SLEEPER_SUMMARY_DESCRIPTION: 'Hi {name}, we hope you enjoyed your personalized wake-up message from Stir.',
     SLEEPER_SUMMARY_FAILED: 'Hi {name}, Sorry we couldn\'t deliver your wake-up message',
     BE_A_ROUSER: 'Want to be a Rouser?',
     SLEEPER_SUMMARY_MESSAGE: 'Good morning, {name}! Check out your wake-up summary from Stir at {url}',
