@@ -7,7 +7,7 @@
                     <p><formatted-message id='HOME_EXPLANATION'/></p>
                     <p><formatted-message id='HOME_CHOICE1'/></p>
                     <p><formatted-message id='HOME_CHOICE2'/></p>
-                    <h1><formatted-message id='HOME_ACTION'/></h1>
+                    <h1 class="second"><formatted-message id='HOME_ACTION'/></h1>
                     <a class="btn primary" href="/sleeper/alarms" click="{refreshSleeper}">
                         <formatted-message id='SLEEPER'/>
                     </a>
@@ -25,7 +25,7 @@
 
     <style>
         body {
-            font-family: 'Roboto Condensed', Helvetica, sans-serif;
+            font-family: 'Abel', Helvetica, sans-serif;
             font-weight: 400;
             color: white;
             background-color: #000;
@@ -77,6 +77,7 @@
             width: 100%;
             color: white !important;
             line-height: 20px;
+            border-radius: 0;
         }
        .btn:hover, .btn.btn-flat:hover {
          background: white !important;
@@ -99,8 +100,8 @@
             margin: 0;
             min-height: 580px;
             p {
-                font-family: 'Roboto Condensed', Helvetica, sans-serif;
-                font-size: .9rem;
+                font-family: 'Abel', Helvetica, sans-serif;
+                font-size: 1rem;
                 margin-bottom: 10px;
                 color: #d1d1d1;
                 margin-top: 16px;
@@ -108,17 +109,18 @@
         }
         h1 {
             font-family: 'Abel', Helvetica, sans-serif;
-            text-transform: uppercase;
-            font-size: 1.4rem;
-            letter-spacing: .1rem;
-            margin-top: 10px;
+            font-size: 1.7rem;
+            letter-spacing: .03rem;
             font-weight: 600;
-            line-height: unset;
-            margin: unset;
+            line-height: 1.2;
             margin-bottom: 13.9333px;
             margin-left: 0px;
             margin-right: 0px;
             margin-top: 13.9333px;
+        }
+        
+        h1.second {
+            margin-top: 30px;
         }
 
         a {
@@ -191,9 +193,10 @@
 
         }
         .disclaimer, .disclaimer > p  {
+            font-family: Roboto Condensed, Helvetica, sans-serif;
             color: #c2f442;
             font-size: .7rem;
-            margin-top: 30px;
+            margin-top: 15px;
         }
 
         .dialog {
@@ -253,7 +256,7 @@
                 bottom: 15px;
             }
             position: absolute;
-            bottom: 60px;
+            bottom: 30px;
             width: 100%;
             padding-top: 20px;
 
@@ -261,23 +264,29 @@
                 color: white;
                 letter-spacing: 1px;
                 text-decoration: underline;
-                font-weight: 400;
+                font-weight: 600;
+                font-family: Abel;
+                font-size: .8rem;      
+           }
+           
+           a:hover {
+                color: blue;
            }
         }
         #prompt {
             .intro {
-                font-size: 18px;
+         
                 margin-bottom: 10px;
             }        
             p {
-                font-size: 16px;
+                font-size: 1rem;
             }
             ul {
                 padding-left: 10px;
                 margin-top: 0;
 
                 li {
-                    font-size: 16px;
+                    font-size: 1rem;
                     margin-bottom: 5px;
                 }
 
@@ -341,6 +350,10 @@
                     width: 100%;
                     text-align: center;
                 }
+                
+                .video-title {
+                  display: none;
+                }
 
                 a {
                     width: 100%;
@@ -349,18 +362,29 @@
                 
                 .play-button {
                     position: absolute;
+                    width: 90px;
+                    height: 90px;
+                    background-color: rgba(0,0,0,.6);
+                    display: flex;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    
                     i {
-                        color: #333;
-                        font-size: 72px;
+                        color: #fff;
+                        font-size: 60px;
                     }
                 }
 
                 .skip-link {
                     position: absolute;
-                    bottom: 8%;
-                    font-size: 22px;
-                    font-weight: bold;
+                    bottom: 5%;
+                    font-size: .9rem;
+                    font-family: Abel;
+                    font-weight: 600;
+                    text-decoration: underline;
                     color: #333;
+                    text-transform:uppercase;
                 }
                 
             }

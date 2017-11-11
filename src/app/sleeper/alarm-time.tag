@@ -32,7 +32,8 @@
  <style>
      alarm-time {
          .alarm-time {
-            font-size: 28px;
+            font-size: 44px;
+            color: white;
             margin-right: 5px;
          }
          .alarm-time.verifying {
@@ -51,14 +52,13 @@
             color: lightblue;         
          }
          .alarm {
-            background-color: #333;
+            background-color: #232323;
             margin-top: 15px;
             padding: 20px;
-            margin-right: 20px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            border-radius: 5px;
+            border-radius: 0px;
          }
          .alarm-container {
             display: flex;

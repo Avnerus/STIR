@@ -9,16 +9,16 @@
                 <p><formatted-message id='ROUSER_WELCOME_3'/></p>
                 <p><formatted-message id='ROUSER_WELCOME_4'/></p>
             </div>
-            <div class="disclaimer">
-                <p>
-                    <formatted-message id='ROUSER_WELCOME_DISCLAIMER'/>
-                </p>
-            </div>
             <div class="action">
                 <button class="btn raised primary" click="{begin}">
                     <formatted-message id='BEGIN'/>
                 </a>
             </div>
+             <div class="disclaimer">
+                <p>
+                    <formatted-message id='ROUSER_WELCOME_DISCLAIMER'/>
+                </p>
+            </div>           
       </div>
  </div>
  <style>
