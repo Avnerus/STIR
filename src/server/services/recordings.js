@@ -9,7 +9,7 @@ import TwiMLService from './twiml'
 
 const BACKING_TRACKS = {
     big5_agreeableness: 'agreeableness.wav',
-    big5_conscientiousness: '_2014_.wav',
+    big5_conscientiousness: 'conscientiousness.wav',
     big5_extraversion: 'extraversion.wav',
     big5_neuroticism: 'neuroticism.wav',
     big5_openness: 'openness.wav'
