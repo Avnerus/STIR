@@ -7,7 +7,7 @@
                     <p><formatted-message id='HOME_EXPLANATION'/></p>
                     <p><formatted-message id='HOME_CHOICE1'/></p>
                     <p><formatted-message id='HOME_CHOICE2'/></p>
-                    <h1><formatted-message id='HOME_ACTION'/></h1>
+                    <h1 class="second"><formatted-message id='HOME_ACTION'/></h1>
                     <a class="btn primary" href="/sleeper/alarms" click="{refreshSleeper}">
                         <formatted-message id='SLEEPER'/>
                     </a>
@@ -119,6 +119,10 @@
             margin-left: 0px;
             margin-right: 0px;
             margin-top: 13.9333px;
+        }
+        
+        h1.second {
+            margin-top: 30px;
         }
 
         a {
