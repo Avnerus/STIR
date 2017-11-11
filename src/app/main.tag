@@ -25,8 +25,8 @@
 
     <style>
         body {
-            font-family: 'Roboto Condensed', Helvetica, sans-serif;
-            font-weight: 400;
+            font-family: 'Abel', Helvetica, sans-serif;
+            font-weight: 600;
             color: white;
             background-color: #000;
         }
