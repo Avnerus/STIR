@@ -58,8 +58,11 @@
         try {
             console.log("Verify code " + this.refs.code.value);
             let result = await this.state.auth.verifyCode(this.refs.code.value);
-            console.log("Verify code result status: " + result.status);
+            console.log("Verify code result : " , result);
             if (result.status == "success") {
+                if (result.refresh) {
+                    this.state.sleeper.invalidateAlarms();                
+                }
                 await this.RouteUtil.routeSignup();
             } else {
                 throw new Error("Internal error");
