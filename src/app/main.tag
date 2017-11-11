@@ -112,8 +112,7 @@
             font-size: 1.7rem;
             letter-spacing: .03rem;
             font-weight: 600;
-            line-height: unset;
-            margin: unset;
+            line-height: 1.2;
             margin-bottom: 13.9333px;
             margin-left: 0px;
             margin-right: 0px;
