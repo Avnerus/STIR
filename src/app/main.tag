@@ -246,6 +246,7 @@
             position: absolute;
             bottom: 60px;
             width: 100%;
+            padding-top: 20px;
 
            a {
                 color: white;

@@ -20,9 +20,11 @@
              display: flex;
              justify-content: center;
              margin-top: 50px;
+             flex-wrap: wrap;
 
              span {
                 padding-right: 15px;
+                padding-bottom: 15px;
                 b {
                     display: block;
                 }
