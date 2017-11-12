@@ -8,7 +8,7 @@
                 </a>
                 <a href="/">
                     <formatted-message id="STIR"/>
-                    <span class="role" if="{state.main.role != null}"> | </span>
+                    <span class="role" if="{state.main.role != null}">  |  </span>
                     <formatted-message class="role" if="{state.main.role == 'sleeper'}" id="SLEEPER"/>
                     <formatted-message class="role" if="{state.main.role == 'rouser'}" id="ROUSER"/>
                     <formatted-message class="role" if="{opts.section}" id="{opts.section}"/>
@@ -19,6 +19,10 @@
 </header>
  <style>
  header {
+ 
+    h1.navtext {
+        font-size:1.2rem;
+    }
      span.role, .role span {
         color: #2e2e2e;
      }
