@@ -1,8 +1,6 @@
 import TwilioUtil from '../util/twilio'
 import STIRError from '../../app/stir-error'
-import Session from '../models/session-persistent'
 import Alarm from '../models/alarm'
-import {encrypt} from './encrypt-user'
 
 export default class UserContactService {
     setup(app) {
@@ -42,30 +40,28 @@ export default class UserContactService {
 
     create(data,params) {
         console.log("set user contact", data,params);
-        let session = Session.getFor(params.user._id);
 
-        if (data.code && session && session.contact && session.contact.verificationCode) {
-            return this.verify(data,params,session.contact)
+        if (data.code && params.user.verificationCode) {
+            return this.verify(data,params,params.user)
         } else {
-            return this.generateVerficationCode(data,params);
+            return this.generateVerficationCode(data,params, data.phone);
         }
     }
 
-    generateVerficationCode(data, params) {
+    generateVerficationCode(data, params, phone) {
         if (!data.phone) {
             return Promise.reject(new Error("Data does not contain a phone number"));
         }
         data.verificationCode = this.get4DigitCode();
 
-        // Save in the session
-        Session.setFor(params.user._id, {contact: data});
+        data['status.phoneValidated'] = false;
         
-        return this.app.service("users").patch(params.user._id, {'status.phoneValidated' : false})
+        return this.app.service("users").patch(params.user._id, data)
         .then((result) => {
            console.log("User updated sending text");
            return TwilioUtil.client.messages.create({
                 body: 'Your STIR code is ' + data.verificationCode,
-                to: data.phone,  
+                to: phone,  
                 from: TwilioUtil.TWILIO_PHONE_NUMBER
            })
         })
@@ -90,7 +86,7 @@ export default class UserContactService {
             let refresh = false;
 
             return this.app.service("users").find({query: {
-                phone: encrypt(contact.phone),
+                phone: contact.phone,
                 _id: {$ne: params.user._id}
             }})
             .then((result) => {
@@ -123,8 +119,7 @@ export default class UserContactService {
                 }
             })
             .then((result) => {
-                contact['status.phoneValidated'] = true;
-                return this.app.service("users").patch(params.user._id, contact)
+                return this.app.service("users").patch(params.user._id, {'status.phoneValidated': true})
             })
             .then((result) => {
                console.log("Patched contact", result);
