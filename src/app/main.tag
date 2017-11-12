@@ -211,6 +211,15 @@
             background-color: transparent;
 
         }
+        .circle-progress.active {
+            .spinner {
+                border-top-color: #ffffff;
+                border-right-color: #ffffff;
+                border-bottom-color: #ffffff;
+                border-left-color:  #0084e7;
+
+            }
+        }
         .notification {
             font-size: 16px;
             line-height: unset;
