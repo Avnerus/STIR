@@ -3,6 +3,8 @@ import crypto from 'crypto'
 const ALGORITHM = 'aes-256-ctr'
 const PASSWORD = process.env.AES_PASSWORD;
 
+// TODO: createCipheriv should be used
+
 export function encryptUser(hook) {
     if (hook.data.phone) {
         hook.data.phone = encrypt(hook.data.phone);
