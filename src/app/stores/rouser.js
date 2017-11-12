@@ -37,6 +37,7 @@ export default class RouserStore extends Store {
     }
 
     invalidateAlarms() {
+        console.log("Rouser refresh");
         this.alarms = null;
     }
 

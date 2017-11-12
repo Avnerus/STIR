@@ -23,7 +23,7 @@
               >
               </alarm-time>
               <div if="{state.sleeper.alarms && state.sleeper.alarms.length > 0}"class="action">
-                <a class="btn raised primary" href="/rouser/alarms">
+                <a class="btn raised primary" href="/rouser/alarms" click="{refreshRouser}">
                     <formatted-message id='BE_A_ROUSER'/>
                 </a>
               </div>
@@ -197,6 +197,9 @@
             }
         });
         confirm.on('cancel', function() {} );
+    }
+    refreshRouser(e) {
+        this.state.rouser.invalidateAlarms();            
     }
  </script>
 </sleeper-alarms>

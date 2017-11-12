@@ -8,6 +8,8 @@ import {IntlMixin} from 'riot-intl'
 import {BaseI18n, withTimezone} from '../../app/i18n/i18n'
 import DummyAlarms from '../models/dummy-alarms'
 import TwiMLService from './twiml'
+import AuthSettings from '../auth-settings'
+import BitlyClient from 'bitly';
 
 let ALARMS_IN_QUEUE = 1;
 const FIELDS_TO_RETURN = "_id time name prompt locales country pronoun recording dummy"
@@ -19,6 +21,7 @@ const MTURK_TRIGGER_HOURS = 3;
 const ROUSERS_TO_NOTIFY = 2;
 const TOO_EARLY_HOURS = 8;
 const CALL_RETRY_TIMEOUT = 1000 * 90;
+const SUMMARY_SEND_INTERVAL_MS = 1000 * 60 * 2;
 
 export default class AlarmManager {
     constructor() {
@@ -36,6 +39,8 @@ export default class AlarmManager {
         setInterval(() => {
             this.tick();
         },1000);
+
+        this.bitly = BitlyClient(process.env.BITLY_ACCESS_TOKEN);
     }
     getTooEarlyHours() {
         return TOO_EARLY_HOURS;
@@ -119,16 +124,13 @@ export default class AlarmManager {
                 return Promise.resolve({})
                 .then(() => {
                     if (alarm.recording && alarm.recording.finalized) {
-                        return this.app.service('users').get(alarm.userId)
-                        .then((user) => {
-                            let message = IntlMixin.formatMessage('ALARM_FAILED_NOTIFY',{
-                                name: alarm.name,
-                                time: new Date(alarm.time),
-                                url: process.env.SERVER_URL + "/sleeper/alarm/" + alarm._id + "/summary",
-                            },withTimezone(alarm.timezone),alarm.userLocale);
-
-                            return this.messageUser(alarm.userId, message);
-                        })
+                        return this.sendAlarmSummary(
+                            alarm._id,
+                            alarm.userId,
+                            'ALARM_FAILED_NOTIFY',
+                            0,
+                            new Date(alarm.time)
+                        )
                     } else {
                         return ;
                     }
@@ -187,32 +189,55 @@ export default class AlarmManager {
         }
         if (alarm.recording && alarm.recording.finalized) {
             console.log("Will send summary message");
-            this.sendAlarmSummary(alarm._id, alarm.userId);
-        } else {
-            // this.app.service('/user/contact').clearData(alarm.userId);
-        }
+            this.sendAlarmSummary(
+                alarm._id, 
+                alarm.userId, 
+                'SLEEPER_SUMMARY_MESSAGE', 
+                SUMMARY_SEND_INTERVAL_MS, 
+                new Date(alarm.time)
+            );
+        } 
     }
-    sendAlarmSummary(alarmId, userId) {
+    sendAlarmSummary(alarmId, userId, messageId, timeout, time) {
         // In 2 minutes..
         setTimeout(() => {
-            console.log("Sending summary message");
+            console.log("Sending summary message in " + timeout + "ms");
+            let url = process.env.SERVER_URL + "/sleeper/alarm/" + alarmId + "/summary";
+            let targetUser;
+
             this.app.service('users').get(userId)
             .then((user) => {
-                let message = IntlMixin.formatMessage('SLEEPER_SUMMARY_MESSAGE',{
-                    url: process.env.SERVER_URL + "/sleeper/alarm/" + alarmId + "/summary",
-                    name: user.name
-                },BaseI18n,user.locale);
+                targetUser = user;
+                // Create token for the user to attach to the url
+                return this.app.passport.createJWT({userId: user._id}, AuthSettings);
+            })
+            .then((accessToken) => {
+                console.log("Access token:", accessToken);
+                // Shortening url
+                return this.bitly.shorten(url + '?accessToken=' + accessToken)
+                .then((shortUrl) => {
+                    console.log("Short url", shortUrl.data.url);
+                    url = shortUrl.data.url;
+                })
+                .catch((err) => {
+                    console.log("Error shortening url!", err);
+                })
+            })
+            .then(() => {
+                let message = IntlMixin.formatMessage(messageId, {
+                    url: url,
+                    name: targetUser.name,
+                    time: time
+                },BaseI18n,targetUser.locale);
                 return this.messageUser(userId, message);
             })
             .then((result) => {
                 console.log("Sent");
-                //return this.app.service('/user/contact').clearData(userId);
             })
             .catch((err) => {
                 console.log("Error sending alarm summary!", err);
-                //this.app.service('/user/contact').clearData(userId);
             })
-        }, 1000 * 60 * 2);
+        }, timeout);
     }
 
     messageUser(id, message) {

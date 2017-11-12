@@ -11,15 +11,11 @@
             <p>Or you can be a sleeper yourself.</p>
        </div>
        <div class="action">
-            <a href="/rouser/alarms">
-                <button class="btn primary raised" click="{anotherSleeper}">
-                    <formatted-message id="ANOTHER_SLEEPER"/>
-                </button>
+            <a href="/rouser/alarms" class="btn primary" click="{refreshRouser}">
+                <formatted-message id="ANOTHER_SLEEPER"/>
             </a>
-            <a href="/sleeper/alarms">
-                <button class="btn primary raised">
+            <a href="/sleeper/alarms" class="btn primary raised" click="{refreshSleeper}">
                 <formatted-message id="BE_A_SLEEPER"/>
-                </button>
             </a>
         </div>
     </div>
@@ -32,15 +28,13 @@
     <script>
         import '../../common/stir-header.tag'
 
-        this.on('mount', () => {
-                    
-        });
+        refreshRouser(e) {
+            this.state.rouser.invalidateAlarms();            
+        }
 
-        this.on('unmount', () => {
+        refreshSleeper(e) {
+            this.state.sleeper.invalidateAlarms();            
+        }
 
-        });
-
-        this.on('ready', () => {
-        })
     </script>
 </rouser-alarm-thankyou>

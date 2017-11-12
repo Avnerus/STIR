@@ -54,7 +54,6 @@ const AlarmSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
-mongoose.set('debug', true)
 AlarmSchema.index({ userId: 1, time: -1  }, {unique: true, partialFilterExpression: { deleted: false }});
 
 const Model = mongoose.model('Alarm', AlarmSchema);

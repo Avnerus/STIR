@@ -373,6 +373,9 @@ app.service('/alarms/admin').hooks({
 });
 
 mongoose.Promise = global.Promise;
+if (process.env.NODE_ENV == 'development') {
+    mongoose.set('debug', true)
+}
 mongoose.connect(process.env['MONGO_CONNECTION'], {useMongoClient: true})
 .then(() => {
     return createFixtures(app);
