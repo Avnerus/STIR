@@ -34,7 +34,13 @@
  <style>
      alarm-time {
          .alarm-time {
-            font-size: 40px;
+            font-size: 44px;
+            @media (max-width: 360px) {
+                font-size: 42px;
+            }
+            @media (max-width: 340px) {
+                font-size: 36px;
+            }
             color: white;
             margin-right: 5px;
          }
@@ -83,7 +89,13 @@
          .alarm-action {
             color: #ff6969;
             i {
-              font-size: 36px;
+               font-size: 40px;
+               @media (max-width: 360px) {
+                    font-size: 36px;
+               }
+               @media (max-width: 345px) {
+                    font-size: 30px;
+               }
             }
          } 
          .actions {
