@@ -38,6 +38,7 @@ export default class RouteUtil {
                     false, 
                     "Ok"
                 );
+                this.state.sleeper.invalidateAlarms();
             } else {
                 phonon.alert(err.message, "Oops", false, "Ok");
             }
