@@ -2,7 +2,7 @@ import {S3} from 'aws-sdk';
 import fs from 'fs';
 
 const S3_VERSION='2006-03-01';
-const BUCKET_NAME = 'stir-assets';
+const BUCKET_NAME = process.env.S3_BUCKET_NAME;
 
 class S3Util {
     constructor() {
