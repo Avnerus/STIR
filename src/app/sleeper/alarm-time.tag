@@ -24,15 +24,17 @@
         <div show="{opts.verifying}" class="circle-progress active">
             <div class="spinner"></div>
         </div>
-        <a id="choose-time" class="alarm-action" if="{!opts.onCancel}" click="{changeTime}">
-            <i class="material-icons">arrow_drop_down</i>
-        </a>
+        <div if="{!opts.onCancel}" class="choose-time">
+            <a class="alarm-action" click="{changeTime}">
+                <i class="material-icons">arrow_drop_down</i>
+            </a>
+        </div>
     </article>
     <input ref="time" type="time" style="display:none;" change="{onTimeChange}" blur="{onTimeBlur}">
  <style>
      alarm-time {
          .alarm-time {
-            font-size: 44px;
+            font-size: 40px;
             color: white;
             margin-right: 5px;
          }
@@ -59,6 +61,7 @@
             flex-direction: row;
             align-items: center;
             border-radius: 0px;
+            justify-content: space-between;
          }
          .alarm-container {
             display: flex;
@@ -79,10 +82,8 @@
          }
          .alarm-action {
             color: #ff6969;
-            position: absolute;
-            right: 15%;
             i {
-              font-size: 30px;
+              font-size: 36px;
             }
          } 
          .actions {
@@ -101,7 +102,7 @@
          .circle-progress {
             width: 20px;
             height: 20px;
-            left: 20%;
+            position: unset;
          }
      }
  </style>
