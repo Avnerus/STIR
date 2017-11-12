@@ -56,11 +56,11 @@ export function authHook(hook) {
 export function authMiddleware(req,res,next) {
     try {
         console.log("Authentication middleware!", req.method, req.originalUrl)
-        if (!req.cookies[AuthSettings.cookie.name]) {
+        let accessToken = req.query.accessToken || req.cookies[AuthSettings.cookie.name];
+        if (!accessToken) {
             next();
         } else {
             console.log("Found token! verifying");
-            let accessToken = req.cookies[AuthSettings.cookie.name];
             verifyUser(accessToken, req.app)
             .then((result) => {
                 req.user = result;

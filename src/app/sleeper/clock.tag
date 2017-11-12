@@ -95,6 +95,11 @@
     this.on('ready', () => {
         console.log("Clock ready", this.state.auth.user.name);
         this.update();
+        if (phonon.device.os == "iOS" && this.state.auth.accessToken) {
+            window.history.replaceState(null, null, "/sleeper/alarms?accessToken=" + this.state.auth.accessToken);
+        }
+        this.UIUtil.addManifests('sleeper');
+
         if (this.state.sleeper.newAlarmTime) {
             let diff = this.TimeUtil.getDiff(new Date(this.state.sleeper.newAlarmTime));
             this.state.sleeper.newAlarmTime = null;
@@ -112,10 +117,6 @@
             if (this.UIUtil.suggest('SLEEPER')) {
                 this.state.auth.suggestedSleeperHome();
             }
-        }
-        let manifestLink = $('link[href="manifest.json"]');
-        if (manifestLink.length == 0) {
-            $('head').append('<link rel="manifest" href="/sleeper/manifest.json">');
         }
     })
 

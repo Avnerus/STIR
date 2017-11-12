@@ -1,6 +1,7 @@
 export default class UIUtil {
-    constructor(intl) {
+    constructor(state, intl) {
         this.intl = intl;
+        this.state = state;
     }
     showError(errorText) {
         phonon.alert(errorText, this.intl.formatMessage('ERROR_TITLE'), false, "Ok");
@@ -29,6 +30,27 @@ export default class UIUtil {
             return true;
         } else {
             return false;
+        }
+    }
+    addManifests(role) {
+        if (phonon.device.os == "iOS") {
+            let iphoneTitle = $('meta[name="apple-mobile-web-app-title"]');
+            let iphoneValue = this.intl.formatMessage('STIR') + ' - ' + this.intl.formatMessage(role.toUpperCase());
+            if (iphoneTitle.length == 0) {
+               $('head').append('<meta name="apple-mobile-web-app-title" content="' + iphoneValue + '">');
+            } else {
+                iphoneTitle.attr('content',iphoneValue);
+            }
+        }
+        else if (phonon.device.os == "Android") {
+            let manifestLink = $('link[rel="manifest"]');
+            let manifestValue = '/' + role + '/manifest.json';
+
+            if (manifestLink.length == 0) {
+                $('head').append('<link rel="manifest" href="' + manifestValue + '">');
+            } else {
+                manifestLink.attr('href', manifestValue);
+            }
         }
     }
 };

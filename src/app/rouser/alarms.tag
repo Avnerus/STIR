@@ -70,16 +70,16 @@
 
     this.on('ready', () => {
         this.update();
+        if (phonon.device.os == "iOS" && this.state.auth.accessToken) {
+            window.history.replaceState(null, null, "/rouser/alarms?accessToken=" + this.state.auth.accessToken);
+        }
+        this.UIUtil.addManifests('rouser');
+
         if (!MiscUtil.isStandaone() && this.state.auth.user && !this.state.auth.user.status.suggestedRouserHome) {
             if (this.UIUtil.suggest('ROUSER')) {
                 this.state.auth.suggestedRouserHome();
             }
         }
-        let manifestLink = $('link[href="manifest.json"]');
-        if (manifestLink.length == 0) {
-            $('head').append('<link rel="manifest" href="/rouser/manifest.json">');
-        }
-
         this.state.auth.refreshStatus();
     });
 

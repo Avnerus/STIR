@@ -141,6 +141,7 @@ page('*', function(ctx,next) {
         ctx.canonicalPath = ctx.canonicalPath.split('?')[0];
     }
     let path = ctx.canonicalPath.split('#')[0];
+    path = path.split('?')[0];
     if (ctx.page) {
         console.log("Phonon page: ", ctx.page);
         phonon.navigator().changePage(ctx.page);
@@ -168,7 +169,7 @@ IntlMixin.i18n = {
 }
 mixin('i18n', IntlMixin, true); 
 mixin('TimeUtil', {TimeUtil: TimeUtil}); 
-mixin('UIUtil', {UIUtil: new UIUtil(IntlMixin)}); 
+mixin('UIUtil', {UIUtil: new UIUtil(state, IntlMixin)}); 
 mixin('RouteUtil', {RouteUtil: new RouteUtil(state, IntlMixin)}); 
 
 page();
