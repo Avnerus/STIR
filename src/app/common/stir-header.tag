@@ -1,7 +1,7 @@
 <stir-header>
 <header class="header-bar">
     <div class="pull-left">
-        <h1>
+        <h1 class="navtext">
             <div class="header-wrapper">
                 <a href="" click="{goBack}">
                     <i if="{history && history.length > 0}" id="back-arrow" class="material-icons">arrow_back</i>
