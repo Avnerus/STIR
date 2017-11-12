@@ -195,7 +195,7 @@
         .disclaimer, .disclaimer > p  {
             font-family: Roboto Condensed, Helvetica, sans-serif;
             color: #c2f442;
-            font-size: .7rem;
+            font-size: .8rem;
             margin-top: 15px;
         }
 
