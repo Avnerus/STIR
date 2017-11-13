@@ -86,12 +86,15 @@
 		font-family: 'Source Sans Pro', sans-serif;
                 font-size: .9rem;
                 margin-bottom: 10px;
-                color: #000000;
+                color: #919191;
                 margin-top: 16px;
 }
 
 	.rouser-alarm-record #prompt {
-		font-family: Source Sans Pro;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: .9rem;
+                margin-bottom: 10px;
+                color: #000000;
 		border-radius:0px;
 		padding:20px;
 
