@@ -88,6 +88,11 @@
             border: none;
             color: white !important;
         }
+        div#social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
        .primary,.positive {
             background-color: #000 !important;        
         }
@@ -100,7 +105,7 @@
             margin: 0;
             min-height: 580px;
             p {
-                font-family: 'Abel', Helvetica, sans-serif;
+                font-family: Roboto, Helvetica, sans-serif;
                 font-size: 1rem;
                 margin-bottom: 10px;
                 color: #d1d1d1;
