@@ -26,8 +26,6 @@ import 'phonon/dist/js/components/forms'
 import 'phonon/dist/js/components/panels'
 import 'phonon/dist/js/components/notifications'
 
-console.log("Client loading!");
-
 window.IS_SERVER = false
 window.IS_CLIENT = true
 
@@ -102,7 +100,6 @@ Object.keys(state).forEach((key) => {
 });
 
 page('*', function(ctx,next) {
-    console.log("Set state in page context");
     ctx.appState = state;
     ctx.populateQueue = [];
     next();
@@ -111,7 +108,6 @@ page('*', function(ctx,next) {
 Routes.runRoutingTable(window.app);
 
 page('*', function(ctx,next) {
-    console.log("Page!", ctx);
     if (ctx.querystring && ctx.querystring.indexOf('lang') >= 0) {
         let newLocale = ctx.querystring.split('=')[1];
         if (SUPPORTED_LANGS[newLocale] && newLocale != ctx.appState.auth.locale) {
@@ -143,23 +139,19 @@ page('*', function(ctx,next) {
     let path = ctx.canonicalPath.split('#')[0];
     path = path.split('?')[0];
     if (ctx.page) {
-        console.log("Phonon page: ", ctx.page);
         phonon.navigator().changePage(ctx.page);
     }
     else if (path == "/") {
-         console.log("Phonon page main");
          phonon.navigator().changePage('main');
     } 
     else if (path.indexOf('auth/') == -1)  {
         let tagName = path.substring(1).replace(/\//g,"-");
-        console.log("Phonon change page to ", tagName);
         phonon.navigator().changePage(tagName);
     } else {
         next();
     }
 })
 
-console.log("Initial state", state);
 mixin({state: state}); // Global state mixin
 /* Locale */
 IntlMixin.i18n = {

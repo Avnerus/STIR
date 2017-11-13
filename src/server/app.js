@@ -396,6 +396,7 @@ app.use(function (req, res, next) {
         req.populateQueue = [];
         req.appState.auth.setAcessToken(req.accessToken);
         req.appState.auth.locale = req.locale;
+        req.appState.main.env = process.env.NODE_ENV;
         next();
     } catch (e) {
         console.log("Error in middleware!", e);

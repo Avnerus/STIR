@@ -510,7 +510,10 @@
         import MiscUtil from './util/misc'
 
         this.on('mount', async () => {
-            console.log("Main mounted");
+            console.log("STIR Main mounted: Environment: " + this.state.main.env);
+            if (IS_CLIENT && this.state.main.env == 'production') {
+                console.log = function() {};                
+            }
 
             if (IS_CLIENT && !this.state.auth.mturk) {
                if (!this.state.auth.accessToken) {

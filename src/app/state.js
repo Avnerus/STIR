@@ -14,7 +14,5 @@ export default class State {
         this.sleeper = new SleeperStore(this);
         this.rouser = new RouserStore(this);
         this.admin = new AdminStore(this);
-            
-        console.log("State Initialized");
     }
 };

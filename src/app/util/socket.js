@@ -6,7 +6,6 @@ class SocketUtil {
 
     }
     initWithUrl(url) {
-        console.log("Init feathers socket client", url);
         this.url = url;
         this.socket = io(url);
 

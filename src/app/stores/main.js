@@ -3,7 +3,6 @@ import Store from './store';
 export default class MainStore extends Store {
     constructor() {
         super();
-        console.log("Init MainStore");
         this.role = null;
     }     
 
