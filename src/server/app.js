@@ -367,7 +367,7 @@ app.service('/alarms/admin').hooks({
   },
   after: {
     find: [
-      pluck('_id', 'createdAt','time', 'name', 'recording.finalized', 'delivered', 'assignedTo', 'mturk', 'analyzed', 'recording.mixUrl','failed')
+      pluck('_id', 'createdAt','time', 'name', 'recording.finalized', 'delivered', 'assignedTo', 'mturk', 'analyzed', 'recording.mixUrl','failed','timezone')
     ]
   }
 });

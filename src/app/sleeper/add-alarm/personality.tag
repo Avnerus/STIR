@@ -3,18 +3,23 @@
   <div class="content">
     <div class="padded-full">
         <h1><formatted-message id='PERSONALITY_DESCRIPTION'/></h1>
-        <div id="social-buttons" class="row">
-          <a href="/auth/facebook" class="btn primary raised">
-            <formatted-message id='CONNECT_FACEBOOK'/>
-          </a>
-          <a href="/auth/twitter" class="btn primary raised">
-            <formatted-message id='CONNECT_TWITTER'/>
-          </a>
+        <div show="{!loading}">
+            <div id="social-buttons" class="row">
+              <a href="/auth/facebook" class="btn primary raised">
+                <formatted-message id='CONNECT_FACEBOOK'/>
+              </a>
+              <a href="/auth/twitter" class="btn primary raised">
+                <formatted-message id='CONNECT_TWITTER'/>
+              </a>
+            </div>
+            <div class="row">
+                <a id="questions-link" href="/sleeper/alarms/add/questions">
+                    <formatted-message id='NOT_SOCIAL'/>
+                </a>
+            </div>
         </div>
-        <div class="row">
-            <a id="questions-link" href="/sleeper/alarms/add/questions">
-                <formatted-message id='NOT_SOCIAL'/>
-            </a>
+        <div show="{ loading }" class="circle-progress center active">
+           <div class="spinner"></div>
         </div>
         <div class="disclaimer">
             </p><formatted-message id='PERSONALITY_DISCLAIMER_1'/></p>
@@ -28,9 +33,6 @@
       <div class="stepper-container">
           <stepper size="{state.sleeper.getSteps()}" current="2"></stepper>
       </div>
-      <div show="{ loading }" class="circle-progress center active">
-        <div class="spinner"></div>
-     </div>
   </div>
   
  <style>
@@ -56,7 +58,7 @@
 
          .circle-progress.active {
              position: relative;
-             top: -110px;
+             top: 0;
          }
      }
  </style>
@@ -123,9 +125,14 @@
                         this.state.auth.setUserName(analysisStatus.userName);
                         this.state.sleeper.currentAlarm.name = analysisStatus.userName;
                         this.validateCheck();
+                        setTimeout(() => {
+                            this.update();
+                        },500);
                    } else {
                         throw new Error(analysisStatus);
                    }
+                } else {
+                    this.update();
                 }
             }
 
@@ -134,8 +141,8 @@
                 this.state.sleeper.pendingFacebook = false;
                 this.loading = false;
                 this.showError(err);
+                this.update();
             }
-            this.update();
         }
     })
 

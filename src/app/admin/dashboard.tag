@@ -10,6 +10,7 @@
             <thead>
                 <th>Name</th>
                 <th>Time</th>
+                <th>Timezone</th>
                 <th>Analyzed</th>
                 <th>Assigned to</th>
                 <th>Recorded</th>
@@ -22,6 +23,7 @@
                 <tr each={ state.admin.alarms }>
                     <td>{name}</td>
                     <td>{time}</td>
+                    <td>{timezone}</td>
                     <td>{analyzed}</td>
                     <td>{mturk? "MTURK" : assignedTo}</td>
                     <td>{recording.finalized}</td>
