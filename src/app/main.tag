@@ -1,6 +1,6 @@
 <main data-page="true">
     <!--role ref="role"></role-->
-    <div if="{!state.main.role}">
+    <div if="{!state.main.role}" show="{state.auth.accessToken}">
             <div class="content">
                 <div class="padded-full">
                     <h1><formatted-message id='HOME_TITLE'/></h1>
@@ -509,7 +509,7 @@
 
         import MiscUtil from './util/misc'
 
-        this.on('mount', () => {
+        this.on('mount', async () => {
             console.log("Main mounted");
 
             if (IS_CLIENT && !this.state.auth.mturk) {
@@ -518,7 +518,8 @@
                     MiscUtil.initVideoPanel('#intro-panel');
                     phonon.panel('#intro-panel').open();                    
                }
-               this.state.auth.loginRest();
+               await this.state.auth.loginRest();
+               this.update();
             }
         });
 
