@@ -129,7 +129,8 @@ export default class AlarmManager {
                             alarm.userId,
                             'ALARM_FAILED_NOTIFY',
                             0,
-                            new Date(alarm.time)
+                            new Date(alarm.time),
+                            alarm.timezone
                         )
                     } else {
                         return ;
@@ -194,11 +195,12 @@ export default class AlarmManager {
                 alarm.userId, 
                 'SLEEPER_SUMMARY_MESSAGE', 
                 SUMMARY_SEND_INTERVAL_MS, 
-                new Date(alarm.time)
+                new Date(alarm.time),
+                alarm.timezone
             );
         } 
     }
-    sendAlarmSummary(alarmId, userId, messageId, timeout, time) {
+    sendAlarmSummary(alarmId, userId, messageId, timeout, time, timezone) {
         // In 2 minutes..
         setTimeout(() => {
             console.log("Sending summary message in " + timeout + "ms");
@@ -228,7 +230,7 @@ export default class AlarmManager {
                     url: url,
                     name: targetUser.name,
                     time: time
-                },BaseI18n,targetUser.locale);
+                },withTimezone(timezone),targetUser.locale);
                 return this.messageUser(userId, message);
             })
             .then((result) => {
