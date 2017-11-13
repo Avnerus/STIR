@@ -82,13 +82,13 @@
     async onAlarmTimeChange(item, time) {
         console.log("Alarm time change!",item,time);
         let alarmTime;
+        let prevTime = this.state.sleeper.currentAlarm.time;
         if (time) {
             alarmTime = this.TimeUtil.getAlarmTime(time);
             this.state.sleeper.currentAlarm.time = alarmTime;
         } else {
             alarmTime = this.state.sleeper.currentAlarm.time;
         }
-        let prevTime = this.state.sleeper.currentAlarm.time;
         this.verifying = true;
         this.update();
         try {
@@ -111,6 +111,7 @@
                     this.update();
                 });
                 confirm.on('cancel', () => {
+                    console.log("Swithc back to prev time!", prevTime);
                     item.time = this.state.sleeper.currentAlarm.time = prevTime;
                     this.verifying = false;
                     this.update();
