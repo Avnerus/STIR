@@ -9,7 +9,7 @@
                     <a href="/rouser/alarm/{_id}/record"><b>{name}</b></a>
                     <span>{country}</span>
                 </div>
-                <div>
+                <div class="sleeperbutton">
                         <a href="/rouser/alarm/{_id}/record">
                             <button class="btn primary raised">
                             <formatted-message id="{'WAKE_' + pronoun}"/>
@@ -40,6 +40,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            flex-wrap:wrap;
             justify-content : space-between;
 
             .details {
