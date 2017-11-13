@@ -6,7 +6,7 @@
             <p><formatted-message id='ROUSER_SLEEPER_EXPLANATION'/></p>
             <article class="sleeper" each={ state.rouser.alarms }>
                 <div class="details">
-                    <a href="/rouser/alarm/{_id}/record"><b>{name}</b></a>
+                    <a href="/rouser/alarm/{_id}/record">{name}</a>
                     <span class="country">{country}</span>
                 </div>
                 <div class="sleeperbutton">
