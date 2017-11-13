@@ -36,7 +36,7 @@
             background-color: #232323;
             margin-top: 15px;
             padding: 20px;
-            margin-right: 20px;
+            margin-top: 30px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -52,12 +52,13 @@
 			opacity: .5;
 			font-weight: 600;
 			letter-spacing: .05rem;
+			font-size:.8rem;
 		}
             }
             
              .details a {
 	          font-size: 1.7rem;
-	          font-weight: 400;
+	          font-weight: 400!important;
 	          line-height: 1.2;
 	          color: white;
 	         }
