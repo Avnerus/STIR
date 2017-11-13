@@ -48,7 +48,7 @@
                 flex-direction: column;
             }
             
-             details a {
+             .details a {
 	          font-size: 1.7rem;
 	          font-weight: 400;
 	          line-height: 1.2;
