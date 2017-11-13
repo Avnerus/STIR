@@ -21,12 +21,16 @@ export default {
                 return User.findOne({_id: twimlSession.pendingRecording.rouserId})
                 .then((user) => {
                     console.log("Found user ", user);
+                    let locale = user.locale || 'en';
+
                     if (req.body.RecordingSid) {
-                        response.say({}, "Thank you mister");
+                        response.play({}, process.env.S3_URL + "/audio/thanks_" + locale + ".mp3")
                     } else {
-                        response.say({}, "It's S T I R time! Record something for 10 seconds and then press hash");
+                        response.play({}, process.env.S3_URL + "/audio/record_" + locale + ".mp3")
+
                         response.record({
                                 timeout: 10,
+                                maxLength: 120,
                                 recordingStatusCallback: '/twiml/recording-status',
                                 finishOnKey: '#'
                         });
