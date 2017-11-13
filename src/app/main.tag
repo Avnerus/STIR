@@ -199,8 +199,9 @@
         .disclaimer, .disclaimer > p  {
             font-family: Roboto, Helvetica, sans-serif;
             color: #c2f442;
-            font-size: .8rem;
+            font-size: .7rem;
             margin-top: 15px;
+            opacity: .7;
         }
 
         .dialog {
