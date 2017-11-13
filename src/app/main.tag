@@ -105,7 +105,7 @@
             margin: 0;
             min-height: 580px;
             p {
-                font-family: Roboto, Helvetica, sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
                 font-size: .9rem;
                 margin-bottom: 10px;
                 color: #919191;
@@ -211,7 +211,7 @@
 
         }
         .disclaimer, .disclaimer > p  {
-            font-family: Roboto, Helvetica, sans-serif;
+           font-family: 'Source Sans Pro', sans-serif;
             color: gray;
             font-size: .7rem;
             margin-top: 15px;
@@ -308,7 +308,7 @@
             }        
             p {
                 font-size: 1rem;
-                font-family: Roboto, Helvetica, sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
             }
             ul {
                 padding-left: 10px;
