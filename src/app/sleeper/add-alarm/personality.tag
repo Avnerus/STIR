@@ -21,7 +21,7 @@
         <div show="{ loading }" class="circle-progress center active">
            <div class="spinner"></div>
         </div>
-        <div class="disclaimer">
+        <div class="disclaimer" show="{!loading}">
             </p><formatted-message id='PERSONALITY_DISCLAIMER_1'/></p>
             <p>
                 <formatted-message id='PRIVACY_DISCLAMER_1'/>
@@ -59,6 +59,7 @@
          .circle-progress.active {
              position: relative;
              top: 0;
+             margin-top: 30px;
          }
      }
  </style>
