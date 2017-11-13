@@ -47,6 +47,11 @@
                 display: flex;
                 flex-direction: column;
             }
+            
+            .sleeperbutton {
+               width: 100%;
+               margin-top: 15px;
+            }
 
             .btn {
                 margin-top: 0;
