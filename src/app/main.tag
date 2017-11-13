@@ -212,7 +212,7 @@
         }
         .disclaimer, .disclaimer > p  {
             font-family: Roboto, Helvetica, sans-serif;
-            color: #c2f442;
+            color: gray;
             font-size: .7rem;
             margin-top: 15px;
             opacity: .7;
