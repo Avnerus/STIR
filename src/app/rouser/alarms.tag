@@ -91,12 +91,24 @@
 }
 
 	.rouser-alarm-record #prompt {
+		border-radius:0px!important;
+		padding:20px!important;
+		
+		p {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: .9rem;
                 margin-bottom: 10px;
                 color: #000000;
-		border-radius:0px!important;
-		padding:20px;
+		font-weight: 400;
+		}
+		
+		ul li {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: .9rem;
+                margin-bottom: 10px;
+                color: #000000;
+		font-weight: 400;
+		}
 
 	}
  </style>
