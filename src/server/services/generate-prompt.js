@@ -56,6 +56,7 @@ function generatePrompt(app, alarm, analysis,  user, tryNumber) {
                 alarmData.debug = {
                     //watson: JSON.stringify(result.personality)  Legal constraint
                 }
+                console.log("Analyzed from ", result.personality.word_count + " words");
                 alarmData.generatedFrom = chooseTraits(result.personality, analysis, PromptLogics.en);
                 console.log("Generated From:", alarmData.generatedFrom);
 
