@@ -139,6 +139,20 @@
             background-color: transparent !important;
             color: white !important;
         }
+        
+        .intl-tel-input {
+	        width: 100%;
+        }
+
+    input#phone {
+	    font-size: 1.7rem;
+	    border-bottom: 2px solid gray;
+	    border-bottom-width: 2px!important;
+    }
+
+    input:invalid {
+	    border-color: #f44242!important;
+    }
     
         main {
             .title {
