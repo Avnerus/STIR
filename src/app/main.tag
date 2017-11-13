@@ -465,6 +465,19 @@
             }
 
         }
+	
+	ul#sortable {
+		li {
+			padding: 0px;
+			padding-bottom: 15px;
+			font-family: 'Source Sans Pro', sans-serif;
+
+			i {
+				padding-right:15px;
+			}
+		}
+
+}
     </style>
 
     <script>
