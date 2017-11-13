@@ -95,7 +95,7 @@
 		font-size: .9rem;
                 margin-bottom: 10px;
                 color: #000000;
-		border-radius:0px;
+		border-radius:0px!important;
 		padding:20px;
 
 	}
