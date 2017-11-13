@@ -46,6 +46,13 @@
             .details {
                 display: flex;
                 flex-direction: column;
+		
+		.country {
+			text-transform: uppercase;
+			opacity: .5;
+			font-weight: 600;
+			letter-spacing: .05rem;
+		}
             }
             
              .details a {
