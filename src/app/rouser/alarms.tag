@@ -73,6 +73,29 @@
             }
          }
      }
+     
+     rouser-alarm-record .notice {
+ 	font-family: 'Source Sans Pro', sans-serif;
+        font-size: .9rem;
+	margin-bottom: 10px;
+	color: #919191;
+	margin-top: 16px;
+}
+
+	.language-requirement {
+		font-family: 'Source Sans Pro', sans-serif;
+                font-size: .9rem;
+                margin-bottom: 10px;
+                color: #000000;
+                margin-top: 16px;
+}
+
+	.rouser-alarm-record #prompt {
+		font-family: Source Sans Pro;
+		border-radius:0px;
+		padding:20px;
+
+	}
  </style>
  <script>
     import '../common/stir-header.tag'
