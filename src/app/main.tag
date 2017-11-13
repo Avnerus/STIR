@@ -111,7 +111,6 @@
             font-family: 'Abel', Helvetica, sans-serif;
             font-size: 1.7rem;
             letter-spacing: .03rem;
-            font-weight: 600;
             line-height: 1.2;
             margin-bottom: 13.9333px;
             margin-left: 0px;
@@ -193,7 +192,7 @@
 
         }
         .disclaimer, .disclaimer > p  {
-            font-family: Roboto Condensed, Helvetica, sans-serif;
+            font-family: Roboto, Helvetica, sans-serif;
             color: #c2f442;
             font-size: .8rem;
             margin-top: 15px;
@@ -289,6 +288,7 @@
             }        
             p {
                 font-size: 1rem;
+                font-family: Roboto, Helvetica, sans-serif;
             }
             ul {
                 padding-left: 10px;
