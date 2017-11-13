@@ -7,7 +7,7 @@
             <article class="sleeper" each={ state.rouser.alarms }>
                 <div class="details">
                     <a href="/rouser/alarm/{_id}/record"><b>{name}</b></a>
-                    <span>{country}</span>
+                    <span class="country">{country}</span>
                 </div>
                 <div class="sleeperbutton">
                         <a href="/rouser/alarm/{_id}/record">
