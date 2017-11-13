@@ -6,10 +6,10 @@
             <p><formatted-message id='ROUSER_SLEEPER_EXPLANATION'/></p>
             <article class="sleeper" each={ state.rouser.alarms }>
                 <div class="details">
-                    <a href="/rouser/alarm/{_id}/record"><b>{name}</b></a>
-                    <span>{country}</span>
+                    <a href="/rouser/alarm/{_id}/record">{name}</a>
+                    <span class="country">{country}</span>
                 </div>
-                <div>
+                <div class="sleeperbutton">
                         <a href="/rouser/alarm/{_id}/record">
                             <button class="btn primary raised">
                             <formatted-message id="{'WAKE_' + pronoun}"/>
@@ -33,18 +33,39 @@
             margin-bottom: 10px;
          }
          .sleeper {
-            background-color: #333;
+            background-color: #232323;
             margin-top: 15px;
             padding: 20px;
-            margin-right: 20px;
+            margin-top: 30px;
             display: flex;
             flex-direction: row;
             align-items: center;
+            flex-wrap:wrap;
             justify-content : space-between;
 
             .details {
                 display: flex;
                 flex-direction: column;
+		
+		.country {
+			text-transform: uppercase;
+			opacity: .5;
+			font-weight: 600;
+			letter-spacing: .05rem;
+			font-size:.8rem;
+		}
+            }
+            
+             .details a {
+	          font-size: 1.7rem;
+	          font-weight: 400!important;
+	          line-height: 1.2;
+	          color: white;
+	         }
+            
+            .sleeperbutton {
+               width: 100%;
+               margin-top: 15px;
             }
 
             .btn {
@@ -52,6 +73,44 @@
             }
          }
      }
+     
+     rouser-alarm-record .notice {
+ 	font-family: 'Source Sans Pro', sans-serif;
+        font-size: .9rem;
+	margin-bottom: 10px;
+	color: #919191;
+	margin-top: 16px;
+}
+
+	.language-requirement {
+		font-family: 'Source Sans Pro', sans-serif;
+                font-size: .9rem;
+                margin-bottom: 10px;
+                color: #919191;
+                margin-top: 16px;
+}
+
+	.rouser-alarm-record #prompt {
+		border-radius:0px!important;
+		padding:20px!important;
+		
+		p {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: .9rem;
+                margin-bottom: 10px;
+                color: #000000;
+		font-weight: 400;
+		}
+		
+		ul li {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: .9rem;
+                margin-bottom: 10px;
+                color: #000000;
+		font-weight: 400;
+		}
+
+	}
  </style>
  <script>
     import '../common/stir-header.tag'

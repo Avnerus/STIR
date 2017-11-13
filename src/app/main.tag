@@ -88,6 +88,11 @@
             border: none;
             color: white !important;
         }
+        div#social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
        .primary,.positive {
             background-color: #000 !important;        
         }
@@ -100,10 +105,10 @@
             margin: 0;
             min-height: 580px;
             p {
-                font-family: 'Abel', Helvetica, sans-serif;
-                font-size: 1rem;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: .9rem;
                 margin-bottom: 10px;
-                color: #d1d1d1;
+                color: #919191;
                 margin-top: 16px;
             }
         }
@@ -111,7 +116,6 @@
             font-family: 'Abel', Helvetica, sans-serif;
             font-size: 1.7rem;
             letter-spacing: .03rem;
-            font-weight: 600;
             line-height: 1.2;
             margin-bottom: 13.9333px;
             margin-left: 0px;
@@ -135,6 +139,20 @@
             background-color: transparent !important;
             color: white !important;
         }
+        
+        .intl-tel-input {
+	        width: 100%;
+        }
+
+    input#phone {
+	    font-size: 1.7rem;
+	    border-bottom: 2px solid gray;
+	    border-bottom-width: 2px!important;
+    }
+
+    input:invalid {
+	    border-color: #f44242!important;
+    }
     
         main {
             .title {
@@ -193,10 +211,11 @@
 
         }
         .disclaimer, .disclaimer > p  {
-            font-family: Roboto Condensed, Helvetica, sans-serif;
-            color: #c2f442;
-            font-size: .8rem;
+           font-family: 'Source Sans Pro', sans-serif;
+            color: gray;
+            font-size: .7rem;
             margin-top: 15px;
+            opacity: .7;
         }
 
         .dialog {
@@ -289,6 +308,7 @@
             }        
             p {
                 font-size: 1rem;
+                font-family: 'Source Sans Pro', sans-serif;
             }
             ul {
                 padding-left: 10px;
@@ -445,6 +465,19 @@
             }
 
         }
+	
+	ul#sortable {
+		li {
+			padding: 0px;
+			padding-bottom: 15px;
+			font-family: 'Source Sans Pro', sans-serif;
+
+			i {
+				padding-right:15px;
+			}
+		}
+
+}
     </style>
 
     <script>

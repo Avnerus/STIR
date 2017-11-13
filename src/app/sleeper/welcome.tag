@@ -17,13 +17,14 @@
             <div class="row explanation">
                 <formatted-message id='SLEEPER_WELCOME_1'/>
             </div>
-            <div class="disclaimer">
-                <p><formatted-message id='SLEEPER_WELCOME_DISCLAIMER'/></p>
-            </div>
+
             <div class="action">
                 <button class="btn raised primary" click="{begin}">
                     <formatted-message id='BEGIN'/>
                 </a>
+            </div>
+            <div class="disclaimer">
+                <p><formatted-message id='SLEEPER_WELCOME_DISCLAIMER'/></p>
             </div>
       </div>
  </div>

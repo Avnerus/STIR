@@ -22,6 +22,7 @@
  
     h1.navtext {
         font-size:1.2rem;
+        font-weight: 400;
     }
      span.role, .role span {
         color: #2e2e2e;
