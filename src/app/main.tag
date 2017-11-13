@@ -106,9 +106,9 @@
             min-height: 580px;
             p {
                 font-family: Roboto, Helvetica, sans-serif;
-                font-size: 1rem;
+                font-size: .9rem;
                 margin-bottom: 10px;
-                color: #d1d1d1;
+                color: #919191;
                 margin-top: 16px;
             }
         }
