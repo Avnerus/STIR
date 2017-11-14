@@ -489,8 +489,9 @@
 
 .how-works p {
 	font-family: 'Oswald', Helvetica, sans-serif;
+	text-transform: uppercase;
 	font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: .15rem;
         line-height: 1.4;
 }
