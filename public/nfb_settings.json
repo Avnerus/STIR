@@ -8,36 +8,21 @@
     "share": {
         "en": {
             "title": "STIR",
-            "description": "My Description EN",
-            "tweet": "tweet description avec #hashtag and @onf EN",
-            "image": "/demo/img/default.png",
-            "video_url": "Video URL EN",
-            "video_secure_url": "video secure URL EN",
-            "video_type": "text/html",
-            "video_width": "200",
-            "video_height": "100"
+            "description": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "tweet": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "image": "/images/icons/rouser/icon-512x512.png"
         },
         "fr": {
-            "title": "STIR (FR)",
-            "description": "My Description FR",
-            "tweet": "tweet description avec #hashtag and @onf Fr",
-            "image": "/demo/img/default.png",
-            "video_url": "Video URL FR",
-            "video_secure_url": "video secure URL FR",
-            "video_type": "text/html",
-            "video_width": "200",
-            "video_height": "100"
+            "title": "STIR",
+            "description": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "tweet": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "image": "/images/icons/rouser/icon-512x512.png"
         },
         "de": {
-            "title": "STIR (DE)",
-            "description": "My Description DE",
-            "tweet": "tweet description avec #hashtag and @onf DE",
-            "image": "\/demo/img/default.png",
-            "video_url": "Video URL DE",
-            "video_secure_url": "video secure URL DE",
-            "video_type": "text/html",
-            "video_width": "200",
-            "video_height": "100"
+            "title": "STIR",
+            "description": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "tweet": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "image": "/images/icons/rouser/icon-512x512.png"
         }
     }
 }
