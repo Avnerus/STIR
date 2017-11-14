@@ -25,8 +25,7 @@
 
     <style>
         body {
-            font-family: 'Abel', Helvetica, sans-serif;
-            font-weight: 400;
+            font-family: 'Work Sans', Helvetica, sans-serif;
             color: white;
             background-color: #000;
         }
@@ -65,10 +64,10 @@
                 }
         .btn {
             display: inline-block;
-            font-family: 'Abel', Helvetica, sans-serif;
+            font-family: 'Oswald', Helvetica, sans-serif;
             text-transform: uppercase;
-            font-size: .9rem;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 500;
             letter-spacing: .1rem;
             border: 3px solid white;
             padding: 20px;
@@ -92,6 +91,8 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
+	    margin-left: 0px;
+	    margin-right: 0px;
         }
        .primary,.positive {
             background-color: #000 !important;        
@@ -100,23 +101,31 @@
             border-color: #0ae700 !important;
         }
         .padded-full {
-            font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 14px;
+	    line-height: 18px;
             padding: 20px;
             margin: 0;
             min-height: 580px;
-            p {
-                font-family: 'Source Sans Pro', sans-serif;
-                font-size: .9rem;
-                margin-bottom: 10px;
-                color: #919191;
-                margin-top: 16px;
-            }
         }
+	
+	p {
+           font-family: 'Work Sans', sans-serif;
+           font-size: 14px;
+	   line-height: 18px;
+           margin-bottom: 10px;
+           color: #C8C8C8;
+           margin-top: 16px;
+		
+         }
+	 
         h1 {
-            font-family: 'Abel', Helvetica, sans-serif;
-            font-size: 1.7rem;
-            letter-spacing: .03rem;
-            line-height: 1.2;
+            font-family: 'Oswald', Helvetica, sans-serif;
+	    font-weight: 500;
+            font-size: 22px;
+            letter-spacing: .15rem;
+            line-height: 1.4;
+	    text-transform: uppercase;
             margin-bottom: 13.9333px;
             margin-left: 0px;
             margin-right: 0px;
@@ -145,7 +154,7 @@
         }
 
     input#phone {
-	    font-size: 1.7rem;
+	    font-size: 24px;
 	    border-bottom: 2px solid gray;
 	    border-bottom-width: 2px!important;
     }
@@ -211,11 +220,11 @@
 
         }
         .disclaimer, .disclaimer > p  {
-           font-family: 'Source Sans Pro', sans-serif;
+           font-family: 'Work Sans', sans-serif;
             color: gray;
-            font-size: .7rem;
+            font-size: 11px;
+	    line-height: 1.4;
             margin-top: 15px;
-            opacity: .7;
         }
 
         .dialog {
@@ -290,11 +299,11 @@
 
            a {
                 color: white;
-                letter-spacing: 1px;
                 text-decoration: underline;
-                font-weight: 600;
-                font-family: Abel;
-                font-size: .8rem;      
+                font-family: Oswald, Helvetica;
+		text-transform:uppercase;
+		letter-spacing: .15rem;
+                font-size: 14px;      
            }
            
            a:hover {
@@ -307,8 +316,8 @@
                 margin-bottom: 10px;
             }        
             p {
-                font-size: 1rem;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 12px;
+                font-family: 'Work Sans', sans-serif;
             }
             ul {
                 padding-left: 10px;
@@ -393,14 +402,14 @@
                     position: absolute;
                     width: 90px;
                     height: 90px;
-                    background-color: rgba(0,0,0,.6);
+                    border: 2px solid #000;
                     display: flex;
                     border-radius: 50%;
                     justify-content: center;
                     align-items: center;
                     
                     i {
-                        color: #fff;
+                        color: #000;
                         font-size: 60px;
                     }
                 }
@@ -408,11 +417,12 @@
                 .skip-link {
                     position: absolute;
                     bottom: 5%;
-                    font-size: .9rem;
-                    font-family: Abel;
+                    font-size: 14px;
+		    letter-spacing: .1rem;
+                    font-family: Oswald, sans-serif;
                     font-weight: 600;
                     text-decoration: underline;
-                    color: #333;
+                    color: #000;
                     text-transform:uppercase;
                 }
                 
@@ -470,7 +480,7 @@
 		li {
 			padding: 0px;
 			padding-bottom: 15px;
-			font-family: 'Source Sans Pro', sans-serif;
+			font-family: 'Work Sans', sans-serif;
 
 			i {
 				padding-right:15px;
@@ -478,6 +488,23 @@
 		}
 
 }
+
+.how-works p {
+	font-family: 'Oswald', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+        font-size: 16px;
+        letter-spacing: .15rem;
+        line-height: 1.4;
+}
+
+#SLEEPER_WELCOME, .how-works ul, .row.explanation {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #C8C8C8;
+}
+
     </style>
 
     <script>
