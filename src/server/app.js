@@ -426,6 +426,9 @@ app.use(async function (req, res, next) {
             let nfbSettings = null;
             if (!req.query.assignmentId) {
                 nfbSettings = await NFBUtil.getSettings(process.env.NFB_ENDPOINT, req.feathers.ip, req.forceLocale || req.appState.auth.user.locale);
+                if (nfbSettings.error) {
+                    nfbSettings = null;
+                }
             }
 
             console.log("Render riot");

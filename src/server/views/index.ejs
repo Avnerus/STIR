@@ -15,7 +15,9 @@
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="/css/material-icons.css">
-  <!--link rel="stylesheet" href="/css/intlTelInput.css"-->
+
+  <%- typeof nfbDeps != 'undefined' ? '' : '<link rel="stylesheet" href="/css/intlTelInput.css">' %>
+
   <link rel="stylesheet" href="/css/phonon.min.css">
   <link rel="stylesheet" href="/css/style.css">
 
@@ -30,7 +32,9 @@
   <script src="/lib/socket.io.slim.js"></script>
   <script src="/lib/jquery-ui.min.js"></script>
   <script src="/lib/jquery.ui.touch-punch.min.js"></script>
-  <!--script src="/lib/intlTelInput.min.js"></script-->
+
+  <%- typeof nfbDeps != 'undefined' ? '' : '<script src="/lib/intlTelInput.min.js"></script>' %>
+
   <script src="/lib/mediaDevices-getUserMedia-polyfill.js"></script>
   <script src="/lib/RecordRTC.min.js"></script>
   <script src="/lib/platform.js"></script>
