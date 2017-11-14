@@ -56,10 +56,10 @@
             font-weight: 600px;
          }
          .alarm-date.verifying {
-            color: lightsalmon;
+            color: gray;
          }
          .alarm-timezone.verifying {
-            color: lightblue;         
+            color: gray;         
          }
          .alarm {
             background-color: #232323;
@@ -119,6 +119,19 @@
             position: unset;
          }
      }
+     
+     .alarm-time .alarm-action {
+	color: white;
+}
+
+.alarm-time .alarm-time-group {
+	color: gray;
+}
+
+.alarm-time .alarm-date {
+	color: gray;
+	text-transform: uppercase;
+}
  </style>
  <script>
     import MiscUtil from '../util/misc'
