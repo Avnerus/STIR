@@ -34,9 +34,11 @@
  <style>
      alarm-time {
          .alarm-time {
-            font-size: 44px;
+            font-size: 40px;
+            font-family: 'Oswald', Helvetica, sans-serif;
+            padding-top:10px;
             @media (max-width: 360px) {
-                font-size: 42px;
+                font-size: 36px;
             }
             @media (max-width: 340px) {
                 font-size: 36px;
