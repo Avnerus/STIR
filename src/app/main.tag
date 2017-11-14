@@ -484,6 +484,22 @@
 		}
 
 }
+
+.how-works p {
+	font-family: 'Oswald', Helvetica, sans-serif;
+	font-weight: 500;
+        font-size: 18px;
+        letter-spacing: .15rem;
+        line-height: 1.4;
+}
+
+#SLEEPER_WELCOME, .how-works ul, .row.explanation {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #C8C8C8;
+}
+
     </style>
 
     <script>
