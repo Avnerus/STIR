@@ -121,6 +121,7 @@
             font-size: 24px;
             letter-spacing: 1rem;
             line-height: 1.4;
+	    text-transform: uppercase;
             margin-bottom: 13.9333px;
             margin-left: 0px;
             margin-right: 0px;
