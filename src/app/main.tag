@@ -91,6 +91,8 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
+	    margin-left: 0px;
+	    margin-right: 0px;
         }
        .primary,.positive {
             background-color: #000 !important;        
