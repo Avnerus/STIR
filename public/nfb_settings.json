@@ -8,20 +8,20 @@
     "share": {
         "en": {
             "title": "STIR",
-            "description": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
-            "tweet": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "description": "How do you wake up in the morning? Tomorrow I'll wake up to a personalized message from Stir."
+            "tweet": "How do you wake up in the morning? Tomorrow I'll wake up to a personalized message from Stir.",
             "image": "/images/icons/rouser/icon-512x512.png"
         },
         "fr": {
             "title": "STIR",
-            "description": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
-            "tweet": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "description": "How do you wake up in the morning? Tomorrow I'll wake up to a personalized message from Stir.",
+            "tweet": "How do you wake up in the morning? Tomorrow I'll wake up to a personalized message from Stir.",
             "image": "/images/icons/rouser/icon-512x512.png"
         },
         "de": {
             "title": "STIR",
-            "description": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
-            "tweet": "Tomorrow I will wake up with Stir, the new personalized wake-up service from #veryveryshort.",
+            "description": "How do you wake up in the morning? Tomorrow I'll wake up to a personalized message from Stir.",
+            "tweet": "How do you wake up in the morning? Tomorrow I'll wake up to a personalized message from Stir.",
             "image": "/images/icons/rouser/icon-512x512.png"
         }
     }
