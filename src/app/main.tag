@@ -412,7 +412,7 @@
                 .skip-link {
                     position: absolute;
                     bottom: 5%;
-                    font-size: 12px;
+                    font-size: 14px;
 		    letter-spacing: .1rem;
                     font-family: Oswald, sans-serif;
                     font-weight: 600;
