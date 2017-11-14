@@ -218,7 +218,8 @@
         .disclaimer, .disclaimer > p  {
            font-family: 'Work Sans', sans-serif;
             color: gray;
-            font-size: 12ppx;
+            font-size: 11px;
+	    line-height: 1.4;
             margin-top: 15px;
         }
 
