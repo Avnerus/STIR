@@ -25,8 +25,7 @@
 
     <style>
         body {
-            font-family: 'Abel', Helvetica, sans-serif;
-            font-weight: 400;
+            font-family: 'Work Sans', Helvetica, sans-serif;
             color: white;
             background-color: #000;
         }
@@ -65,10 +64,10 @@
                 }
         .btn {
             display: inline-block;
-            font-family: 'Abel', Helvetica, sans-serif;
+            font-family: 'Oswald', Helvetica, sans-serif;
             text-transform: uppercase;
-            font-size: .9rem;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 500;
             letter-spacing: .1rem;
             border: 3px solid white;
             padding: 20px;
@@ -118,10 +117,10 @@
 	 
         h1 {
             font-family: 'Oswald', Helvetica, sans-serif;
-	    font-weight: 600;
-            font-size: 28px;
-            letter-spacing: .05rem;
-            line-height: 1.2;
+	    font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 1rem;
+            line-height: 1.4;
             margin-bottom: 13.9333px;
             margin-left: 0px;
             margin-right: 0px;
@@ -150,7 +149,7 @@
         }
 
     input#phone {
-	    font-size: 1.7rem;
+	    font-size: 24px;
 	    border-bottom: 2px solid gray;
 	    border-bottom-width: 2px!important;
     }
@@ -218,9 +217,8 @@
         .disclaimer, .disclaimer > p  {
            font-family: 'Work Sans', sans-serif;
             color: gray;
-            font-size: .7rem;
+            font-size: 12ppx;
             margin-top: 15px;
-            opacity: .7;
         }
 
         .dialog {
@@ -414,7 +412,8 @@
                     position: absolute;
                     bottom: 5%;
                     font-size: 12px;
-                    font-family: Abel;
+		    letter-spacing: .1rem;
+                    font-family: Oswald, sans-serif;
                     font-weight: 600;
                     text-decoration: underline;
                     color: #000;
