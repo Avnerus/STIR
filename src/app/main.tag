@@ -108,7 +108,8 @@
 	
 	p {
            font-family: 'Work Sans', sans-serif;
-           font-size: 12px;
+           font-size: 14px;
+	   line-height: 18px;
            margin-bottom: 10px;
            color: #C8C8C8;
            margin-top: 16px;
@@ -116,9 +117,10 @@
          }
 	 
         h1 {
-            font-family: 'Abel', Helvetica, sans-serif;
-            font-size: 1.7rem;
-            letter-spacing: .03rem;
+            font-family: 'Oswald', Helvetica, sans-serif;
+	    font-weight: 600;
+            font-size: 28px;
+            letter-spacing: .05rem;
             line-height: 1.2;
             margin-bottom: 13.9333px;
             margin-left: 0px;
