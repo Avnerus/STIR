@@ -1,6 +1,6 @@
 const Messages =
 {
-    STIR: 'STIR',
+    STIR: 'Stir',
     OK: 'Ok',
     CANCEL: 'Cancel',
     NOTICE: 'Notice',
