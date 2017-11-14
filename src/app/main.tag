@@ -399,7 +399,6 @@
                 }
                 
                 .play-button {
-                    position: absolute;
                     width: 90px;
                     height: 90px;
                     border: 2px solid #000;
