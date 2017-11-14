@@ -50,6 +50,10 @@ export default class RouserStore extends Store {
             }
             this.trigger('action_updated', action);
         }
+        if (action == null && IS_CLIENT) {
+            // In case the video was playing
+            $('#rouser-intro-panel').find('video')[0].pause();
+        }
     }
 
     setRecordStage(stage) {

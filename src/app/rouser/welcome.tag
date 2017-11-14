@@ -55,6 +55,9 @@
         }
         this.update();
     });
+    this.on('hidden', () => {
+        $('#rouser-intro-panel').find('video')[0].pause();
+    });
 
     begin(e) {
         this.state.auth.shownRouserVideo();

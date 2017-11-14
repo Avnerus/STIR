@@ -98,16 +98,17 @@ export default class AuthStore extends Store {
             }
 
             catch (e) {
-                console.log("Error getting rouser status  ", e);                    
+                console.log("Error user status  ", e);                    
                 this.gettingStatus = false;
             }
         }
     }
 
     refreshStatus() {
-        this.user.status = null;
-        this.gettingStatus = false;
-        this.getStatus();
+        if (this.user.status && !this.gettingStatus)  {
+            this.user.status = null;
+            this.getStatus();
+        }
     }
     async getSession() { 
         if (!this.user.session && !this.gettingSession)  {
