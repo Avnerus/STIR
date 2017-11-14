@@ -425,8 +425,15 @@ app.use(async function (req, res, next) {
 
             let nfbSettings = null;
             if (!req.query.assignmentId) {
-                nfbSettings = await NFBUtil.getSettings(process.env.NFB_ENDPOINT, req.feathers.ip, req.forceLocale || req.appState.auth.user.locale);
-                if (nfbSettings.error) {
+                try {
+                    nfbSettings = await NFBUtil.getSettings(process.env.NFB_ENDPOINT, req.feathers.ip, req.forceLocale || req.appState.auth.user.locale);
+                    if (nfbSettings.error) {
+                        console.error("NFB ERROR", nfbSettings);
+                        nfbSettings = null;
+                    }
+                }
+                catch (err) {
+                    console.error("NFB ERROR",err);
                     nfbSettings = null;
                 }
             }
