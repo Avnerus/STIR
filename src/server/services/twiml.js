@@ -58,8 +58,8 @@ export default {
         console.log("TWIML ALARM SERVICE CALLED!", req.body);
         const response = new twiml.VoiceResponse();
 
-        const defaultText = "Good morning from Stir. We're sorry but no one was able to record your personalized message. But please wake up anyway!";
-        
+        let defaultPlay = process.env.S3_URL + "/audio/sorry_en.mp3";
+
         Promise.resolve({})
         .then(() => {
             let twimlSession = TWIML_SESSIONS[req.body.CallSid];
@@ -82,7 +82,7 @@ export default {
                     response.play({},SERVER_URL + alarm.recording.mixUrl);
                 }
             } else {
-                response.say({}, defaultText);
+                response.play({},defaultPlay);
             }
            
         })
@@ -94,7 +94,7 @@ export default {
         .catch((err) => {
             console.log("Error in twiml alarm service!", err);
             let errorResponse = new twiml.VoiceResponse();
-            errorResponse.say({}, defaultText);
+            errorResponse.play({},defaultPlay);
             res.type('text/xml');
             res.send(response.toString());
 
