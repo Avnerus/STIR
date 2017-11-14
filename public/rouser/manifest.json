@@ -2,7 +2,7 @@
   "name": "",
   "short_name": "STIR - Rouser",
   "theme_color": "#000000",
-  "background_color": "#000000",
+  "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
