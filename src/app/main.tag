@@ -411,11 +411,11 @@
                 .skip-link {
                     position: absolute;
                     bottom: 5%;
-                    font-size: .9rem;
+                    font-size: 12px;
                     font-family: Abel;
                     font-weight: 600;
                     text-decoration: underline;
-                    color: #333;
+                    color: #000;
                     text-transform:uppercase;
                 }
                 
