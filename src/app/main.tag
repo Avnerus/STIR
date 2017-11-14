@@ -99,7 +99,9 @@
             border-color: #0ae700 !important;
         }
         .padded-full {
-            font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 14px;
+	    line-height: 18px;
             padding: 20px;
             margin: 0;
             min-height: 580px;
