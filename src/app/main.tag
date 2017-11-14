@@ -118,7 +118,7 @@
         h1 {
             font-family: 'Oswald', Helvetica, sans-serif;
 	    font-weight: 500;
-            font-size: 24px;
+            font-size: 22px;
             letter-spacing: .15rem;
             line-height: 1.4;
 	    text-transform: uppercase;
@@ -294,11 +294,11 @@
 
            a {
                 color: white;
-                letter-spacing: 1px;
                 text-decoration: underline;
-                font-weight: 600;
-                font-family: Abel;
-                font-size: .8rem;      
+                font-family: Oswald, Helvetica;
+		text-transform:uppercase;
+		letter-spacing: .15rem;
+                font-size: 14px;      
            }
            
            a:hover {
