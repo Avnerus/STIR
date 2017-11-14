@@ -369,6 +369,9 @@
                 video {
                     width: 100%;
                 }
+                display: flex;
+                justify-content: center;
+                align-items: center
             }
             .overlay {
                 width: 100%;
