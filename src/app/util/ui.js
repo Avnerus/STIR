@@ -41,6 +41,14 @@ export default class UIUtil {
             } else {
                 iphoneTitle.attr('content',iphoneValue);
             }
+
+            let iphoneIcon = $('link[rel="apple-touch-icon"]');
+            let iconValue = "/images/icons/" + role + "/icon-152x152.png";
+            if (iphoneIcon.length == 0) {
+               $('head').append('<link rel="apple-touch-icon" href="' + iconValue + '">');
+            } else {
+                iphoneIcon.attr('href',iconValue);
+            }
         }
         else if (phonon.device.os == "Android") {
             let manifestLink = $('link[rel="manifest"]');
