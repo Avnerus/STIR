@@ -66,7 +66,7 @@
             display: inline-block;
             font-family: 'Oswald', Helvetica, sans-serif;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 500;
             letter-spacing: .1rem;
             border: 3px solid white;
@@ -119,7 +119,7 @@
             font-family: 'Oswald', Helvetica, sans-serif;
 	    font-weight: 500;
             font-size: 24px;
-            letter-spacing: 1rem;
+            letter-spacing: .15rem;
             line-height: 1.4;
 	    text-transform: uppercase;
             margin-bottom: 13.9333px;
