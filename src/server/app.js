@@ -435,6 +435,7 @@ app.use(async function (req, res, next) {
             if (!req.query.assignmentId) {
                 try {
                     nfbSettings = await NFBUtil.getSettings(process.env.NFB_ENDPOINT, req.feathers.ip, req.forceLocale || req.appState.auth.user.locale);
+                    console.log("NFB Settings", nfbSettings);
                     if (nfbSettings.error) {
                         console.error("NFB ERROR", nfbSettings);
                         nfbSettings = null;
@@ -475,8 +476,11 @@ app.use(async function (req, res, next) {
                     nfbHeader: nfbSettings.header,
                     //nfbFooter: nfbSettings.footer
                     nfbTopnav: nfbSettings.geoloc.topnav,
-                    nfbTag: nfbSettings.tag
+                    nfbTag: nfbSettings.tag,
                 });
+                if (req.path == "/") {
+                    renderOpts.nfbJson = nfbSettings.export_to_js;
+                }
             } 
             res.render('index', renderOpts);
 

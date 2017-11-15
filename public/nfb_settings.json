@@ -5,6 +5,7 @@
     "www_folder": "www",
     "switch_lang_by_query": true,
     "cdn": "https://amazon.ca",
+    "mobile_only": true,
     "share": {
         "en": {
             "title": "STIR",

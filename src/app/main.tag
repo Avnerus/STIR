@@ -60,7 +60,7 @@
         }
 
         .btn.raised {
-                box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+              //  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
                 }
         .btn {
             display: inline-block;
@@ -106,7 +106,7 @@
 	    line-height: 18px;
             padding: 20px;
             margin: 0;
-            min-height: 580px;
+            min-height: 400px;
         }
 	
 	p {
@@ -272,7 +272,7 @@
             justify-content: center;
             @media (max-height: 650px) {
                 position: relative;
-                bottom: 50px;
+                bottom: 10px;
             }
             position: absolute;
             bottom: 60px;
@@ -361,9 +361,12 @@
                 min-height: 0;
             }
         }
+        #onf-intro {
+            position: fixed !important;
+        }
 
         .intro-panel {
-            z-index: 9999;
+            z-index: 1000;
             .content {
                 background-color: black;
                 video {

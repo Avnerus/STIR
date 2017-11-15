@@ -137,5 +137,11 @@
 
     <%- typeof nfbFooter != 'undefined' ? nfbFooter.join('\n') : '' %>
 
+    <%if (typeof nfbJson != 'undefined') { %> 
+        <script>
+            var fW = new Framework('<%- nfbJson -%>');
+        </script>
+    <% } %>
+
   </body>
 </html>
