@@ -41,7 +41,7 @@
                 font-size: 36px;
             }
             @media (max-width: 340px) {
-                font-size: 36px;
+                font-size: 34px;
             }
             color: white;
             margin-right: 5px;
