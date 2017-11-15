@@ -51,6 +51,7 @@
     "bitly": "^5.0.12",
     "body-parser": "^1.17.2",
     "compression": "^1.7.0",
+    "connect-mongo": "^2.0.0",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.4",
     "country-data": "0.0.31",

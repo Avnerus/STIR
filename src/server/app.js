@@ -18,6 +18,7 @@ import service from 'feathers-mongoose'
 import State from '../app/state'
 import hooks from 'feathers-hooks'
 import session from 'express-session';
+import connectMongo from 'connect-mongo';
 import authentication from 'feathers-authentication'
 import jwt from 'feathers-authentication-jwt'
 import oauth1 from 'feathers-authentication-oauth1'
@@ -80,6 +81,8 @@ const SUPPORTED_LANGS = {
     'de': 'de'*/
 }
 
+const MongoStore = connectMongo(session);
+
 const app = feathers()
 .set('views', process.env.APP_BASE_PATH + "/src/server/views")
 .set('view engine', 'ejs')
@@ -102,7 +105,12 @@ const app = feathers()
     }
     next();
 })
-.use(session({ secret: AuthSettings.secret, resave: true, saveUninitialized: true  }));
+.use(session({ 
+    secret: AuthSettings.secret, 
+    resave: true, 
+    saveUninitialized: true,
+    store: new MongoStore({ url: process.env['MONGO_CONNECTION']})
+}));
 
 app.enable('trust proxy');
 app.set('trust proxy', true);
