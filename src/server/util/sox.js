@@ -25,7 +25,7 @@ class SoxUtil {
 
                 let command = SoxCommand()
                 .inputSubCommand(subCommand)
-                .input('-v 0.3 ' + backingTrack)
+                .input('-v 0.1 ' + backingTrack)
                 .combine('mix')
                 .output(output)
                 .outputFileType('mp3')

@@ -15,7 +15,7 @@ let ALARMS_IN_QUEUE = 1;
 const FIELDS_TO_RETURN = "_id time name prompt locales country pronoun recording dummy"
 
 const ROUTINE_TASKS_INTERVAL = 1000 * 60;
-const STALLLING_TIMEOUT_HOURS = 1;
+const STALLLING_TIMEOUT_MINUTES = 15;
 const NOTIFY_SLEEPERS_HOURS = 12;
 const MTURK_TRIGGER_HOURS = 3;
 const ROUSERS_TO_NOTIFY = 2;
@@ -456,7 +456,7 @@ export default class AlarmManager {
 
     freeStalledAlarms() {
         let timeout = new Date();
-        timeout.setHours(timeout.getHours() - STALLLING_TIMEOUT_HOURS);
+        timeout.setMinutes(timeout.getMinutes() - STALLLING_TIMEOUT_MINUTES);
 
         return Alarm.update(
             { 
