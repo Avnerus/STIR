@@ -15,7 +15,7 @@ let ALARMS_IN_QUEUE = 1;
 const FIELDS_TO_RETURN = "_id time name prompt locales country pronoun recording dummy"
 
 const ROUTINE_TASKS_INTERVAL = 1000 * 60;
-const STALLLING_TIMEOUT_MINUTES = 15;
+const STALLLING_TIMEOUT_MINUTES = 20;
 const NOTIFY_SLEEPERS_HOURS = 12;
 const MTURK_TRIGGER_HOURS = 3;
 const ROUSERS_TO_NOTIFY = 2;
