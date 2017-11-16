@@ -290,7 +290,7 @@ export default class AlarmManager {
                         // Don't wake yourself
                         query.userId = {$ne: params.user._id};
                     }
-                    return Alarm.find(query).select("_id").limit(alarmsToGo)
+                    return Alarm.find(query).sort({time: 1}).select("_id").limit(alarmsToGo)
                     .then((newIds) => {
                         alarmIds = newIds;
                         console.log("We have " + alarmIds.length + " alarms to assign");
