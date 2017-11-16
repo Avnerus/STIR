@@ -366,7 +366,7 @@
         }
 
         .intro-panel {
-            z-index: 1000;
+            z-index: 1002;
             .content {
                 background-color: black;
                 video {
