@@ -475,10 +475,13 @@ app.use(async function (req, res, next) {
                     nfbHeader: nfbSettings.header,
                     //nfbFooter: nfbSettings.footer
                     nfbTopnav: nfbSettings.geoloc.topnav,
-                    nfbTag: nfbSettings.tag
+                    nfbTag: nfbSettings.tag,
+                    nfbJson: nfbSettings.export_to_js
                 });
                 if (req.path == "/") {
-                    renderOpts.nfbJson = nfbSettings.export_to_js;
+                    renderOpts.nfbNoIntro = false;
+                } else {
+                    renderOpts.nfbNoIntro = true;
                 }
             } 
             res.render('index', renderOpts);
