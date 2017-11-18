@@ -3,7 +3,10 @@
 <div class="content">
      <div class="padded-full">
          <div show="{state.sleeper.alarms != null}">
-             <h1 if="{state.auth.user.name}">
+            <h1 if="{state.auth.user.name && state.sleeper.newAlarmTime}">
+               <formatted-message id="ALL_SET_NAME" name="{state.auth.user.name}"/>
+            </h1>
+             <h1 if="{state.auth.user.name && !state.sleeper.newAlarmTime}">
                 <formatted-message id="CLOCK_WELCOME_NAME" name="{state.auth.user.name}"/>
              </h1>
              <h1 if="{!state.auth.user.name}">
