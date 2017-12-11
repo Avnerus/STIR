@@ -100,6 +100,7 @@ gulp.task('rollup-watch',['rollup'], function() {
 // serve task
 gulp.task('serve', ['env','rollup-watch', 'css-watch'] , function(cb) {
 
+    /*
     if (process.env.NODE_ENV == 'production') {
       var nodeProcess =  exec('node ./src/server/index.js', function (err, stdout, stderr) {
         console.log(stdout);
@@ -114,14 +115,14 @@ gulp.task('serve', ['env','rollup-watch', 'css-watch'] , function(cb) {
           process.exit(code);
       });
 
-    } else {
+    } else {*/
         return nodemon({
              //exec: './node_modules/.bin/babel-node --presets es2015-riot,stage-2',
              exec: 'node',
              script: './src/server/index.js',
              watch: './src/server/'
         });
-    }
+    //}
 
 
   //gulp.watch(['./src/**/*.js'], function(event) {
