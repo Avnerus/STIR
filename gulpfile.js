@@ -26,11 +26,6 @@ var watchEvent;
 
 var rollupCache;
 
-// ENV
-gulp.task('env', function() {
-  process.env.APP_BASE_PATH = __dirname;
-});
-
 gulp.task('todo', function() {
     gulp.src('src/**/*.js')
     .pipe(todo())
@@ -98,39 +93,14 @@ gulp.task('rollup-watch',['rollup'], function() {
 });
 
 // serve task
-gulp.task('serve', ['env','rollup-watch', 'css-watch'] , function(cb) {
+gulp.task('serve', ['rollup-watch', 'css-watch'] , function(cb) {
 
-    /*
-    if (process.env.NODE_ENV == 'production') {
-      var nodeProcess =  exec('node ./src/server/index.js', function (err, stdout, stderr) {
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-      });
-
-      nodeProcess.stdout.pipe(process.stdout);
-      nodeProcess.stderr.pipe(process.stderr);
-      nodeProcess.on('exit', function(code) {
-          console.log("NODE EXIT  - CODE",code);
-          process.exit(code);
-      });
-
-    } else {*/
-        return nodemon({
-             //exec: './node_modules/.bin/babel-node --presets es2015-riot,stage-2',
-             exec: 'node',
-             script: './src/server/index.js',
-             watch: './src/server/'
-        });
-    //}
-
-
-  //gulp.watch(['./src/**/*.js'], function(event) {
-  /*
-      watchEvent = event;
-      gulp.start('reload-server');
-  });
-  gulp.watch('app.js', server.start);*/
+    return nodemon({
+         //exec: './node_modules/.bin/babel-node --presets es2015-riot,stage-2',
+         exec: 'node',
+         script: './src/server/index.js',
+         watch: './src/server/'
+    });
 });
 
 gulp.task('reload-server', ['public'], function() {
@@ -138,19 +108,17 @@ gulp.task('reload-server', ['public'], function() {
     server.notify(watchEvent) ;
 });
 
-
-// Delete build Directory
-gulp.task('delete-build', function() {
-  rimraf('./build', function(err) {
-    plugins.util.log(err);
-  });
-});
-
-
 // Default
 gulp.task('default', ['serve']);
 
 
 
-// DISTRIBUTION TASKS (TODO)
+// DISTRIBUTION TASKS
 //===============================================
+gulp.task('setprod', function() {
+  process.env.NODE_ENV = 'production';
+});
+
+gulp.task('dist', ['setprod','rollup', 'css'] , function(cb) {
+    return;
+});

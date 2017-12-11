@@ -84,7 +84,7 @@ const SUPPORTED_LANGS = {
 const MongoStore = connectMongo(session);
 
 const app = feathers()
-.set('views', process.env.APP_BASE_PATH + "/src/server/views")
+.set('views', __dirname + "/src/server/views")
 .set('view engine', 'ejs')
 .configure(rest())
 .configure(socketio({wsEngine: 'uws'}))
@@ -92,7 +92,7 @@ const app = feathers()
 .use(compress())
 .options('*', cors())
 .use(cors())
-.use(feathers.static(process.env.APP_BASE_PATH + "/public"))
+.use(feathers.static(__dirname + "/public"))
 .use(cookieParser())
 .use(bodyParser.json())
 .use(bodyParser.urlencoded({ extended: true  }))
