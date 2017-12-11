@@ -4,7 +4,7 @@
   "description": "STIR",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server/index.js",
+    "start": "node index.js",
     "dev": "./node_modules/gulp/bin/gulp.js",
     "dist": "./node_modules/gulp/bin/gulp.js dist",
     "security_cleanup": "node src/tasks/run security_cleanup"

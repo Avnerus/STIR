@@ -98,7 +98,7 @@ gulp.task('serve', ['rollup-watch', 'css-watch'] , function(cb) {
     return nodemon({
          //exec: './node_modules/.bin/babel-node --presets es2015-riot,stage-2',
          exec: 'node',
-         script: './src/server/index.js',
+         script: './index.js',
          watch: './src/server/'
     });
 });
