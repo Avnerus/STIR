@@ -408,7 +408,7 @@ export default {
                 },
             },
             "facets":{
-                "facet_achievement-striving":{
+                "facet_achievement_striving":{
                     "instructions":[
                         {
                             "he":"Share how deeply impressed you are by his ability to succeed no matter the circumstances.",
@@ -484,7 +484,7 @@ export default {
                         "they": "They are driven by a strong need for structure. This sense of order can be seen in their home and how they plan their life.",
                     }
                 },  
-                "facet_self-discipline":{
+                "facet_self_discipline":{
                     "instructions":[
                         {
                             "he":"Let him know how impressed you are with his tremendous willpower.",
@@ -503,7 +503,7 @@ export default {
                         "they": "They are an extremely self-disciplined hard worker. This persistence carries #name# through even the toughest, most unpleasant tasks.",
                     }
                 },   
-                "facet_self-efficacy":{
+                "facet_self_efficacy":{
                     "instructions":[
                         {
                             "he":"Let him know how impressed you are by his confidence and poise.",
@@ -770,7 +770,7 @@ export default {
                         "they": "They bring an optimism and joy to everything in their life. People describe their positive spirit as contagious.",
                     }
                 }, 
-                "facet_excitement-seeking":{
+                "facet_excitement_seeking":{
                     "instructions":[
                         {
                             "he":"Let him know that today has some exciting novelties in store for him.",
@@ -1094,7 +1094,7 @@ export default {
                         "they": "They have strong desires. Some may even call them a hedonist, with their appreciation for decadence and instant gratification.",
                     }
                 },
-                "facet_self-consciousness":{
+                "facet_self_consciousness":{
                     "instructions":[
                         {
                             "he":"Share with him how humbled you are by his emotional depth and his many abilities.",
