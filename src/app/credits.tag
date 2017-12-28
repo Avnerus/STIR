@@ -4,10 +4,12 @@
       <div class="padded-full">
            <h1><formatted-message id="CREDITS"/></h1>
            <div class="credits">
-               <span> <b> Creators: </b> Rebecca Lieberman, Julia Irwin </span>
-               <span> <b> Lead Developer: </b> Avner Peled </span>
-               <span> <b> Developer: </b> Becca Ricks </span>
-               <span> <b> Sound Designer: </b> T.K. Broderick </span>
+               <div class="credit"> <b> Creators: </b><br/> Rebecca Lieberman, Julia Irwin </div>
+               <div class="credit"> <b> Lead Developer: </b><br/> Avner Peled </div>
+               <div class="credit"> <b> Sound Designer: </b><br/> T.K. Broderick </div>
+               <div class="credit"> <b> Actor and Voiceover: </b><br/> Rena Anakwe </div>
+               <div class="credit"> <b> Additional Development: </b><br/> Rebecca Ricks </div>
+               <div class="credit"> <b> Special Thanks: </b><br/> Jackson Jewett, Ziv Schneider, Justin Mulroy, Jane Irwin, Victoria Irwin, Charlotte Lieberman, Nicholas Hubbard, Jason Sigal, Or Fleisher </div>
            </div>
            <div class="nfb-credits">
             <pre>
@@ -15,37 +17,37 @@ Life is short. Now more than ever. We want it all. We want it now. Right away. V
 
 NFB
 
-Executive Producer 
+Executive Producer
 Hugues Sweeney
 
-Production Managers 
+Production Managers
 Marie-Pier Gauthier
 Nathalie Bédard Morin
 
-Editorial Manager 
+Editorial Manager
 Valérie Darveau
 
-Technology director 
+Technology director
 Martin Viau
 
-Production Coordinators 
+Production Coordinators
 Caroline Fournier
 Claudia Boutin
 Dominique Brunet
 
-Administrator 
+Administrator
 Marie-Andrée Bonneau
 
 Marketing Manager
 Tammy Peddle
 
-Marketing coordinator 
+Marketing coordinator
 Florent Prevelle
- 
-Social Media Strategist
-Kate Ruscito 
 
-Web content Project manager 
+Social Media Strategist
+Kate Ruscito
+
+Web content Project manager
 Félix-Antoine Viens
 
 Press Relations
@@ -54,12 +56,12 @@ Pat Dillon
 
 Information technologies
 Sergiu Suciu
- 
-Legal Services 
+
+Legal Services
 Peter Kallianiotis
 
 
-ARTE France 
+ARTE France
 
 Digital Development Chief
 Gilles Freissinier
@@ -69,30 +71,30 @@ Marianne Levy-Leblond
 
 Program Producers
 Marie Berthoumieu
-Emilie Bessard  
+Emilie Bessard
 
 Head of project management
 Stéphane Nauroy
- 
+
 Community manager
 Léa Jagut
 
 Administrator
 Jerôme Vernet
- 
+
 ARTE France Développement
 
 Production Managers
 Claire Aubret
-Angèle Le Névé 
+Angèle Le Névé
 
-Assisted by 
+Assisted by
 Juliette Droillard
 
-Translation 
+Translation
 Christian Stonner
- 
-Responsable ARTE Studio Lab 
+
+Responsable ARTE Studio Lab
 Clément Dhamelincourt
 
 
@@ -110,7 +112,7 @@ Caspar Sonnen
 Wotienke Vermeer
 Michael Zbieranowski
 
-ACKNOWLEDGEMENTS 
+ACKNOWLEDGEMENTS
 
 Caspar Sonnen - IDFA DocLab
 Ziv Schneider - New media artist
@@ -118,7 +120,7 @@ Jouke Vuurmans - MediaMonks
 Julia Kaganskiy - New Museum
 Myriam Achard - PHI Center
 Florent Maurin - The Pixel Hunt
-Jepchumba - Digital Artist and Curator 
+Jepchumba - Digital Artist and Curator
 Marie Berthoumieu - ARTE
 Hugues Sweeney - National Film Board of Canada
 Rafaella Wang
@@ -134,19 +136,12 @@ Zina Kisch
          h1 {
             text-align: center;
          }
-         .credits {
-             display: flex;
-             justify-content: center;
-             margin-top: 50px;
-             flex-wrap: wrap;
 
-             span {
-                padding-right: 15px;
-                padding-bottom: 15px;
-                b {
-                    display: block;
-                }
-             }
+         .credits {
+             margin-left: auto;
+             margin-right:auto;
+             margin-top: 50px;
+             max-width: 250px;
          }
 
          pre {
