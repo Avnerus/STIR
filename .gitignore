@@ -49,3 +49,5 @@ public/recordings/*.mp3
 backingtracks/*.wav
 
 .node-persist
+
+.DS_Store
