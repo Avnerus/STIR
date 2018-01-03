@@ -42,7 +42,7 @@ const Messages =
     WAKE_he: 'Réveillez-le',
     WAKE_she: 'Réveillez-la',
     WAKE_they: 'Réveillez-les',
-    SLEEPER_NOTIFY: 'Bonjour {name}, ceci est un rappel de L\'appel du réveil. Vous avez un appel de réveil programmé pour le {time, time, short}. ,
+    SLEEPER_NOTIFY: 'Bonjour {name}, ceci est un rappel de L\'appel du réveil. Vous avez un appel de réveil programmé pour le {time, time, short}.' ,
     ROUSER_NOTIFY: 'Ceci est un message de L\'appel du réveil. De nouveaux Dormeurs sont en attente d\'un message de réveil! Visitez le {url}',
     HOME_SUGGEST_TAP: 'Appuyez',
     HOME_SUGGEST: 'pour obtenir votre appli de {role}!',
