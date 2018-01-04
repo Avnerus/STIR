@@ -1,0 +1,7 @@
+%s/big5_emotional_range/big5_neuroticism/g
+%s/achievement-striving/achievement_striving/g
+%s/self-discipline/self_discipline/g
+%s/self-efficacy/self_efficacy/g
+%s/excitement-seeking/excitement_seeking/g
+%s/self-consciousness/self_consciousness/g
+%s/self-expression/self_expression/g

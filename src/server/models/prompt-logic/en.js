@@ -254,7 +254,7 @@ export default {
                         "they": "Give them the gift of feeling connected, feeling seen.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Make him feel like he's his own, unique person.",
                         "she": "Make her feel like she's her own, unique person.",
@@ -559,7 +559,7 @@ export default {
                         "they": "Give them a sense of connection, a sense of feeling 'tapped in.'",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Make him feel confident in asserting himself today. ",
                         "she": "Make her feel confident in asserting herself today.",
@@ -639,9 +639,9 @@ export default {
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Support his penchant for fiery self-expression.",
-                        "she":"Support her penchant for fiery self-expression.",
-                        "they":"Support their penchant for fiery self-expression.",
+                        "he":"Support his penchant for fiery self_expression.",
+                        "she":"Support her penchant for fiery self_expression.",
+                        "they":"Support their penchant for fiery self_expression.",
                     },
                     "paragraph":{
                         "he":"#name# is extravagant, charming and quite moody. Always putting on a show for the people in his life, no moment is dull with #name#.",
@@ -864,7 +864,7 @@ export default {
                         "they": "Give them that sense of deep connection they're looking for.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Make him feel supported in his desire to express his true self.",
                         "she": "Make her feel supported in her desire to express her true self.",
@@ -1169,7 +1169,7 @@ export default {
                         "they": "Give them a sense of closeness and care this morning.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Make him feel worthy of expressing himself fully today.",
                         "she": "Make her feel worthy of expressing herself fully today.",
@@ -1474,7 +1474,7 @@ export default {
                         "they": "Make them feel seen and recognized for being themselves.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Make him feel celebrated for being such a maverick.",
                         "she": "Make her feel celebrated for being such a maverick.",
