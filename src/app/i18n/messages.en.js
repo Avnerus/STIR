@@ -131,6 +131,14 @@ const Messages =
     CREDITS: 'CREDITS',
     EDIT: 'EDIT',
     ALL_SET_NAME: '{name}, you\'re all set',
+    CREATORS: 'Creators',
+    LEAD_DEVELOPER: 'Lead Developer',
+    SOUND_DESIGNER: 'Sound Designer',
+    ACTOR_VOICEOVER: 'Actor and Voiceover',
+    ADDITIONAL_DEVELOPMENT: 'Additional Development',
+    SPECIAL_THANKS: 'Special Thanks',
+    AND: 'and',
+    
 
     // TRAITS
     IN_NEED: "in need of ",
