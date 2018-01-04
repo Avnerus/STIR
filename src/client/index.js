@@ -17,6 +17,7 @@ import {IntlMixin} from 'riot-intl'
 import Messages from '../app/i18n/messages'
 import Formats from '../app/i18n/formats'
 import 'riot-intl/dist/locale-data/fr'
+import 'riot-intl/dist/locale-data/de'
 
 // Phonon
 import 'phonon/dist/js/phonon-core'

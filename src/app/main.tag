@@ -292,7 +292,7 @@
                 position: relative;
                 bottom: 15px;
             }
-            position: absolute;
+            position: relative;
             bottom: 30px;
             width: 100%;
             padding-top: 20px;
