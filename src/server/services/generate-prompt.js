@@ -64,7 +64,7 @@ function generatePrompt(app, alarm, analysis,  user, tryNumber) {
 
                 for (lang in PromptLogics) {
                     let promptLogic = PromptLogics[lang];
-                    let logicResult = runLogic(promptData, alarmData.generatedFrom, promptLogic);
+                    let logicResult = runLogic(promptData, alarmData.generatedFrom, promptLogic, lang);
                     alarmData.prompt[lang] = logicResult.prompt;
                 }
             } else {
@@ -179,11 +179,15 @@ function chooseTraits(data, analysis, promptLogic) {
     return generatedFrom;
 }
 
-function runLogic(promptData, generatedFrom, promptLogic) {
+function runLogic(promptData, generatedFrom, promptLogic, lang) {
     let promptParagraphs = [];
     let promptInstructions = [];
 
-    const PRONOUN = promptData.pronoun;
+    let PRONOUN = promptData.pronoun;
+    if ((lang == "fr" || lang == "de") && PRONOUN == "they") {
+        // They is used as 'she'
+        PRONOUN = "she";
+    }
 
     let choice = generatedFrom.highs ? 'highs' : 'lows';
 
