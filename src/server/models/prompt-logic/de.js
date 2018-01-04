@@ -8,8 +8,8 @@ export default {
                         "she":"Erinnern Sie sie daran, heute ihre Freundlichkeit zum Ausdruck zu bringen.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine hilfsbereite und höfliche Person, die sehr um das Wohlergehen anderer bemüht ist.",
-                        "she":"#name ist eine hilfsbereite und höfliche Person, die sehr um das Wohlergehen anderer bemüht ist.",
+                        "he":"#name# ist eine hilfsbereite und höfliche Person, die sehr um das Wohlergehen anderer bemüht ist.",
+                        "she":"#name# ist eine hilfsbereite und höfliche Person, die sehr um das Wohlergehen anderer bemüht ist.",
                     }
                 },
                 "big5_extraversion":{
@@ -18,8 +18,8 @@ export default {
                         "she":"Ermutigen Sie sie dazu, den Tag mit ihrer gewohnten Fröhlichkeit zu verbringen.",
                     },
                     "paragraph":{
-                        "he":"#name ist voller Freude und überschäumender Energie. Er gibt seinen Mitmenschen sehr viel Liebe.",
-                        "she":"#name ist voller Freude und überschäumender Energie. Sie gibt ihren Mitmenschen sehr viel Liebe.",
+                        "he":"#name# ist voller Freude und überschäumender Energie. Er gibt seinen Mitmenschen sehr viel Liebe.",
+                        "she":"#name# ist voller Freude und überschäumender Energie. Sie gibt ihren Mitmenschen sehr viel Liebe.",
                     },
                 },
                 "big5_neuroticism":{
@@ -28,8 +28,8 @@ export default {
                         "she":"Ermutigen Sie sie dazu, sich von ihrem einnehmenden Wesen durch den Tag geleiten zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine sehr leidenschaftliche Person. Sein weichherziges Gemüt macht #name zu etwas Besonderem.",
-                        "she":"#name ist eine sehr leidenschaftliche Person. Ihr weichherziges Gemüt macht #name zu etwas Besonderem."
+                        "he":"#name# ist eine sehr leidenschaftliche Person. Sein weichherziges Gemüt macht #name# zu etwas Besonderem.",
+                        "she":"#name# ist eine sehr leidenschaftliche Person. Ihr weichherziges Gemüt macht #name# zu etwas Besonderem."
                     },
                 },
                 "big5_openness":{
@@ -38,8 +38,8 @@ export default {
                         "she":"Erinnern Sie sie daran, wie sehr die Welt mitfühlende Menschen wie sie braucht.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine geniale und idealistische Person. Sein bedingungsloses Mitgefühl macht #name zu etwas Besonderem.",
-                        "she":"#name ist eine geniale und idealistische Person. Ihr bedingungsloses Mitgefühl macht #name zu etwas Besonderem."
+                        "he":"#name# ist eine geniale und idealistische Person. Sein bedingungsloses Mitgefühl macht #name# zu etwas Besonderem.",
+                        "she":"#name# ist eine geniale und idealistische Person. Ihr bedingungsloses Mitgefühl macht #name# zu etwas Besonderem."
                     },
                 },
             },
@@ -50,8 +50,8 @@ export default {
                         "she":"Raten Sie ihr, sich heute ein wenig Zeit für sich selbst zu nehmen.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine bescheidene und selbstlose Person, die sich mehr um die Bedürfnisse anderer kümmert als um ihre eigenen.",
-                        "she":"#name ist eine bescheidene und selbstlose Person, die sich mehr um die Bedürfnisse anderer kümmert als um ihre eigenen."
+                        "he":"#name# ist eine bescheidene und selbstlose Person, die sich mehr um die Bedürfnisse anderer kümmert als um ihre eigenen.",
+                        "she":"#name# ist eine bescheidene und selbstlose Person, die sich mehr um die Bedürfnisse anderer kümmert als um ihre eigenen."
                     },
                 },
                 "big5_extraversion":{
@@ -60,8 +60,8 @@ export default {
                         "she":"Erinnern Sie sie daran, dass seine Bescheidenheit eine Tugend ist.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine bescheidene und weichherzige Seele. Obwohl #name oft allein ist, hat er sehr viel Mitgefühl für andere.",
-                        "she":"#name ist eine bescheidene und weichherzige Seele. Obwohl #name oft allein ist, hat sie sehr viel Mitgefühl für andere."
+                        "he":"#name# ist eine bescheidene und weichherzige Seele. Obwohl #name# oft allein ist, hat er sehr viel Mitgefühl für andere.",
+                        "she":"#name# ist eine bescheidene und weichherzige Seele. Obwohl #name# oft allein ist, hat sie sehr viel Mitgefühl für andere."
                     },
                 },
                 "big5_neuroticism":{
@@ -70,8 +70,8 @@ export default {
                         "she":" Raten Sie ihr, andere heute mit ihrer Ruhe anzustecken.",
                     },
                     "paragraph":{
-                        "he":"#name legt ein friedliches und gelassenes Verhalten an den Tag. Das kommt von seiner Toleranz und Freigiebigkeit.",
-                        "she":"#name legt ein friedliches und gelassenes Verhalten an den Tag. Das kommt von ihrer Toleranz und Freigiebigkeit."
+                        "he":"#name# legt ein friedliches und gelassenes Verhalten an den Tag. Das kommt von seiner Toleranz und Freigiebigkeit.",
+                        "she":"#name# legt ein friedliches und gelassenes Verhalten an den Tag. Das kommt von ihrer Toleranz und Freigiebigkeit."
                     },
                 },
                 "big5_openness":{
@@ -80,8 +80,8 @@ export default {
                         "she":"Raten Sie ihm dazu, sich heute um ihre Beziehungen zu anderen zu kümmern.",
                     },
                     "paragraph":{
-                        "he":"#name hat viel Mitgefühl für andere und achtet auf seine zwischenmenschlichen Beziehungen. Manche würden ihn sogar als abhängig beschreiben.",
-                        "she":"#name hat viel Mitgefühl für andere und achtet auf ihre zwischenmenschlichen Beziehungen. Manche würden sie sogar als abhängig beschreiben."
+                        "he":"#name# hat viel Mitgefühl für andere und achtet auf seine zwischenmenschlichen Beziehungen. Manche würden ihn sogar als abhängig beschreiben.",
+                        "she":"#name# hat viel Mitgefühl für andere und achtet auf ihre zwischenmenschlichen Beziehungen. Manche würden sie sogar als abhängig beschreiben."
                     },
                 },
             },
@@ -178,8 +178,8 @@ export default {
                         }
                     ],
                     "paragraph":{
-                        "he":"Er vertraut spontan anderen Menschen. Obwohl seine Nachgiebigkeit #name in die Nähe von Naivität rückt, ermöglicht sie ihm, das Beste aus jeder Situation zu machen.",
-                        "she": "Sie vertraut spontan anderen Menschen. Obwohl ihre Nachgiebigkeit #name in die Nähe von Naivität rückt, ermöglicht sie ihr, das Beste aus jeder Situation zu machen.",
+                        "he":"Er vertraut spontan anderen Menschen. Obwohl seine Nachgiebigkeit #name# in die Nähe von Naivität rückt, ermöglicht sie ihm, das Beste aus jeder Situation zu machen.",
+                        "she": "Sie vertraut spontan anderen Menschen. Obwohl ihre Nachgiebigkeit #name# in die Nähe von Naivität rückt, ermöglicht sie ihr, das Beste aus jeder Situation zu machen.",
                     }
                 }                                                                              
             },
@@ -266,8 +266,8 @@ export default {
                         "she":"Erinnern Sie sie daran, dass ihr andere vertrauen und sie ihr Vertrauen verdient.",
                     },
                     "paragraph":{
-                        "he":"#name ist zuverlässig und verantwortungsvoll und handelt mit Bedacht.",
-                        "she":"#name ist zuverlässig und verantwortungsvoll und handelt mit Bedacht."
+                        "he":"#name# ist zuverlässig und verantwortungsvoll und handelt mit Bedacht.",
+                        "she":"#name# ist zuverlässig und verantwortungsvoll und handelt mit Bedacht."
                     },
                 },
                 "big5_extraversion":{
@@ -276,8 +276,8 @@ export default {
                         "she":" Erinnern Sie sie daran, dass sie ihrem Erfolgsstreben heute ruhig nachgehen sollte.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine Naturgewalt und voller Ambitionen. Er geht jede Aufgabe leistungsorientiert und zielbewusst an.",
-                        "she":"#name ist eine Naturgewalt und voller Ambitionen. Sie geht jede Aufgabe leistungsorientiert und zielbewusst an."
+                        "he":"#name# ist eine Naturgewalt und voller Ambitionen. Er geht jede Aufgabe leistungsorientiert und zielbewusst an.",
+                        "she":"#name# ist eine Naturgewalt und voller Ambitionen. Sie geht jede Aufgabe leistungsorientiert und zielbewusst an."
                     },
                 },
                 "big5_neuroticism":{
@@ -286,8 +286,8 @@ export default {
                         "she":"Ermutigen Sie sie dazu, Vertrauen zu ihrer Sicht der Dinge zu haben und auf das Gelingen zu vertrauen.",
                     },
                     "paragraph":{
-                        "he":"#name ist sehr anspruchsvoll. Er hat klare Vorstellungen und mag es nicht, vom Kurs abzukommen.",
-                        "she":"#name ist sehr anspruchsvoll. Sie hat klare Vorstellungen und mag es nicht, vom Kurs abzukommen."
+                        "he":"#name# ist sehr anspruchsvoll. Er hat klare Vorstellungen und mag es nicht, vom Kurs abzukommen.",
+                        "she":"#name# ist sehr anspruchsvoll. Sie hat klare Vorstellungen und mag es nicht, vom Kurs abzukommen."
                     },
                 },
                 "big5_openness":{
@@ -296,8 +296,8 @@ export default {
                         "she":"Erinnern Sie sie an ihre Fähigkeiten und ermuntern Sie sie dazu, am Ball zu bleiben – denn sie wird es schaffen!",
                     },
                     "paragraph":{
-                        "he":"#name ist eine feinfühlige Person und in der Lage, Arbeiten elegant und perfekt zu erledigen.",
-                        "she":"#name ist eine feinfühlige Person und in der Lage, Arbeiten elegant und perfekt zu erledigen."
+                        "he":"#name# ist eine feinfühlige Person und in der Lage, Arbeiten elegant und perfekt zu erledigen.",
+                        "she":"#name# ist eine feinfühlige Person und in der Lage, Arbeiten elegant und perfekt zu erledigen."
                     },
                 },
             },
@@ -308,8 +308,8 @@ export default {
                         "she":"Unterstützen Sie sie dabei, die Regeln so gewissenhaft einzuhalten.",
                     },
                     "paragraph":{
-                        "he":"#name ist sehr ernsthaft. Er hält sich an die Regeln und achtet sehr auf Einzelheiten.",
-                        "she":"#name ist sehr ernsthaft. Sie hält sich an die Regeln und achtet sehr auf Einzelheiten."
+                        "he":"#name# ist sehr ernsthaft. Er hält sich an die Regeln und achtet sehr auf Einzelheiten.",
+                        "she":"#name# ist sehr ernsthaft. Sie hält sich an die Regeln und achtet sehr auf Einzelheiten."
                     },
                 },
                 "big5_extraversion":{
@@ -318,8 +318,8 @@ export default {
                         "she":"Erinnern Sie sie daran, wie sehr die Welt fähige und gewissenhafte Menschen wie sie braucht.",
                     },
                     "paragraph":{
-                        "he":"#name ist stets pünktlich und akribisch. Er kann ein sehr formelles Verhalten an den Tag legen und strahlt Zuversicht aus.",
-                        "she":"#name ist stets pünktlich und akribisch. Sie kann ein sehr formelles Verhalten an den Tag legen und strahlt Zuversicht aus."
+                        "he":"#name# ist stets pünktlich und akribisch. Er kann ein sehr formelles Verhalten an den Tag legen und strahlt Zuversicht aus.",
+                        "she":"#name# ist stets pünktlich und akribisch. Sie kann ein sehr formelles Verhalten an den Tag legen und strahlt Zuversicht aus."
                     },
                 },
                 "big5_neuroticism":{
@@ -328,8 +328,8 @@ export default {
                         "she":"Erinnern Sie sie an ihre Fähigkeit, sich durch alles durchzukämpfen.",
                     },
                     "paragraph":{
-                        "he":"#name ist unerschütterlich. Mit Selbstdisziplin und logischem Denken gelangt er ans Ziel.",
-                        "she":"#name ist unerschütterlich. Mit Selbstdisziplin und logischem Denken gelangt sie ans Ziel."
+                        "he":"#name# ist unerschütterlich. Mit Selbstdisziplin und logischem Denken gelangt er ans Ziel.",
+                        "she":"#name# ist unerschütterlich. Mit Selbstdisziplin und logischem Denken gelangt sie ans Ziel."
                     },
                 },
                 "big5_openness":{
@@ -338,8 +338,8 @@ export default {
                         "she":"Loben Sie ihre Vorsicht, aber ermutigen Sie sie dazu, heute ruhig kleine Risiken einzugehen.",
                     },
                     "paragraph":{
-                        "he":"#name hat eher traditionelle Einstellungen. Er geht mit Bedacht vor und setzt sowohl in seiner Karriere als auch bei seinen Beziehungen auf Bewährtes.",
-                        "she":"#name hat eher traditionelle Einstellungen. Sie geht mit Bedacht vor und setzt sowohl in ihrer Karriere als auch bei ihren Beziehungen auf Bewährtes."
+                        "he":"#name# hat eher traditionelle Einstellungen. Er geht mit Bedacht vor und setzt sowohl in seiner Karriere als auch bei seinen Beziehungen auf Bewährtes.",
+                        "she":"#name# hat eher traditionelle Einstellungen. Sie geht mit Bedacht vor und setzt sowohl in ihrer Karriere als auch bei ihren Beziehungen auf Bewährtes."
                     },
                 },
             },
@@ -356,8 +356,8 @@ export default {
                         }
                     ],
                     "paragraph":{
-                        "he":"Er ist ehrgeizig und immer auf der Suche nach neuen Zielen. Letztendlich strebt #name aber vor allem nach Anerkennung.",
-                        "she": "Sie ist ehrgeizig und immer auf der Suche nach neuen Zielen. Letztendlich strebt #name aber vor allem nach Anerkennung.",
+                        "he":"Er ist ehrgeizig und immer auf der Suche nach neuen Zielen. Letztendlich strebt #name# aber vor allem nach Anerkennung.",
+                        "she": "Sie ist ehrgeizig und immer auf der Suche nach neuen Zielen. Letztendlich strebt #name# aber vor allem nach Anerkennung.",
                     }
                 }, 
                 "facet_cautiousness":{
@@ -372,8 +372,8 @@ export default {
                         }
                     ],
                     "paragraph":{
-                        "he":"Er ist vorsichtig. Bevor er handelt, wägt er alles sorgfältig ab. Manchen bezeichnen #name als sicherheitsbewusst.",
-                        "she": "Sie ist vorsichtig. Bevor sie handelt, wägt sie alles sorgfältig ab. Manchen bezeichnen #name als sicherheitsbewusst.",
+                        "he":"Er ist vorsichtig. Bevor er handelt, wägt er alles sorgfältig ab. Manchen bezeichnen #name# als sicherheitsbewusst.",
+                        "she": "Sie ist vorsichtig. Bevor sie handelt, wägt sie alles sorgfältig ab. Manchen bezeichnen #name# als sicherheitsbewusst.",
                     }
                 }, 
                 "facet_dutifulness":{
@@ -420,8 +420,8 @@ export default {
                         }
                     ],
                     "paragraph":{
-                        "he":"Er ist diszipliniert und arbeitet hart. Das ermöglicht es #name, auch die schwierigsten Aufgaben zu bewältigen.",
-                        "she": "Sie ist diszipliniert und arbeitet hart. Das ermöglicht es #name, auch die schwierigsten Aufgaben zu bewältigen.",
+                        "he":"Er ist diszipliniert und arbeitet hart. Das ermöglicht es #name#, auch die schwierigsten Aufgaben zu bewältigen.",
+                        "she": "Sie ist diszipliniert und arbeitet hart. Das ermöglicht es #name#, auch die schwierigsten Aufgaben zu bewältigen.",
                     }
                 },   
                 "facet_self_efficacy":{
@@ -436,8 +436,8 @@ export default {
                         }
                     ],
                     "paragraph":{
-                        "he":"Er ist von sich überzeugt. #name glaubt fest an sich, was auch immer er unternimmt.",
-                        "she": "Sie ist von sich überzeugt. #name glaubt fest an sich, was auch immer sie unternimmt.",
+                        "he":"Er ist von sich überzeugt. #name# glaubt fest an sich, was auch immer er unternimmt.",
+                        "she": "Sie ist von sich überzeugt. #name# glaubt fest an sich, was auch immer sie unternimmt.",
                     }
                 }                                                                            
             },
@@ -524,8 +524,8 @@ export default {
                         "she":"Erinnern Sie sie daran, sich von ihrer Energie durch den Tag führen zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name ist lebhaft und teilt gern seine Begeisterung mit seinen Mitmenschen.",
-                        "she":"#name ist lebhaft und teilt gern ihre Begeisterung mit ihren Mitmenschen."
+                        "he":"#name# ist lebhaft und teilt gern seine Begeisterung mit seinen Mitmenschen.",
+                        "she":"#name# ist lebhaft und teilt gern ihre Begeisterung mit ihren Mitmenschen."
                     },
                 },
                 "big5_conscientiousness":{
@@ -534,8 +534,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, tatkräftig neue Gipfel zu erklimmen.",
                     },
                     "paragraph":{
-                        "he":"#name ist von Ehrgeiz und Hartnäckigkeit geprägt. Er ist ständig in Bewegung und bereit, weiter voranzukommen.",
-                        "she":"#name ist von Ehrgeiz und Hartnäckigkeit geprägt. Sie ist ständig in Bewegung und bereit, weiter voranzukommen."
+                        "he":"#name# ist von Ehrgeiz und Hartnäckigkeit geprägt. Er ist ständig in Bewegung und bereit, weiter voranzukommen.",
+                        "she":"#name# ist von Ehrgeiz und Hartnäckigkeit geprägt. Sie ist ständig in Bewegung und bereit, weiter voranzukommen."
                     },
                 },
                 "big5_neuroticism":{
@@ -544,8 +544,8 @@ export default {
                         "she":"Unterstützen Sie sie in ihrem Hang zu leidenschaftlicher Selbstverwirklichung.",
                     },
                     "paragraph":{
-                        "he":"#name ist extravagant, charmant und ein wenig sprunghaft. Er stellt sich selbst gern zur Schau, mit #name langweilt man sich nie.",
-                        "she":"#name ist extravagant, charmant und ein wenig sprunghaft. Sie stellt sich selbst gern zur Schau, mit #name langweilt man sich nie."
+                        "he":"#name# ist extravagant, charmant und ein wenig sprunghaft. Er stellt sich selbst gern zur Schau, mit #name# langweilt man sich nie.",
+                        "she":"#name# ist extravagant, charmant und ein wenig sprunghaft. Sie stellt sich selbst gern zur Schau, mit #name# langweilt man sich nie."
                     },
                 },
                 "big5_openness":{
@@ -554,8 +554,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, mit ihrem scharfen Verstand und ihrer Neugierde den neuen Tag in Angriff zu nehmen.",
                     },
                     "paragraph":{
-                        "he":"#name ist sehr schlagfertig. Er ist klüger als Sie und viele andere und versteht sich auszudrücken.",
-                        "she":"#name ist sehr schlagfertig. Sie ist klüger als Sie und viele andere und versteht sich auszudrücken."
+                        "he":"#name# ist sehr schlagfertig. Er ist klüger als Sie und viele andere und versteht sich auszudrücken.",
+                        "she":"#name# ist sehr schlagfertig. Sie ist klüger als Sie und viele andere und versteht sich auszudrücken."
                     },
                 },
             },
@@ -566,8 +566,8 @@ export default {
                         "she":"Unterstützen Sie sie dabei, ihren Wünschen Ausdruck zu verleihen und andere an ihren Ideen teihaben zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name weiß, was er will und versteht das auch anderen mitzuteilen. Er ist ein wenig starrköpfing und versteht es, sich durchzusetzen.",
-                        "she":"#name weiß, was sie will und versteht das auch anderen mitzuteilen. Sie ist ein wenig starrköpfing und versteht es, sich durchzusetzen."
+                        "he":"#name# weiß, was er will und versteht das auch anderen mitzuteilen. Er ist ein wenig starrköpfing und versteht es, sich durchzusetzen.",
+                        "she":"#name# weiß, was sie will und versteht das auch anderen mitzuteilen. Sie ist ein wenig starrköpfing und versteht es, sich durchzusetzen."
                     },
                 },
                 "big5_conscientiousness":{
@@ -576,8 +576,8 @@ export default {
                         "she":"Erinnern Sie sie daran, wie leicht es ihr fällt, ihre Mitmenschen zu unterhalten.",
                     },
                     "paragraph":{
-                        "he":"#name ist spitzbübisch und übermütig. Er ist extrovertiert und reißt andere Menschen mit sich.",
-                        "she":"#name ist spitzbübisch und übermütig. Sie ist extrovertiert und reißt andere Menschen mit sich."
+                        "he":"#name# ist spitzbübisch und übermütig. Er ist extrovertiert und reißt andere Menschen mit sich.",
+                        "she":"#name# ist spitzbübisch und übermütig. Sie ist extrovertiert und reißt andere Menschen mit sich."
                     },
                 },
                 "big5_neuroticism":{
@@ -586,8 +586,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, ihre Ziele heute noch höher zu stecken.",
                     },
                     "paragraph":{
-                        "he":"#name ist durchaus mutig. Sein unerschütterliches Selbstvertrauen veranlasst ihn dazu, seine Ziele konsequent zu verfolgen.",
-                        "she":"#name ist durchaus mutig. Ihr unerschütterliches Selbstvertrauen veranlasst sie dazu, ihre Ziele konsequent zu verfolgen."
+                        "he":"#name# ist durchaus mutig. Sein unerschütterliches Selbstvertrauen veranlasst ihn dazu, seine Ziele konsequent zu verfolgen.",
+                        "she":"#name# ist durchaus mutig. Ihr unerschütterliches Selbstvertrauen veranlasst sie dazu, ihre Ziele konsequent zu verfolgen."
                     },
                 },
                 "big5_openness":{
@@ -596,8 +596,8 @@ export default {
                         "she":"Unterstützen Sie ihre Kontaktfreude, aber ermuntern Sie sie auch dazu, manchmal andere in den Vordergund treten zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name sagt, was er denkt. Er ist zuversichtlich und gesprächig. Er hört vielleicht nicht immer zu, aber er lässt andere an seinen Gedanken teilhaben.",
-                        "she":"#name sagt, was sie denkt. Sie ist zuversichtlich und gesprächig. Sie hört vielleicht nicht immer zu, aber sie lässt andere an ihren Gedanken teilhaben."
+                        "he":"#name# sagt, was er denkt. Er ist zuversichtlich und gesprächig. Er hört vielleicht nicht immer zu, aber er lässt andere an seinen Gedanken teilhaben.",
+                        "she":"#name# sagt, was sie denkt. Sie ist zuversichtlich und gesprächig. Sie hört vielleicht nicht immer zu, aber sie lässt andere an ihren Gedanken teilhaben."
                     },
                 },
             },
@@ -782,8 +782,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, den ganzen Tag lang ihr angenehmes Wesen zum Ausdruck zu bringen.",
                     },
                     "paragraph":{
-                        "he":"#name ist ein sanfter und empfindsamer Mensch. Man könnte ihn fast als naiv bezeichnen, aber alle mögen ihn aufgrund seiner Freundlichkeit.",
-                        "she":"#name ist ein sanfter und empfindsamer Mensch. Man könnte sie fast als naiv bezeichnen, aber alle mögen sie aufgrund ihrer Freundlichkeit."
+                        "he":"#name# ist ein sanfter und empfindsamer Mensch. Man könnte ihn fast als naiv bezeichnen, aber alle mögen ihn aufgrund seiner Freundlichkeit.",
+                        "she":"#name# ist ein sanfter und empfindsamer Mensch. Man könnte sie fast als naiv bezeichnen, aber alle mögen sie aufgrund ihrer Freundlichkeit."
                     },
                 },
                 "big5_conscientiousness":{
@@ -792,8 +792,8 @@ export default {
                         "she":"Erinnern Sie sie daran, dass Strenge eine Tugend sein kann, und ermutigen Sie sie dazu, ihren Instinkten zu folgen.",
                     },
                     "paragraph":{
-                        "he":"#name ist bei allem, was er tut, äußerst sorgfältig. Manche meinen, er sei schwer zufriedenzustellen, aber andere geben viel auf seine Meinung.",
-                        "she":"#name ist bei allem, was sie tut, äußerst sorgfältig. Manche meinen, sie sei schwer zufriedenzustellen, aber andere geben viel auf ihre Meinung."
+                        "he":"#name# ist bei allem, was er tut, äußerst sorgfältig. Manche meinen, er sei schwer zufriedenzustellen, aber andere geben viel auf seine Meinung.",
+                        "she":"#name# ist bei allem, was sie tut, äußerst sorgfältig. Manche meinen, sie sei schwer zufriedenzustellen, aber andere geben viel auf ihre Meinung."
                     },
                 },
                 "big5_extraversion":{
@@ -802,8 +802,8 @@ export default {
                         "she":"Erinnern Sie sie daran, wie anziehend ihre Energie auf andere wirken kann.",
                     },
                     "paragraph":{
-                        "he":"#name ist reizbar. Seine überschäumende Energie kann ihn aber auch attraktiv machen.",
-                        "she":"#name ist reizbar. Ihre überschäumende Energie kann sie aber auch attraktiv machen."
+                        "he":"#name# ist reizbar. Seine überschäumende Energie kann ihn aber auch attraktiv machen.",
+                        "she":"#name# ist reizbar. Ihre überschäumende Energie kann sie aber auch attraktiv machen."
                     },
                 },
                 "big5_openness":{
@@ -812,8 +812,8 @@ export default {
                         "she":"Ermutigen Sie sie dazu, heute gegenüber allen Menschen, die sie trifft, ihren Gefühlen Ausdruck zu verleihen.",
                     },
                     "paragraph":{
-                        "he":"#name ist ein leidenschaftlicher und sinnlicher Zeitgenosse. Seine Lebensfreude wirkt anziehend auf andere, auch wenn sie ihn nicht immer verstehen.",
-                        "she":"#name ist eine leidenschaftliche und sinnliche Zeitgenossin. Ihre Lebensfreude wirkt anziehend auf andere, auch wenn sie sie nicht immer verstehen."
+                        "he":"#name# ist ein leidenschaftlicher und sinnlicher Zeitgenosse. Seine Lebensfreude wirkt anziehend auf andere, auch wenn sie ihn nicht immer verstehen.",
+                        "she":"#name# ist eine leidenschaftliche und sinnliche Zeitgenossin. Ihre Lebensfreude wirkt anziehend auf andere, auch wenn sie sie nicht immer verstehen."
                     },
                 },
             },
@@ -830,8 +830,8 @@ export default {
                         "she":"Geben Sie ihr zu verstehen, wie sehr sie von ihrer  gefühlsbetonten Art beeindruckt sind, und ermutigen Sie sie dazu, heute auf ihre innere Stimme zu hören.",
                     },
                     "paragraph":{
-                        "he":"#name handelt spontan. Er verlässt sich auf seine Instinkte, wenn es darum geht, das Ruder herumzuwerfen.",
-                        "she":"#name handelt spontan. Sie verlässt sich auf ihre Instinkte, wenn es darum geht, das Ruder herumzuwerfen."
+                        "he":"#name# handelt spontan. Er verlässt sich auf seine Instinkte, wenn es darum geht, das Ruder herumzuwerfen.",
+                        "she":"#name# handelt spontan. Sie verlässt sich auf ihre Instinkte, wenn es darum geht, das Ruder herumzuwerfen."
                     },
                 },
                 "big5_extraversion":{
@@ -840,8 +840,8 @@ export default {
                         "she":"Ermutigen Sie sie dazu, heute auf sich selbst zu hören und ihrem Bauchgefühl zu vertrauen.",
                     },
                     "paragraph":{
-                        "he":"#name ist ein bisschen geheimnisvoll. Er neigt dazu sich abzuschotten, aber wen er in sein Inneres blicken lässt, der kann von Glück reden, denn er ist ein sehr interessanter Mensch.",
-                        "she":"#name ist ein bisschen geheimnisvoll. Sie neigt dazu sich abzuschotten, aber wen sie in ihr Inneres blicken lässt, der kann von Glück reden, denn sie ist ein sehr interessanter Mensch."
+                        "he":"#name# ist ein bisschen geheimnisvoll. Er neigt dazu sich abzuschotten, aber wen er in sein Inneres blicken lässt, der kann von Glück reden, denn er ist ein sehr interessanter Mensch.",
+                        "she":"#name# ist ein bisschen geheimnisvoll. Sie neigt dazu sich abzuschotten, aber wen sie in ihr Inneres blicken lässt, der kann von Glück reden, denn sie ist ein sehr interessanter Mensch."
                     },
                 },
                 "big5_openness":{
@@ -850,8 +850,8 @@ export default {
                         "she":"Ermutigen Sie sie dazu, heute sich selbst zu vertrauen, damit sie ihr Bestes geben kann.",
                     },
                     "paragraph":{
-                        "he":"#name mag keine Überraschungen. Er kennt seine Bedürfnisse und fühlt sich in einer gut strukturierten Umgebung wohl. Wenn #name nach Erfolg strebt, verlässt er sich auf seine innersten Gefühle.",
-                        "she":"#name mag keine Überraschungen. Sie kennt ihre Bedürfnisse und fühlt sich in einer gut strukturierten Umgebung wohl. Wenn #name nach Erfolg strebt, verlässt sie sich auf ihre innersten Gefühle."
+                        "he":"#name# mag keine Überraschungen. Er kennt seine Bedürfnisse und fühlt sich in einer gut strukturierten Umgebung wohl. Wenn #name# nach Erfolg strebt, verlässt er sich auf seine innersten Gefühle.",
+                        "she":"#name# mag keine Überraschungen. Sie kennt ihre Bedürfnisse und fühlt sich in einer gut strukturierten Umgebung wohl. Wenn #name# nach Erfolg strebt, verlässt sie sich auf ihre innersten Gefühle."
                     },
                 },
             },
@@ -1036,8 +1036,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, sich am heutigen Tag voll einzubringen – damit beschenkt sie ihre Mitmenschen.",
                     },
                     "paragraph":{
-                        "he":"#name ist taktvoll und diplomatisch, was es ihm möglich macht, mit vielen unterschiedlichen Menschen klarzukommen.",
-                        "she":"#name ist taktvoll und diplomatisch, was es ihr möglich macht, mit vielen unterschiedlichen Menschen klarzukommen."
+                        "he":"#name# ist taktvoll und diplomatisch, was es ihm möglich macht, mit vielen unterschiedlichen Menschen klarzukommen.",
+                        "she":"#name# ist taktvoll und diplomatisch, was es ihr möglich macht, mit vielen unterschiedlichen Menschen klarzukommen."
                     },
                 },
                 "big5_conscientiousness":{
@@ -1046,8 +1046,8 @@ export default {
                         "she":"Erinnern Sie sie daran, dass ihre Schlagfertigkeit ein besonderes Talent ist.",
                     },
                     "paragraph":{
-                        "he":"#name ist sehr intelligent. Er lernt schnell und versteht das Gelernte an andere weiterzugeben.",
-                        "she":"#name ist sehr intelligent. Sie lernt schnell und versteht das Gelernte an andere weiterzugeben."
+                        "he":"#name# ist sehr intelligent. Er lernt schnell und versteht das Gelernte an andere weiterzugeben.",
+                        "she":"#name# ist sehr intelligent. Sie lernt schnell und versteht das Gelernte an andere weiterzugeben."
                     },
                 },
                 "big5_extraversion":{
@@ -1056,8 +1056,8 @@ export default {
                         "she":"Erinnern Sie sie daran, dass ihre Lebhaftigkeit und ihre Weltoffenheit belebend für ihr Umfeld sind.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine wahre Naturgewalt und ausdrucksstark. Seine Mitmenschen heben seine große Ausstrahlung hervor.",
-                        "she":"#name ist eine wahre Naturgewalt und ausdrucksstark. Ihre Mitmenschen heben ihre große Ausstrahlung hervor."
+                        "he":"#name# ist eine wahre Naturgewalt und ausdrucksstark. Seine Mitmenschen heben seine große Ausstrahlung hervor.",
+                        "she":"#name# ist eine wahre Naturgewalt und ausdrucksstark. Ihre Mitmenschen heben ihre große Ausstrahlung hervor."
                     },
                 },
                 "big5_neuroticism":{
@@ -1066,8 +1066,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, den heutigen Tag voll und ganz zu nutzen – es wird nicht zu ihrem Schaden sein.",
                     },
                     "paragraph":{
-                        "he":"#name ist ein leidenschaftlicher Mensch und bestrebt, alles auszuprobieren, was das Leben zu bieten hat. Er geht bis zum Äußersten.",
-                        "she":"#name ist ein leidenschaftlicher Mensch und bestrebt, alles auszuprobieren, was das Leben zu bieten hat. Sie geht bis zum Äußersten."
+                        "he":"#name# ist ein leidenschaftlicher Mensch und bestrebt, alles auszuprobieren, was das Leben zu bieten hat. Er geht bis zum Äußersten.",
+                        "she":"#name# ist ein leidenschaftlicher Mensch und bestrebt, alles auszuprobieren, was das Leben zu bieten hat. Sie geht bis zum Äußersten."
                     },
                 },
             },
@@ -1078,8 +1078,8 @@ export default {
                         "she":"Erinnern Sie sie daran, wie sehr die Welt ihre Scharfsinnigkeit braucht.",
                     },
                     "paragraph":{
-                        "he":"#name ist einzigartig und durchaus exzentrisch. Seine Gewitztheit bringt ihm viel Aufmerksamkeit ein.",
-                        "she":"#name ist einzigartig und durchaus exzentrisch. Ihre Gewitztheit bringt ihr viel Aufmerksamkeit ein."
+                        "he":"#name# ist einzigartig und durchaus exzentrisch. Seine Gewitztheit bringt ihm viel Aufmerksamkeit ein.",
+                        "she":"#name# ist einzigartig und durchaus exzentrisch. Ihre Gewitztheit bringt ihr viel Aufmerksamkeit ein."
                     },
                 },
                 "big5_conscientiousness":{
@@ -1088,8 +1088,8 @@ export default {
                         "she":"Unterstützen Sie sie in ihren Marotten und dabei, den Tag so zu gestalten, wie sie es wünscht.",
                     },
                     "paragraph":{
-                        "he":"#name ist eine amüsante Person. Er ist unkonventionell und hat seine eigenen Ansichten. Jemanden wie #name findet man nicht alle Tage.",
-                        "she":"#name ist eine amüsante Person. Sie ist unkonventionell und hat ihre eigenen Ansichten. Jemanden wie #name findet man nicht alle Tage."
+                        "he":"#name# ist eine amüsante Person. Er ist unkonventionell und hat seine eigenen Ansichten. Jemanden wie #name# findet man nicht alle Tage.",
+                        "she":"#name# ist eine amüsante Person. Sie ist unkonventionell und hat ihre eigenen Ansichten. Jemanden wie #name# findet man nicht alle Tage."
                     },
                 },
                 "big5_extraversion":{
@@ -1098,8 +1098,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, heute über sich selbst und ihre inneren Werte nachzudenken.",
                     },
                     "paragraph":{
-                        "he":"#name ist ein nachdenklicher Mensch. Er denkt oft über sich selbst nach und darüber, was sein Wesen ausmacht.",
-                        "she":"#name ist ein nachdenklicher Mensch. Sie denkt oft über sich selbst nach und darüber, was ihr Wesen ausmacht."
+                        "he":"#name# ist ein nachdenklicher Mensch. Er denkt oft über sich selbst nach und darüber, was sein Wesen ausmacht.",
+                        "she":"#name# ist ein nachdenklicher Mensch. Sie denkt oft über sich selbst nach und darüber, was ihr Wesen ausmacht."
                     },
                 },
                 "big5_neuroticism":{
@@ -1108,8 +1108,8 @@ export default {
                         "she":"Ermuntern Sie sie dazu, heute auf ihre innere Stimme zu hören, damit der Tag erfolgreich wird.",
                     },
                     "paragraph":{
-                        "he":"#name ist scharfsinnig und macht sich manchmal Sorgen um die Zukunft. Er ist gefühlsbetont und reagiert empfindlich auf seine Umwelt.",
-                        "she":"#name ist scharfsinnig und macht sich manchmal Sorgen um die Zukunft. Sie ist gefühlsbetont und reagiert empfindlich auf ihre Umwelt."
+                        "he":"#name# ist scharfsinnig und macht sich manchmal Sorgen um die Zukunft. Er ist gefühlsbetont und reagiert empfindlich auf seine Umwelt.",
+                        "she":"#name# ist scharfsinnig und macht sich manchmal Sorgen um die Zukunft. Sie ist gefühlsbetont und reagiert empfindlich auf ihre Umwelt."
                     },
                 },
             },
@@ -1126,8 +1126,8 @@ export default {
                         }
                     ],
                     "paragraph":{
-                        "he":"Er versucht Routine und gesellschaftliche Konventionen zu vermeiden. Stattdessen ist #name auf der Suche nach neuen, bereichernden Erfahrungen.",
-                        "she": "Sie versucht Routine und gesellschaftliche Konventionen zu vermeiden. Stattdessen ist #name auf der Suche nach neuen, bereichernden Erfahrungen.",
+                        "he":"Er versucht Routine und gesellschaftliche Konventionen zu vermeiden. Stattdessen ist #name# auf der Suche nach neuen, bereichernden Erfahrungen.",
+                        "she": "Sie versucht Routine und gesellschaftliche Konventionen zu vermeiden. Stattdessen ist #name# auf der Suche nach neuen, bereichernden Erfahrungen.",
                     }
                 },  
                 "facet_artistic_interests":{
