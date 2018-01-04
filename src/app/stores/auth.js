@@ -2,6 +2,12 @@ import SocketUtil from '../util/socket';
 import FetchUtil from '../util/fetch';
 import Store from './store';
 
+const SUPPORTED_LANGS = {
+    en: 1,
+    fr: 1,
+    de: 1
+}
+
 export default class AuthStore extends Store {
     constructor() {
         super();
@@ -83,7 +89,7 @@ export default class AuthStore extends Store {
         }
         
     }
-    async getStatus() { 
+    async getStatus(query) { 
         if (!this.user.status && !this.gettingStatus)  {
             try {
                 this.gettingStatus = true;
@@ -94,6 +100,14 @@ export default class AuthStore extends Store {
                 Object.assign(this.user.status, result.status);
                 Object.assign(this.user.env, result.env);
                 console.log("User contact status", this.user);
+
+                if (query && query.lang && SUPPORTED_LANGS[query.lang] && this.user.locale != query.lang) {
+                    console.log("Language switch!", query.lang);
+                    await this.updateContact(
+                        {locale: query.lang, accessToken: this.accessToken}
+                    )
+                    this.user.locale = query.lang;
+                }
                 this.trigger("status_updated");
             }
 

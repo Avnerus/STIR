@@ -302,6 +302,7 @@ app.service('/user/contact').hooks({
         authHooks.queryWithCurrentUser()
       ],
       patch: [
+        authentication.hooks.authenticate(['jwt']),
         noDotPluck(
             'locale',
             'alarmLocales',
@@ -421,7 +422,6 @@ app.use(async function (req, res, next) {
         try {
             for (let i = 0; i < req.populateQueue.length; i++) {
                 let taskObj = req.populateQueue[i];
-                console.log("Runnint task", taskObj);
                 await req.appState[taskObj.store][taskObj.task].apply(req.appState[taskObj.store], taskObj.args);
             }
             

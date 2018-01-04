@@ -30,7 +30,7 @@ class Routes {
             req.appState.main.setRole(null)
             req.appState.sleeper.setAction(null);
             req.appState.rouser.setAction(null);
-            this.populate(req, 'auth', 'getStatus');
+            this.populate(req, 'auth', 'getStatus', req.query);
             this.go(next, req, res);
         });
 
@@ -47,7 +47,7 @@ class Routes {
                     page.show("/sleeper/welcome");
 
             } else {
-                this.populate(req, 'auth', 'getStatus');
+                this.populate(req, 'auth', 'getStatus', req.query);
                 this.populate(req, 'sleeper', 'getAlarms');
             }
             this.next(next, req, res);
@@ -103,7 +103,7 @@ class Routes {
                     page.show("/sign-up/locale");
                 }
             } else {
-                this.populate(req, 'auth', 'getStatus');
+                this.populate(req, 'auth', 'getStatus', req.query);
             }
             this.next(next, req, res);
         });
@@ -123,12 +123,12 @@ class Routes {
         });
 
         app.route('/sign-up/contact').get((req, res, next) => {
-            this.populate(req, 'auth', 'getStatus');
+            this.populate(req, 'auth', 'getStatus', req.query);
             console.log("sign-up contact route");
             this.go(next, req, res);
         });
         app.route('/sign-up/verify').get((req, res, next) => {
-            this.populate(req, 'auth', 'getStatus');
+            this.populate(req, 'auth', 'getStatus', req.query);
             console.log("sign-up verify route");
             this.go(next, req, res);
         });
@@ -197,7 +197,7 @@ class Routes {
                     }
                 }
             } else {
-                this.populate(req, 'auth', 'getStatus');
+                this.populate(req, 'auth', 'getStatus', req.query);
             }
             this.go(next, req, res);
         });

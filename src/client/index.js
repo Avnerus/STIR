@@ -113,27 +113,7 @@ page('*', function(ctx,next) {
         let newLocale = ctx.querystring.split('=')[1];
         if (SUPPORTED_LANGS[newLocale] && newLocale != ctx.appState.auth.locale) {
             console.log("Language switch!", newLocale);
-            ctx.appState.auth.locale = newLocale;
-            ctx.appState.auth.updateContact(
-                {locale: ctx.appState.auth.locale}
-            )
-            .then(() => {
-               window.location = ctx.canonicalPath;
-            })
-            .catch(() => {
-                window.location = ctx.canonicalPath;
-            })
-            /*
-            let mixinObj = mixin('i18n', null, true);            
-            mixinObj.i18n.messages = Messages[ctx.appState.auth.locale];
-            mixinObj.i18n.locales = [ctx.appState.auth.locale];
-            updateTag(phonon.navigator().currentPage);
-
-            let header = $('.next-language');
-            header.removeClass('is-expanded');
-            header.find('a > span')[0].innerHTML = newLocale;
-            header.find('li.is-active').removeClass('is-active');
-            header.find('a[data-code=' + newLocale+ ']').parent().addClass('is-active');*/
+            window.location = ctx.canonicalPath;
         }
         ctx.canonicalPath = ctx.canonicalPath.split('?')[0];
     }
