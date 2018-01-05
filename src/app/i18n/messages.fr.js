@@ -117,7 +117,7 @@ const Messages =
     NOT_SOCIAL: 'Vous n\'êtes pas sur les médias sociaux?',
     SUBMIT: 'Soumettre',
     NEW_ALARM_NOTIFICATION: 'Message de réveil prévu pour dans {hours} heure(s) et {minutes} minutes.',
-    NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.',
+    NEW_ALARM_NOTIFICATION_1DAY: 'Message de réveil prévu pour dans 1 jour, {hours} heure(s) et {minutes} minutes.',
     LANGUAGE_REQUIREMENT: 'Vous pouvez enregistrer votre message dans l\'une des langues suivantes:',
     ALARM_DELIVERED: "Votre message de réveil vient d'être livré à {name}! Merci de la part de L'appel du réveil.",
     FB_NO_PERMISSION: 'L\'appel du réveil a besoin de votre permission pour analyser vos publications, afin de personnaliser votre message de réveil.',
@@ -138,6 +138,11 @@ const Messages =
     ADDITIONAL_DEVELOPMENT: 'Développement additionnel',
     SPECIAL_THANKS: 'Remerciements spéciaux',
     AND: 'et',
+    CODE_MESSAGE: 'Votre code L\'appel du réveil est {number}',
+    LOCAL_TIME: 'HEURE LOCALE',
+    THANK_YOU: 'Merci!',
+    THANK_YOU_DESC_1: 'Si vous le souhaitez, nous pouvons chercher un autre Dormeur qui a besoin d\'un message de réveil.',
+    THANK_YOU_DESC_2: 'Ou vous pouvez devenir un Dormeur à votre tour.',
 
     // TRAITS
     IN_NEED: "besoin ",

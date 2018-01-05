@@ -117,7 +117,7 @@ const Messages =
     NOT_SOCIAL: 'Sie sind nicht in sozialen Medien präsent?',
     SUBMIT: 'Nachricht',
     NEW_ALARM_NOTIFICATION: 'Weck-Nachricht in {hours} Stunden und {minutes} Minuten.',
-    NEW_ALARM_NOTIFICATION_1DAY: 'Wakeup message set for 1 day, {hours} hours and {minutes} minutes from now.',
+    NEW_ALARM_NOTIFICATION_1DAY: 'Weck-Nachricht in 1 tag, {hours} Stunden und {minutes} Minuten.',
     LANGUAGE_REQUIREMENT: 'Aufnehmen können Sie die Nachricht auf',
     ALARM_DELIVERED: 'Ihre Weck-Nachricht wurde an {name} gesendet. Weckruf dankt Ihnen.',
     FB_NO_PERMISSION: 'Weckruf benötigt die Erlaubnis, auf Ihre Beiträge zugreifen zu dürfen, um Ihre Weck-Nachricht möglichst persönlich gestalten zu können.',
@@ -138,6 +138,11 @@ const Messages =
     ADDITIONAL_DEVELOPMENT: 'Zusätzliche Entwicklung',
     SPECIAL_THANKS: 'Unser besonderer Dank geht an',
     AND: 'und',
+    CODE_MESSAGE: 'Ihr Weckruf-Code lautet {number}',
+    LOCAL_TIME: 'UHR ORTSZEIT',
+    THANK_YOU: 'Danke!',
+    THANK_YOU_DESC_1: 'Wenn Sie wünschen, suchen wir für Sie eine(n) weitere(n) Schlafende(n), die/der geweckt werden möchte.',
+    THANK_YOU_DESC_2: 'Sie können sich auch selbst als Schlafende(r) anmelden.',
     
     // TRAITS
     IN_NEED: "Bedürfnis nach ",

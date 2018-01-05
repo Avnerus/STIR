@@ -62,7 +62,10 @@ class TimeUtil {
 
     getDefaultTime() {
         let defaultTime = new Date(new Date().setHours(9,0,0));
-        defaultTime.setDate(defaultTime.getDate() + 1);
+        let now = new Date();
+        if (now.getHours() != 0) {
+            defaultTime.setDate(defaultTime.getDate() + 1);
+        }
         defaultTime.setMilliseconds(0);
         return defaultTime;
     }

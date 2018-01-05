@@ -465,7 +465,8 @@ app.use(async function (req, res, next) {
 
             let renderOpts = {
               initialData: initialData,
-              body: render('main', req.appState)
+              body: render('main', req.appState),
+              locale: req.appState.auth.locale
             };
 
             if (nfbSettings) {

@@ -138,7 +138,11 @@ const Messages =
     ADDITIONAL_DEVELOPMENT: 'Additional Development',
     SPECIAL_THANKS: 'Special Thanks',
     AND: 'and',
-    
+    CODE_MESSAGE: 'Your STIR code is {number}',
+    LOCAL_TIME: 'LOCAL TIME',
+    THANK_YOU: 'Thank you!',
+    THANK_YOU_DESC_1: 'If you would like, we can search for another sleeper in need of a wakeup.',
+    THANK_YOU_DESC_2: 'Or you can be a sleeper yourself.',
 
     // TRAITS
     IN_NEED: "in need of ",
