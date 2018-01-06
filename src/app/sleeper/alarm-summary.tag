@@ -22,8 +22,20 @@
             </p>
             <p><b><formatted-message id='YOUR_TRAITS'/></b></p>
             <ul class="">
-              <li each="{traits}">
-                {adjective + ' ' + noun}
+              <li>
+                <formatted-message id="HIGH"/><formatted-message id="{state.sleeper.currentAlarm.generatedFrom.big5}"/>
+              </li>
+              <li if="{state.sleeper.currentAlarm.generatedFrom.lows}">
+                <formatted-message id="LOW"/><formatted-message id="{state.sleeper.currentAlarm.generatedFrom.lows}"/>
+              </li>
+              <li if="{state.sleeper.currentAlarm.generatedFrom.highs}">
+                <formatted-message id="HIGH"/><formatted-message id="{state.sleeper.currentAlarm.generatedFrom.highs}"/>
+              </li>
+              <li class="facet">
+                <formatted-message id="{state.sleeper.currentAlarm.generatedFrom.facet}"/>
+              </li>
+              <li>
+                <formatted-message id="IN_NEED"/><formatted-message id="{state.sleeper.currentAlarm.generatedFrom.need}"/>
               </li>
             </ul>
             <div if="{!state.sleeper.currentAlarm.sentFeedback}" id="feedback">
@@ -107,22 +119,6 @@
 
     this.loading = false;
     this.sent = false;
-
-    this.traits = Object.keys(this.state.sleeper.currentAlarm.generatedFrom).map((key) => {
-            let adjectives = {
-                big5: 'High',
-                highs: 'High',
-                lows: 'Low',
-                facet: 'Notable',
-                need: 'Need for'
-            }
-            let noun = this.state.sleeper.currentAlarm.generatedFrom[key].split('_')[1];
-
-            return {
-                adjective: adjectives[key],
-                noun: noun
-            }
-    });
 
     this.on('mount', () => {
         console.log("alarm summary mounted");
