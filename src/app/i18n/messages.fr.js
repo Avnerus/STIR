@@ -162,7 +162,7 @@ const Messages =
     "facet_orderliness": "Haut niveau d'ordre",
     "facet_self_discipline": "Auto-discipline notable",
     "facet_self_efficacy": "Efficacité notable",
-    "big5_extraversion": "extraversion",
+    "big5_extraversion": "niveau d'extraversion",
     "facet_activity_level": "Haut niveau d'activité",
     "facet_assertiveness": "Haut niveau d'affirmation de soi",
     "facet_cheerfulness": "Haut niveau de gaieté",

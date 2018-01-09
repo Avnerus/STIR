@@ -227,7 +227,7 @@ Zina Kisch
 
 © ARTE  FRANCE - ONF 2017
             </pre>
-            <pre show="{state.auth.locale = 'de'}">
+            <pre show="{state.auth.locale == 'de'}">
 Das Leben ist kurz. Mehr als je zuvor. Wir wollen alles. Und wir wollen es jetzt. Sehr Sehr Kurz ist eine Serie aus 10 interaktiven Projekten, bei denen das Thema Mobilität jeweils in 60 Sekunden behandelt wird. Eine Koproduktion von National Film Board of Canada und ARTE, in Zusammenarbeit mit IDFADocLab.
 
 Produktionsausführung
