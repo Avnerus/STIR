@@ -41,7 +41,7 @@ const Messages =
     BE_A_SLEEPER: 'Devenez un Dormeur',
     WAKE_he: 'Réveillez-le',
     WAKE_she: 'Réveillez-la',
-    WAKE_they: 'Réveillez-les',
+    WAKE_they: 'Réveillez cette personne',
     SLEEPER_NOTIFY: 'Bonjour {name}, ceci est un rappel de L\'appel du réveil. Vous avez un appel de réveil programmé pour le {time, time, short}. Pour être certain que vous vous réveillerez, montez le volume de votre téléphone et assurez-vous que le mode VEILLE est désactivé.',
     ROUSER_NOTIFY: 'Ceci est un message de L\'appel du réveil. De nouveaux Dormeurs sont en attente d\'un message de réveil! Visitez le {url}',
     HOME_SUGGEST_TAP: 'Appuyez sur',
@@ -143,6 +143,7 @@ const Messages =
     THANK_YOU: 'Merci!',
     THANK_YOU_DESC_1: 'Si vous le souhaitez, nous pouvons chercher un autre Dormeur qui a besoin d\'un message de réveil.',
     THANK_YOU_DESC_2: 'Ou vous pouvez devenir un Dormeur à votre tour.',
+    SKIP: 'Passer',
 
     // TRAITS
     IN_NEED: "Besoin ",

@@ -550,7 +550,7 @@
             if (IS_CLIENT && !this.state.auth.mturk) {
                if (!this.state.auth.accessToken) {
                     console.log("Opening intro");
-                    MiscUtil.initVideoPanel('#intro-panel');
+                    MiscUtil.initVideoPanel('#intro-panel', this.formatMessage('SKIP'));
                     phonon.panel('#intro-panel').open();                    
                }
                await this.state.auth.loginRest();

@@ -50,7 +50,7 @@
         this.state.rouser.setAction("alarms");
         if (!MiscUtil.isStandaone() && IS_CLIENT && !this.state.auth.mturk) {
             console.log("Opening intro");
-            MiscUtil.initVideoPanel('#rouser-intro-panel');
+            MiscUtil.initVideoPanel('#rouser-intro-panel',this.formatMessage('SKIP'));
             phonon.panel('#rouser-intro-panel').open();                    
         }
         this.update();

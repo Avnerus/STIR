@@ -143,6 +143,7 @@ const Messages =
     THANK_YOU: 'Thank you!',
     THANK_YOU_DESC_1: 'If you would like, we can search for another sleeper in need of a wakeup.',
     THANK_YOU_DESC_2: 'Or you can be a sleeper yourself.',
+    SKIP: 'Skip',
 
     // TRAITS
     IN_NEED: "In need of ",

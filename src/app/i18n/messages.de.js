@@ -143,6 +143,7 @@ const Messages =
     THANK_YOU: 'Danke!',
     THANK_YOU_DESC_1: 'Wenn Sie wünschen, suchen wir für Sie eine(n) weitere(n) Schlafende(n), die/der geweckt werden möchte.',
     THANK_YOU_DESC_2: 'Sie können sich auch selbst als Schlafende(r) anmelden.',
+    SKIP: 'Überspringen',
     
     // TRAITS
     IN_NEED: "Bedürfnis nach ",

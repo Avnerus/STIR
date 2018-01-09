@@ -46,8 +46,9 @@ class MiscUtil {
         return item;
     }
 
-    initVideoPanel(panelId) {
+    initVideoPanel(panelId, skipText) {
         let panel = $(panelId);
+        panel.find('.skip-link').text(skipText);
         enableInlineVideo(panel.find('video'));
 
         panel.find('.play-button').click((e) => {
