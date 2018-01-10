@@ -1,3 +1,4 @@
+%s/#name/#name#/g
 %s/big5_emotional_range/big5_neuroticism/g
 %s/achievement-striving/achievement_striving/g
 %s/self-discipline/self_discipline/g

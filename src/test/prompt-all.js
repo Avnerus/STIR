@@ -1,5 +1,5 @@
 import tracery from 'tracery-grammar'
-import PromptLogic from '../server/models/prompt-logic'
+import PromptLogic from '../server/models/prompt-logic/en'
 
 const promptSyntax = {
   "sentence": [
