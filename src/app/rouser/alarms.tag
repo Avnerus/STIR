@@ -49,7 +49,6 @@
 
             a {
               text-transform: uppercase;
-              font-family:
               letter-spacing: .15rem;
               color: white;
               font-family: Oswald;
