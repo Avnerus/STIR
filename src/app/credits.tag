@@ -4,7 +4,7 @@
       <div class="padded-full">
            <h1><formatted-message id="CREDITS"/></h1>
            <div class="credits">
-               <span> <b><formatted-message id="CREATORS"/></b>Rebecca Lieberman<formatted-message id="AND"/>Julia Irwin</span>
+               <span> <b><formatted-message id="CREATORS"/></b>Rebecca Lieberman <formatted-message id="AND"/>Julia Irwin</span>
                <span> <b><formatted-message id="LEAD_DEVELOPER"/></b>Avner Peled</span>
                <span> <b><formatted-message id="SOUND_DESIGNER"/></b>T.K. Broderick</span>
                <span if="{state.auth.locale != 'fr'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Rena Anakwe</span>
