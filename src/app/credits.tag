@@ -341,6 +341,8 @@ Zina Kisch
              margin-top: 20px;
              margin-top: 30px;
              flex-wrap: wrap;
+             padding-bottom: 20px;
+             border-bottom: 1px solid gray;
 
              span {
                 padding-right: 5px;
@@ -356,14 +358,6 @@ Zina Kisch
             white-space: pre-wrap;
          }
 
-         .nfb-credits:before {
-           content: "";
-           width: 100px;
-           margin: 0 auto;
-           height: 1px;
-           color: white;
-           background-color: white;
-         }
          .nfb-credits {
            font-family: 'Montserrat', Helvetica, sans-serif;
            font-size: 13px;

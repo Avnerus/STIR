@@ -60,8 +60,8 @@
             bottom: 80px;
             right: 1px;
            .add-button {
-                background-color: #f36b21;
-                border-radius: 40px;
+                background-color: #0084e7;
+                border-radius: 50%;
                 width: 80px;
                 height: 80px;
                 display: flex;
