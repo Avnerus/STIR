@@ -103,7 +103,7 @@
 
 		p {
 		font-family: 'Montserrat', sans-serif;
-		font-size: 13px
+		font-size: 13px;
           margin-bottom: 10px;
           color: #000000;
 		font-weight: 400;
