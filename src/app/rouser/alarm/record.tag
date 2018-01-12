@@ -23,9 +23,9 @@
       <div id="prompt">
             <div class="intro row">
                <formatted-message id='PROMPT_INTRO' name="{state.rouser.currentAlarm.name}"/>
-            </div> 
+            </div>
             <p each="{text, i in state.rouser.currentAlarm.prompt[state.auth.locale].paragraphs}">{text}</p>
-            <p><i><formatted-message id='PROMPT_INSTRUCTION' name="{state.rouser.currentAlarm.name}"/></i></p>
+            <p><formatted-message id='PROMPT_INSTRUCTION' name="{state.rouser.currentAlarm.name}"/></p>
             <ul class="">
               <li each="{text, i in state.rouser.currentAlarm.prompt[state.auth.locale].instructions}">
                 {text}
@@ -39,7 +39,7 @@
    </div>
 </div>
 
- <style>    
+ <style>
      rouser-alarm-record {
          #prompt {
             background-color: #f8f8f8;
@@ -96,7 +96,7 @@
             this.loading = true;
             let result = await this.state.rouser.requestCall();
             console.log("Request call result", result);
-        } 
+        }
         catch(e) {
             console.log("Error requesting call", e);
             phonon.alert(e.name ? e.name : e.message, "Oops", false, "Ok");

@@ -11,6 +11,7 @@
                <span if="{state.auth.locale == 'fr'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Sofi Lambert</span>
                <span> <b><formatted-message id="ADDITIONAL_DEVELOPMENT"/></b>Rebecca Ricks</span>
                <span> <b><formatted-message id="SPECIAL_THANKS"/></b>Jackson Jewett, Ziv Schneider, Justin Mulroy, Pierre Vannier, Jane Irwin, Victoria Irwin, Charlotte Lieberman, Nicholas Hubbard, Jason Sigal, Or Fleisher</span>
+
            </div>
            <div class="nfb-credits">
             <pre show="{state.auth.locale == 'en'}">
@@ -18,37 +19,37 @@ Life is short. Now more than ever. We want it all. We want it now. Right away. V
 
 NFB
 
-Executive Producer 
+Executive Producer
 Hugues Sweeney
 
-Production Managers 
+Production Managers
 Marie-Pier Gauthier
 Nathalie Bédard Morin
 
-Editorial Manager 
+Editorial Manager
 Valérie Darveau
 
-Technology director 
+Technology director
 Martin Viau
 
-Production Coordinators 
+Production Coordinators
 Caroline Fournier
 Claudia Boutin
 Dominique Brunet
 
-Administrator 
+Administrator
 Marie-Andrée Bonneau
 
 Marketing Manager
 Tammy Peddle
 
-Marketing coordinator 
+Marketing coordinator
 Florent Prevelle
- 
-Social Media Strategist
-Kate Ruscito 
 
-Web content Project manager 
+Social Media Strategist
+Kate Ruscito
+
+Web content Project manager
 Félix-Antoine Viens
 
 Press Relations
@@ -57,12 +58,12 @@ Pat Dillon
 
 Information technologies
 Sergiu Suciu
- 
-Legal Services 
+
+Legal Services
 Peter Kallianiotis
 
 
-ARTE France 
+ARTE France
 
 Digital Development Chief
 Gilles Freissinier
@@ -72,30 +73,30 @@ Marianne Levy-Leblond
 
 Program Producers
 Marie Berthoumieu
-Emilie Bessard  
+Emilie Bessard
 
 Head of project management
 Stéphane Nauroy
- 
+
 Community manager
 Léa Jagut
 
 Administrator
 Jerôme Vernet
- 
+
 ARTE France Développement
 
 Production Managers
 Claire Aubret
-Angèle Le Névé 
+Angèle Le Névé
 
-Assisted by 
+Assisted by
 Juliette Droillard
 
-Translation 
+Translation
 Christian Stonner
- 
-Responsable ARTE Studio Lab 
+
+Responsable ARTE Studio Lab
 Clément Dhamelincourt
 
 
@@ -113,7 +114,7 @@ Caspar Sonnen
 Wotienke Vermeer
 Michael Zbieranowski
 
-ACKNOWLEDGEMENTS 
+ACKNOWLEDGEMENTS
 
 Caspar Sonnen - IDFA DocLab
 Ziv Schneider - New media artist
@@ -121,7 +122,7 @@ Jouke Vuurmans - MediaMonks
 Julia Kaganskiy - New Museum
 Myriam Achard - PHI Center
 Florent Maurin - The Pixel Hunt
-Jepchumba - Digital Artist and Curator 
+Jepchumba - Digital Artist and Curator
 Marie Berthoumieu - ARTE
 Hugues Sweeney - National Film Board of Canada
 Rafaella Wang
@@ -161,7 +162,7 @@ Tammy Peddle
 Coordonnateur marketing
 Florent Prevelle
 Stratège médias sociaux
-Kate Ruscito 
+Kate Ruscito
 
 Chargé de projet contenu web
 Félix-Antoine Viens
@@ -175,7 +176,7 @@ Sergiu Suciu
 Services juridiques
 Peter Kallianiotis
 
-ARTE France 
+ARTE France
 Directeur du développement numérique
 Gilles Freissinier
 
@@ -196,7 +197,7 @@ Jerôme Vernet
 ARTE France Développement
 Directrices de Production
 Claire Aubret
-Angèle Le Névé 
+Angèle Le Névé
 Assistées de
 Juliette Droillard
 Traduction
@@ -258,7 +259,7 @@ Tammy Peddle
 Koordination Marketing
 Florent Prevelle
 Strategie Soziale Medien
-Kate Ruscito 
+Kate Ruscito
 
 Management Web-Content
 Félix-Antoine Viens
@@ -272,7 +273,7 @@ Sergiu Suciu
 Rechtsberatung
 Peter Kallianiotis
 
-ARTE France 
+ARTE France
 Leitung Pôle Web
 Gilles Freissinier
 
@@ -293,7 +294,7 @@ Jerôme Vernet
 ARTE France Développement
 Produktionsleitung
 Claire Aubret
-Angèle Le Névé 
+Angèle Le Névé
 Assistenz
 Juliette Droillard
 Übersetzung
@@ -333,6 +334,7 @@ Zina Kisch
          h1 {
             text-align: center;
          }
+
          .credits {
              display: flex;
              justify-content: center;
@@ -352,6 +354,21 @@ Zina Kisch
 
          pre {
             white-space: pre-wrap;
+         }
+
+         .nfb-credits:before {
+           content: "";
+           width: 100px;
+           margin: 0 auto;
+           height: 1px;
+           color: white;
+           background-color: white;
+         }
+         .nfb-credits {
+           font-family: 'Montserrat', Helvetica, sans-serif;
+           font-size: 13px;
+           text-align: center;
+           line-height: 1.5;
          }
      }
  </style>

@@ -46,23 +46,31 @@
             .details {
                 display: flex;
                 flex-direction: column;
-		
-		.country {
-			text-transform: uppercase;
-			opacity: .5;
-			font-weight: 600;
-			letter-spacing: .05rem;
-			font-size:.8rem;
-		}
+
+            a {
+              text-transform: uppercase;
+              font-family:
+              letter-spacing: .15rem;
+              color: white;
+              font-family: Oswald;
             }
-            
+
+        		.country {
+        			text-transform: uppercase;
+        			opacity: .5;
+        			font-weight: 600;
+        			letter-spacing: .05rem;
+        			font-size:.8rem;
+        		}
+            }
+
              .details a {
 	          font-size: 1.7rem;
 	          font-weight: 400!important;
 	          line-height: 1.2;
 	          color: white;
 	         }
-            
+
             .sleeperbutton {
                width: 100%;
                margin-top: 15px;
@@ -73,40 +81,40 @@
             }
          }
      }
-     
+
      rouser-alarm-record .notice {
- 	font-family: 'Source Sans Pro', sans-serif;
-        font-size: .9rem;
-	margin-bottom: 10px;
-	color: #919191;
-	margin-top: 16px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          margin-bottom: 10px;
+          color: #C8C8C8;
+          margin-top: 16px;
 }
 
 	.language-requirement {
-		font-family: 'Source Sans Pro', sans-serif;
-                font-size: .9rem;
-                margin-bottom: 10px;
-                color: #919191;
-                margin-top: 16px;
+		font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          margin-bottom: 10px;
+          color: #C8C8C8;
+          margin-top: 16px;
 }
 
 	.rouser-alarm-record #prompt {
 		border-radius:0px!important;
 		padding:20px!important;
-		
+
 		p {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: .9rem;
-                margin-bottom: 10px;
-                color: #000000;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 13px
+          margin-bottom: 10px;
+          color: #000000;
 		font-weight: 400;
 		}
-		
+
 		ul li {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: .9rem;
-                margin-bottom: 10px;
-                color: #000000;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 13px;
+          margin-bottom: 10px;
+          color: #000000;
 		font-weight: 400;
 		}
 

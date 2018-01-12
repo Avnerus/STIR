@@ -14,14 +14,14 @@
                 <source src={state.rouser.currentAlarm.recording.mixUrl} type="audio/wav">
             </audio>
         </p>
-        <button class="btn primary raised" type="button" click="{recordAgain}">
-            <formatted-message id='RERECORD'/>
-        </button>
         <form action="" onsubmit="{finalize}">
            <button class="btn positive raised" type="submit">
                 <formatted-message id='SUBMIT_MESSAGE'/>
             </button>
         </form>
+        <button class="btn primary raised" type="button" click="{recordAgain}">
+            <formatted-message id='RERECORD'/>
+        </button>
         </div>
     </div>
 </div>
@@ -40,7 +40,7 @@
 
         this.on('mount', () => {
             console.log("alarm mix mounted");
-                    
+
         });
 
         this.on('unmount', () => {
@@ -64,7 +64,7 @@
             e.preventDefault();
             try {
                 console.log("Finalizing alarm");
-                let result = await this.state.rouser.finalizeAlarm();            
+                let result = await this.state.rouser.finalizeAlarm();
                 console.log("Finalize result", result);
                 if (result.status == "success") {
                     this.state.rouser.invalidateAlarms();
@@ -79,4 +79,3 @@
         }
     </script>
 </rouser-alarm-mix>
-
