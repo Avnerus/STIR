@@ -1,88 +1,87 @@
 export default {
     "big5s":{
         "big5_agreeableness":{
-            "person_type":"morning",
             "highs":{
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Remind him to let his kindness shine today.",
-                        "she":"Remind her to let her kindness shine today.",
+                        "he":"Erinnern Sie ihn daran, heute seine Freundlichkeit zum Ausdruck zu bringen.",
+                        "she":"Erinnern Sie sie daran, heute ihre Freundlichkeit zum Ausdruck zu bringen.",
                     },
                     "paragraph":{
-                        "he":"#name# is a cooperative, polite person who cares deeply about the needs of others.",
-                        "she":"#name# is a cooperative, polite person who cares deeply about the needs of others.",
+                        "he":"#name# ist eine hilfsbereite und höfliche Person, die sehr um das Wohlergehen anderer bemüht ist.",
+                        "she":"#name# ist eine hilfsbereite und höfliche Person, die sehr um das Wohlergehen anderer bemüht ist.",
                     }
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Encourage him to celebrate the day in his usual merry ways.",
-                        "she":"Encourage her to celebrate the day in her usual merry ways.",
+                        "he":"Ermutigen Sie ihn dazu, den Tag mit seiner gewohnten Fröhlichkeit zu verbringen.",
+                        "she":"Ermutigen Sie sie dazu, den Tag mit ihrer gewohnten Fröhlichkeit zu verbringen.",
                     },
                     "paragraph":{
-                        "he":"#name# is full of joy and effervescent energy. He has a lot of love for the people in his life.",
-                        "she":"#name# is full of joy and effervescent energy. She has a lot of love for the people in her life.",
+                        "he":"#name# ist voller Freude und überschäumender Energie. Er gibt seinen Mitmenschen sehr viel Liebe.",
+                        "she":"#name# ist voller Freude und überschäumender Energie. Sie gibt ihren Mitmenschen sehr viel Liebe.",
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Encourage him to let his grace carry him through the day.",
-                        "she":"Encourage her to let her grace carry her through the day.",
+                        "he":"Ermutigen Sie ihn dazu, sich von seinem einnehmenden Wesen durch den Tag geleiten zu lassen.",
+                        "she":"Ermutigen Sie sie dazu, sich von ihrem einnehmenden Wesen durch den Tag geleiten zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name# is a deeply passionate, affectionate person. This soft-hearted spirit makes #name# stand out.",
-                        "she":"#name# is a deeply passionate, affectionate person. This soft-hearted spirit makes #name# stand out."
+                        "he":"#name# ist eine sehr leidenschaftliche Person. Sein weichherziges Gemüt macht #name# zu etwas Besonderem.",
+                        "she":"#name# ist eine sehr leidenschaftliche Person. Ihr weichherziges Gemüt macht #name# zu etwas Besonderem."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Remind him how much the world needs compassionate people like him.",
-                        "she":"Remind her how much the world needs compassionate people like her.",
+                        "he":"Erinnern Sie ihn daran, wie sehr die Welt mitfühlende Menschen wie ihn braucht.",
+                        "she":"Erinnern Sie sie daran, wie sehr die Welt mitfühlende Menschen wie sie braucht.",
                     },
                     "paragraph":{
-                        "he":"#name# is a genial, idealistic person. His unconditional compassion makes #name# stand out.",
-                        "she":"#name# is a genial, idealistic person. Her unconditional compassion makes #name# stand out."
+                        "he":"#name# ist eine geniale und idealistische Person. Sein bedingungsloses Mitgefühl macht #name# zu etwas Besonderem.",
+                        "she":"#name# ist eine geniale und idealistische Person. Ihr bedingungsloses Mitgefühl macht #name# zu etwas Besonderem."
                     },
                 },
             },
             "lows":{
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Support him in finding some time for himself today.",
-                        "she":"Support her in finding some time for herself today.",
+                        "he":"Raten Sie ihm, sich heute ein wenig Zeit für sich selbst zu nehmen.",
+                        "she":"Raten Sie ihr, sich heute ein wenig Zeit für sich selbst zu nehmen.",
                     },
                     "paragraph":{
-                        "he":"#name# is an unpretentious, self-effacing person, putting the needs of others before his own.",
-                        "she":"#name# is an unpretentious, self-effacing person, putting the needs of others before her own."
+                        "he":"#name# ist eine bescheidene und selbstlose Person, die sich mehr um die Bedürfnisse anderer kümmert als um ihre eigenen.",
+                        "she":"#name# ist eine bescheidene und selbstlose Person, die sich mehr um die Bedürfnisse anderer kümmert als um ihre eigenen."
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":">Remind him that his humility is a virtue.",
-                        "she":"Remind her that her humility is a virtue.",
+                        "he":"Erinnern Sie ihn daran, dass seine Bescheidenheit eine Tugend ist.",
+                        "she":"Erinnern Sie sie daran, dass seine Bescheidenheit eine Tugend ist.",
                     },
                     "paragraph":{
-                        "he":"#name# is a humble, soft-hearted soul. While #name# often sticks to himself, he has a deep compassion for others.",
-                        "she":"#name# is a humble, soft-hearted soul. While #name# often sticks to herself, she has a deep compassion for others."
+                        "he":"#name# ist eine bescheidene und weichherzige Seele. Obwohl #name# oft allein ist, hat er sehr viel Mitgefühl für andere.",
+                        "she":"#name# ist eine bescheidene und weichherzige Seele. Obwohl #name# oft allein ist, hat sie sehr viel Mitgefühl für andere."
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Support him in spreading his peaceful spirit today.",
-                        "she":"Support her in spreading her peaceful spirit today.",
+                        "he":"Raten Sie ihm, andere heute mit seiner Ruhe anzustecken.",
+                        "she":" Raten Sie ihr, andere heute mit ihrer Ruhe anzustecken.",
                     },
                     "paragraph":{
-                        "he":"#name# has a peaceful, easygoing demeanor. This comes from an attitude of tolerance and a generosity toward others.",
-                        "she":"#name# has a peaceful, easygoing demeanor. This comes from an attitude of tolerance and a generosity toward others."
+                        "he":"#name# legt ein friedliches und gelassenes Verhalten an den Tag. Das kommt von seiner Toleranz und Freigiebigkeit.",
+                        "she":"#name# legt ein friedliches und gelassenes Verhalten an den Tag. Das kommt von ihrer Toleranz und Freigiebigkeit."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Support him in prioritizing his relationships today.",
-                        "she":"Support her in prioritizing her relationships today.",
+                        "he":"Raten Sie ihm dazu, sich heute um seine Beziehungen zu anderen zu kümmern.",
+                        "she":"Raten Sie ihm dazu, sich heute um ihre Beziehungen zu anderen zu kümmern.",
                     },
                     "paragraph":{
-                        "he":"#name# has a deep compassion for others and puts his relationships first. Some may even describe him as dependent.",
-                        "she":"#name# has a deep compassion for others and puts her relationships first. Some may even describe her as dependent."
+                        "he":"#name# hat viel Mitgefühl für andere und achtet auf seine zwischenmenschlichen Beziehungen. Manche würden ihn sogar als abhängig beschreiben.",
+                        "she":"#name# hat viel Mitgefühl für andere und achtet auf ihre zwischenmenschlichen Beziehungen. Manche würden sie sogar als abhängig beschreiben."
                     },
                 },
             },
@@ -90,517 +89,515 @@ export default {
                 "facet_altruism":{
                     "instructions":[
                         {
-                            "he":"Share how much respect you have for his altruism.",
-                            "she":"Share how much respect you have for her altruism.",
+                            "he":"Sagen Sie ihm, wie sehr Sie seine Uneigennützigkeit repektieren.",
+                            "she":"Sagen Sie ihr, wie sehr Sie ihre Uneigennützigkeit repektieren.",
                         },
                         {
-                            "he":"Reassure him that it's okay to focus on himself and his own needs from time to time though.",
-                            "she":"Reassure her that it's okay to focus on herself and her own needs from time to time though.",
+                            "he":"Machen Sie ihm klar, dass er trotzdem von Zeit zu Zeit an sich selbst denken sollte.",
+                            "she":"Machen Sie ihr klar, dass sie trotzdem von Zeit zu Zeit an sich selbst denken sollte.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is driven by a genuine desire to help people. For him, putting others’ needs first is fulfilling and rewarding, not burdensome.",
-                        "she": "She is driven by a genuine desire to help people. For her, putting others’ needs first is fulfilling and rewarding, not burdensome.",
+                        "he":"Er möchte immer anderen Menschen helfen. Sich um andere zu kümmern, ist für ihn eine dankbare Aufgabe, keine Last.",
+                        "she": "Sie möchte immer anderen Menschen helfen. Sich um andere zu kümmern, ist für sie eine dankbare Aufgabe, keine Last.",
                     }
                 },
                 "facet_cooperation":{
                     "instructions":[
                         {
-                            "he":"Let him know how special his cooperative spirit is.",
-                            "she":"Let her know how special her cooperative spirit is.",
+                            "he":"Sagen Sie ihm, wie besonders seine Hilfsbereitschaft ist.",
+                            "she":"Sagen Sie ihr, wie besonders ihre Hilfsbereitschaft ist.",
                         },
                         {
-                            "he":"Advise him to stand up for himself though, whenever the situation calls for it.",
-                            "she":"Advise her to stand up for herself though, whenever the situation calls for it.",
+                            "he":"Raten Sie ihm, sich trotzdem durchzusetzen, wenn es erforderlich ist.",
+                            "she":"Raten Sie ihr, sich trotzdem durchzusetzen, wenn es erforderlich ist.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has a strong desire to avoid confrontation and is willing to make sacrifices in order to do so.",
-                        "she": "She has a strong desire to avoid confrontation and is willing to make sacrifices in order to do so.",
+                        "he":"Er vermeidet Konflikte und bringt dafür auch ruhig mal ein Opfer.",
+                        "she": "Sie vermeidet Konflikte und bringt dafür auch ruhig mal ein Opfer.",
                     }
                 },
                 "facet_modesty":{
                     "instructions":[
                         {
-                            "he":"Let him know you value his modesty, and make him feel comfortable with being seen.",
-                            "she":"Let her know you value her modesty, and make her feel comfortable with being seen.",
+                            "he":"Sagen Sie ihm, dass Sie seine Bescheidenheit wertschätzen und er ruhig stolz darauf sein kann.",
+                            "she":"Sagen Sie ihr, dass Sie ihre Bescheidenheit wertschätzen und sie ruhig stolz darauf sein kann.",
                         },
                         {
-                            "he":"Reassure him that it's okay to accept positive attention - after all, he's an admirable person.",
-                            "she":"Reassure her that it's okay to accept positive attention - after all, she's an admirable person.",
+                            "he":"Versichern Sie ihm, dass er eine positive Haltung ihm gegenüber akzeptieren kann – denn er ist eine bewundenswerte Person.",
+                            "she":" Versichern Sie ihr, dass sie eine positive Haltung ihr gegenüber akzeptieren kann – denn sie ist eine bewundenswerte Person.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is modest and reserved. While he has ample confidence to get on with life, being the center of attention is extremely uncomfortable.",
-                        "she": "She is modest and reserved. While she has ample confidence to get on with life, being the center of attention is extremely uncomfortable.",
+                        "he":"Er ist bescheiden und zurückhaltend. Er kommt zwar gut zurecht, steht aber nicht gern im Mittelpunkt.",
+                        "she": " Sie ist bescheiden und zurückhaltend. Sie kommt zwar gut zurecht, steht aber nicht gern im Mittelpunkt.",
                     }
                 },
                 "facet_morality":{
                     "instructions":[
                         {
-                            "he":"Share how much you respect his moral compass.",
-                            "she":"Share how much you respect her moral compass.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie seine moralischen Standpunkte respektieren.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihre moralischen Standpunkte respektieren.",
                         },
                         {
-                            "he":"Advise him against being too black and white in his judgments though.",
-                            "she":"Advise her against being too black and white in her judgments though.",
+                            "he":"Raten Sie ihm, die Dinge trotzdem nicht allzu sehr zu vereinfachen.",
+                            "she":"Raten Sie ihr, die Dinge trotzdem nicht allzu sehr zu vereinfachen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is driven by a strong sense of moral conviction, always trying to do what is 'right.'",
-                        "she": "She is driven by a strong sense of moral conviction, always trying to do what is 'right.'",
+                        "he":"Er hat starke Moralvorstellungen und möchte immer alles richtig machen.'",
+                        "she": "Sie hat starke Moralvorstellungen und möchte immer alles richtig machen.'",
                     }
                 },
                 "facet_sympathy":{
                     "instructions":[
                         {
-                            "he":"Show your appreciation for the empathy he feels and expresses.",
-                            "she":"Show your appreciation for the empathy she feels and expresses.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie sein Mitgefühl schätzen.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihr Mitgefühl schätzen.",
                         },
                         {
-                            "he":"Advise him against letting others' emotions affect his own moods though.",
-                            "she":"Advise her against letting others' emotions affect her own moods though.",
+                            "he":"Raten Sie ihm, die Gefühle der anderen seinen eigenen Gemütszustand nicht zu sehr beeinflussen zu lassen.",
+                            "she":"Raten Sie ihr, die Gefühle der anderen ihren eigenen Gemütszustand nicht zu sehr beeinflussen zu lassen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is sensitive to the feelings of others. Some might call him an empath.",
-                        "she": "She is sensitive to the feelings of others. Some might call her an empath.",
+                        "he":"Er ist empfindlich für die Gefühle anderer. Manche würden ihn als Empathen bezeichnen.",
+                        "she": "Sie ist empfindlich für die Gefühle anderer. Manche würden sie als Empathin bezeichnen.",
                     }
                 }, 
                 "facet_trust":{
                     "instructions":[
                         {
-                            "he":"Share how much you respect his positivity and faith in people.",
-                            "she":"Share how much you respect her positivity and faith in people.",
+                            "he":"Zeigen Sie ihm, wie sehe Sie seine positive Einstellungen gegenüber anderen Menschen schätzen.",
+                            "she":"Zeigen Sie ihr, wie sehe Sie ihre positive Einstellungen gegenüber anderen Menschen schätzen.",
                         },
                         {
-                            "he":"Advise him to be a little discerning in his trust of people, just to protect himself.",
-                            "she":"Advise her to be a little discerning in her trust of people, just to protect herself.",
+                            "he":"Raten Sie ihm, nicht allzu vertrauensselig zu sein, um sich selbst zu schützen.",
+                            "she":"Raten Sie ihr, nicht allzu vertrauensselig zu sein, um sich selbst zu schützen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is driven by a sense of trust in people. Although this 'forgive and forget' attitude sometimes borders on naive, it allows #name# to see the best in any situation.",
-                        "she": "She is driven by a sense of trust in people. Although this 'forgive and forget' attitude sometimes borders on naive, it allows #name# to see the best in any situation.",
+                        "he":"Er vertraut spontan anderen Menschen. Obwohl seine Nachgiebigkeit #name# in die Nähe von Naivität rückt, ermöglicht sie ihm, das Beste aus jeder Situation zu machen.",
+                        "she": "Sie vertraut spontan anderen Menschen. Obwohl ihre Nachgiebigkeit #name# in die Nähe von Naivität rückt, ermöglicht sie ihr, das Beste aus jeder Situation zu machen.",
                     }
                 }                                                                              
             },
             "needs":{
                 "need_excitement":{
                     "instruction":{
-                        "he":"Bring some upbeat, positive energy to his morning.",
-                        "she": "Bring some upbeat, positive energy to her morning.",
+                        "he":"Verschaffen Sie ihm heute Morgen ein wenig positive Energie.",
+                        "she": "Verschaffen Sie ihr heute Morgen ein wenig positive Energie.",
                     }
                 },
                 "need_harmony":{
                     "instruction":{
-                        "he":"Bring him into the new day with a warmth and calmness.",
-                        "she": "Bring her into the new day with a warmth and calmness.",
+                        "he":"Bringen Sie ihn sanft und ruhig in den neuen Tag.",
+                        "she": " Bringen Sie sie sanft und ruhig in den neuen Tag.",
                     }                    
                 },
                 "need_curiosity":{
                     "instruction":{
-                        "he":"Give him a morning a dose of optimism.",
-                        "she": "Give her a morning a dose of optimism.",
+                        "he":"Geben Sie ihm ein wenig morgendlichen Optimismus.",
+                        "she": "Geben Sie ihr ein wenig morgendlichen Optimismus.",
                     }
                 },
                 "need_ideal":{
                     "instruction":{
-                        "he":"Make him feel like he's part of a community.",
-                        "she": "Make her feel like she's part of a community.",
+                        "he":"Bringen Sie ihn dazu, sich als Teil einer Gemeinschaft zu fühlen.",
+                        "she": "Bringen Sie sie dazu, sich als Teil einer Gemeinschaft zu fühlen.",
                     }
                 },
                 "need_closeness":{
                     "instruction":{
-                        "he":"Give him the gift of feeling connected, feeling seen.",
-                        "she": "Give her the gift of feeling connected, feeling seen.",
+                        "he":"Geben Sie ihm das Gefühl, dazuzugehören.",
+                        "she": "Geben Sie ihr das Gefühl, dazuzugehören.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
-                        "he":"Make him feel like he's his own, unique person.",
-                        "she": "Make her feel like she's her own, unique person.",
+                        "he":"Bringen Sie ihn dazu, sich als einzigartig zu fühlen.",
+                        "she": "Bringen Sie ihr dazu, sich als einzigartig zu fühlen.",
                     }
                 },
                 "need_liberty":{
                     "instruction":{
-                        "he":"Bring a feeling of freshness to his morning.",
-                        "she": "Bring a feeling of freshness to her morning.",
+                        "he":"Verleihen Sie seinem Morgen ein wenig Frische.",
+                        "she": "Verleihen Sie ihrem Morgen ein wenig Frische.",
                     }
                 },
                 "need_love":{
                     "instruction":{
-                        "he":"Make him feel adored.",
-                        "she": "Make her feel adored.",
+                        "he":"Bringen Sie ihn dazu, dass er sich bewundert fühlt.",
+                        "she": "Bringen Sie sie dazu, dass sie sich bewundert fühlt.",
                     }
                 },
                 "need_practicality":{
                     "instruction":{
-                        "he":"tGive him confidence that today will be a fruitful day.",
-                        "she": "Give her confidence that today will be a fruitful day.",
+                        "he":"Verschaffen Sie ihm die Zuversicht, dass heute ein erfolgreicher Tag sein wird.",
+                        "she": "Verschaffen Sie ihr die Zuversicht, dass heute ein erfolgreicher Tag sein wird.",
                     }
                 },
                 "need_stability":{
                     "instruction":{
-                        "he":"Bring a sense of stability to his morning.",
-                        "she": "Bring a sense of stability to her morning.",
+                        "he":"Verleihen Sie seinem Morgen ein wenig Stabilität.",
+                        "she": "Verleihen Sie ihrem Morgen ein wenig Stabilität.",
                     }
                 },    
                 "need_challenge":{
                     "instruction":{
-                        "he":"Give him confidence to take on anything that comes his way today.",
-                        "she": "Give her confidence to take on anything that comes her way today.",
+                        "he":"Geben Sie ihm Selbstvertrauen, damit er die Dinge heute so nimmt, wie sie kommen.",
+                        "she": "Geben Sie ihr Selbstvertrauen, damit sie die Dinge heute so nimmt, wie sie kommen.",
                     }
                 },    
                 "need_structure":{
                     "instruction":{
-                        "he":"Give him a feeling of trust that everything will be under control today.",
-                        "she": "Give her a feeling of trust that everything will be under control today.",
+                        "he":"Vermitteln Sie ihm die Zuversicht, dass er heute alles in den Griff bekommt.",
+                        "she": "Vermitteln Sie ihr die Zuversicht, dass sie heute alles in den Griff bekommt.",
                     }
                 }                                                                                                                                                                                
             }
         },
         "big5_conscientiousness":{
-            "person_type":"morning",
             "highs":{
                 "big5_agreeableness":{
                     "instruction":{
-                        "he":"Remind him how much faith people put in him and how worthy he is of their trust.",
-                        "she":"Remind her how much faith people put in her and how worthy she is of their trust.",
+                        "he":"Erinnern Sie ihn daran, dass ihm andere vertrauen und er ihr Vertrauen verdient.",
+                        "she":"Erinnern Sie sie daran, dass ihr andere vertrauen und sie ihr Vertrauen verdient.",
                     },
                     "paragraph":{
-                        "he":"#name# is a dependable, responsible person who puts a lot of thought and care into his actions.",
-                        "she":"#name# is a dependable, responsible person who puts a lot of thought and care into her actions."
+                        "he":"#name# ist zuverlässig und verantwortungsvoll und handelt mit Bedacht.",
+                        "she":"#name# ist zuverlässig und verantwortungsvoll und handelt mit Bedacht."
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Remind him to let his drive for success guide his every move today.",
-                        "she":"Remind her to let her drive for success guide her every move today.",
+                        "he":"Erinnern Sie ihn daran, dass er seinem Erfolgsstreben heute ruhig nachgehen sollte.",
+                        "she":" Erinnern Sie sie daran, dass sie ihrem Erfolgsstreben heute ruhig nachgehen sollte.",
                     },
                     "paragraph":{
-                        "he":"#name# is an ambitious force of nature. He approaches every task with a competitive, purposeful spirit.",
-                        "she":"#name# is an ambitious force of nature. She approaches every task with a competitive, purposeful spirit."
+                        "he":"#name# ist eine Naturgewalt und voller Ambitionen. Er geht jede Aufgabe leistungsorientiert und zielbewusst an.",
+                        "she":"#name# ist eine Naturgewalt und voller Ambitionen. Sie geht jede Aufgabe leistungsorientiert und zielbewusst an."
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Encourage him to trust in his vision and believe that all the pieces will come together.",
-                        "she":"Encourage her to trust in her vision and believe that all the pieces will come together.",
+                        "he":"Ermutigen Sie ihn dazu, Vertrauen zu seiner Sicht der Dinge zu haben und auf das Gelingen zu vertrauen.",
+                        "she":"Ermutigen Sie sie dazu, Vertrauen zu ihrer Sicht der Dinge zu haben und auf das Gelingen zu vertrauen.",
                     },
                     "paragraph":{
-                        "he":"#name# is very particular. He has a clear vision and doesn't like to be veered off course.",
-                        "she":"#name# is very particular. She has a clear vision and doesn't like to be veered off course."
+                        "he":"#name# ist sehr anspruchsvoll. Er hat klare Vorstellungen und mag es nicht, vom Kurs abzukommen.",
+                        "she":"#name# ist sehr anspruchsvoll. Sie hat klare Vorstellungen und mag es nicht, vom Kurs abzukommen."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Remind him how capable he is and encourage him to keep doing whatever he's doing - because it's working!",
-                        "she":"Remind her how capable she is and encourage her to keep doing whatever she's doing - because it's working!",
+                        "he":"Erinnern Sie ihn an seine Fähigkeiten und ermuntern Sie ihn dazu, am Ball zu bleiben – denn er wird es schaffen!",
+                        "she":"Erinnern Sie sie an ihre Fähigkeiten und ermuntern Sie sie dazu, am Ball zu bleiben – denn sie wird es schaffen!",
                     },
                     "paragraph":{
-                        "he":"#name# is a dignified soul with an ability to bring sophisticated ideas and execute to perfection.",
-                        "she":"#name# is a dignified soul with an ability to bring sophisticated ideas and execute to perfection."
+                        "he":"#name# ist eine feinfühlige Person und in der Lage, Arbeiten elegant und perfekt zu erledigen.",
+                        "she":"#name# ist eine feinfühlige Person und in der Lage, Arbeiten elegant und perfekt zu erledigen."
                     },
                 },
             },
             "lows":{
                 "big5_agreeableness":{
                     "instruction":{
-                        "he":"Support him in following the rules so diligently.",
-                        "she":"Support her in following the rules so diligently.",
+                        "he":"Unterstützen Sie ihn dabei, die Regeln so gewissenhaft einzuhalten.",
+                        "she":"Unterstützen Sie sie dabei, die Regeln so gewissenhaft einzuhalten.",
                     },
                     "paragraph":{
-                        "he":"#name# has a stern demeanor. He is a strict follower of rules and exhibits tremendous attention to detail.",
-                        "she":"#name# has a stern demeanor. She is a strict follower of rules and exhibits tremendous attention to detail."
+                        "he":"#name# ist sehr ernsthaft. Er hält sich an die Regeln und achtet sehr auf Einzelheiten.",
+                        "she":"#name# ist sehr ernsthaft. Sie hält sich an die Regeln und achtet sehr auf Einzelheiten."
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Remind him how much the world needs capable, conscientious people like him.",
-                        "she":"Remind her how much the world needs capable, conscientious people like her.",
+                        "he":"Erinnern Sie ihn daran, wie sehr die Welt fähige und gewissenhafte Menschen wie ihn braucht.",
+                        "she":"Erinnern Sie sie daran, wie sehr die Welt fähige und gewissenhafte Menschen wie sie braucht.",
                     },
                     "paragraph":{
-                        "he":"#name# is always on time and over-prepared. He can be quite formal in his demeanor, and exudes confidence.",
-                        "she":"#name# is always on time and over-prepared. She can be quite formal in her demeanor, and exudes confidence."
+                        "he":"#name# ist stets pünktlich und akribisch. Er kann ein sehr formelles Verhalten an den Tag legen und strahlt Zuversicht aus.",
+                        "she":"#name# ist stets pünktlich und akribisch. Sie kann ein sehr formelles Verhalten an den Tag legen und strahlt Zuversicht aus."
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":">Remind him to trust his ability to plow through just about anything.",
-                        "she":"Remind her to trust her ability to plow through just about anything.",
+                        "he":"Erinnern Sie ihn an seine Fähigkeit, sich durch alles durchzukämpfen.",
+                        "she":"Erinnern Sie sie an ihre Fähigkeit, sich durch alles durchzukämpfen.",
                     },
                     "paragraph":{
-                        "he":"#name# is a steady soul. Self-discipline and a logical mindset get him through the day and help him succeed.",
-                        "she":"#name# is a steady soul. Self-discipline and a logical mindset get her through the day and help her succeed."
+                        "he":"#name# ist unerschütterlich. Mit Selbstdisziplin und logischem Denken gelangt er ans Ziel.",
+                        "she":"#name# ist unerschütterlich. Mit Selbstdisziplin und logischem Denken gelangt sie ans Ziel."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Support him in being cautious, but encourage him to take some small risks today.",
-                        "she":"Support her in being cautious, but encourage her to take some small risks today.",
+                        "he":"Loben Sie seine Vorsicht, aber ermutigen Sie ihn dazu, heute ruhig kleine Risiken einzugehen.",
+                        "she":"Loben Sie ihre Vorsicht, aber ermutigen Sie sie dazu, heute ruhig kleine Risiken einzugehen.",
                     },
                     "paragraph":{
-                        "he":"#name# is quite traditional. He is thoughtful in his actions, preferring the tried-and-true in both his career and relationships.",
-                        "she":"#name# is quite traditional. She is thoughtful in her actions, preferring the tried-and-true in both her career and relationships."
+                        "he":"#name# hat eher traditionelle Einstellungen. Er geht mit Bedacht vor und setzt sowohl in seiner Karriere als auch bei seinen Beziehungen auf Bewährtes.",
+                        "she":"#name# hat eher traditionelle Einstellungen. Sie geht mit Bedacht vor und setzt sowohl in ihrer Karriere als auch bei ihren Beziehungen auf Bewährtes."
                     },
                 },
             },
             "facets":{
-                "facet_achievement-striving":{
+                "facet_achievement_striving":{
                     "instructions":[
                         {
-                            "he":"Share how deeply impressed you are by his ability to succeed no matter the circumstances.",
-                            "she":"Share how deeply impressed you are by her ability to succeed no matter the circumstances.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie seine Fähigkeit beeindruckt, unter allen Umständen erfolgreich zu sein.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihre Fähigkeit beeindruckt, unter allen Umständen erfolgreich zu sein.",
                         },
                         {
-                            "he":"Advise him to take breaks and deep breaths from time to time so he doesn’t get overworked.",
-                            "she":"Advise her to take breaks and deep breaths from time to time so she doesn’t get overworked.",
+                            "he":"Raten Sie ihm dazu, von Zeit zu Zeit tief durchzuatmen, um sich nicht zuviel zuzumuten.",
+                            "she":"Raten Sie ihr dazu, von Zeit zu Zeit tief durchzuatmen, um sich nicht zuviel zuzumuten.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is ambitious and constantly striving to achieve lofty goals. Ultimately, #name# has a deep need to be recognized for his succes.",
-                        "she": "She is ambitious and constantly striving to achieve lofty goals. Ultimately, #name# has a deep need to be recognized for her succes.",
+                        "he":"Er ist ehrgeizig und immer auf der Suche nach neuen Zielen. Letztendlich strebt #name# aber vor allem nach Anerkennung.",
+                        "she": "Sie ist ehrgeizig und immer auf der Suche nach neuen Zielen. Letztendlich strebt #name# aber vor allem nach Anerkennung.",
                     }
                 }, 
                 "facet_cautiousness":{
                     "instructions":[
                         {
-                            "he":"Let him know how much respect you have for his deliberate approach to making decisions.",
-                            "she":"Let her know how much respect you have for her deliberate approach to making decisions.",
+                            "he":"Geben Sie ihm zu verstehen, wie sehr Sie seine Art respektieren, bewusst Entscheidungen herbeizuführen.",
+                            "she":"Geben Sie ihr zu verstehen, wie sehr Sie ihre Art respektieren, bewusst Entscheidungen herbeizuführen.",
                         },
                         {
-                            "he":"Reassure him that it's okay to take a small risk from time to time.",
-                            "she":"Reassure her that it's okay to take a small risk from time to time.",
+                            "he":"Sagen Sie ihm, dass er ruhig von Zeit zu Zeit etwas wagen sollte.",
+                            "she":"Sagen Sie ihr, dass sie ruhig von Zeit zu Zeit etwas wagen sollte.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is a cautious person. Weighing all the given outcomes before acting, people describe #name# as risk-averse.",
-                        "she": "She is a cautious person. Weighing all the given outcomes before acting, people describe #name# as risk-averse.",
+                        "he":"Er ist vorsichtig. Bevor er handelt, wägt er alles sorgfältig ab. Manchen bezeichnen #name# als sicherheitsbewusst.",
+                        "she": "Sie ist vorsichtig. Bevor sie handelt, wägt sie alles sorgfältig ab. Manchen bezeichnen #name# als sicherheitsbewusst.",
                     }
                 }, 
                 "facet_dutifulness":{
                     "instructions":[
                         {
-                            "he":"Share how impressed you are by his commitment to duty.",
-                            "she":"Share how impressed you are by her commitment to duty.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie sein Pflichtbewusstsein beeindruckt.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihr Pflichtbewusstsein beeindruckt.",
                         },
                         {
-                            "he":"Reassure him that it's okay to sometimes let loose and just enjoy himself.",
-                            "she":"Reassure her that it's okay to sometimes let loose and just enjoy herself.",
+                            "he":"Versichern Sie ihm, dass es in Ordnung ist, sich manchmal zu entspannen und das Leben zu genießen.",
+                            "she":"Versichern Sie ihr, dass es in Ordnung ist, sich manchmal zu entspannen und das Leben zu genießen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is driven by a strong sense of duty. Even when it’s inconvenient, he'll stick to the rules and meet obligations.",
-                        "she": "She is driven by a strong sense of duty. Even when it’s inconvenient, she'll stick to the rules and meet obligations.",
+                        "he":"Er ist sehr pflichtbewusst. Auch wenn es unangenehm ist, hält er sich an die Regeln und an Vereinbarungen.",
+                        "she": "Sie ist sehr pflichtbewusst. Auch wenn es unangenehm ist, hält sie sich an die Regeln und an Vereinbarungen.",
                     }
                 },
                 "facet_orderliness":{
                     "instructions":[
                         {
-                            "he":"Share how much you respect his ability to bring order to a chaotic world.",
-                            "she":"Share how much you respect her ability to bring order to a chaotic world.",
+                            "he":"Sagen Sie ihm, wie sehr Sie seine Fähigkeit respektieren, Ordnung in eine chaotische Welt zu bringen.",
+                            "she":"Sagen Sie ihm, wie sehr Sie ihre Fähigkeit respektieren, Ordnung in eine chaotische Welt zu bringen.",
                         },
                         {
-                            "he":"Reassure him that it's okay to color outside the lines from time to time and let loose.",
-                            "she":"Reassure her that it's okay to color outside the lines from time to time and let loose.",
+                            "he":"Versichern Sie ihm, dass es in Ordnung ist, von Zeit zu Zeit die Grenzen zu überwinden und sich gehen zu lassen.",
+                            "she":"Versichern Sie ihr, dass es in Ordnung ist, von Zeit zu Zeit die Grenzen zu überwinden und sich gehen zu lassen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is driven by a strong need for structure. This sense of order can be seen in his home and how he plans his life.",
-                        "she": "She is driven by a strong need for structure. This sense of order can be seen in her home and how she plans her life.",
+                        "he":"Er braucht Struktur. Sein Ordnungssinn kommt in seiner Einrichtung und seiner Lebensplanung zum Ausdruck.",
+                        "she": "Sie braucht Struktur. Ihr Ordnungssinn kommt in ihrer Einrichtung und ihrer Lebensplanung zum Ausdruck.",
                     }
                 },  
-                "facet_self-discipline":{
+                "facet_self_discipline":{
                     "instructions":[
                         {
-                            "he":"Let him know how impressed you are with his tremendous willpower.",
-                            "she":"Let her know how impressed you are with her tremendous willpower.",
+                            "he":"Lassen Sie ihn wissen, wie sehr Sie seine starke Willenskraft beeindruckt.",
+                            "she":"Lassen Sie sie wissen, wie sehr Sie ihre starke Willenskraft beeindruckt.",
                         },
                         {
-                            "he":"Advise him to occasionally take a moment to enjoy himself.",
-                            "she":"Advise to her occasionally take a moment to enjoy herself.",
+                            "he":"Raten Sie ihm, sich einfach manchmal Zeit für sich selbst zu nehmen.",
+                            "she":"Raten Sie ihr, sich einfach manchmal Zeit für sich selbst zu nehmen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is an extremely self-disciplined hard worker. This persistence carries #name# through even the toughest, most unpleasant tasks.",
-                        "she": "She is an extremely self-disciplined hard worker. This persistence carries #name# through even the toughest, most unpleasant tasks.",
+                        "he":"Er ist diszipliniert und arbeitet hart. Das ermöglicht es #name#, auch die schwierigsten Aufgaben zu bewältigen.",
+                        "she": "Sie ist diszipliniert und arbeitet hart. Das ermöglicht es #name#, auch die schwierigsten Aufgaben zu bewältigen.",
                     }
                 },   
-                "facet_self-efficacy":{
+                "facet_self_efficacy":{
                     "instructions":[
                         {
-                            "he":"Let him know how impressed you are by his confidence and poise.",
-                            "she":"Let her know how impressed you are by her confidence and poise.",
+                            "he":"Sagen Sie ihm, wie sehr Sie von seiner Zuversicht und Gelassenheit beeindruckt sind.",
+                            "she":"Sagen Sie ihr, wie sehr Sie von ihrer Zuversicht und Gelassenheit beeindruckt sind.",
                         },
                         {
-                            "he":"Advise him to make space for some self-critique and self-reflection.",
-                            "she":"Advise her to make space for some self-critique and self-reflection.",
+                            "he":"Raten Sie ihm, sich auch einmal selbst in Frage zu stellen.",
+                            "she":"Raten Sie ihr, sich auch einmal selbst in Frage zu stellen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has a strong sense of self-assuredness. Whatever the task, whatever #name# sets out to do, he believes in himself.",
-                        "she": "She has a strong sense of self-assuredness. Whatever the task, whatever #name# sets out to do, she believes in herself.",
+                        "he":"Er ist von sich überzeugt. #name# glaubt fest an sich, was auch immer er unternimmt.",
+                        "she": "Sie ist von sich überzeugt. #name# glaubt fest an sich, was auch immer sie unternimmt.",
                     }
                 }                                                                            
             },
             "needs":{
                 "need_excitement":{
                     "instruction":{
-                        "he":"Give him a boost of enthusiasm as he attacks his to-dos this morning.",
-                        "she": "Give her a boost of enthusiasm as she attacks her to-dos this morning.",
+                        "he":"Ermuntern Sie ihn dazu, seine heutigen Aufgaben mit Begeisterung in Angriff zu nehmen.",
+                        "she": "Ermuntern Sie sie dazu, ihre heutigen Aufgaben mit Begeisterung in Angriff zu nehmen.",
                     }
                 },
                 "need_harmony":{
                     "instruction":{
-                        "he":"Bring a much-needed dose of calm to his morning.",
-                        "she": "Bring a much-needed dose of calm to her morning.",
+                        "he":"Vermitteln Sie ihm ein wenig morgendliche Ruhe.",
+                        "she": "Vermitteln Sie ihr ein wenig morgendliche Ruhe.",
                     }                    
                 },
                 "need_curiosity":{
                     "instruction":{
-                        "he":"Make him feel like his next breakthrough is right around the corner.",
-                        "she": "Make her feel like her next breakthrough is right around the corner.",
+                        "he":"Geben Sie ihm das Gefühl, dass ein Durchbruch kurz bevorsteht.",
+                        "she": "Geben Sie ihr das Gefühl, dass ein Durchbruch kurz bevorsteht.",
                     }
                 },
                 "need_ideal":{
                     "instruction":{
-                        "he":"Make him feel as though perfection is within reach.",
-                        "she": "Make her feel as though perfection is within reach. ",
+                        "he":"Vermitteln Sie ihm das Gefühl, dass die Perfektion in Reichweite ist.",
+                        "she": "Vermitteln Sie ihr das Gefühl, dass die Perfektion in Reichweite ist. ",
                     }
                 },
                 "need_closeness":{
                     "instruction":{
-                        "he":"Give him a sense of connection, a sense of feeling 'tapped in.'",
-                        "she": "Give her a sense of connection, a sense of feeling 'tapped in.'",
+                        "he":"Geben Sie ihm das Gefühl, nicht allein zu sein und dazuzugehören.",
+                        "she": "Geben Sie ihr das Gefühl, nicht allein zu sein und dazuzugehören.'",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
-                        "he":"Make him feel confident in asserting himself today. ",
-                        "she": "Make her feel confident in asserting herself today.",
+                        "he":"Ermutigen Sie ihn dazu, sich heute durchzusetzen. ",
+                        "she": "Ermutigen Sie sie dazu, sich heute durchzusetzen.",
                     }
                 },
                 "need_liberty":{
                     "instruction":{
-                        "he":"Give him confidence that the day is filled with new possibilities.",
-                        "she": "Give her confidence that the day is filled with new possibilities.",
+                        "he":"Vermitteln Sie ihm die Zuversicht, dass sich ihm heute viele Möglichkeiten eröffnen werden.",
+                        "she": "Vermitteln Sie ihr die Zuversicht, dass sich ihr heute viele Möglichkeiten eröffnen werden.",
                     }
                 },
                 "need_love":{
                     "instruction":{
-                        "he":"Give him confidence in his ability to connect with others.",
-                        "she": "Give her confidence in her ability to connect with others.",
+                        "he":"Geben Sie ihm zu verstehen, dass er in der Lage ist, sich mit anderen zusammenzuschließen.",
+                        "she": "Geben Sie ihr zu verstehen, dass sie in der Lage ist, sich mit anderen zusammenzuschließen.",
                     }
                 },
                 "need_practicality":{
                     "instruction":{
-                        "he":"Make him feel assured that today is the day to get the job done.",
-                        "she": "Make her feel assured that today is the day to get the job done.",
+                        "he":"Versichern Sie ihm, dass er seinen Job heute gut erledigen wird.",
+                        "she": "Versichern Sie ihr, dass sie ihren Job heute gut erledigen wird.",
                     }
                 },
                 "need_stability":{
                     "instruction":{
-                        "he":"Bring him into the day feeling stable and secure about what's in store.",
-                        "she": "Bring her into the day feeling stable and secure about what's in store.",
+                        "he":"Vermitteln Sie ihm für den beginnenden Tag ein Gefühl der Stabilität und Sicherheit.",
+                        "she": "Vermitteln Sie ihr für den beginnenden Tag ein Gefühl der Stabilität und Sicherheit.",
                     }
                 },    
                 "need_challenge":{
                     "instruction":{
-                        "he":"Give him a dose of confidence to overcome any challenge today.",
-                        "she": "Give her a dose of confidence to overcome any challenge today.",
+                        "he":"Vermitteln Sie ihm die Zuversicht, heute alle Aufgaben bewältigen zu können.",
+                        "she": "Vermitteln Sie ihr die Zuversicht, heute alle Aufgaben bewältigen zu können.",
                     }
                 },    
                 "need_structure":{
                     "instruction":{
-                        "he":"Make him feel like he has everything under control.",
-                        "she": "Make her feel like she has everything under control.",
+                        "he":"Vermitteln Sie ihm das Gefühl, alles unter Kontrolle zu haben.",
+                        "she": "Vermitteln Sie ihr das Gefühl, alles unter Kontrolle zu haben.",
                     }
                 }                                                                                                                                                                                
             }
         },
         "big5_extraversion":{
-            "person_type":"morning",
             "highs":{
                 "big5_agreeableness":{
                     "instruction":{
-                        "he":"Remind him to let his lively energy carry him through the new day.",
-                        "she":"Remind her to let her lively energy carry her through the new day.",
+                        "he":"Erinnern Sie ihn daran, sich von seiner Energie durch den Tag führen zu lassen.",
+                        "she":"Erinnern Sie sie daran, sich von ihrer Energie durch den Tag führen zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name# is a vibrant soul, with a lot of enthusiasm to share with the people in his life.",
-                        "she":"#name# is a vibrant soul, with a lot of enthusiasm to share with the people in her life."
+                        "he":"#name# ist lebhaft und teilt gern seine Begeisterung mit seinen Mitmenschen.",
+                        "she":"#name# ist lebhaft und teilt gern ihre Begeisterung mit ihren Mitmenschen."
                     },
                 },
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Encourage him to embrace his go-getter ways to reach new heights today.",
-                        "she":"Encourage her to embrace her go-getter ways to reach new heights today.",
+                        "he":"Ermuntern Sie ihn dazu, tatkräftig neue Gipfel zu erklimmen.",
+                        "she":"Ermuntern Sie sie dazu, tatkräftig neue Gipfel zu erklimmen.",
                     },
                     "paragraph":{
-                        "he":"#name# has an inner fire that drives his ambitious and persistent spirit. He is always on the move and making things happen for himself.",
-                        "she":"#name# has an inner fire that drives her ambitious and persistent spirit. She is always on the move and making things happen for herself."
+                        "he":"#name# ist von Ehrgeiz und Hartnäckigkeit geprägt. Er ist ständig in Bewegung und bereit, weiter voranzukommen.",
+                        "she":"#name# ist von Ehrgeiz und Hartnäckigkeit geprägt. Sie ist ständig in Bewegung und bereit, weiter voranzukommen."
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Support his penchant for fiery self-expression.",
-                        "she":"Support her penchant for fiery self-expression.",
+                        "he":"Unterstützen Sie ihn in seinem Hang zu leidenschaftlicher Selbstverwirklichung.",
+                        "she":"Unterstützen Sie sie in ihrem Hang zu leidenschaftlicher Selbstverwirklichung.",
                     },
                     "paragraph":{
-                        "he":"#name# is extravagant, charming and quite moody. Always putting on a show for the people in his life, no moment is dull with #name#.",
-                        "she":"#name# is extravagant, charming and quite moody. Always putting on a show for the people in her life, no moment is dull with #name#."
+                        "he":"#name# ist extravagant, charmant und ein wenig sprunghaft. Er stellt sich selbst gern zur Schau, mit #name# langweilt man sich nie.",
+                        "she":"#name# ist extravagant, charmant und ein wenig sprunghaft. Sie stellt sich selbst gern zur Schau, mit #name# langweilt man sich nie."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Remind him to let his sharp wit and thirst for discovery lead the way today.",
-                        "she":"Remind her to let her sharp wit and thirst for discovery lead the way today.",
+                        "he":"Ermuntern Sie ihn dazu, mit seinem scharfen Verstand und seiner Neugierde den neuen Tag in Angriff zu nehmen.",
+                        "she":"Ermuntern Sie sie dazu, mit ihrem scharfen Verstand und ihrer Neugierde den neuen Tag in Angriff zu nehmen.",
                     },
                     "paragraph":{
-                        "he":"#name# is full of spontaneous wit. He is smarter than you and the next person, and knows how to express himself.",
-                        "she":"#name# is full of spontaneous wit. She is smarter than you and the next person, and knows how to express herself."
+                        "he":"#name# ist sehr schlagfertig. Er ist klüger als Sie und viele andere und versteht sich auszudrücken.",
+                        "she":"#name# ist sehr schlagfertig. Sie ist klüger als Sie und viele andere und versteht sich auszudrücken."
                     },
                 },
             },
             "lows":{
                 "big5_agreeableness":{
                     "instruction":{
-                        "he":"Support him in making his desires known and leading others to see his vision today.",
-                        "she":"Support her in making her desires known and leading others to see her vision today.",
+                        "he":"Unterstützen Sie ihn dabei, seinen Wünschen Ausdruck zu verleihen und andere an seinen Ideen teihaben zu lassen.",
+                        "she":"Unterstützen Sie sie dabei, ihren Wünschen Ausdruck zu verleihen und andere an ihren Ideen teihaben zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name# knows what he wants and isn't afraid to tell you. He's opinionated and knows how to get his way.",
-                        "she":"#name# knows what she wants and isn't afraid to tell you. She's opinionated and knows how to get her way."
+                        "he":"#name# weiß, was er will und versteht das auch anderen mitzuteilen. Er ist ein wenig starrköpfing und versteht es, sich durchzusetzen.",
+                        "she":"#name# weiß, was sie will und versteht das auch anderen mitzuteilen. Sie ist ein wenig starrköpfing und versteht es, sich durchzusetzen."
                     },
                 },
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Remind him how talented he is at entertaining the people in his life.",
-                        "she":"Remind her how talented she is at entertaining the people in her life.",
+                        "he":"Erinnern Sie ihn daran, wie leicht es ihm fällt, seine Mitmenschen zu unterhalten.",
+                        "she":"Erinnern Sie sie daran, wie leicht es ihr fällt, ihre Mitmenschen zu unterhalten.",
                     },
                     "paragraph":{
-                        "he":"#name# has a mischievous, boisterous spirit. An exhibitionist at heart, he's always taking people for a ride.",
-                        "she":"#name# has a mischievous, boisterous spirit. An exhibitionist at heart, she's always taking people for a ride."
+                        "he":"#name# ist spitzbübisch und übermütig. Er ist extrovertiert und reißt andere Menschen mit sich.",
+                        "she":"#name# ist spitzbübisch und übermütig. Sie ist extrovertiert und reißt andere Menschen mit sich."
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Support him in his audacity as he goes forth to attempt new heights today.",
-                        "she":"Support her in her audacity as she goes forth to attempt new heights today.",
+                        "he":"Ermuntern Sie ihn dazu, seine Ziele heute noch höher zu stecken.",
+                        "she":"Ermuntern Sie sie dazu, ihre Ziele heute noch höher zu stecken.",
                     },
                     "paragraph":{
-                        "he":"#name# is a bold soul. Driven by an unwavering confidence, he is uninhibited when going after what he wants.",
-                        "she":"#name# is a bold soul. Driven by an unwavering confidence, she is uninhibited when going after what she wants."
+                        "he":"#name# ist durchaus mutig. Sein unerschütterliches Selbstvertrauen veranlasst ihn dazu, seine Ziele konsequent zu verfolgen.",
+                        "she":"#name# ist durchaus mutig. Ihr unerschütterliches Selbstvertrauen veranlasst sie dazu, ihre Ziele konsequent zu verfolgen."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Support his outgoing spirit and encourage him to take a step back and let others share the spotlight sometimes.",
-                        "she":"Support her outgoing spirit and encourage her to take a step back and let others share the spotlight sometimes.",
+                        "he":"Unterstützen Sie seine Kontaktfreude, aber ermuntern Sie ihn auch dazu, manchmal andere in den Vordergund treten zu lassen.",
+                        "she":"Unterstützen Sie ihre Kontaktfreude, aber ermuntern Sie sie auch dazu, manchmal andere in den Vordergund treten zu lassen.",
                     },
                     "paragraph":{
-                        "he":"#name# doesn't hold back. He's confident and talkative. He may not always be the best listener but does have a great willingness to share himself.",
-                        "she":"#name# doesn't hold back. She's confident and talkative. She may not always be the best listener but does have a great willingness to share herself."
+                        "he":"#name# sagt, was er denkt. Er ist zuversichtlich und gesprächig. Er hört vielleicht nicht immer zu, aber er lässt andere an seinen Gedanken teilhaben.",
+                        "she":"#name# sagt, was sie denkt. Sie ist zuversichtlich und gesprächig. Sie hört vielleicht nicht immer zu, aber sie lässt andere an ihren Gedanken teilhaben."
                     },
                 },
             },
@@ -608,216 +605,215 @@ export default {
                 "facet_activity_level":{
                     "instructions":[
                         {
-                            "he":"Share how impressed you are with the energy he brings to the juggling act that is his life.",
-                            "she":"Share how impressed you are with the energy she brings to the juggling act that is her life.",
+                            "he":"Zeigen Sie ihm, wie sehr sie von seiner Fähigkeit beeindruckt sind, auch die schwierigen Momente in seinem Leben zu meistern.",
+                            "she":"Zeigen Sie ihr, wie sehr sie von ihrer Fähigkeit beeindruckt sind, auch die schwierigen Momente in ihrem Leben zu meistern.",
                         },
                         {
-                            "he":"Reassure him that it's okay to take some time to breathe and recharge.",
-                            "she":"Reassure her that it's okay to take some time to breathe and recharge.",
+                            "he":"Versichern Sie ihm, dass es durchaus in Ordnung ist, ab und zu zu pausieren und Kraft zu schöpfen.",
+                            "she":"Versichern Sie ihr, dass es durchaus in Ordnung ist, ab und zu zu pausieren und Kraft zu schöpfen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is always involved in multiple activities, multi-tasking and bringing vigor to everything he does.",
-                        "she": "She is always involved in multiple activities, multi-tasking and bringing vigor to everything she does.",
+                        "he":"Er tanzt gern auf mehreren Hochzeiten und bringt Leben in alles, was er unternimmt.",
+                        "she": "Sie tanzt gern auf mehreren Hochzeiten und bringt Leben in alles, was sie unternimmt.",
                     }
                 },  
                 "facet_assertiveness":{
                     "instructions":[
                         {
-                            "he":"Share how humbled you are by his tremendous leadership abilities.",
-                            "she":"Share how humbled you are by her tremendous leadership abilities.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie seine Führungskompetenz beeindruckt.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihre Führungskompetenz beeindruckt.",
                         },
                         {
-                            "he":"Advise him to occasionally make space for others' opinions to have a moment in the spotlight.",
-                            "she":"Advise her to occasionally make space for others' opinions to have a moment in the spotlight.",
+                            "he":"Raten Sie ihm, gelegentlich auch andere mit ihrer Meinung zu Wort kommen zu lassen.",
+                            "she":"Raten Sie ihr, gelegentlich auch andere mit ihrer Meinung zu Wort kommen zu lassen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is a true leader, always ssserting his ideas and directing others to make sure they come to life.",
-                        "she": "She is a true leader, always ssserting her ideas and directing others to make sure they come to life.",
+                        "he":"Er ist ein Führungstyp, der seine Ideen zum Ausdruck bringt und andere dazu bringt, sie umzusetzen.",
+                        "she": "Sie ist ein Führungstyp, der seine Ideen zum Ausdruck bringt und andere dazu bringt, sie umzusetzen.",
                     }
                 },  
                 "facet_cheerfulness":{
                     "instructions":[
                         {
-                            "he":"Show him that you're in awe of his inner light.",
-                            "she":"Show her that you're in awe of her inner light.",
+                            "he":"Zeigen Sie ihm, dass Sie Respekt vor seiner inneren Antriebskraft haben.",
+                            "she":"Zeigen Sie ihr, dass Sie Respekt vor ihrer inneren Antriebskraft haben.",
                         },
                         {
-                            "he":"Reassure him that he doesn't have to put on a face of positivity if he's ever having a down moment.",
-                            "she":"Reassure her that she doesn't have to put on a face of positivity if she's ever having a down moment.",
+                            "he":"Versichern Sie ihm, dass es in Ordnung ist, nicht ständig zu lächeln, wenn er einmal einen Durchhänger hat.",
+                            "she":"Versichern Sie ihr, dass es in Ordnung ist, nicht ständig zu lächeln, wenn sie einmal einen Durchhänger hat.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He brings an optimism and joy to everything in his life. People describe his positive spirit as contagious.",
-                        "she": "She brings an optimism and joy to everything in her life. People describe her positive spirit as contagious.",
+                        "he":"Er verbreitet überall Optimismus. Seine Mitmenschen beschreiben seine positive Einstellung als ansteckend.",
+                        "she": "Sie verbreitet überall Optimismus. Ihre Mitmenschen beschreiben ihre positive Einstellung als ansteckend.",
                     }
                 }, 
-                "facet_excitement-seeking":{
+                "facet_excitement_seeking":{
                     "instructions":[
                         {
-                            "he":"Let him know that today has some exciting novelties in store for him.",
-                            "she":"Let her know that today has some exciting novelties in store for her.",
+                            "he":"Sagen Sie ihm, dass ihn heute ein paar begeisternde Neuigkeiten erwarten.",
+                            "she":"Sagen Sie ihr, dass sie heute ein paar begeisternde Neuigkeiten erwarten.",
                         },
                         {
-                            "he":"Reassure him that it's okay to have quiet moments sometimes too, and that it might even be good for him.",
-                            "she":"Reassure her that it's okay to have quiet moments sometimes too, and that it might even be good for her. ",
+                            "he":" Versichern Sie ihm, dass es in Ordnung ist, es auch manchmal langsamer angehen zu lassen, und das sogar gut für ihn sein könnte.",
+                            "she":"Versichern Sie ihr, dass es in Ordnung ist, es auch manchmal langsamer angehen zu lassen, und das sogar gut für sie sein könnte.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is always looking for external stimulation. Anything that smells of routine is sure to make him bored - perhaps his greatest fear.",
-                        "she": "She is always looking for external stimulation. Anything that smells of routine is sure to make her bored - perhaps her greatest fear.",
+                        "he":"Er ist ständig auf der Suche nach äußeren Anreizen. Routine langweilt ihn – oder macht ihm Angst.",
+                        "she": "Sie ist ständig auf der Suche nach äußeren Anreizen. Routine langweilt sie – oder macht ihr Angst.",
                     }
                 },  
                 "facet_friendliness":{
                     "instructions":[
                         {
-                            "he":"Share how deeply impressed you are by his ability to bring joy to others.",
-                            "she":"Share how deeply impressed you are by her ability to bring joy to others.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie seine Fähigkeit beeindruckt, anderen Freude zu bereiten.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihre Fähigkeit beeindruckt, anderen Freude zu bereiten.",
                         },
                         {
-                            "he":"Reassure him that it's okay to think about himself and his own needs too.",
-                            "she":"Reassure her that it's okay to think about herself and her own needs too.",
+                            "he":"Erinnern Sie ihn daran, dass es durchaus in Ordnung ist, auch an sich selbst und seine eigenen Bedürfnisse zu denken.",
+                            "she":"Erinnern Sie sie daran, dass es durchaus in Ordnung ist, auch an sich selbst und seine eigenen Bedürfnisse zu denken.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has only positive feelings to share with others. Outgoing and warm, he makes people feel really good about themselves.",
-                        "she": "She has only positive feelings to share with others. Outgoing and warm, she makes people feel really good about themselves.",
+                        "he":"Er verbreitet durchweg gute Laune. Er ist extrovertiert und warmherzig, und mit ihm fühlt man sich wohl in seiner Haut.",
+                        "she": "Sie verbreitet durchweg gute Laune. Sie ist extrovertiert und warmherzig, und mit ihr fühlt man sich wohl in seiner Haut.",
                     }
                 },  
                 "facet_gregariousness":{
                     "instructions":[
                         {
-                            "he":"Share how much faith you have that today will bring great social opportunities for him.",
-                            "she":"Share how much faith you have that today will bring great social opportunities for her.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie daran glauben, dass ihm der heutige Tag gute Chancen eröffnen wird.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie daran glauben, dass ihr der heutige Tag gute Chancen eröffnen wird.",
                         },
                         {
-                            "he":"Reassure him that there can also be great value in being alone sometimes.",
-                            "she":"Reassure her that there can also be great value in being alone sometimes.",
+                            "he":"Bestätigen Sie ihm, dass auch allein zu sein manchmal von Vorteil sein kann.",
+                            "she":"Bestätigen Sie ihr, dass auch allein zu sein manchmal von Vorteil sein kann.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He finds great pleasure in the company of others - parties, crowds, concerts. Stimulation from social settings is a necessary element of his day.",
-                        "she": "She finds great pleasure in the company of others - parties, crowds, concerts. Stimulation from social settings is a necessary element of her day.",
+                        "he":"Er fühlt sich in der Gesellschaft anderer besonders wohl – auf Feten, in Menschenmengen, auf Konzerten. Soziale Kontakte sind für ihn von großer Bedeutung.",
+                        "she": "Sie fühlt sich in der Gesellschaft anderer besonders wohl – auf Feten, in Menschenmengen, auf Konzerten. Soziale Kontakte sind für sie von großer Bedeutung.",
                     }
                 }                                                                                  
             },
             "needs":{
                 "need_excitement":{
                     "instruction":{
-                        "he":"Bring a big dose of energy and excitement to his morning.",
-                        "she": "Bring a big dose of energy and excitement to her morning.",
+                        "he":"Verleihen Sie seinem Morgen einen Schuss Energie und Begeisterung.",
+                        "she": "Verleihen Sie ihre, Morgen einen Schuss Energie und Begeisterung.",
                     }
                 },
                 "need_harmony":{
                     "instruction":{
-                        "he":"Make him feel as if everything and everyone is in sync this morning.",
-                        "she": "Make her feel as if everything and everyone is in sync this morning.",
+                        "he":"Geben Sie ihm das Gefühl, dass heute alle mit allem harmonieren.",
+                        "she": "Geben Sie ihr das Gefühl, dass heute alle mit allem harmonieren.",
                     }                    
                 },
                 "need_curiosity":{
                     "instruction":{
-                        "he":"Give him confidence that his day will be filled with exciting discoveries.",
-                        "she": "Give her confidence that her day will be filled with exciting discoveries.",
+                        "he":"Vermitteln Sie ihm die Zuversicht, dass ihn heute aufregende Entdeckungen erwarten.",
+                        "she": "Vermitteln Sie ihr die Zuversicht, dass sie heute aufregende Entdeckungen erwarten.",
                     }
                 },
                 "need_ideal":{
                     "instruction":{
-                        "he":"Make him feel connected to a spirited global community.",
-                        "she": "Make her feel connected to a spirited global community.",
+                        "he":"Geben Sie ihm das Gefühl, Teil einer lebhaften weltweiten Gemeinschaft zu sein.",
+                        "she": "Geben Sie ihr das Gefühl, Teil einer lebhaften weltweiten Gemeinschaft zu sein.",
                     }
                 },
                 "need_closeness":{
                     "instruction":{
-                        "he":"Give him that sense of deep connection he's looking for.",
-                        "she": "Give her that sense of deep connection she's looking for.",
+                        "he":"Vermitteln Sie ihm das Gefühl tiefer Verbundenheit, nach dem er sucht.",
+                        "she": " Vermitteln Sie ihr das Gefühl tiefer Verbundenheit, nach dem sie sucht.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
-                        "he":"Make him feel supported in his desire to express his true self.",
-                        "she": "Make her feel supported in her desire to express her true self.",
+                        "he":"Unterstützen Sie ihn bei seinem Wunsch nach Selbstverwirklichung.",
+                        "she": "Unterstützen Sie sie bei ihrem Wunsch nach Selbstverwirklichung.",
                     }
                 },
                 "need_liberty":{
                     "instruction":{
-                        "he":"Make him feel totally and completely free.",
-                        "she": "Make her feel totally and completely free.",
+                        "he":"Geben Sie ihm das Gefühl, völlig frei zu sein.",
+                        "she": "Geben Sie ihr das Gefühl, völlig frei zu sein.",
                     }
                 },
                 "need_love":{
                     "instruction":{
-                        "he":"Give him confidence that today he'll be around great people to feed his soul.",
-                        "she": "Give her confidence that today she'll be around great people to feed her soul.",
+                        "he":"Vermitteln Sie ihm die Zuversicht, dass er heute von großartigen Menschen umgeben sein wird.",
+                        "she": "Vermitteln Sie ihr die Zuversicht, dass sie heute von großartigen Menschen umgeben sein wird.",
                     }
                 },
                 "need_practicality":{
                     "instruction":{
-                        "he":"Bring a sense of focus and clarity to his morning so he can approach any task.",
-                        "she": "Bring a sense of focus and clarity to her morning so she can approach any task.",
+                        "he":"Verleihen Sie ihm das Gefühl von Konzentration und Durchblick, sodass er jede Aufgabe in Angriff nehmen kann.",
+                        "she": "Verleihen Sie ihr das Gefühl von Konzentration und Durchblick, sodass sie jede Aufgabe in Angriff nehmen kann.",
                     }
                 },
                 "need_stability":{
                     "instruction":{
-                        "he":"Be a stable force to ground him in the new day.",
-                        "she": "Be a stable force to ground her in the new day.",
+                        "he":"Seien Sie ein solides Fundament für seinen neuen Tag.",
+                        "she": "Seien Sie ein solides Fundament für ihren neuen Tag.",
                     }
                 },    
                 "need_challenge":{
                     "instruction":{
-                        "he":"Give him confidence that the day is filled with great challenges and opportunities to express himself.",
-                        "she": "Give her confidence that the day is filled with great challenges and opportunities to express herself.",
+                        "he":"Geben Sie ihm das Gefühl, dass der Tag voller Herausforderungen und Chancen für ihn steckt.",
+                        "she": "Geben Sie ihr das Gefühl, dass der Tag voller Herausforderungen und Chancen für sie steckt.",
                     }
                 },    
                 "need_structure":{
                     "instruction":{
-                        "he":"Bring him into the new day with a groundedness to make him feel in control.",
-                        "she": "Bring her into the new day with a groundedness to make her feel in control.",
+                        "he":"Begrüßen Sie ihn mit dem Gefühl, dass er heute alles unter Kontrolle haben wird.",
+                        "she": "Begrüßen Sie sie mit dem Gefühl, dass sie heute alles unter Kontrolle haben wird.",
                     }
                 }                                                                                                                                                                                
             }
         },
         "big5_neuroticism":{
-            "person_type":"morning",
             "highs":{
                 "big5_agreeableness":{
                     "instruction":{
-                        "he":"Support him in bringing his sweet, approachable self to the new day.",
-                        "she":"Support her in bringing her sweet, approachable self to the new day.",
+                        "he":"Ermuntern Sie ihn dazu, den ganzen Tag lang sein angenehmes Wesen zum Ausdruck zu bringen.",
+                        "she":"Ermuntern Sie sie dazu, den ganzen Tag lang ihr angenehmes Wesen zum Ausdruck zu bringen.",
                     },
                     "paragraph":{
-                        "he":"#name# is a soft, sensitive person. Some may even describe him as gullible, but he is beloved for his kindness.",
-                        "she":"#name# is a soft, sensitive person. Some may even describe her as gullible, but she is beloved for her kindness."
+                        "he":"#name# ist ein sanfter und empfindsamer Mensch. Man könnte ihn fast als naiv bezeichnen, aber alle mögen ihn aufgrund seiner Freundlichkeit.",
+                        "she":"#name# ist ein sanfter und empfindsamer Mensch. Man könnte sie fast als naiv bezeichnen, aber alle mögen sie aufgrund ihrer Freundlichkeit."
                     },
                 },
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Remind him that being picky can be a virtue, and encourage him to trust his instincts.",
-                        "she":"Remind her that being picky can be a virtue, and encourage her to trust her instincts.",
+                        "he":"Erinnern Sie ihn daran, dass Strenge eine Tugend sein kann, und ermutigen Sie ihn dazu, seinen Instinkten zu folgen.",
+                        "she":"Erinnern Sie sie daran, dass Strenge eine Tugend sein kann, und ermutigen Sie sie dazu, ihren Instinkten zu folgen.",
                     },
                     "paragraph":{
-                        "he":"#name# is exacting at everything he does. Some may describe him as hard to please and high-strung, but many place a high value on his opinions.",
-                        "she":"#name# is exacting at everything she does. Some may describe her as hard to please and high-strung, but many place a high value on her opinions."
+                        "he":"#name# ist bei allem, was er tut, äußerst sorgfältig. Manche meinen, er sei schwer zufriedenzustellen, aber andere geben viel auf seine Meinung.",
+                        "she":"#name# ist bei allem, was sie tut, äußerst sorgfältig. Manche meinen, sie sei schwer zufriedenzustellen, aber andere geben viel auf ihre Meinung."
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Remind him how magnetic his energy can be to those around him.",
-                        "she":"Remind her how magnetic her energy can be to those around her.",
+                        "he":"Erinnern Sie ihn daran, wie anziehend seine Energie auf andere wirken kann.",
+                        "she":"Erinnern Sie sie daran, wie anziehend ihre Energie auf andere wirken kann.",
                     },
                     "paragraph":{
-                        "he":"#name# is excitable. He has an explosive energy that can be contagious and alluring.",
-                        "she":"#name# is excitable. She has an explosive energy that can be contagious and alluring."
+                        "he":"#name# ist reizbar. Seine überschäumende Energie kann ihn aber auch attraktiv machen.",
+                        "she":"#name# ist reizbar. Ihre überschäumende Energie kann sie aber auch attraktiv machen."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Support him in expressing his full, emotional self with the people he encounters today.",
-                        "she":"Support her in expressing her full, emotional self with the people she encounters today.",
+                        "he":"Ermutigen Sie ihn dazu, heute gegenüber allen Menschen, die er trifft, seinen Gefühlen Ausdruck zu verleihen.",
+                        "she":"Ermutigen Sie sie dazu, heute gegenüber allen Menschen, die sie trifft, ihren Gefühlen Ausdruck zu verleihen.",
                     },
                     "paragraph":{
-                        "he":"#name# is a passionate, sensual soul. Full of life and emotion, others can't help but be drawn to him even if they don't always understand him.",
-                        "she":"#name# is a passionate, sensual soul. Full of life and emotion, others can't help but be drawn to her even if they don't always understand her."
+                        "he":"#name# ist ein leidenschaftlicher und sinnlicher Zeitgenosse. Seine Lebensfreude wirkt anziehend auf andere, auch wenn sie ihn nicht immer verstehen.",
+                        "she":"#name# ist eine leidenschaftliche und sinnliche Zeitgenossin. Ihre Lebensfreude wirkt anziehend auf andere, auch wenn sie sie nicht immer verstehen."
                     },
                 },
             },
@@ -830,32 +826,32 @@ export default {
                 },
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Remind him how humbled you are by his intuitive nature and encourage him to listen to his gut today.",
-                        "she":"Remind her how humbled you are by her intuitive nature and encourage her to listen to her gut today.",
+                        "he":"Geben Sie ihm zu verstehen, wie sehr sie von seiner  gefühlsbetonten Art beeindruckt sind, und ermutigen Sie ihn dazu, heute auf seine innere Stimme zu hören.",
+                        "she":"Geben Sie ihr zu verstehen, wie sehr sie von ihrer  gefühlsbetonten Art beeindruckt sind, und ermutigen Sie sie dazu, heute auf ihre innere Stimme zu hören.",
                     },
                     "paragraph":{
-                        "he":"#name# is driven to act on impulse. He is deeply in touch with his instincts and relies on them to act fast and make a change when necessary.",
-                        "she":"#name# is driven to act on impulse. She is deeply in touch with her instincts and relies on them to act fast and make a change when necessary."
+                        "he":"#name# handelt spontan. Er verlässt sich auf seine Instinkte, wenn es darum geht, das Ruder herumzuwerfen.",
+                        "she":"#name# handelt spontan. Sie verlässt sich auf ihre Instinkte, wenn es darum geht, das Ruder herumzuwerfen."
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Encourage him to be in touch with himself today and to have confidence in his intuition.",
-                        "she":"Encourage her to be in touch with herself today and to have confidence in her intuition.",
+                        "he":"Ermutigen Sie ihn dazu, heute auf sich selbst zu hören und seinem Bauchgefühl zu vertrauen.",
+                        "she":"Ermutigen Sie sie dazu, heute auf sich selbst zu hören und ihrem Bauchgefühl zu vertrauen.",
                     },
                     "paragraph":{
-                        "he":"#name# can be a bit of a mystery. He tends to have his guard up, but anyone who is let in is quite lucky. He has a rich inner life.",
-                        "she":"#name# can be a bit of a mystery. She tends to have her guard up, but anyone who is let in is quite lucky. She has a rich inner life."
+                        "he":"#name# ist ein bisschen geheimnisvoll. Er neigt dazu sich abzuschotten, aber wen er in sein Inneres blicken lässt, der kann von Glück reden, denn er ist ein sehr interessanter Mensch.",
+                        "she":"#name# ist ein bisschen geheimnisvoll. Sie neigt dazu sich abzuschotten, aber wen sie in ihr Inneres blicken lässt, der kann von Glück reden, denn sie ist ein sehr interessanter Mensch."
                     },
                 },
                 "big5_openness":{
                     "instruction":{
-                        "he":"Encourage him to trust that he can find peace today and can be his best self.",
-                        "she":"Encourage her to trust that she can find peace today and can be her best self.",
+                        "he":"Ermutigen Sie ihn dazu, heute sich selbst zu vertrauen, damit er sein Bestes geben kann.",
+                        "she":"Ermutigen Sie sie dazu, heute sich selbst zu vertrauen, damit sie ihr Bestes geben kann.",
                     },
                     "paragraph":{
-                        "he":"#name# doesn't like surprises. He knows his needs and seeks refuge in structured environments. When setup for success, #name# has an emotional depth that allows him to thrive.",
-                        "she":"#name# doesn't like surprises. She knows her needs and seeks refuge in structured environments. When setup for success, #name# has an emotional depth that allows her to thrive."
+                        "he":"#name# mag keine Überraschungen. Er kennt seine Bedürfnisse und fühlt sich in einer gut strukturierten Umgebung wohl. Wenn #name# nach Erfolg strebt, verlässt er sich auf seine innersten Gefühle.",
+                        "she":"#name# mag keine Überraschungen. Sie kennt ihre Bedürfnisse und fühlt sich in einer gut strukturierten Umgebung wohl. Wenn #name# nach Erfolg strebt, verlässt sie sich auf ihre innersten Gefühle."
                     },
                 },
             },
@@ -863,258 +859,257 @@ export default {
                 "facet_anger":{
                     "instructions":[
                         {
-                            "he":"Share with him how optimistic you are that today will be favorable to him.",
-                            "she":"Share with her how optimistic you are that today will be favorable to her.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie darauf vertrauen, dass er heute erfolgreich sein wird.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie darauf vertrauen, dass sie heute erfolgreich sein wird.",
                         },
                         {
-                            "he":"Reassure him that his feelings are always valid but that sometimes it can be good to take a deep breath.",
-                            "she":"Reassure her that her feelings are always valid but that sometimes it can be good to take a deep breath.",
+                            "he":"Machen Sie ihm klar, dass seine Gefühle durchaus berechtigt sind, aber dass es manchmal hilft, tief durchzuatmen.",
+                            "she":"Machen Sie ihr klar, dass ihre Gefühle durchaus berechtigt sind, aber dass es manchmal hilft, tief durchzuatmen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He likes things to go his way and can have a temper when they don't.",
-                        "she": "She likes things to go her way and can have a temper when they don't.",
+                        "he":"Er bestimmt gern, wo’s lang geht, und kann aufbrausend werden, wenn sich nicht alle daran halten.",
+                        "she": "Sie bestimmt gern, wo’s lang geht, und kann aufbrausend werden, wenn sich nicht alle daran halten.",
                     }
                 },
                 "facet_anxiety":{
                     "instructions":[
                         {
-                            "he":"Let him know how much respect you have for his perceptive emotional instincts.",
-                            "she":"Let her know how much respect you have for her perceptive emotional instincts.",
+                            "he":"Versichern Sie ihm, wie sehr Sie seine emotionalen Instinkte respektieren.",
+                            "she":"Versichern Sie ihr, wie sehr Sie ihre emotionalen Instinkte respektieren.",
                         },
                         {
-                            "he":"Advise him to make space for all of his feelings and to trust that everything will be okay.",
-                            "she":"Advise her to make space for all of her feelings and to trust that everything will be okay.",
+                            "he":"Raten Sie ihm dazu, auf alle seine Gefühle zu achten und darauf zu vertrauen, dass sich alles zum Guten fügen wird.",
+                            "she":"Raten Sie ihr dazu, auf alle ihre Gefühle zu achten und darauf zu vertrauen, dass sich alles zum Guten fügen wird.",
                         }
                     ],
                     "paragraph":{
-                        "he":"His fight-or-flight instincts are often on high alert. He is sensitive to his environment and has a deep emotional capacity.",
-                        "she": "Her fight-or-flight instincts are often on high alert. She is sensitive to her environment and has a deep emotional capacity.",
+                        "he":"Seine Nerven sind oft angespannt. Er reagiert empfindlich auf seine Umwelt und ist sehr gefühlsbetont.",
+                        "she": "Ihre Nerven sind oft angespannt. Sie reagiert empfindlich auf ihre Umwelt und ist sehr gefühlsbetont.",
                     }
                 },
                 "facet_depression":{
                     "instructions":[
                         {
-                            "he":"Share how humbled you are by his rich emotional world.",
-                            "she":"Share how humbled you are by her rich emotional world.",
+                            "he":"Zeigen Sie ihm, wie beeindruckt Sie von seiner Gefühlswelt sind.",
+                            "she":"Zeigen Sie ihr, wie beeindruckt Sie von ihrer Gefühlswelt sind.",
                         },
                         {
-                            "he":"Reassure him that you understand how unpredictable and harsh life can be and that today can offer a fresh start.",
-                            "she":"Reassure her that you understand how unpredictable and harsh life can be and that today can offer a fresh start.",
+                            "he":" Sagen Sie ihm, wie sehr Sie verstehen, dass das Leben unberechenbar sein kann, aber dass ein neuer Tag auch neue Chancen bietet.",
+                            "she":"Sagen Sie ihr, wie sehr Sie verstehen, dass das Leben unberechenbar sein kann, aber dass ein neuer Tag auch neue Chancen bietet.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has an emotional depth and thinks quite often about his feelings. As we all know, life's ups and downs can be a lot to handle.",
-                        "she": "She has an emotional depth and thinks quite often about her feelings. As we all know, life's ups and downs can be a lot to handle.",
+                        "he":" Er ist gefühlsbetont und zeigt seine Gefühle auch. Wie wir alle wissen, sind die Höhen und Tiefen des Lebens nicht immer leicht zu meistern.",
+                        "she": "Sie ist gefühlsbetont und zeigt ihre Gefühle auch. Wie wir alle wissen, sind die Höhen und Tiefen des Lebens nicht immer leicht zu meistern.",
                     }
                 },
                 "facet_immoderation":{
                     "instructions":[
                         {
-                            "he":"Show him how much you support his revelry of life's pleasures.",
-                            "she":"Show her how much you support her revelry of life's pleasures.",
+                            "he":" Zeigen Sie ihm, wie sehr Sie seine Art respektieren, das Leben zu genießen.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihre Art respektieren, das Leben zu genießen.",
                         },
                         {
-                            "he":"Advise him to occasionally exercise restraint and find beauty in the simpler, quieter moments.",
-                            "she":"Advise her to occasionally exercise restraint and find beauty in the simpler, quieter moments. ",
+                            "he":" Raten Sie ihm dazu, sich manchmal ein wenig zurückzuhalten und auch einfachere Augenblicke zu genießen.",
+                            "she":"Raten Sie ihr dazu, sich manchmal ein wenig zurückzuhalten und auch einfachere Augenblicke zu genießen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has strong desires. Some may even call him a hedonist, with his appreciation for decadence and instant gratification.",
-                        "she": "She has strong desires. Some may even call her a hedonist, with her appreciation for decadence and instant gratification.",
+                        "he":" Er hat ausgeprägte Bedürfnisse. Aufgrund seines Hangs nach Dekadenz und sofortiger Befriedigung würden ihn manche als Hedonisten bezeichnen.",
+                        "she": "Sie hat ausgeprägte Bedürfnisse. Aufgrund ihres Hangs nach Dekadenz und sofortiger Befriedigung würden sie manche als Hedonistin bezeichnen.",
                     }
                 },
-                "facet_self-consciousness":{
+                "facet_self_consciousness":{
                     "instructions":[
                         {
-                            "he":"Share with him how humbled you are by his emotional depth and his many abilities.",
-                            "she":"Share with her how humbled you are by her emotional depth and her many abilities.",
+                            "he":" Zeigen Sie ihm, wie sehr Sie von seiner emotionalen Tiefe und seinen Fähigkeiten beeindruckt sind.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie von ihrer emotionalen Tiefe und ihren Fähigkeiten beeindruckt sind.",
                         },
                         {
-                            "he":"Reassure him that he is loved and appreciated.",
-                            "she":"Reassure her that she is loved and appreciated.",
+                            "he":" Versichern Sie ihm, dass er geliebt und geschätzt wird.",
+                            "she":"Versichern Sie ihr, dass sie geliebt und geschätzt wird.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is sensitive and deep. A fear of being judged can make him shy in certain settings.",
-                        "she": "She is sensitive and deep. A fear of being judged can make her shy in certain settings.",
+                        "he":"Er ist sehr sensibel. Die Furcht, beurteilt zu werden, kann ihn manchmal einschüchtern.",
+                        "she": "Sie ist sehr sensibel. Die Furcht, beurteilt zu werden, kann sie manchmal einschüchtern.",
                     }
                 },
                 "facet_vulnerability":{
                     "instructions":[
                         {
-                            "he":"Share with him how much faith you have in his ability to handle whatever is on his plate.",
-                            "she":"Share with her how much faith you have in her ability to handle whatever is on her plate.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie darauf vertrauen, dass er alle Hindernisse überwinden wird.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie darauf vertrauen, dass sie alle Hindernisse überwinden wird.",
                         },
                         {
-                            "he":"Advise him to give himself space to take some deep breaths and start the day with a clear mind and an open heart.",
-                            "she":"Advise her to give herself space to take some deep breaths and start the day with a clear mind and an open heart.",
+                            "he":"Raten Sie ihm dazu, ab und zu tief durchzuatmen und den Tag mit klaren Vorstellungen zu beginnen.",
+                            "she":"Raten Sie ihr dazu, ab und zu tief durchzuatmen und den Tag mit klaren Vorstellungen zu beginnen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"Life can be quite stressful for him and he often feels a lot of pressure to succeed.",
-                        "she": "Life can be quite stressful for her and she often feels a lot of pressure to succeed.",
+                        "he":"Das Leben kann ziemlich stressig für ihn sein und er steht oft unter Erfolgszwang.",
+                        "she": "Das Leben kann ziemlich stressig für sie sein und sie steht oft unter Erfolgszwang.",
                     }
                 }                                                                                                    
             },
             "needs":{
                 "need_excitement":{
                     "instruction":{
-                        "he":"Give his morning a dose of motivating, positive energy.",
-                        "she": "Give her morning a dose of motivating, positive energy.",
+                        "he":"Verleihen Sie seinem Morgen einen Schuss positiver, motivierender Energie.",
+                        "she": "Verleihen Sie ihrem Morgen einen Schuss positiver, motivierender Energie.",
                     }
                 },
                 "need_harmony":{
                     "instruction":{
-                        "he":"Bring a sense of calm and harmony to his morning.",
-                        "she": "Bring a sense of calm and harmony to her morning.",
+                        "he":"Verleihen Sie seinem Morgen Ruhe und Harmonie.",
+                        "she": " Verleihen Sie ihrem Morgen Ruhe und Harmonie.",
                     }                    
                 },
                 "need_curiosity":{
                     "instruction":{
-                        "he":"Make him feel as though today offers wonderful growth opportunities.",
-                        "she": "Make her feel as though today offers wonderful growth opportunities.",
+                        "he":"Geben Sie ihm das Gefühl, dass der heutige Tag wunderbare Perspektiven bietet.",
+                        "she": "Geben Sie ihr das Gefühl, dass der heutige Tag wunderbare Perspektiven bietet.",
                     }
                 },
                 "need_ideal":{
                     "instruction":{
-                        "he":"Give him confidence that he can find support from others today.",
-                        "she": "Give her confidence that she can find support from others today.",
+                        "he":"Geben Sie ihm das Gefühl, dass ihn heute andere unterstützen werden.",
+                        "she": "Geben Sie ihr das Gefühl, dass sie heute andere unterstützen werden.",
                     }
                 },
                 "need_closeness":{
                     "instruction":{
-                        "he":"Give him a sense of closeness and care this morning.",
-                        "she": "Give her a sense of closeness and care this morning.",
+                        "he":"Vermitteln Sie ihm am heutigen Morgen ein Gefühl von Nähe und Fürsorge.",
+                        "she": " Vermitteln Sie ihr am heutigen Morgen ein Gefühl von Nähe und Fürsorge.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
-                        "he":"Make him feel worthy of expressing himself fully today.",
-                        "she": "Make her feel worthy of expressing herself fully today.",
+                        "he":"Vermitteln Sie ihm das Gefühl, dass er sich heute voll und ganz entfalten kann.",
+                        "she": "Vermitteln Sie ihr das Gefühl, dass sie sich heute voll und ganz entfalten kann.",
                     }
                 },
                 "need_liberty":{
                     "instruction":{
-                        "he":"Give him the sense that today is a totally fresh start.",
-                        "she": "Give her the sense that today is a totally fresh start.",
+                        "he":"Geben Sie ihm das Gefühl, dass heute ein neuer Anfang ist.",
+                        "she": "Geben Sie ihr das Gefühl, dass heute ein neuer Anfang ist.",
                     }
                 },
                 "need_love":{
                     "instruction":{
-                        "he":"Give him confidence that he'll be surrounded by good people and good vibes today.",
-                        "she": "Give her confidence that she'll be surrounded by good people and good vibes today.",
+                        "he":"Geben Sie ihm das Gefühl, dass er heute von freundlichen Menschen und einer guten Stimmung umgeben sein wird.",
+                        "she": "Geben Sie ihr das Gefühl, dass sie heute von freundlichen Menschen und einer guten Stimmung umgeben sein wird.",
                     }
                 },
                 "need_practicality":{
                     "instruction":{
-                        "he":"Make him feel as though he has everything he needs to find success and productivity today.",
-                        "she": "Make her feel as though she has everything she needs to find success and productivity today.",
+                        "he":"Geben Sie ihm das Gefühl, dass er heute alles hat, was er braucht, um erfolgreich und produktiv zu sein.",
+                        "she": "Geben Sie ihr das Gefühl, dass sie heute alles hat, was sie braucht, um erfolgreich und produktiv zu sein.",
                     }
                 },
                 "need_stability":{
                     "instruction":{
-                        "he":"Bring a sense of security and stability to his morning by letting him know you're there for him.",
-                        "she": "Bring a sense of security and stability to her morning by letting her know you're there for her.",
+                        "he":"Vermitteln Sie ihm ein Gefühl von Sicherheit und Stabilität, indem Sie ihm zu verstehen geben, dass Sie für ihn da sind.",
+                        "she": "Vermitteln Sie ihr ein Gefühl von Sicherheit und Stabilität, indem Sie ihr zu verstehen geben, dass Sie für sie da sind.",
                     }
                 },    
                 "need_challenge":{
                     "instruction":{
-                        "he":"Give him confidence that he is totally prepared and capable of taking on whatever comes his way today.",
-                        "she": "Give her confidence that she is totally prepared and capable of taking on whatever comes her way today.",
+                        "he":"Vermitteln Sie ihm das Vertrauen, dass er alles, was heute auf ihn zukommen wird, bewältigen kann.",
+                        "she": "Vermitteln Sie ihr das Vertrauen, dass sie alles, was heute auf sie zukommen wird, bewältigen kann.",
                     }
                 },    
                 "need_structure":{
                     "instruction":{
-                        "he":"Make him feel confident that everything is under control this morning.",
-                        "she": "Make her feel confident that everything is under control this morning.",
+                        "he":"Geben Sie ihm das Gefühl, dass er heute Morgen alles unter Kontrolle hat.",
+                        "she": "Geben Sie ihr das Gefühl, dass sie heute Morgen alles unter Kontrolle hat.",
                     }
                 }                                                                                                                                                                                
             }
         },
         "big5_openness":{
-            "person_type":"morning",
            "highs":{
                 "big5_agreeableness":{
                     "instruction":{
-                        "he":"Encourage him to bring his whole, genial self to this new day - it's a gift to the people in his life.",
-                        "she":"Encourage her to bring her whole, genial self to this new day - it's a gift to the people in her life.",
+                        "he":"Ermuntern Sie ihn dazu, sich am heutigen Tag voll einzubringen – damit beschenkt er seine Mitmenschen.",
+                        "she":"Ermuntern Sie sie dazu, sich am heutigen Tag voll einzubringen – damit beschenkt sie ihre Mitmenschen.",
                     },
                     "paragraph":{
-                        "he":"#name# has a tactful, diplomatic nature that allows him to get along with many different types of people.",
-                        "she":"#name# has a tactful, diplomatic nature that allows her to get along with many different types of people."
+                        "he":"#name# ist taktvoll und diplomatisch, was es ihm möglich macht, mit vielen unterschiedlichen Menschen klarzukommen.",
+                        "she":"#name# ist taktvoll und diplomatisch, was es ihr möglich macht, mit vielen unterschiedlichen Menschen klarzukommen."
                     },
                 },
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Remind him to cherish his perceptive wit, as it is a special, unique gift.",
-                        "she":"Remind her to cherish her perceptive wit, as it is a special, unique gift.",
+                        "he":"Erinnern Sie ihn daran, dass seine Schlagfertigkeit ein besonderes Talent ist.",
+                        "she":"Erinnern Sie sie daran, dass ihre Schlagfertigkeit ein besonderes Talent ist.",
                     },
                     "paragraph":{
-                        "he":"#name# is extremely bright. He has a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge.",
-                        "she":"#name# is extremely bright. She has a deep capacity to learn and evaluate new things, and an aptitude for communicating that knowledge."
+                        "he":"#name# ist sehr intelligent. Er lernt schnell und versteht das Gelernte an andere weiterzugeben.",
+                        "she":"#name# ist sehr intelligent. Sie lernt schnell und versteht das Gelernte an andere weiterzugeben."
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Remind him how much his vivacious, worldly nature brings life to any environment he inhabits.",
-                        "she":"Remind her how much her vivacious, worldly nature brings life to any environment she inhabits.",
+                        "he":"Erinnern Sie ihn daran, dass seine Lebhaftigkeit und seine Weltoffenheit belebend für sein Umfeld sind.",
+                        "she":"Erinnern Sie sie daran, dass ihre Lebhaftigkeit und ihre Weltoffenheit belebend für ihr Umfeld sind.",
                     },
                     "paragraph":{
-                        "he":"#name# is a force to be reckoned with, smart and full of expression. People might describe him as having a magnetic intensity.",
-                        "she":"#name# is a force to be reckoned with, smart and full of expression. People might describe her as having a magnetic intensity."
+                        "he":"#name# ist eine wahre Naturgewalt und ausdrucksstark. Seine Mitmenschen heben seine große Ausstrahlung hervor.",
+                        "she":"#name# ist eine wahre Naturgewalt und ausdrucksstark. Ihre Mitmenschen heben ihre große Ausstrahlung hervor."
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Encourage him to seize today with every bit of energy he has - he's sure to get out what he puts in.",
-                        "she":"Encourage her to seize today with every bit of energy she has - she's sure to get out what she puts in.",
+                        "he":"Ermuntern Sie ihn dazu, den heutigen Tag voll und ganz zu nutzen – es wird nicht zu seinem Schaden sein.",
+                        "she":"Ermuntern Sie sie dazu, den heutigen Tag voll und ganz zu nutzen – es wird nicht zu ihrem Schaden sein.",
                     },
                     "paragraph":{
-                        "he":"#name# is a passionate soul with a desire to experience every last bit of what life has to offer. He has a penchant for the extreme.",
-                        "she":"#name# is a passionate soul with a desire to experience every last bit of what life has to offer. She has a penchant for the extreme."
+                        "he":"#name# ist ein leidenschaftlicher Mensch und bestrebt, alles auszuprobieren, was das Leben zu bieten hat. Er geht bis zum Äußersten.",
+                        "she":"#name# ist ein leidenschaftlicher Mensch und bestrebt, alles auszuprobieren, was das Leben zu bieten hat. Sie geht bis zum Äußersten."
                     },
                 },
             },
             "lows":{
                 "big5_agreeableness":{
                     "instruction":{
-                        "he":"Remind him how much the world needs his unique and sharp-witted sensibility.",
-                        "she":"Remind her how much the world needs her unique and sharp-witted sensibility.",
+                        "he":"Erinnern Sie ihn daran, wie sehr die Welt seine Scharfsinnigkeit braucht.",
+                        "she":"Erinnern Sie sie daran, wie sehr die Welt ihre Scharfsinnigkeit braucht.",
                     },
                     "paragraph":{
-                        "he":"#name# is very much his own person, full of beautiful eccentricities. His savviness and wit garner him a lot of attention.",
-                        "she":"#name# is very much her own person, full of beautiful eccentricities. Her savviness and wit garner her a lot of attention."
+                        "he":"#name# ist einzigartig und durchaus exzentrisch. Seine Gewitztheit bringt ihm viel Aufmerksamkeit ein.",
+                        "she":"#name# ist einzigartig und durchaus exzentrisch. Ihre Gewitztheit bringt ihr viel Aufmerksamkeit ein."
                     },
                 },
                 "big5_conscientiousness":{
                     "instruction":{
-                        "he":"Support him in embracing his quirks and making today look just as he imagines it.",
-                        "she":"Support her in embracing her quirks and making today look just as she imagines it.",
+                        "he":"Unterstützen Sie ihn in seinen Marotten und dabei, den Tag so zu gestalten, wie er es wünscht.",
+                        "she":"Unterstützen Sie sie in ihren Marotten und dabei, den Tag so zu gestalten, wie sie es wünscht.",
                     },
                     "paragraph":{
-                        "he":"#name# is a fun, quirky person. He is unconventional and charts his own path. You will not find another #name# in the world.",
-                        "she":"#name# is a fun, quirky person. She is unconventional and charts her own path. You will not find another #name# in the world."
+                        "he":"#name# ist eine amüsante Person. Er ist unkonventionell und hat seine eigenen Ansichten. Jemanden wie #name# findet man nicht alle Tage.",
+                        "she":"#name# ist eine amüsante Person. Sie ist unkonventionell und hat ihre eigenen Ansichten. Jemanden wie #name# findet man nicht alle Tage."
                     },
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Support him in making today a journey in self-reflection and a pursuit of inner beauty.",
-                        "she":"Support her in making today a journey in self-reflection and a pursuit of inner beauty.",
+                        "he":"Ermuntern Sie ihn dazu, heute über sich selbst und seine inneren Werte nachzudenken.",
+                        "she":"Ermuntern Sie sie dazu, heute über sich selbst und ihre inneren Werte nachzudenken.",
                     },
                     "paragraph":{
-                        "he":"#name# is a thoughtful, meditative being. He lives a life of self-examination and introspection, seeking the beauty within.",
-                        "she":"#name# is a thoughtful, meditative being. She lives a life of self-examination and introspection, seeking the beauty within."
+                        "he":"#name# ist ein nachdenklicher Mensch. Er denkt oft über sich selbst nach und darüber, was sein Wesen ausmacht.",
+                        "she":"#name# ist ein nachdenklicher Mensch. Sie denkt oft über sich selbst nach und darüber, was ihr Wesen ausmacht."
                     },
                 },
                 "big5_neuroticism":{
                     "instruction":{
-                        "he":"Encourage him to listen to his intuition today and trust that it will be a good day.",
-                        "she":"Encourage her to listen to her intuition today and trust that it will be a good day.",
+                        "he":"Ermuntern Sie ihn dazu, heute auf seine innere Stimme zu hören, damit der Tag erfolgreich wird.",
+                        "she":"Ermuntern Sie sie dazu, heute auf ihre innere Stimme zu hören, damit der Tag erfolgreich wird.",
                     },
                     "paragraph":{
-                        "he":"#name# is deeply perceptive and can also be apprehensive about the future. He is emotional and can be easily affected by his environment.",
-                        "she":"#name# is deeply perceptive and can also be apprehensive about the future. She is emotional and can be easily affected by her environment."
+                        "he":"#name# ist scharfsinnig und macht sich manchmal Sorgen um die Zukunft. Er ist gefühlsbetont und reagiert empfindlich auf seine Umwelt.",
+                        "she":"#name# ist scharfsinnig und macht sich manchmal Sorgen um die Zukunft. Sie ist gefühlsbetont und reagiert empfindlich auf ihre Umwelt."
                     },
                 },
             },
@@ -1122,171 +1117,171 @@ export default {
                 "facet_adventurousness":{
                     "instructions":[
                         {
-                            "he":"Share your excitement for all that he'll encounter today.",
-                            "she":"Share your excitement for all that she'll encounter today.",
+                            "he":"Vermitteln Sie ihm Ihre Begeisterung für alles, was ihm heute widerfahren wird.",
+                            "she":"Vermitteln Sie ihr Ihre Begeisterung für alles, was ihr heute widerfahren wird.",
                         },
                         {
-                            "he":"Reassure him that he can find adventure even in life's simple, everyday experiences.",
-                            "she":"Reassure her that she can find adventure even in life's simple, everyday experiences.",
+                            "he":"Machen Sie ihm klar, dass auch alltägliche Ereignisse Abenteuer in sich bergen können.",
+                            "she":"Machen Sie ihr klar, dass auch alltägliche Ereignisse Abenteuer in sich bergen können.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is averse to routines and conventions. Instead, #name# seeks new experiences that expand his knowledge of the world.",
-                        "she": "She is averse to routines and conventions. Instead, #name# seeks new experiences that expand her knowledge of the world.",
+                        "he":"Er versucht Routine und gesellschaftliche Konventionen zu vermeiden. Stattdessen ist #name# auf der Suche nach neuen, bereichernden Erfahrungen.",
+                        "she": "Sie versucht Routine und gesellschaftliche Konventionen zu vermeiden. Stattdessen ist #name# auf der Suche nach neuen, bereichernden Erfahrungen.",
                     }
                 },  
                 "facet_artistic_interests":{
                     "instructions":[
                         {
-                            "he":"Let him know how much his passion for the arts inspires the people in his life.",
-                            "she":"Let her know how much her passion for the arts inspires the people in her life.",
+                            "he":"Lassen Sie ihn wissen, wie inspirierend seine Begeisterung für Kunst auf seine Mitmenschen wirkt.",
+                            "she":"Lassen Sie sie wissen, wie inspirierend ihre Begeisterung für Kunst auf ihre Mitmenschen wirkt.",
                         },
                         {
-                            "he":"Advise him to not let his desire to be 'taken away' by beauty take him out of the present moment.",
-                            "she":"Advise her to not let her desire to be 'taken away' by beauty take her out of the present moment. ",
+                            "he":"Raten Sie ihm, sich nicht durch sein Streben nach Schönheit von der Wirklichkeit ablenken zu lassen.",
+                            "she":"Raten Sie ihr, sich nicht durch ihr Streben nach Schönheit von der Wirklichkeit ablenken zu lassen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has a deep appreciation for beauty in both art and nature. He is often completely absorbed by artistic or creative experiences.",
-                        "she": "She has a deep appreciation for beauty in both art and nature. She is often completely absorbed by artistic or creative experiences.",
+                        "he":"Er ist sehr empfänglich für Schönheit in der Kunst und in der Natur. Er lässt sich oft von künstlerischen und kreativen Erfahrungen vereinnahmen.",
+                        "she": "Sie ist sehr empfänglich für Schönheit in der Kunst und in der Natur. Sie lässt sich oft von künstlerischen und kreativen Erfahrungen vereinnahmen.",
                     }
                 },  
                 "facet_emotionality":{
                     "instructions":[
                         {
-                            "he":"Share how deeply impressed you are by his emotional intelligence and depth.",
-                            "she":"Share how deeply impressed you are by her emotional intelligence and depth.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie von seiner emotionalen Intelligenz beeindruckt sind.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie von ihrer emotionalen Intelligenz beeindruckt sind.",
                         },
                         {
-                            "he":"Reassure him that being an emotional person is a strength, not a weakness.",
-                            "she":"Reassure her that being an emotional person is a strength, not a weakness.",
+                            "he":"Erinnern Sie ihn daran, dass gefühlsbetont zu sein eine Stärke und keine Schwäche ist.",
+                            "she":"Erinnern Sie sie daran, dass gefühlsbetont zu sein eine Stärke und keine Schwäche ist.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is emotionally aware and is able to access and make sense of his feelings. His ability to express how he feels makes for strong relationships.",
-                        "she": "She is emotionally aware and is able to access and make sense of her feelings. Her ability to express how she feels makes for strong relationships.",
+                        "he":"Er ist sich seiner Gefühle bewusst und in der Lage sie zu begreifen. Seine Fähigkeit, seine Gefühle zum Ausdruck zu bringen, ermöglicht es ihm, solide Beziehungen einzugehen.",
+                        "she": "Sie ist sich ihrer Gefühle bewusst und in der Lage sie zu begreifen. Ihre Fähigkeit, ihre Gefühle zum Ausdruck zu bringen, ermöglicht es ihr, solide Beziehungen einzugehen.",
                     }
                 },  
                 "facet_imagination":{
                     "instructions":[
                         {
-                            "he":"Share how in awe you are of his creative and imaginative talents.",
-                            "she":"Share how in awe you are of her creative and imaginative talents.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie seine Kreativität und seinen Einfallsreichtum bewundern.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihre Kreativität und ihren Einfallsreichtum bewundern.",
                         },
                         {
-                            "he":"Advise him to occasionally bring himself back to earth, to stay present, and find comfort in reality.",
-                            "she":"Advise her to occasionally bring herself back to earth, to stay present, and find comfort in reality.",
+                            "he":"Raten Sie ihm dazu, ab und zu auf den Boden der Tatsachen zurückzukommen und sich in der Wirklichkeit wohlzufühlen.",
+                            "she":"Raten Sie ihr dazu, ab und zu auf den Boden der Tatsachen zurückzukommen und sich in der Wirklichkeit wohlzufühlen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has a wild imagination that knows no bounds, giving him a creative spirit that often takes him into fantasyland.",
-                        "she": "She has a wild imagination that knows no bounds, giving her a creative spirit that often takes her into fantasyland.",
+                        "he":"Er hat ein grenzenloses Vorstellungsvermögen, das ihn oft in eine Fabelwelt entführt.",
+                        "she": "Sie hat ein grenzenloses Vorstellungsvermögen, das sie oft in eine Fabelwelt entführt.",
                     }
                 },  
                 "facet_intellect":{
                     "instructions":[
                         {
-                            "he":"Share how deeply humbled you are by his intelligence.",
-                            "she":"Share how deeply humbled you are by her intelligence.",
+                            "he":"Zeigen Sie ihm, wie sehr seine Intelligenz Sie beeindruckt.",
+                            "she":"Zeigen Sie ihr, wie sehr ihre Intelligenz Sie beeindruckt.",
                         },
                         {
-                            "he":"Reassure him that, although many people count on him, it's okay to take a break and relax from time to time.",
-                            "she":"Reassure her that, although many people count on her, it's okay to take a break and relax from time to time.",
+                            "he":"Versichern Sie ihm, dass es durchaus in Ordnung ist, ab und zu ein wenig kürzer zu treten, auch wenn viele Menschen auf ihn zählen.",
+                            "she":"Versichern Sie ihr, dass es durchaus in Ordnung ist, ab und zu ein wenig kürzer zu treten, auch wenn viele Menschen auf sie zählen.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He is wickedly smart and is driven by an insatiable intellectual curiosity. He'll find a creative solution to any problem.",
-                        "she": "She is wickedly smart and is driven by an insatiable intellectual curiosity. She'll find a creative solution to any problem.",
+                        "he":"Er ist sehr intelligent und von einer unersättlichen intellektuellen Neugierde. Er findet für jedes problem eine kreative Lösung.",
+                        "she": "Sie ist sehr intelligent und von einer unersättlichen intellektuellen Neugierde. Sie findet für jedes problem eine kreative Lösung.",
                     }
                 },  
                 "facet_liberalism":{
                     "instructions":[
                         {
-                            "he":"Share how much you admire his audacity to breathe new life into tired conventions and make for a brighter future.",
-                            "she":"Share how much you admire her audacity to breathe new life into tired conventions and make for a brighter future.",
+                            "he":"Zeigen Sie ihm, wie sehr Sie seine Fähigkeit bewundern, erlahmende Diskussionen zu beleben und auf eine bessere Zukunft hinzuwirken.",
+                            "she":"Zeigen Sie ihr, wie sehr Sie ihre Fähigkeit bewundern, erlahmende Diskussionen zu beleben und auf eine bessere Zukunft hinzuwirken.",
                         },
                         {
-                            "he":"Reassure him that this is a noble task, and he deserves a break and a lot of recognition.",
-                            "she":"Reassure her that this is a noble task, and she deserves a break and a lot of recognition.",
+                            "he":"Versichern Sie ihm, dass das eine ehrenwerte Aufgabe ist und er dafür eine Pause und Anerkennung verdient.",
+                            "she":"Versichern Sie ihr, dass das eine ehrenwerte Aufgabe ist und sie dafür eine Pause und Anerkennung verdient.",
                         }
                     ],
                     "paragraph":{
-                        "he":"He has a penchant for challenging authority and abandoning convention. A desire for change and progress drives many of his actions.",
-                        "she": "She has a penchant for challenging authority and abandoning convention. A desire for change and progress drives many of her actions.",
+                        "he":"Er fordert gern Autoritäten heraus und kümmert sich wenig um Gepflogenheiten. Er ist getrieben von einem Wunsch nach Wandel und Fortschritt.",
+                        "she": "Sie fordert gern Autoritäten heraus und kümmert sich wenig um Gepflogenheiten. Sie ist getrieben von einem Wunsch nach Wandel und Fortschritt.",
                     }
                 }                                                                                  
             },
             "needs":{
                 "need_excitement":{
                     "instruction":{
-                        "he":"Give his morning a dose of excitement for all the new experiences he'll have today.",
-                        "she": "Give her morning a dose of excitement for all the new experiences she'll have today.",
+                        "he":"Machen Sie ihm Lust auf all die neuartigen Erfahrungen, die er heute machen wird.",
+                        "she": " Machen Sie ihr Lust auf all die neuartigen Erfahrungen, die sie heute machen wird.",
                     }
                 },
                 "need_harmony":{
                     "instruction":{
-                        "he":"Make him feel how beautiful and connected the world can be.",
-                        "she": "Make her feel how beautiful and connected the world can be.",
+                        "he":"Geben Sie ihm das Gefühl, dass die Welt ein lebenswerter Ort ist, an dem alles miteinander verbunden ist.",
+                        "she": "Geben Sie ihr das Gefühl, dass die Welt ein lebenswerter Ort ist, an dem alles miteinander verbunden ist.",
                     }                    
                 },
                 "need_curiosity":{
                     "instruction":{
-                        "he":"Make him feel like every new discovery is just around the corner.",
-                        "she": "Make her feel like every new discovery is just around the corner.",
+                        "he":"Machen Sie ihm klar, dass es überall etwas zu entdecken gibt.",
+                        "she": "Machen Sie ihr klar, dass es überall etwas zu entdecken gibt.",
                     }
                 },
                 "need_ideal":{
                     "instruction":{
-                        "he":"Give him hope that the idyllic is achievable.",
-                        "she": "Give her hope that the idyllic is achievable.",
+                        "he":"Vermitteln Sie ihm die Hoffnung, dass sich alles zum Guten wenden kann.",
+                        "she": "Vermitteln Sie ihr die Hoffnung, dass sich alles zum Guten wenden kann.",
                     }
                 },
                 "need_closeness":{
                     "instruction":{
-                        "he":"Make him feel seen and recognized for being himself.",
-                        "she": "Make her feel seen and recognized for being herself.",
+                        "he":"Vermitteln Sie ihm das Gefühl, dass er als er selbst anerkannt wird.",
+                        "she": "Vermitteln Sie ihr das Gefühl, dass sie als sie selbst anerkannt wird.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
-                        "he":"Make him feel celebrated for being such a maverick.",
-                        "she": "Make her feel celebrated for being such a maverick.",
+                        "he":"Vermittlen Sie ihm das Gefühl, als Einzelgänger gefeiert zu werden.",
+                        "she": "Vermittlen Sie ihr das Gefühl, als Einzelgängerin gefeiert zu werden.",
                     }
                 },
                 "need_liberty":{
                     "instruction":{
-                        "he":"Bring him into the new day with confidence that he can do things his way today.",
-                        "she": "Bring her into the new day with confidence that she can do things her way today.",
+                        "he":"Ermöglichen Sie es ihm, den Tag mit der Zuversicht zu beginnen, heute alles erreichen zu können.",
+                        "she": "Ermöglichen Sie es ihr, den Tag mit der Zuversicht zu beginnen, heute alles erreichen zu können.",
                     }
                 },
                 "need_love":{
                     "instruction":{
-                        "he":"Make him feel completely adored and admired.",
-                        "she": "Make her feel completely adored and admired.",
+                        "he":"Vermitteln Sie ihm das Gefühl, bewundert zu werden.",
+                        "she": "Vermitteln Sie ihr das Gefühl, bewundert zu werden.",
                     }
                 },
                 "need_practicality":{
                     "instruction":{
-                        "he":"Give him confidence that his vision is achievable, that everything is within reach.",
-                        "she": "Give her confidence that her vision is achievable, that everything is within reach.",
+                        "he":"Vermitteln Sie ihm die Zuversicht, dass er seine Vorstellungen verwirklichen und alles erreichen kann.",
+                        "she": "Vermitteln Sie ihr die Zuversicht, dass sie ihre Vorstellungen verwirklichen und alles erreichen kann.",
                     }
                 },
                 "need_stability":{
                     "instruction":{
-                        "he":"Bring him into the new day with a centeredness from which he can thrive.",
-                        "she": "Bring her into the new day with a centeredness from which she can thrive.",
+                        "he":"Vermitteln Sie ihm eine Ausgeglichenheit, von der aus er den Tag ruhig beginnen kann.",
+                        "she": "Vermitteln Sie ihr eine Ausgeglichenheit, von der aus sie den Tag ruhig beginnen kann.",
                     }
                 },    
                 "need_challenge":{
                     "instruction":{
-                        "he":"Give him confidence that the day will be filled with new and exciting challenges to tackle.",
-                        "she": "Give her confidence that the day will be filled with new and exciting challenges to tackle.",
+                        "he":"Vermitteln Sie ihm die Zuversicht, dass der kommende Tag voller interessanter Herausforderungen steckt.",
+                        "she": "Vermitteln Sie ihr die Zuversicht, dass der kommende Tag voller interessanter Herausforderungen steckt.",
                     }
                 },    
                 "need_structure":{
                     "instruction":{
-                        "he":"Give him a sense of groundedness before he goes off and takes the day by storm.",
-                        "she": "Give her a sense of groundedness before she goes off and takes the day by storm.",
+                        "he":"Vermitteln Sie ihm Ausgeglichenheit, bevor er ins Leben hinausgeht, um die Welt zu erobern.",
+                        "she": "Vermitteln Sie ihr Ausgeglichenheit, bevor sie ins Leben hinausgeht, um die Welt zu erobern.",
                     }
                 }                                                                                                                                                                                
             }

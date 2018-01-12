@@ -25,6 +25,7 @@
         </form>
         <div class="disclaimer">
             <p if="{state.main.role == 'rouser'}"><formatted-message id='ROUSER_CONTACT_DISCLAIMER'/></p>
+            <p><formatted-message id='CONTACT_ENCRYPTION'/></p>
             <p><formatted-message id='CONTACT_DISCLAIMER'/></p>
         </div>
       </div>

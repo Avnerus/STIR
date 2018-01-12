@@ -47,7 +47,7 @@
     var initialData = '<%- initialData %>'
   </script>
   </head>
-  <body <%- typeof nfbTopnav != 'undefined' ? 'class="' + nfbTopnav + '"' : '' %> >
+  <body class="<%-locale-%><%- typeof nfbTopnav != 'undefined' ? ' ' + nfbTopnav : '' %>" >
     <%- typeof nfbHeader != 'undefined' ? nfbHeader.join('\n') : '' %>
     <%- body %>
 

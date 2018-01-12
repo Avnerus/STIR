@@ -3,12 +3,12 @@
 <div class="content">
     <div class="padded-full">
        <div class="row description">
-          <h1>Thank you!</h1>
+          <h1><formatted-message id="THANK_YOU"/></h1>
        </div>
        <div>
-            <p>If you would like, we can search for another sleeper in need of a wakeup.</p>
+            <p><formatted-message id="THANK_YOU_DESC_1"/></p>
 
-            <p>Or you can be a sleeper yourself.</p>
+            <p><formatted-message id="THANK_YOU_DESC_2"/></p>
        </div>
        <div class="action">
             <a href="/rouser/alarms" class="btn primary" click="{refreshRouser}">

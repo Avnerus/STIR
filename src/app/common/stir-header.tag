@@ -37,6 +37,14 @@
         display: flex;
      }
  }
+body.fr {
+    header {
+        h1.navtext {
+            font-size:0.9rem;
+            font-weight: 400;
+        }
+    }
+} 
  </style>
  <script>
      goBack(e) {

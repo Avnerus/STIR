@@ -121,8 +121,8 @@ export default {
                 "facet_modesty":{
                     "instructions":[
                         {
-                            "he":"Dites-lui que sa modestie vous impressionne, et aidez-le à se sentir plus confortable à l'idée d'être reconnu.",
-                            "she":"Dites-lui que sa modestie vous impressionne, et aidez-la à se sentir plus confortable à l'idée d'être reconnue.",
+                            "he":"Dites-lui que sa modestie vous impressionne, et aidez-le à se sentir plus à l’aise à l'idée d'être reconnu.",
+                            "she":"Dites-lui que sa modestie vous impressionne, et aidez-la à se sentir plus à l’aise à l'idée d'être reconnue.",
                         },
                         {
                             "he":"Rassurez-le en lui disant qu'il n'y a rien de mal à recevoir de l'attention positive – après tout, il est une personne admirable.",
@@ -137,8 +137,8 @@ export default {
                 "facet_morality":{
                     "instructions":[
                         {
-                            "he":"Dites-lui à quel point vous respectez son compas moral.",
-                            "she":"Dites-lui à quel point vous respectez son compas moral.",
+                            "he":"Dites-lui à quel point vous respectez son sens moral.",
+                            "she":"Dites-lui à quel point vous respectez son sens moral.",
                         },
                         {
                             "he":"Mettez-le toutefois en garde contre sa tendance à tout voir en blanc ou en noir.",
@@ -186,8 +186,8 @@ export default {
             "needs":{
                 "need_excitement":{
                     "instruction":{
-                        "he":"Apportez énergie positive et motivation à son matin.",
-                        "she": "Apportez énergie positive et motivation à son matin.",
+                        "he":"Apportez énergie positive et motivation à sa matinée.",
+                        "she": "Apportez énergie positive et motivation à sa matinée.",
                     }
                 },
                 "need_harmony":{
@@ -214,7 +214,7 @@ export default {
                         "she": "Faites-lui cadeau du sentiment d'appartenance et de reconnaissance.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Faites-le se sentir comme une personne unique et merveilleuse.",
                         "she": "Faites-la se sentir comme une personne unique et merveilleuse.",
@@ -286,8 +286,8 @@ export default {
                         "she":"Encouragez-la à faire confiance à sa vision et à croire que toutes les pièces se mettront bientôt en place.",
                     },
                     "paragraph":{
-                        "he":"#name# est très particulier. Il a une vision claire et n'aime pas du tout en être détourné.",
-                        "she":"#name# est très particulière. Elle a une vision claire et n'aime pas du tout en être détournée."
+                        "he":"#name# est très particulier. Il a une vision claire et n'aime pas du tout être remis en question.",
+                        "she":"#name# est très particulière. Elle a une vision claire et n'aime pas du tout être remise en question."
                     },
                 },
                 "big5_openness":{
@@ -314,7 +314,7 @@ export default {
                 },
                 "big5_extraversion":{
                     "instruction":{
-                        "he":"Rappelez-lui combien que le monde a besoin de gens vaillants et consciencieux comme lui.",
+                        "he":"Rappelez-lui combien le monde a besoin de gens vaillants et consciencieux comme lui.",
                         "she":"Rappelez-lui combien le monde a besoin de gens vaillants et consciencieux comme elle.",
                     },
                     "paragraph":{
@@ -328,8 +328,8 @@ export default {
                         "she":"Rappelez-lui d'avoir confiance en sa capacité à exécuter même les tâches les plus exigeantes.",
                     },
                     "paragraph":{
-                        "he":"#name# est une personne stable. La pensée logique et l'autodiscipline l'aident à traverser ses journées et obtenir du succès.",
-                        "she":"#name# est une personne stable. La pensée logique et l'autodiscipline l'aident à traverser ses journées et obtenir du succès."
+                        "he":"#name# est une personne stable. La pensée logique et l'autodiscipline l'aident à traverser ses journées avec succès.",
+                        "she":"#name# est une personne stable. La pensée logique et l'autodiscipline l'aident à traverser ses journées avec succès."
                     },
                 },
                 "big5_openness":{
@@ -344,7 +344,7 @@ export default {
                 },
             },
             "facets":{
-                "facet_achievement-striving":{
+                "facet_achievement_striving":{
                     "instructions":[
                         {
                             "he":"Exprimez votre profonde admiration pour sa capacité à réussir, peu importe les circonstances.",
@@ -408,7 +408,7 @@ export default {
                         "she": "Elle est animée par un grand besoin de structure. Ce sens de l'ordre se voit dans sa maison et sa façon d'organiser sa vie.",
                     }
                 },  
-                "facet_self-discipline":{
+                "facet_self_discipline":{
                     "instructions":[
                         {
                             "he":"Exprimez votre admiration pour son inébranlable détermination.",
@@ -424,7 +424,7 @@ export default {
                         "she": "C'est une travailleuse assidue et extrêmement disciplinée. C'est grâce à sa persistance que #name# parvient à accomplir les tâches les plus difficiles et désagréables.",
                     }
                 },   
-                "facet_self-efficacy":{
+                "facet_self_efficacy":{
                     "instructions":[
                         {
                             "he":"Exprimez votre admiration pour sa confiance et son sérieux.",
@@ -472,7 +472,7 @@ export default {
                         "she": "Donnez-lui le sentiment d'être connecté, de faire partie d'un tout.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Donnez-lui le courage de prendre sa place aujourd'hui.",
                         "she": "Donnez-lui le courage de prendre sa place aujourd'hui.",
@@ -486,8 +486,8 @@ export default {
                 },
                 "need_love":{
                     "instruction":{
-                        "he":"Donnez-lui confiance en sa capacité à connecter avec les autres.",
-                        "she": "Donnez-lui confiance en sa capacité à connecter avec les autres.",
+                        "he":"Donnez-lui confiance en sa capacité à communiquer avec les autres.",
+                        "she": "Donnez-lui confiance en sa capacité à communiquer avec les autres.",
                     }
                 },
                 "need_practicality":{
@@ -554,8 +554,8 @@ export default {
                         "she":"Rappelez-lui de laisser son intuition et sa soif de savoir la guider aujourd'hui.",
                     },
                     "paragraph":{
-                        "he":"#name# a une répartie légendaire. Il est plus brillant que vous et que plusieurs autres en plus de savoir s'exprimer.",
-                        "she":"#name# a une répartie légendaire. Elle est plus brillante que vous et que plusieurs autres en plus de savoir s'exprimer."
+                        "he":"#name# a une répartie légendaire. Il est plus brillant que vous et que plusieurs autres, en plus de savoir s'exprimer avec adresse.",
+                        "she":"#name# a une répartie légendaire. Elle est plus brillante que vous et que plusieurs autres en plus de savoir s'exprimer avec adresse."
                     },
                 },
             },
@@ -650,7 +650,7 @@ export default {
                         "she": "Elle apporte joie et optimisme dans toutes les sphères de sa vie. Les gens disent d'elle que son enthousiasme est contagieux. ",
                     }
                 }, 
-                "facet_excitement-seeking":{
+                "facet_excitement_seeking":{
                     "instructions":[
                         {
                             "he":"Dites-lui que cette journée apportera toutes sortes de choses inattendues.",
@@ -720,8 +720,8 @@ export default {
                 },
                 "need_ideal":{
                     "instruction":{
-                        "he":"Faites-le se sentir connecté à une communauté globale vivante.",
-                        "she": "Faites-la se sentir connectée à une communauté globale vivante.",
+                        "he":"Faites en sorte qu’il se sente connecté à une communauté globale vivante.", 
+                        "she": "Faites en sorte qu’elle se sente connectée à une communauté globale vivante.",
                     }
                 },
                 "need_closeness":{
@@ -730,7 +730,7 @@ export default {
                         "she": "Faites-lui cadeau de ce sentiment de connexion profonde qu'elle recherche.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Encouragez-le dans son désir d'exprimer sa vraie nature.",
                         "she": "Encouragez-la dans son désir d'exprimer sa vraie nature.",
@@ -802,8 +802,8 @@ export default {
                         "she":"Rappelez-lui à quel point son énergie peut être magnétique pour les gens qui l'entourent.",
                     },
                     "paragraph":{
-                        "he":"#name# est intense. Son explosive peut être aussi contagieuse qu'attirante.",
-                        "she":"#name# est intense. Son explosive peut être aussi contagieuse qu'attirante."
+                        "he":"#name# est intense. Son énergie explosive peut être aussi contagieuse qu'attirante.",
+                        "she":"#name# est intense. Son énergie explosive peut être aussi contagieuse qu'attirante."
                     },
                 },
                 "big5_openness":{
@@ -830,8 +830,8 @@ export default {
                         "she":"Dites-lui combien sa nature intuitive vous impressionne et encouragez-le à écouter son instinct aujourd'hui.",
                     },
                     "paragraph":{
-                        "he":"#name# agit de manière impulsive. Il est très en contact avec ses instincts et les laisser le guider lorsqu'il vient le temps d'agir vite et de changer de cap.",
-                        "she":"#name# agit de manière impulsive. Elle est très en contact avec ses instincts et les laisse la guider lorsqu'il vient le temps d'agir vite et de changer de cap."
+                        "he":"#name# agit de manière impulsive. Il est très en contact avec ses instincts et les laisse le guider lorsqu'il faut agir vite et changer de cap.",
+                        "she":"#name# agit de manière impulsive. Elle est très en contact avec ses instincts et les laisse la guider lorsqu'il faut agir vite et changer de cap."
                     },
                 },
                 "big5_extraversion":{
@@ -879,8 +879,8 @@ export default {
                             "she":"Exprimez-lui votre profond respect pour la justesse de son instinct émotionnel.",
                         },
                         {
-                            "he":"Dites-lui de laisser de l'espace pour tous ses sentiments et d'avoir confiance : tout va bien se passer.",
-                            "she":"Dites-lui de laisser de l'espace pour tous ses sentiments et d'avoir confiance : tout va bien se passer.",
+                            "he":"Dites-lui de laisser de l'espace pour tous ses sentiments et d'avoir confiance : tout va bien se passer.",
+                            "she":"Dites-lui de laisser de l'espace pour tous ses sentiments et d'avoir confiance : tout va bien se passer.",
                         }
                     ],
                     "paragraph":{
@@ -920,7 +920,7 @@ export default {
                         "she": "Ses désirs sont forts. Certains la qualifieraient d'hédoniste en raison de son amour pour la décadence et la gratification instantanée.",
                     }
                 },
-                "facet_self-consciousness":{
+                "facet_self_consciousness":{
                     "instructions":[
                         {
                             "he":"Exprimez votre admiration pour sa profondeur émotionnelle et ses nombreux talents.",
@@ -984,7 +984,7 @@ export default {
                         "she": "Offrez-lui un sentiment de proximité et d'affection ce matin.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Faites-lui ressentir qu'il vaut la peine, et qu'il peut s'exprimer pleinement aujourd'hui.",
                         "she": "Faites-lui ressentir qu'elle vaut la peine, et qu'elle peut s'exprimer pleinement aujourd'hui.",
@@ -1133,8 +1133,8 @@ export default {
                 "facet_artistic_interests":{
                     "instructions":[
                         {
-                            "he":"Laissez-lui savoir que sa passion pour les arts inspire les gens de son entourage.",
-                            "she":"Laissez-lui savoir que sa passion pour les arts inspire les gens de son entourage.",
+                            "he":" Dites-lui que sa passion pour les arts inspire les gens de son entourage.",
+                            "she":"Dites-lui que sa passion pour les arts inspire les gens de son entourage.",
                         },
                         {
                             "he":"Conseillez-lui de ne pas laisser sa quête de beauté et d'aventure l'éloigner du moment présent.",
@@ -1242,7 +1242,7 @@ export default {
                         "she": "Donnez-lui le sentiment d'être vue et appréciée pour ce qu'elle est.",
                     }
                 },
-                "need_self-expression":{
+                "need_self_expression":{
                     "instruction":{
                         "he":"Célébrez son audace et son esprit libre.",
                         "she": "Célébrez son audace et son esprit libre.",
@@ -1256,8 +1256,8 @@ export default {
                 },
                 "need_love":{
                     "instruction":{
-                        "he":"Faites-le sentir complètement adoré et admiré.",
-                        "she": "Faites-la sentir complètement adorée et admirée.",
+                        "he":"Faites-le se sentir complètement adoré et admiré.",
+                        "she": "Faites-la se sentir complètement adorée et admirée.",
                     }
                 },
                 "need_practicality":{
@@ -1288,4 +1288,3 @@ export default {
         }
     }
 }
-

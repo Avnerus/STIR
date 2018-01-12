@@ -293,7 +293,7 @@
                 position: relative;
                 bottom: 15px;
             }
-            position: absolute;
+            position: relative;
             bottom: 30px;
             width: 100%;
             padding-top: 20px;
@@ -557,7 +557,7 @@
             if (IS_CLIENT && !this.state.auth.mturk) {
                if (!this.state.auth.accessToken) {
                     console.log("Opening intro");
-                    MiscUtil.initVideoPanel('#intro-panel');
+                    MiscUtil.initVideoPanel('#intro-panel', this.formatMessage('SKIP'));
                     phonon.panel('#intro-panel').open();
                }
                await this.state.auth.loginRest();

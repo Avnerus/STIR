@@ -175,7 +175,7 @@
 
     privacy(e) {
         e.preventDefault();
-        window.location = "/privacy.html"
+        window.location = "/privacy_" + this.state.auth.locale + ".html";
     }
  </script>
 </sleeper-alarms-add-personality>

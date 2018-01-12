@@ -1,6 +1,8 @@
 import TwilioUtil from '../util/twilio'
 import STIRError from '../../app/stir-error'
 import Alarm from '../models/alarm'
+import {BaseI18n} from '../../app/i18n/i18n'
+import {IntlMixin} from 'riot-intl'
 
 export default class UserContactService {
     setup(app) {
@@ -59,8 +61,11 @@ export default class UserContactService {
         return this.app.service("users").patch(params.user._id, data)
         .then((result) => {
            console.log("User updated sending text");
+            let message = IntlMixin.formatMessage('CODE_MESSAGE',{
+                number: data.verificationCode
+            },BaseI18n,params.user.locale);
            return TwilioUtil.client.messages.create({
-                body: 'Your STIR code is ' + data.verificationCode,
+                body: message,
                 to: phone,  
                 from: TwilioUtil.TWILIO_PHONE_NUMBER
            })

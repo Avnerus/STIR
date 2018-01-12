@@ -76,9 +76,9 @@ global.SERVER_URL = process.env['SERVER_URL'];
 SocketUtil.initWithUrl("http://localhost:3030");
 
 const SUPPORTED_LANGS = {
-    'en' : 'en'/*,
+    'en' : 'en',
     'fr': 'fr',
-    'de': 'de'*/
+    'de': 'de'
 }
 
 const MongoStore = connectMongo(session);
@@ -101,7 +101,7 @@ const app = feathers()
     if (req.query.lang && SUPPORTED_LANGS[req.query.lang]) {
         req.feathers.locale = req.forceLocale = req.locale = req.query.lang;
     } else {
-        req.feathers.locale = req.locale = req.acceptsLanguages('en'/*,'fr','de'*/) || 'en';
+        req.feathers.locale = req.locale = req.acceptsLanguages('en','fr','de') || 'en';
     }
     next();
 })
@@ -302,6 +302,7 @@ app.service('/user/contact').hooks({
         authHooks.queryWithCurrentUser()
       ],
       patch: [
+        authentication.hooks.authenticate(['jwt']),
         noDotPluck(
             'locale',
             'alarmLocales',
@@ -421,7 +422,6 @@ app.use(async function (req, res, next) {
         try {
             for (let i = 0; i < req.populateQueue.length; i++) {
                 let taskObj = req.populateQueue[i];
-                console.log("Runnint task", taskObj);
                 await req.appState[taskObj.store][taskObj.task].apply(req.appState[taskObj.store], taskObj.args);
             }
             
@@ -465,7 +465,8 @@ app.use(async function (req, res, next) {
 
             let renderOpts = {
               initialData: initialData,
-              body: render('main', req.appState)
+              body: render('main', req.appState),
+              locale: req.appState.auth.locale
             };
 
             if (nfbSettings) {
