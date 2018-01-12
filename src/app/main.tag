@@ -324,7 +324,7 @@
                 margin-top: 0;
 
                 li {
-                    font-size: 1rem;
+                    font-size: 13px;
                     margin-bottom: 5px;
                 }
 

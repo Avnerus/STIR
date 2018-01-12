@@ -45,10 +45,9 @@
             background-color: #f8f8f8;
             color: black;
             padding: 10px;
-            border-radius: 5px;
+            font-size: 13px;
             p {
                 color: black;
-                font-weight: 600;
             }
          }
         .description {
