@@ -19,8 +19,8 @@
                 <formatted-message id="CLOCK_DESC_NO_ALARMS"/>
               </p>
               <alarm-time
-                  each={ state.sleeper.alarms } 
-                  data="{ {time: this.time, _id: this._id} }" 
+                  each={ state.sleeper.alarms }
+                  data="{ {time: this.time, _id: this._id} }"
                   on-change="{parent.onAlarmTimeChange}"
                   on-cancel="{parent.onAlarmCancel}"
               >
@@ -54,25 +54,25 @@
                 top: 50px;
                 padding-bottom: 20px;
             }
+
             position: absolute;
             width: 100%;
-            bottom: 80px; 
+            bottom: 80px;
             right: 1px;
            .add-button {
                 background-color: #f36b21;
                 border-radius: 40px;
-                // box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-                width: 65px;
-                height: 65px;
+                width: 80px;
+                height: 80px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
                 a {
-                    width: 55px;
-                    height: 55px;
+                    width: 45px;
+                    height: 45px;
                    i {
-                        font-size: 55px;
+                        font-size: 45px;
                         color: white;
                    }
                 }
@@ -145,9 +145,9 @@
             console.log("Save result", result);
             if (result.status == "too_early") {
                 let confirm = phonon.confirm(
-                    this.formatMessage('TOO_EARLY_CONFIRM', {hours: result.hours}), 
+                    this.formatMessage('TOO_EARLY_CONFIRM', {hours: result.hours}),
                     this.formatMessage('NOTICE'),
-                    true, 
+                    true,
                     this.formatMessage('OK'),
                     this.formatMessage('CANCEL')
                 );
@@ -171,7 +171,7 @@
                 phonon.alert(
                     this.formatMessage('ALARM_EXISTS'),
                     this.formatMessage('OOPS'),
-                    false, 
+                    false,
                     this.formatMessage('OK')
                     );
             } else {
@@ -186,7 +186,7 @@
         let confirm = phonon.confirm(
             this.formatMessage('CANCEL_ALARM', {name: this.state.auth.user.name}),
             this.formatMessage('PLEASE_CONFIRM'),
-            false, 
+            false,
             this.formatMessage('YES'),
             this.formatMessage('NO')
         );
@@ -202,7 +202,7 @@
         confirm.on('cancel', function() {} );
     }
     refreshRouser(e) {
-        this.state.rouser.invalidateAlarms();            
+        this.state.rouser.invalidateAlarms();
     }
  </script>
 </sleeper-alarms>

@@ -142,10 +142,26 @@ Zina Kisch
              margin-right:auto;
              margin-top: 50px;
              max-width: 250px;
+             font-size: 13px;
          }
 
          pre {
             white-space: pre-wrap;
+         }
+
+         .nfb-credits:before {
+           content: "";
+           width: 100px;
+           margin: 0 auto;
+           height: 1px;
+           color: white;
+           background-color: white;
+         }
+         .nfb-credits {
+           font-family: 'Montserrat', Helvetica, sans-serif;
+           font-size: 13px;
+           text-align: center;
+           line-height: 1.5;
          }
      }
  </style>

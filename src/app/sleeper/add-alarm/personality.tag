@@ -34,26 +34,26 @@
           <stepper size="{state.sleeper.getSteps()}" current="2"></stepper>
       </div>
   </div>
-  
+
  <style>
 
      sleeper-alarms-add-personality {
          #choose-text {
             margin-top: 20px;
-         } 
+         }
          #social-buttons {
              display: flex;
              margin-top: 15px;
              margin-bottom: 15px;
-             
+
              a {
                 line-height: 1.5;
-                margin-left: 10px;
-                margin-right: 10px;
              }
          }
          #questions-link {
-            font-size: 12px;     
+            font-size: 12px;
+            text-decoration:underline;
+            color:white;
          }
 
          .circle-progress.active {

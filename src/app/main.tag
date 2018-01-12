@@ -25,7 +25,7 @@
 
     <style>
         body {
-            font-family: 'Work Sans', Helvetica, sans-serif;
+            font-family: 'Montserrat', Helvetica, sans-serif;
             color: white;
             background-color: #000;
         }
@@ -40,7 +40,7 @@
             .header-bar ~ .content {
                 margin-top: 92px;
             }
-            
+
             main .content {
                 margin-top: 52px;
             }
@@ -53,7 +53,7 @@
             .header-bar ~ .content {
                 margin-top: 92px;
             }
-            
+
             main .content {
                 margin-top: 52px;
             }
@@ -95,43 +95,42 @@
 	    margin-right: 0px;
         }
        .primary,.positive {
-            background-color: #000 !important;        
+            background-color: #000 !important;
         }
         .positive {
-            border-color: #0ae700 !important;
+            border-color: white;
         }
         .padded-full {
-            font-family: 'Work Sans', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
-	    line-height: 18px;
+	        line-height: 18px;
             padding: 20px;
             margin: 0;
             min-height: 400px;
         }
-	
-	p {
-           font-family: 'Work Sans', sans-serif;
-           font-size: 14px;
-	   line-height: 18px;
-           margin-bottom: 10px;
-           color: #C8C8C8;
-           margin-top: 16px;
-		
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 10px;
+            color: #C8C8C8;
+            margin-top: 16px;
          }
-	 
+
         h1 {
             font-family: 'Oswald', Helvetica, sans-serif;
-	    font-weight: 500;
+            font-weight: 500;
             font-size: 22px;
             letter-spacing: .15rem;
             line-height: 1.4;
-	    text-transform: uppercase;
+            text-transform: uppercase;
             margin-bottom: 13.9333px;
             margin-left: 0px;
             margin-right: 0px;
             margin-top: 13.9333px;
         }
-        
+
         h1.second {
             margin-top: 30px;
         }
@@ -148,21 +147,23 @@
             background-color: transparent !important;
             color: white !important;
         }
-        
+
         .intl-tel-input {
 	        width: 100%;
         }
 
     input#phone {
 	    font-size: 24px;
-	    border-bottom: 2px solid gray;
+	    border-bottom: 2px solid white;
 	    border-bottom-width: 2px!important;
+        font-family: 'Oswald', Helvetica, sans-serif;
+        letter-spacing: .15rem;
     }
 
     input:invalid {
 	    border-color: #f44242!important;
     }
-    
+
         main {
             .title {
                 margin-bottom: 30px;
@@ -220,10 +221,10 @@
 
         }
         .disclaimer, .disclaimer > p  {
-           font-family: 'Work Sans', sans-serif;
+            font-family: 'Montserrat', Helvetica, sans-serif;
             color: gray;
-            font-size: 11px;
-	    line-height: 1.4;
+            font-size: 9.5px;
+            line-height: 1.4;
             margin-top: 15px;
         }
 
@@ -303,24 +304,23 @@
                 font-family: Oswald, Helvetica;
 		text-transform:uppercase;
 		letter-spacing: .15rem;
-                font-size: 14px;      
+                font-size: 14px;
            }
-           
+
            a:hover {
                 color: blue;
            }
         }
         #prompt {
             .intro {
-         
                 margin-bottom: 10px;
-            }        
+            }
             p {
-                font-size: 12px;
-                font-family: 'Work Sans', sans-serif;
+                font-size: 13px;
+                font-family: 'Montserrat', Helvetica, sans-serif;
             }
             ul {
-                padding-left: 10px;
+                padding-left: 20px;
                 margin-top: 0;
 
                 li {
@@ -347,7 +347,7 @@
                     padding-right: 10px;
                     font-weight: bold;
                 }
-                
+
                 a {
                     position: relative;
                     top: 3px;
@@ -394,7 +394,7 @@
                     width: 100%;
                     text-align: center;
                 }
-                
+
                 .video-title {
                   display: none;
                 }
@@ -403,16 +403,16 @@
                     width: 100%;
                     text-align: center;
                 }
-                
+
                 .play-button {
                     width: 90px;
                     height: 90px;
-                    border: 2px solid #000;
+                    border: 3px solid #000;
                     display: flex;
                     border-radius: 50%;
                     justify-content: center;
                     align-items: center;
-                    
+
                     i {
                         color: #000;
                         font-size: 60px;
@@ -430,7 +430,7 @@
                     color: #000;
                     text-transform:uppercase;
                 }
-                
+
             }
         }
         .IIV::-webkit-media-controls-play-button,
@@ -438,7 +438,7 @@
               opacity: 0;
                    pointer-events: none;
                         width: 5px;
-                         
+
          }
 
         .error {
@@ -446,7 +446,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            
+
             span {
                 font-size: 20px;
                 margin-bottom: 20px;
@@ -467,6 +467,7 @@
             .share-icon {
                 position: relative;
                 top: 5px;
+                color: white;
             }
         }
         .home-suggest {
@@ -474,18 +475,19 @@
                 position: absolute;
                 right: 5px;
                 top: 5px;
+                color: white;
             }
             .padded-full {
                 line-height: 22px;
             }
 
         }
-	
+
 	ul#sortable {
 		li {
 			padding: 0px;
 			padding-bottom: 15px;
-			font-family: 'Work Sans', sans-serif;
+			font-family: 'Montserrat', Helvetica, sans-serif;
 
 			i {
 				padding-right:15px;
@@ -498,16 +500,21 @@
 	font-family: 'Oswald', Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: 500;
-        font-size: 16px;
-        letter-spacing: .15rem;
-        line-height: 1.4;
+    font-size: 18px;
+    letter-spacing: .15rem;
+    line-height: 1.4;
+    color: white;
 }
 
 #SLEEPER_WELCOME, .how-works ul, .row.explanation {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Montserrat', Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: #C8C8C8;
+}
+
+.how-works li {
+    margin-bottom: 8px;
 }
 
     </style>
@@ -544,14 +551,14 @@
         this.on('mount', async () => {
             console.log("STIR Main mounted: Environment: " + this.state.main.env);
             if (IS_CLIENT && this.state.main.env == 'production') {
-                console.log = function() {};                
+                console.log = function() {};
             }
 
             if (IS_CLIENT && !this.state.auth.mturk) {
                if (!this.state.auth.accessToken) {
                     console.log("Opening intro");
                     MiscUtil.initVideoPanel('#intro-panel');
-                    phonon.panel('#intro-panel').open();                    
+                    phonon.panel('#intro-panel').open();
                }
                await this.state.auth.loginRest();
                this.update();
@@ -575,11 +582,11 @@
         }
 
         refreshRouser(e) {
-            this.state.rouser.invalidateAlarms();            
+            this.state.rouser.invalidateAlarms();
         }
 
         refreshSleeper(e) {
-            this.state.sleeper.invalidateAlarms();            
+            this.state.sleeper.invalidateAlarms();
         }
     </script>
 </main>

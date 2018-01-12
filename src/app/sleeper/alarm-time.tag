@@ -8,8 +8,8 @@
                     <span class="{alarm-timezone: true, verifying:opts.verifying}">LOCAL TIME</span>
                 </div>
                 <div class="alarm-date-group">
-                    <formatted-message if="{opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(opts.data.time)}" date="{new Date(opts.data.time)}"/>            
-                    <formatted-message if="{!opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(this.defaultTime)}" date="{new Date(this.defaultTime)}"/>            
+                    <formatted-message if="{opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(opts.data.time)}" date="{new Date(opts.data.time)}"/>
+                    <formatted-message if="{!opts.data.time}" class="{alarm-date:true, verifying:opts.verifying}" id="{TimeUtil.getDateMessageId(this.defaultTime)}" date="{new Date(this.defaultTime)}"/>
                 </div>
             </div>
             <div class="actions" if="{opts.onCancel}">
@@ -47,22 +47,23 @@
             margin-right: 5px;
          }
          .alarm-time.verifying {
-            color: lightgrey;         
+            color: lightgrey;
          }
          .alarm-date {
             margin-top: 5px;
             margin-bottom: 5px;
-            color: #ff7500;
-            font-weight: 600px;
+            color: white;
+            font-weight: 700px;
+            text-transform: uppercase;
          }
          .alarm-date.verifying {
             color: gray;
          }
          .alarm-timezone.verifying {
-            color: gray;         
+            color: gray;
          }
          .alarm {
-            background-color: #232323;
+            border: 3px solid white;
             margin-top: 15px;
             padding: 20px;
             display: flex;
@@ -80,6 +81,7 @@
             flex-direction: row;
             align-items: baseline;
             color: #06c2ff;
+
            .clock-desc {
               margin-top: 10px;
             }
@@ -88,8 +90,14 @@
          .alarm-date-group {
             margin-bottom: 5px;
          }
+         .alarm-timezone {
+             color: gray;
+             text-transform: uppercase;
+             font-weight: bold;
+             font-size: 11px;
+         }
          .alarm-action {
-            color: #ff6969;
+            color: white;
             i {
                font-size: 40px;
                @media (max-width: 360px) {
@@ -99,10 +107,10 @@
                     font-size: 30px;
                }
             }
-         } 
+         }
          .actions {
              a {
-                 text-transform: uppercase;                             
+                 text-transform: uppercase;
                  text-decoration: underline;
                  color: white;
                  font-weight: 400;
@@ -119,7 +127,7 @@
             position: unset;
          }
      }
-     
+
      .alarm-time .alarm-action {
 	color: white;
 }
@@ -157,7 +165,7 @@
             $(this.refs.time).hide();
         }
     }
-    
+
     onTimeChange(e) {
         if (phonon.device.os == "Android") {
             console.log("Time Change!");
