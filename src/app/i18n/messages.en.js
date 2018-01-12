@@ -133,7 +133,7 @@ const Messages =
     ALL_SET_NAME: '{name}, you\'re all set',
     CREATORS: 'Creators',
     LEAD_DEVELOPER: 'Lead Developer',
-    SOUND_DESIGNER: 'Sound Designer',
+    SOUND_DESIGNER: 'Sound Designer and Original Music',
     ACTOR_VOICEOVER: 'Actor and Voiceover',
     ADDITIONAL_DEVELOPMENT: 'Additional Development',
     SPECIAL_THANKS: 'Special Thanks',

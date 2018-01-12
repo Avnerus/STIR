@@ -4,12 +4,13 @@
       <div class="padded-full">
            <h1><formatted-message id="CREDITS"/></h1>
            <div class="credits">
-               <span> <b><formatted-message id="CREATORS"/></b> Rebecca Lieberman <formatted-message id="AND"/>Julia Irwin</span>
-               <span> <b><formatted-message id="LEAD_DEVELOPER"/></b> Avner Peled </span>
-               <span> <b><formatted-message id="SOUND_DESIGNER"/></b> T.K. Broderick </span>
-               <span> <b><formatted-message id="ACTOR_VOICEOVER"/></b> Rena Anakwe </span>
-               <span> <b><formatted-message id="ADDITIONAL_DEVELOPMENT"/></b> Rebecca Ricks </span>
-               <span> <b><formatted-message id="SPECIAL_THANKS"/></b> Jackson Jewett, Ziv Schneider, Justin Mulroy, Jane Irwin, Victoria Irwin, Charlotte Lieberman, Nicholas Hubbard, Jason Sigal, Or Fleisher </span>
+               <span> <b><formatted-message id="CREATORS"/></b>Rebecca Lieberman<formatted-message id="AND"/>Julia Irwin</span>
+               <span> <b><formatted-message id="LEAD_DEVELOPER"/></b>Avner Peled</span>
+               <span> <b><formatted-message id="SOUND_DESIGNER"/></b>T.K. Broderick</span>
+               <span if="{state.auth.locale != 'fr'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Rena Anakwe</span>
+               <span if="{state.auth.locale == 'fr'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Sofi Lambert</span>
+               <span> <b><formatted-message id="ADDITIONAL_DEVELOPMENT"/></b>Rebecca Ricks</span>
+               <span> <b><formatted-message id="SPECIAL_THANKS"/></b>Jackson Jewett, Ziv Schneider, Justin Mulroy, Pierre Vannier, Jane Irwin, Victoria Irwin, Charlotte Lieberman, Nicholas Hubbard, Jason Sigal, Or Fleisher</span>
            </div>
            <div class="nfb-credits">
             <pre show="{state.auth.locale == 'en'}">
