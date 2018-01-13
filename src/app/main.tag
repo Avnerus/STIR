@@ -448,7 +448,7 @@
             flex-direction: column;
 
             span {
-                font-size: 20px;
+                font-size: 16px;
                 margin-bottom: 20px;
                 text-align: center;
                 padding: 10px;

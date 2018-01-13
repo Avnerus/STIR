@@ -26,14 +26,24 @@
     window.IS_SERVER = false;
 
   </script>
+
+  <style>
+    h1.error-headline {
+      margin-top: 80px;
+    }
+
+    .error-message {
+      font-size:14px;
+    }
+
+  </style>
   </head>
   <body>
     <div class="content">
-      <div class="error">
-         <img src="/images/icons/icon-384x384.png"></img>
-          <h1> Stir Error <%- error.code %> </h1>
-          <span> <%- error.message %> </span>
-          <a href="<%- home %>">Start over?</a>
+      <div class="error">å
+          <h1 class="error-headline"> Stir Error <%- error.code %> </h1>
+          <span class="error-message"> <%- error.message %> <a href="<%- home %>">Start over?</a> </span>
+
       </div>
     </div>
   </body>
