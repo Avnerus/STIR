@@ -261,14 +261,14 @@ export default class AlarmManager {
             return Promise.reject(new Error("Recording language not set!"));
         } else {
             // First get alarms assigned to this rouser and not finalized
-            let query  = {
+            let findQuery  = {
                 assignedTo: params.user._id,
                 'recording.finalized': false,
                 deleted: false,
                 failed: false,
                 time: {$gt: new Date()}
             };
-            return Alarm.find(query).select(FIELDS_TO_RETURN)
+            return Alarm.find(findQuery).select(FIELDS_TO_RETURN)
             .then((result) => {
                 if (result.length < ALARMS_IN_QUEUE) {
                     let alarmsToGo = ALARMS_IN_QUEUE - result.length;
@@ -276,7 +276,7 @@ export default class AlarmManager {
 
                     console.log("Still need to find " + alarmsToGo + " more alarms");
                     console.log("Capable languages ", params.user.alarmLocales);
-                    let query = {
+                    let assignQuery = {
                         assignedTo: null,
                         mturk: false,
                         analyzed: true,
@@ -288,9 +288,9 @@ export default class AlarmManager {
 
                     if (process.env.NODE_ENV == 'production') {
                         // Don't wake yourself
-                        query.userId = {$ne: params.user._id};
+                        assignQuery.userId = {$ne: params.user._id};
                     }
-                    return Alarm.find(query).sort({time: 1}).select("_id").limit(alarmsToGo)
+                    return Alarm.find(assignQuery).sort({time: 1}).select("_id").limit(alarmsToGo)
                     .then((newIds) => {
                         alarmIds = newIds;
                         console.log("We have " + alarmIds.length + " alarms to assign");
@@ -313,9 +313,12 @@ export default class AlarmManager {
                                 })
                             }
                         } else {
-                            console.log("Assigning " ,alarmIds);
+                            console.log("Assigning/extending" ,alarmIds);
                             return Alarm.update(
-                                {_id: {$in: alarmIds}},
+                                { $or: 
+                                    [{_id: {$in: alarmIds}},
+                                    {$and : [findQuery]}]
+                                },
                                 {"$set": {
                                     assignedTo: params.user._id,
                                     assignedAt: new Date(),
@@ -327,18 +330,22 @@ export default class AlarmManager {
                         return Alarm.find(
                             { $or: 
                                 [{_id: {$in: alarmIds}},
-                                {$and : [{
-                                    assignedTo: params.user._id,
-                                    'recording.finalized': false,
-                                    deleted: false,
-                                    failed: false,
-                                    time: {$gt: new Date()}
-                                }]}]
+                                {$and : [findQuery]}]
                             }
-                        ).select(FIELDS_TO_RETURN)                        
+                        ).select(FIELDS_TO_RETURN);
                     })
                 } else {
-                    return result;
+                    let resultIds = result.map(alarm => alarm._id);
+                    console.log("Extending alarms ", resultIds);
+                    return Alarm.update(
+                        {_id: {$in: resultIds}},
+                        {"$set": {
+                            assignedAt: new Date(),
+                        }}, {multi: true}
+                    )
+                    .then(() => {
+                        return result;
+                    })
                 }
             })
             .then((result) => {

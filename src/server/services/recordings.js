@@ -31,7 +31,22 @@ export default class RecordingsService {
         console.log("RecordingsService::create! ", data,params);
         // Create a pending recording for this user
         //
-        return TwiMLService.dispatchRecordingCall(data, params);
+        return Alarm.findOne(
+            { $and: [
+                {_id: data.alarmId},
+                {$or : [
+                    {assignedTo: params.user._id},
+                    {dummy: true}
+                ]}
+            ]}
+        )
+        .then((alarm) => {
+            if (alarm) {
+                return TwiMLService.dispatchRecordingCall(data, params);
+            } else {
+                throw new Error("This wakeup is no longer assigned to you, please try to refresh your queue")
+            }
+        })
     }
 
     patch(id, data, params) {
