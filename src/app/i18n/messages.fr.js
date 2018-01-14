@@ -133,7 +133,7 @@ const Messages =
     ALL_SET_NAME: '{name}, c\'est parti!',
     CREATORS: 'Créatrices',
     LEAD_DEVELOPER: 'Développeur principal',
-    SOUND_DESIGNER: 'Concepteur sonore',
+    SOUND_DESIGNER: 'Concepteur sonore et musique originale',
     ACTOR_VOICEOVER: 'Actrice et voix hors-champ',
     ADDITIONAL_DEVELOPMENT: 'Développement additionnel',
     SPECIAL_THANKS: 'Remerciements spéciaux',

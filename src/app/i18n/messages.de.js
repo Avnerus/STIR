@@ -133,7 +133,7 @@ const Messages =
     ALL_SET_NAME: '{name}, los geht\'s!',
     CREATORS: 'Autorinnen',
     LEAD_DEVELOPER: 'Entwicklung',
-    SOUND_DESIGNER: 'Tondesign',
+    SOUND_DESIGNER: 'Tondesign und Originalmusik',
     ACTOR_VOICEOVER: 'Stimme',
     ADDITIONAL_DEVELOPMENT: 'Zusätzliche Entwicklung',
     SPECIAL_THANKS: 'Unser besonderer Dank geht an',
