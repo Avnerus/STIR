@@ -184,7 +184,7 @@ function runLogic(promptData, generatedFrom, promptLogic, lang) {
     let promptInstructions = [];
 
     let PRONOUN = promptData.pronoun;
-    if ((lang == "fr" || lang == "de") && PRONOUN == "they") {
+    if (lang == "fr" && PRONOUN == "they") {
         // They is used as 'she'
         PRONOUN = "she";
     }
