@@ -70,6 +70,7 @@ export default {
             }
         })
         .then((alarm) => {
+            defaultPlay = process.env.S3_URL + "/audio/sorry_" + alarm.userLocale + ".mp3";
             req.app.service('alarms/rouser').alarmDelivered(alarm);
 
             if (
