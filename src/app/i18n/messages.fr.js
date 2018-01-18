@@ -126,7 +126,7 @@ const Messages =
     SEND_FEEDBACK: 'Envoyer une réponse',
     FEEDBACK_MESSAGE: 'Vous avez reçu un commentaire de {name}: {text}',
     FEEDBACK_CANT_REACH: 'Nous n\'avons pas réussi à joindre votre Réveilleur.',
-    ROUSER_WELCOME_DISCLAIMER: "Votre message ne doit renfermer aucun contenu en rapport avec un comportement illicite, diffamatoire, haineux, étant donné la nature de l’expérience, il y a un risque inhérent qu’un message non conforme aux règlements soit reçu par un usager. Tout usager de l’expérience reconna't que l'ONF et ARTE se dégagent de toute responsabilité vis-à-vis la réception d’un message non conforme aux règlements.,",
+    ROUSER_WELCOME_DISCLAIMER: "Votre message ne doit renfermer aucun contenu en rapport avec un comportement illicite, diffamatoire, haineux. Étant donné la nature de l’expérience, il y a un risque inhérent qu’un message non conforme aux règlements soit reçu par un usager. Tout usager de l’expérience reconnaît que l'ONF et ARTE se dégagent de toute responsabilité vis-à-vis la réception d’un message non conforme aux règlements.",
     SLEEPER_WELCOME_DISCLAIMER: "Même si les Réveilleurs sont avertis que leur message ne doit renfermer aucun contenu en rapport avec un comportement illicite, diffamatoire, haineux, étant donné la nature de l’expérience, il y a un risque inhérent qu’un message non conforme aux règlements soit reçu par un usager. Tout usager de l’expérience reconna't que l'ONF et ARTE se dégagent de toute responsabilité vis-à-vis la réception d’un message non conforme aux règlements.",
     CREDITS: 'CRÉDITS',
     EDIT: 'Modifier',
