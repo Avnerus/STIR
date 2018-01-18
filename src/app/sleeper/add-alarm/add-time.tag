@@ -11,7 +11,7 @@
              >
              </alarm-time>
             <div id="next-container">
-                  <button class="btn primary raised" click="{next}">Next</button>
+                  <button class="btn primary raised" click="{next}"><formatted-message id='NEXT'/></button>
             </div>
             <div class="disclaimer">
                 <formatted-message id='SLEEPER_TIME_DISCLAMER' 
