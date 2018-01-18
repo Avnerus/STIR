@@ -95,7 +95,7 @@ const Messages =
     ALARM_LOCALES_DISCLAIMER_ROUSER: 'Sélectionnez toutes les langues parlées que vous ma\'trisez afin de réveiller des Dormeurs à travers le monde entier.',
     ROUSER_RECORD_DESCRIPTION: 'Après avoir lu l\'information ci-dessous, appuyez sur le bouton pour enregistrer votre message.',
     ROUSER_RECORD_NOTICE: 'Nous vous téléphonerons afin d\'effectuer l\'enregistrement; gardez donc votre téléphone près de vous.',
-    PROMPT_INTRO: 'Aujourd\'hui, vous réveillerez {name}',
+    PROMPT_INTRO: 'Aujourd\'hui, vous réveillerez {name}.',
     PROMPT_INSTRUCTION: 'Pour votre message à {name}, prenez en considération la description suivante, et ne vous gênez pas pour élaborer:',
     RECORD_ACTION: 'Recevez un appel pour laisser un message',
     ROUSER_MIX_DESCRIPTION: 'Voici un aperçu de votre message de réveil.',
