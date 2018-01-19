@@ -24,6 +24,15 @@
     </div>
 
     <style>
+        @media (orientation: landscape) {
+          video, .overlay {
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+          }
+        }
         body {
             font-family: 'Montserrat', Helvetica, sans-serif;
             color: white;
@@ -562,6 +571,12 @@
                }
                await this.state.auth.loginRest();
                this.update();
+            }
+
+            if (IS_CLIENT && screen && screen.orientation && screen.orientation.lock) {
+                console.log("Locking screen orientation!");
+                let result = screen.orientation.lock("portrait");
+                console.log("Screen lock result", result);
             }
         });
 
