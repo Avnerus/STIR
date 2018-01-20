@@ -213,6 +213,13 @@ class Routes {
             this.populate(req, 'admin', 'getAlarms');
             this.go(next, req, res);
         });
+        app.route('/admin/archive').get((req, res, next) => {
+            console.log("admin archive route");
+            req.appState.admin.setAction("dashboard");
+            req.page = "admin-dashboard"
+            this.populate(req, 'admin', 'getArchive');
+            this.go(next, req, res);
+        });
 
         app.route('/credits').get((req, res, next) => {
             this.go(next, req, res);

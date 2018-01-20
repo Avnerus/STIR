@@ -34,6 +34,29 @@ export default class AdminStore extends Store {
             }
         }
     }
+    async getArchive() { 
+        if (!this.alarms && !this.gettingAlarms)  {
+            try {
+                this.gettingAlarms = true;
+                console.log("Getting alarm (Archive)");
+                let result = await SocketUtil.rpc(
+                    'alarms/admin::find', 
+                    {
+                        accessToken: this._state.auth.accessToken,
+                        'recording.mixUrl': {$ne: null}
+                    });
+                this.gettingAlarms = false;
+                console.log("Alarms archive result", result);
+                this.alarms = result;
+                this.trigger("alarms_updated");
+            }
+
+            catch (e) {
+                this.gettingAlarms = false;
+                console.log("Error getting alarms archive  ", e);                    
+            }
+        }
+    }
 
     setAction(action) {
         if (this.action != action) {
