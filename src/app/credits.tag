@@ -7,8 +7,9 @@
                <span> <b><formatted-message id="CREATORS"/></b>Rebecca Lieberman <formatted-message id="AND"/>Julia Irwin</span>
                <span> <b><formatted-message id="LEAD_DEVELOPER"/></b>Avner Peled</span>
                <span> <b><formatted-message id="SOUND_DESIGNER"/></b>T.K. Broderick</span>
-               <span if="{state.auth.locale != 'fr'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Rena Anakwe</span>
+               <span if="{state.auth.locale == 'en'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Rena Anakwe</span>
                <span if="{state.auth.locale == 'fr'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Sofi Lambert</span>
+               <span if="{state.auth.locale == 'de'}"> <b><formatted-message id="ACTOR_VOICEOVER"/></b>Veronika Beiweis</span>
                <span> <b><formatted-message id="ADDITIONAL_DEVELOPMENT"/></b>Rebecca Ricks</span>
                <span> <b><formatted-message id="SPECIAL_THANKS"/></b>Jackson Jewett, Ziv Schneider, Justin Mulroy, Pierre Vannier, Jane Irwin, Victoria Irwin, Charlotte Lieberman, Nicholas Hubbard, Jason Sigal, Or Fleisher</span>
 

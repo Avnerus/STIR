@@ -14,10 +14,6 @@
                   <li><formatted-message id='HOW_WORKS_4'/></li>
                 </ul>
             </div>
-            <div class="row explanation">
-                <formatted-message id='SLEEPER_WELCOME_1'/>
-            </div>
-
             <div class="action">
                 <button class="btn raised primary" click="{begin}">
                     <formatted-message id='BEGIN'/>

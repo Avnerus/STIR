@@ -60,7 +60,6 @@ const Messages =
     PHONE_EXISTS: 'Un appareil a déjà été enregistré à l\'aide de ce numéro de téléphone. Utiliser cet appareil?,',
     FAIL_NOTIFY: 'Ceci est un message de L\'appel du réveil. Nous sommes désolés, {name}, mais en raison d\'un échec d\'analyse, nous n\'avons pas su livrer votre message de réveil à {time, time, short}.',
     SLEEPER_WELCOME: 'Si vous êtes comme près de la moitié des humains sur Terre, vous étiez fatigué(e) ce matin au réveil. Notre objectif est de rendre cette transition un peu plus agréable.',
-    SLEEPER_WELCOME_1: 'En tant que Dormeur, vous remplacerez votre alarme numérique par un message de L\'appel du réveil. Remettez votre matin entre nos mains, nous en prendrons soin!',
     HOW_IT_WORKS: 'Comment ça fonctionne?',
     HOW_WORKS_1: 'Programmez votre alarme.',
     HOW_WORKS_2: 'Inscrivez-vous avec votre compte Facebook ou Twitter. Nos algorithmes analyseront vos données pour mieux vous comprendre, vous  et vos désirs matinaux.',
