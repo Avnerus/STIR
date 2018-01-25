@@ -126,7 +126,7 @@ const Messages =
     FEEDBACK_MESSAGE: 'Sie haben einen Kommentar von {name} erhalten: {text}',
     FEEDBACK_CANT_REACH: 'Wir konnten Ihre(n) Weckende(n) nicht erreichen.',
     ROUSER_WELCOME_DISCLAIMER: 'Ihre Nachricht darf keine verbotenen, beleidigenden oder hasserfüllten Inhalte enthalten. Aufgrund der Art des Erlebnisses besteht das Risiko, dass ein Nutzer eine Nachricht erhält, die nicht im Einklang mit den Bestimmungen steht. Alle Teilnehmer erklären, dass NFB und ARTE keine Verantwortung für den Erhalt einer Nachricht tragen, die nicht in Einklang mit den Bestimmungen steht.',
-    SLEEPER_WELCOME_DISCLAIMER: 'Even though the Rousers are warned that their message must contain no illicit, defamatory or hateful content, because of the nature of the experience, there is an inherent risk that a user may receive a message that is not in accordance with the regulations. All participants acknowledge that the NFB and ARTE assume no responsibility for the reception of a message that is not in accordance with the regulations.',
+    SLEEPER_WELCOME_DISCLAIMER: 'Auch wenn die Weckenden darauf hingewiesen werden, dass ihre Nachrichten keine verbotenen, beleidigenden oder hasserfüllten Inhalte enthalten dürfen, besteht aufgrund der Art des Erlebnisses das Risiko, dass ein Nutzer eine Nachricht erhält, die nicht im Einklang mit den Bestimmungen steht. Alle Teilnehmer erklären, dass NFB und ARTE keine Verantwortung für den Erhalt einer Nachricht tragen, die nicht in Einklang mit den Bestimmungen steht.',
     CREDITS: 'MITWIRKENDE',
     EDIT: 'Bearbeiten',
     ALL_SET_NAME: '{name}, los geht\'s!',
