@@ -41,7 +41,7 @@ const Messages =
     BE_A_SLEEPER: 'Als Schlafende(r) anmelden',
     WAKE_he: 'Wecken Sie Ihn',
     WAKE_she: 'Wecken Sie sie',
-    WAKE_they: 'Wecken Sie sie',
+    WAKE_they: 'Wecken Sie die Person',
     SLEEPER_NOTIFY: 'Hallo {name}, dies ist eine Erinnerung von Weckruf. Sie haben eine Weck-Nachricht für {time, time, short} eingestellt. Damit Sie sicher sind, von Ihrer Weck-Nachricht geweckt zu werden, aktivieren Sie Ihren Klingelton und achten Sie darauf, dass der Nicht-Stören-Modus deaktiviert ist.',
     ROUSER_NOTIFY: 'Dies ist eine Nachricht von Weckruf. Ein paar Schlafende warten auf eine Weck-Nachricht! Besuchen Sie {url}',
     HOME_SUGGEST_TAP: 'Diesen',
