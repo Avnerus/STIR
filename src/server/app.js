@@ -401,6 +401,7 @@ app.use(authMiddleware);
 app.use(function (req, res, next) {
     try {
         console.log("Init state");
+        console.log("REQ HEADERS", req.headers);
         req.appState = new State();
         req.populateQueue = [];
         req.appState.auth.setAcessToken(req.accessToken);
