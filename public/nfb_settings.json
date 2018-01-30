@@ -11,19 +11,19 @@
             "title": "Stir",
             "description": "Waking up to the voice of a stranger's voice never felt so right. Stir, a 60 second experience by Julia Irwin and Rebecca Lieberman. Produced by the NFB and ARTE, co-commissioned by IDFA DocLab.",
             "tweet": "Waking up to the voice of a stranger never felt so right. Stir, a 60 second experience by Julia Irwin and Rebecca Lieberman, co-produced by @thenfb and @ARTEfr, co-commissioned by @DocLab",
-            "image": "/images/icons/rouser/icon-512x512.png"
+            "image": "/images/social_en.jpg"
         },
         "fr": {
             "title": "L'appel du réveil",
             "description": "Être réveillé par un étranger n'aura jamais été si doux. L'appel du Réveil, une expérience de 60 secondes créée par Julia Irwin et Rebecca Lieberman. Une coproduction ONF et ARTE, co-commandée par le DocLab de l'IDFA.",
             "tweet": "Être réveillé par un étranger n'aura jamais été si doux. L'appel du réveil, une expérience de 60 secondes de Julia Irwin et Rebecca Lieberman, co-produite par @onf and @ARTEfr, en collaboration avec @DocLab",
-            "image": "/images/icons/rouser/icon-512x512.png"
+            "image": "/images/social_fr.jpg"
         },
         "de": {
             "title": "Weckruf",
             "description": "Noch nie war es so schön, von der Stimme einer/eines Fremden geweckt zu werden. Weckruf, ein 60-Sekunden-Erlebnis von Julia Irwin und Rebecca Lieberman. Produziert von NFB und ARTE, in Zusammenarbeit mit IDFA DocLab.",
             "tweet": "Noch nie war es so schön, von der Stimme einer/eines Fremden geweckt zu werden. Weckruf, ein 60-Sekunden-Erlebnis von Julia Irwin und Rebecca Lieberman. Produziert von @thenfb und @ARTEfr, in Zusammenarbeit mit @DocLab.",
-            "image": "/images/icons/rouser/icon-512x512.png"
+            "image": "/images/social_de.jpg"
         }
     }
 }
