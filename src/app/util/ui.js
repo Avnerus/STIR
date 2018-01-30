@@ -43,7 +43,7 @@ export default class UIUtil {
             }
 
             let iphoneIcon = $('link[rel="apple-touch-icon"]');
-            let iconValue = "/images/icons/" + role + "/icon-152x152.png";
+            let iconValue = "/images/icons/" + role + "/" + this.state.auth.locale + "/icon-152x152.png";
             if (iphoneIcon.length == 0) {
                $('head').append('<link rel="apple-touch-icon" href="' + iconValue + '">');
             } else {
@@ -52,7 +52,7 @@ export default class UIUtil {
         }
         else if (phonon.device.os == "Android") {
             let manifestLink = $('link[rel="manifest"]');
-            let manifestValue = '/' + role + '/manifest.json';
+            let manifestValue = '/' + role + '/manifest_' + this.state.auth.locale + '.json';
 
             if (manifestLink.length == 0) {
                 $('head').append('<link rel="manifest" href="' + manifestValue + '">');
