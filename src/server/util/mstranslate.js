@@ -6,12 +6,25 @@ class MSTranslateUtil {
             api_key : process.env.MS_ACCESS_KEY
         },false) // No auto refresh, token will be initialzied and refreshed at interval
 
+        this.TOKEN_REFRESH_INTERVAL = 9 * 60 * 1000;
+        this.refreshToken();
+
+    }
+    refreshToken() {
         this.initToken()
         .then((keys) => {
             console.log("M$ KEYS: ", keys);
+            setTimeout(() => {
+                this.refreshToken();
+            }, 
+            this.TOKEN_REFRESH_INTERVAL);
         })
         .catch((err) => {
-            console.error("Error renewing MSTranslator keys!", err);
+            console.error("Error initializing MSTranslator keys! Retrying in 10 seconds", err);
+            setTimeout(() => {
+                this.refreshToken();
+            }, 
+            10 * 1000);
         });
     }
     translate(text, target) {
@@ -43,7 +56,7 @@ class MSTranslateUtil {
               } else {
                   resolve(keys);
               }
-            });
+            }, true /* noRefresh */);
         })
     }
 };
