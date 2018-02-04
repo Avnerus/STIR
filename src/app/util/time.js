@@ -32,16 +32,11 @@ class TimeUtil {
     }
 
     getTimezone() {
-        let dtf = Intl.DateTimeFormat();
         let timezone;
 
-        if (dtf.resolvedOptions) {
-            timezone = dtf.resolvedOptions().timeZone;
-        }
-        else {
-            let tz = jstz.determine();
-            timezone = tz.name();
-        }
+        let tz = jstz.determine();
+        timezone = tz.name();
+
         console.log("User timezone: ", timezone);
         return timezone;
         
