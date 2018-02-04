@@ -20,13 +20,18 @@ class MSTranslateUtil {
               text: text,
               to: target
             };
-            this.client.translate(params, (err, data) => {
-              if (err) {
-                  reject(err);
-              } else {
-                  resolve(data);
-              }
-            });
+            if (this.client.credentials && this.client.credentials.api_key) {
+                this.client.translate(params, (err, data) => {
+                  if (err) {
+                      reject(err);
+                  } else {
+                      resolve(data);
+                  }
+                });
+            } else {
+                console.error("No credentials for MSTranslator! Returning original");
+                resolve(text);
+            }
         })
     }
 
