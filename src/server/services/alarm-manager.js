@@ -245,11 +245,11 @@ export default class AlarmManager {
     messageUser(id, message) {
         return this.app.service('users').get(id)
         .then((user) => {
-            if (user) {
+            if (user && user.phone && user.phone.length > 0) {
                 console.log("Sending message: ", message);
                 return TwilioUtil.sendMessage(user.phone, message);
             } else {
-                throw new Error("messageUser, User not found! " + id);
+                throw new Error("messageUser, User not found or no phone listed! " + id);
             }
         })
     }
