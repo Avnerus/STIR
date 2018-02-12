@@ -479,7 +479,7 @@ app.use(async function (req, res, next) {
                     nfbTag: nfbSettings.tag
                 });
                 if (req.path == "/") {
-                    renderOpts.nfbJson = nfbSettings.export_to_js;
+                    //renderOpts.nfbJson = nfbSettings.export_to_js;
                 } 
             } 
             res.render('index', renderOpts);
