@@ -25,7 +25,7 @@ export default class AdminStore extends Store {
                 this.gettingAlarms = false;
                 console.log("Alarms result", result);
                 this.alarms = result;
-                this.trigger("alarms_updated");
+                this.clientTrigger("alarms_updated");
             }
 
             catch (e) {
@@ -48,7 +48,7 @@ export default class AdminStore extends Store {
                 this.gettingAlarms = false;
                 console.log("Alarms archive result", result);
                 this.alarms = result;
-                this.trigger("alarms_updated");
+                this.clientTrigger("alarms_updated");
             }
 
             catch (e) {
@@ -61,7 +61,7 @@ export default class AdminStore extends Store {
     setAction(action) {
         if (this.action != action) {
             this.action = action;
-            this.trigger("admin_action_updated");
+            this.clientTrigger("admin_action_updated");
         }
     }
 
