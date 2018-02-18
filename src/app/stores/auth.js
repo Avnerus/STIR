@@ -12,13 +12,13 @@ export default class AuthStore extends Store {
     constructor() {
         super();
         this.user = {};
-
-        SocketUtil.on('socket_reconnect', () => {
-            if (this.accessToken) {
-                this.loginSocket();
-            }
-        });
     }     
+
+    socketReconect() {
+        if (this.accessToken) {
+            this.loginSocket();
+        }
+    }
 
     setAcessToken(accessToken) {
         console.log("Setting access token");

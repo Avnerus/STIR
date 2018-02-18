@@ -10,7 +10,7 @@ export default class MainStore extends Store {
         if (this.role != role) {
             console.log("Setting role", role);
             this.role = role;
-            this.trigger("main_role_updated", role);
+            this.clientTrigger("main_role_updated", role);
         }
     }
 };

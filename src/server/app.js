@@ -68,12 +68,20 @@ import Messages from '../app/i18n/messages'
 import Formats from '../app/i18n/formats'
 import Errors from 'feathers-errors'
 
+import memwatch from 'memwatch-next'
+
 global.fetch = require('node-fetch');
 global.io = require('socket.io-client');
 
 global.SERVER_URL = process.env['SERVER_URL'];
 
 SocketUtil.initWithUrl("http://localhost:3030");
+
+if (process.env.NODE_ENV == 'development') {
+    memwatch.on('leak', (info) => {
+      console.error('Memory leak detected:\n', info);
+    });
+}
 
 const SUPPORTED_LANGS = {
     'en' : 'en',

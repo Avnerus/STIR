@@ -69,7 +69,6 @@
 
     this.on('mount', () => {
         console.log("add-alarm-personality mounted");
-        this.state.sleeper.on('alarm_created', this.onAlarmCreated);
     });
 
     showError(err) {
@@ -90,11 +89,15 @@
     }
 
     this.on('unmount', () => {
-        this.state.sleeper.off('alarm_created', this.onAlarmCreated);
     });
 
     this.on('ready', () => {
+        this.state.sleeper.on('alarm_created', this.onAlarmCreated);
         this.update();
+    });
+
+    this.on('hidden', () => {
+        this.state.sleeper.off('alarm_created', this.onAlarmCreated);
     });
 
     this.on('transitionend', async () => {

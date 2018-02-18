@@ -8,7 +8,6 @@ import {observable} from 'riot'
 
 export default class State {
     constructor() {
-        observable(this);
         this.main = new MainStore();
         this.auth = new AuthStore();
         this.sleeper = new SleeperStore(this);

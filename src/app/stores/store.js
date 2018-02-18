@@ -3,6 +3,15 @@ import { observable } from 'riot';
 export default class Store {
     constructor(state) {
         this._state = state;
-        observable(this);
+
+        if (IS_CLIENT) {
+            observable(this);
+        }
+    }
+
+    clientTrigger(event, data) {
+        if (IS_CLIENT) {
+            this.trigger(event, data);
+        }
     }
 }

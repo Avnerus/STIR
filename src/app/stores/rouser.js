@@ -10,14 +10,13 @@ export default class RouserStore extends Store {
         this.action = null;
         this.alarms = null;
         this.currentAlarm = null;
+    }
 
-        SocketUtil.socket.on('recordings ready', (data) => {
-            if (!this.currentAlarm) {
-                this.currentAlarm.recording = {};
-            }
-            this.currentAlarm.recording = data;
-            this.trigger('recording_ready', data);
-        })
+    recordingReady(data) {
+        if (!this.currentAlarm) {
+            this.currentAlarm.recording = {};
+        }
+        this.currentAlarm.recording = data;
     }
 
     async getAlarms(contact) {
@@ -27,7 +26,7 @@ export default class RouserStore extends Store {
                 console.log("Get rouser alarms");
                 this.alarms = await SocketUtil.rpc('alarms/rouser::find', {accessToken: this._state.auth.accessToken});
                 this.gettingAlarms = false;
-                this.trigger('queue_updated')
+                this.clientTrigger('queue_updated')
             }
         }
         catch (e) {
@@ -48,7 +47,7 @@ export default class RouserStore extends Store {
             if (action == "alarms") {
                 this.currentAlarm = null;
             }
-            this.trigger('action_updated', action);
+            this.clientTrigger('action_updated', action);
         }
         if (action == null && IS_CLIENT) {
             // In case the video was playing
@@ -59,7 +58,7 @@ export default class RouserStore extends Store {
     setRecordStage(stage) {
         console.log("Set record stage", stage);
         this.recordStage = stage;
-        this.trigger('record_stage_updated');
+        this.clientTrigger('record_stage_updated');
     }
 
     async chooseAlarm(id, mturk) {
@@ -71,7 +70,7 @@ export default class RouserStore extends Store {
                 this.currentAlarm = await SocketUtil.rpc('alarms/rouser::get', id, {accessToken: this._state.auth.accessToken, mturk: mturk});
             }
             console.log("Current alarm", this.currentAlarm);
-            this.trigger("alarm_loaded");
+            this.clientTrigger("alarm_loaded");
         }
     }
 

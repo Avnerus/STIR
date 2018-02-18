@@ -16,8 +16,6 @@
     import './dashboard.tag'
 
     this.on('mount', () => {
-        console.log("Admin mounted. current action", this.state.admin.action);
-        this.state.admin.on('admin_action_updated', this.actionUpdated);
 
         console.log("Current user role", this.state.auth.user.role);
         if (IS_CLIENT && this.state.auth.user.role != "admin" && this.state.admin.action != "login") {
@@ -32,6 +30,14 @@
     });
 
     this.on('unmount', () => {
+    });
+
+    this.on('ready', () => {
+        console.log("Admin ready. current action", this.state.admin.action);
+        this.state.admin.on('admin_action_updated', this.actionUpdated);
+    });
+
+    this.on('hidden', () => {
         this.state.admin.off('admin_action_updated', this.actionUpdated);
     });
 

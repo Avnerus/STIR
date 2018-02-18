@@ -59,10 +59,18 @@
  <script>
     this.on('mount', () => {
         console.log("admin dashboard mounted");
-        this.state.admin.on('alarms_updated', this.onAlarmsUpdated);
     });
 
     this.on('unmount', () => {
+    });
+
+    this.on('ready', () => {
+        console.log("admin dashboard ready");
+        this.state.admin.on('alarms_updated', this.onAlarmsUpdated);
+    });
+
+
+    this.on('hidden', () => {
         this.state.admin.off('alarms_updated', this.onAlarmsUpdated);
     });
 

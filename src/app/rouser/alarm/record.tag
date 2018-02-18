@@ -64,18 +64,20 @@
 
  <script>
     import '../../common/stir-header.tag'
+    import SocketUtil from '../../util/socket'
 
     this.on('mount', () => {
         console.log("alarm record mounted");
-        this.state.rouser.on('recording_ready', this.onRecordingReady);
     });
 
     this.on('unmount', () => {
-        this.state.rouser.off('recording_ready', this.onRecordingReady);
     });
 
     this.on('ready', () => {
         this.loading = false;
+        SocketUtil.socket.once('recordings ready', (data) => {
+            this.onRecordingReady(data);
+        });
         this.update();
     });
 
@@ -104,8 +106,9 @@
         }
     }
 
-    onRecordingReady() {
+    onRecordingReady(data) {
         this.loading = false;
+        this.state.rouser.recordingReady(data);
         console.log("Recording ready!", this.state.rouser.currentAlarm.recording);
         if (this.state.rouser.currentAlarm.recording.status == "success") {
             if (IS_CLIENT) {

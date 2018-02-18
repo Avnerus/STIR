@@ -25,14 +25,14 @@ export default class SleeperStore extends Store {
                 this.gettingAlarms = false;
                 console.log("Alarms result", result);
                 this.alarms = result;
-                this.trigger("alarms_updated");
+                this.clientTrigger("alarms_updated");
             }
 
             catch (e) {
                 this.gettingAlarms = false;
                 if (e.code == 401) {
                     this.alarms = [];
-                    this.trigger('alarms_updated');
+                    this.clientTrigger('alarms_updated');
                 } else {
                     console.log("Error getting alarms  ", e);                    
                 }
@@ -46,7 +46,7 @@ export default class SleeperStore extends Store {
             if (action == "add-alarm") {
                 this.currentAlarm = {};
             }
-            this.trigger("sleeper_action_updated");
+            this.clientTrigger("sleeper_action_updated");
         }
     }
 
@@ -64,7 +64,7 @@ export default class SleeperStore extends Store {
         this.newAlarmTime = this.currentAlarm.time;
         this.currentAlarm = null;
         this.addAlarmStage = null;
-        this.trigger('alarm_created');
+        this.clientTrigger('alarm_created');
     }
 
     async saveAlarmTime(newTime, timezone) {
@@ -80,7 +80,7 @@ export default class SleeperStore extends Store {
 
     setAddAlarmStage(stage) {
         this.addAlarmStage = stage;
-        this.trigger("sleeper_add_alarm_stage", stage);
+        this.clientTrigger("sleeper_add_alarm_stage", stage);
     }
 
     chooseAlarm(id) {

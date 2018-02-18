@@ -92,11 +92,11 @@
 
     this.on('mount', () => {
         console.log("alarms mounted");
-        this.state.sleeper.on('alarms_updated', this.onAlarmsUpdated);
     });
 
     this.on('ready', () => {
         console.log("Clock ready", this.state.auth.user.name);
+        this.state.sleeper.on('alarms_updated', this.onAlarmsUpdated);
         this.update();
         if (phonon.device.os == "iOS" && this.state.auth.accessToken) {
             window.history.replaceState(null, null, "/sleeper/alarms?accessToken=" + this.state.auth.accessToken);
@@ -124,6 +124,9 @@
     })
 
     this.on('unmount', () => {
+    });
+
+    this.on('hidden', () => {
         this.state.sleeper.off('alarms_updated', this.onAlarmsUpdated);
     });
 

@@ -40,7 +40,6 @@
 
         this.on('mount', () => {
             console.log("alarm mix mounted");
-
         });
 
         this.on('unmount', () => {

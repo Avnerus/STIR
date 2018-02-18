@@ -556,11 +556,18 @@
         import './credits.tag'
 
         import MiscUtil from './util/misc'
+        import SocketUtil from './util/socket'
 
         this.on('mount', async () => {
             console.log("STIR Main mounted: Environment: " + this.state.main.env);
             if (IS_CLIENT && this.state.main.env == 'production') {
                 console.log = function() {};
+            }
+
+            if (IS_CLIENT) {
+                SocketUtil.on('socket_reconnect', () => {
+                    this.state.auth.socketReconect();
+                });
             }
 
             if (IS_CLIENT && !this.state.auth.mturk) {
@@ -588,7 +595,7 @@
             console.log("Main update");
         })
 
-        this.on('unmount', () => {
+        this.on('hidden', () => {
             this.state.main.off('main_role_updated', this.roleUpdated);
         })
 

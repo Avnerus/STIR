@@ -85,7 +85,6 @@
 
     this.on('mount', async () => {
         console.log("add-alarm-questions mounted");
-        this.state.sleeper.on('alarm_created', this.onAlarmCreated);
         if (IS_CLIENT) {
           $( function() {
             $( "#sortable" ).sortable();
@@ -94,6 +93,13 @@
     });
 
     this.on('unmount', () => {
+    });
+
+    this.on('ready', () => {
+        this.state.sleeper.on('alarm_created', this.onAlarmCreated);
+    });
+
+    this.on('hidden', () => {
         this.state.sleeper.off('alarm_created', this.onAlarmCreated);
     });
 

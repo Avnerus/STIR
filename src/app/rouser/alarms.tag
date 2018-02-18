@@ -127,15 +127,15 @@
 
     this.on('mount', () => {
         console.log("alarm-queue mounted");
-        this.state.rouser.on('queue_updated', this.queueUpdated);
     });
 
-    this.off('unmount', () => {
-        this.state.rouser.on('queue_updated', this.queueUpdated);
+    this.on('hidden', () => {
+        this.state.rouser.off('queue_updated', this.queueUpdated);
     });
 
     this.on('ready', () => {
         this.update();
+        this.state.rouser.on('queue_updated', this.queueUpdated);
         if (phonon.device.os == "iOS" && this.state.auth.accessToken) {
             window.history.replaceState(null, null, "/rouser/alarms?accessToken=" + this.state.auth.accessToken);
         }
